@@ -41,6 +41,8 @@ Installatie van Sass via commandline:
 Variabelen
 ----------
 
+Variabelen in Sass worden gedefinieerd door het symbool `$` gevolgd door de naam van de variabele. Na het `:` kennen we een waarde toe aan deze variabele.
+
 ```
 $primary-font-family:    Helvetica, sans-serif;
 $primary-font-size:16px;
@@ -59,4 +61,6 @@ body {
   font: 16px Helvetica, sans-serif;
   color: #333; }
 ```
+
+Een variabele kunnen we ook binnen een bepaalde selector definiëren. De scope van deze variabele kunnen we globaal maken d.m.v. `!global` keyword.
 
