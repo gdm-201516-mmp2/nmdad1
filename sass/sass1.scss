@@ -1,0 +1,8 @@
+$primary-font-family:    Helvetica, sans-serif;
+$primary-font-size:16px;
+$primary-color: #333;
+
+body {
+  font: $primary-font-size $primary-font-family;
+  color: $primary-color;
+}

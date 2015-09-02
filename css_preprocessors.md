@@ -11,6 +11,9 @@ CSS Preprocessors
 
 [SASS Website](http://sass-lang.com/)
 
+Stylesheets worden groter, meer complex en harder om te onderhouden. Een preprocessor, zoals Sass, kan hierbij helpen. Sass laat toe om eigenschappen te gebruiker die niet bestaan in normale CSS, zoals: variabelen, nesting, mixins, inheritance (overerving) en anderen.
+Sass-bestanden worden gecompileerd naar normale CSS-bestanden, die vervolgens gebruikt worden in een website. 
+
 
 Installatie
 -----------
@@ -34,3 +37,26 @@ Installatie van Sass via commandline:
 	* `gem install sass`
 	* `sudo gem install sass` (installatie als superuser)
 	* `sass -v` (nakijken versie sass)
+	
+Variabelen
+----------
+
+```
+$primary-font-family:    Helvetica, sans-serif;
+$primary-font-size:16px;
+$primary-color: #333;
+
+body {
+  font: $primary-font-size $primary-font-family;
+  color: $primary-color;
+}
+```
+
+De variabele wordt vervangen door de waarde, die we eraan hebben toegekend, na compilatie:
+
+```
+body {
+  font: 16px Helvetica, sans-serif;
+  color: #333; }
+```
+
