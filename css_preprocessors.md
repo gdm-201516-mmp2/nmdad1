@@ -1,15 +1,14 @@
-|Info| |
-|----|----|
-|Auteur(s)|Philippe De Pauw - Waterschoot|
+CSS Preprocessors
+=================
+
+|Info|  |
+|----|---|
+|Olod|New Media Design & Development I|
+|Auteur(s)|Philippe De Pauw - Waterschoot, Jonas Pottie|
 |Opleiding|Bachelor in de Grafische en digitale media|
 |Academiejaar|2015-16|
 
 ***
-
-CSS Preprocessors
-=================
-
-[SASS Website](http://sass-lang.com/)
 
 Stylesheets worden groter, meer complex en harder om te onderhouden. Een preprocessor, zoals Sass, kan hierbij helpen. Sass laat toe om eigenschappen te gebruiker die niet bestaan in normale CSS, zoals: variabelen, nesting, mixins, inheritance (overerving) en anderen.
 Sass-bestanden worden gecompileerd naar normale CSS-bestanden, die vervolgens gebruikt worden in een website. 
@@ -64,3 +63,6 @@ body {
 
 Een variabele kunnen we ook binnen een bepaalde selector definiëren. De scope van deze variabele kunnen we globaal maken d.m.v. `!global` keyword.
 
+Bronnen
+-------
+* [SASS Website](http://sass-lang.com/)

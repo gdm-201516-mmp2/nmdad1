@@ -3,6 +3,7 @@ New Media Design & Development I
 
 |Info|  |
 |----|---|
+|Olod|New Media Design & Development I|
 |Auteur(s)|Philippe De Pauw - Waterschoot, Jonas Pottie|
 |Opleiding|Bachelor in de Grafische en digitale media|
 |Academiejaar|2015-16|
