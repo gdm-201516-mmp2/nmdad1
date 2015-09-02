@@ -1,0 +1,8 @@
+#main {
+  $width: 760/16*1em !global;
+  width: $width;
+}
+
+#sidebar {
+  width: $width/2;
+}

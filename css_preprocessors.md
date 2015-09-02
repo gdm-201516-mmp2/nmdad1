@@ -63,6 +63,50 @@ body {
 
 Een variabele kunnen we ook binnen een bepaalde selector definiëren. De scope van deze variabele kunnen we globaal maken d.m.v. `!global` keyword.
 
+```
+#main {
+  $width: 760/16*1em !global;
+  width: $width;
+}
+
+#sidebar {
+  width: $width/2;
+}
+```
+
+Resultaat:
+
+```
+#main {
+  width: 47.5em; }
+
+#sidebar {
+  width: 23.75em; }
+```
+
+Willen we de lijnhoogte opgeven in het font CSS-attribuut via `/`, dan moeten we de variabelen omsluiten door `#{...}`.
+
+```
+$primary-font-family:    Helvetica, sans-serif;
+$primary-font-size:16px;
+$primary-font-lineheight:1.46;
+$primary-color: #333;
+
+body {
+  font: #{$primary-font-size}/#{$primary-font-lineheight} $primary-font-family;
+  color: $primary-color;
+}
+```
+
+Resultaat:
+
+```
+body {
+  font: 16px/1.46 Helvetica, sans-serif;
+  color: #333; }
+```
+
+
 Bronnen
 -------
 * [SASS Website](http://sass-lang.com/)
