@@ -15,3 +15,28 @@ Documenten
 ----------
 
 * [CSS Preprocessors](css_preprocessors.md "CSS Preprocessors")
+
+Auteurs
+--------
+
+**Philippe De Pauw - Waterschoot**
+
+* <http://twitter.com/drdynscript>
+* <http://bitbucket.org/drdynscript>
+* <https://www.linkedin.com/pub/philippe-de-pauw/6/a33/5a5>
+* <philippe.depauw@arteveldehs.be>
+
+Arteveldehogeschool
+-------------------
+
+- <http://www.arteveldehogeschool.be>
+- <http://www.arteveldehogeschool.be/ects>
+- <http://www.arteveldehogeschool.be/bachelor-de-grafische-en-digitale-media>
+- <http://twitter.com/bachelorGDM>
+- <https://www.facebook.com/BachelorGrafischeEnDigitaleMedia?fref=ts>
+
+
+Copyright and license
+---------------------
+
+Code en documentatie copyright 2003-2016 Arteveldehogeschool | Opleiding Grafische en digitale media | drdynscript. Cursusmateriaal, zoals code, documenten, ... uitgebracht onder de   Creative Commons licentie.
