@@ -31,6 +31,6 @@ Installatie van Sass via commandline:
 
 * Open terminal of command prompt
 * Installatie van sass
-	`gem install sass`
-	`sudo gem install sass` (installatie als superuser)
-	`sass -v` (nakijken versie sass)
+	* `gem install sass`
+	* `sudo gem install sass` (installatie als superuser)
+	* `sass -v` (nakijken versie sass)
