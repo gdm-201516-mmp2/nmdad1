@@ -24,5 +24,5 @@ Installatie
 |Commandline||
 |-----------|---|
 |Linux|`sudo su -c "gem install sass"`|
-|Windows||
-|Mac||
+|Windows|via [Ruby Installer](http://rubyinstaller.org/)|
+|Mac|Pre-installed|
