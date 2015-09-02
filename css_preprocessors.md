@@ -1,7 +1,7 @@
 |Info| |
 |----|----|
 |Auteur(s)|Philippe De Pauw - Waterschoot|
-|Opleiding|Grafische en Digitale Media|
+|Opleiding|Bachelor in de Grafische en digitale media|
 |Academiejaar|2015-16|
 
 ***
