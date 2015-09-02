@@ -12,3 +12,17 @@ CSS Preprocessors
 [SASS Website](http://sass-lang.com/)
 
 
+Installatie
+-----------
+
+|Applicaties||
+|-----------|---|
+|Koala|http://koala-app.com/|
+|Mixture|http://mixture.io/|
+|Scout|http://mhs.github.io/scout-app/|
+
+|Commandline||
+|-----------|---|
+|Linux|`sudo su -c "gem install sass"`|
+|Windows||
+|Mac||
