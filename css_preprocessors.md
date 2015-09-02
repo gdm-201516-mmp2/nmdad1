@@ -26,3 +26,11 @@ Installatie
 |Linux|`sudo su -c "gem install sass"`|
 |Windows|via [Ruby Installer](http://rubyinstaller.org/)|
 |Mac|Pre-installed|
+
+Installatie van Sass via commandline:
+
+* Open terminal of command prompt
+* Installatie van sass
+	`gem install sass`
+	`sudo gem install sass` (installatie als superuser)
+	`sass -v` (nakijken versie sass)
