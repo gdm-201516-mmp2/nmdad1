@@ -32,6 +32,7 @@ Auteurs
 **Philippe De Pauw - Waterschoot**
 
 * <http://twitter.com/drdynscript>
+* <http://github.com/drdynscript>
 * <http://bitbucket.org/drdynscript>
 * <https://www.linkedin.com/pub/philippe-de-pauw/6/a33/5a5>
 * <philippe.depauw@arteveldehs.be>

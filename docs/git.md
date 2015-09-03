@@ -47,7 +47,7 @@ Configuratie
 - Https gebruiken i.p.v. git (proxy)
 	- `git config --global url."https://github.com".insteadOf git://github.com`
 - Editeren van `.gitconfig`
-	- `vi ~/.gitconfig` of 'grep ~/.gitconfig' (vi & grep zijn editors)
+	- **OSX:** `vi ~/.gitconfig` of 'grep ~/.gitconfig' (vi & grep zijn editors)
 
 Door Ã©Ã©n van deze handelingen uit te voeren wordt er een configuratiebestand geschreven op de locatie `~/.gitconfig` (of `~/.config/git/config`). `~` komt overeen met de homelocatie van een gebruiker, bv. op windows: `C:\Users\drdynscript`.
 
@@ -67,15 +67,15 @@ Commando's
 
 ####Up-to-date blijven met de cursusinhoud
 
-**Eénmalig klonen van de cursus** <https://bitbucket.org/drdynscript/nmdadi_201415/overview>, via de url vermeld rechtsboven in de browser: <https://drdynscript@bitbucket.org/drdynscript/nmdadi_201415.git>.
+**Eénmalig klonen van de cursus** 
 
-- `git clone https://drdynscript@bitbucket.org/drdynscript/nmdadi_201415.git`
+- `git clone https://github.com/gdm-201516-mmp2/nmdad1.git gdm-201516-nmdad1`
 
-Om een update te ontvangen van de cursus, navigeren we naar de aangemaakte folder `nmdadi_201415`. Hierbinnen voeren we hetvolgende commando uit:
+Om een update te ontvangen van de cursus, navigeren we naar de aangemaakte folder `gdm-201516-nmdad1`. Hierbinnen voeren we hetvolgende commando uit:
 
 - `git pull origin master`
 
-Het resultaat van dit commando geeft de wijzigingen en toevoegen weer per bestand. Uiteraard kunnen jullie niet via de `push` optie van het `git` commando wijzigingen aanbrengen in deze cursus, maar suggesties en opmerkingen zijn steeds welkom.
+Het resultaat van dit commando geeft de wijzigingen en toevoegingen weer per bestand. Uiteraard kunnen jullie niet via de `push` optie van het `git` commando wijzigingen aanbrengen in deze cursus, maar suggesties en opmerkingen zijn steeds welkom.
 
 
 Bibliografie
@@ -84,3 +84,4 @@ Bibliografie
 > **Git:**
 >  
 - <https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf>
+- <http://courses.olivierparent.be/servermanagement/local-development-environment/installing-design-and-development-tools/source-control/>
