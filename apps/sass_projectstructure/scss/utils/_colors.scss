@@ -1,0 +1,18 @@
+// Colors
+$colors: (
+	'neutral': #aaa,
+	'alpha': #0074D9,
+	'beta': #2ECC40,
+	'success': #2ECC40,
+	'warning': #FF851B,
+	'danger': #FF4136
+);
+
+// Color palettes
+$color-palettes: (
+	'neutral': (
+		'base': $colors('neutral'),
+		'light': $colors('neutral'),
+		'dark': $colors('neutral')
+	)
+);

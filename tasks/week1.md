@@ -23,11 +23,25 @@ Taak 1: GitHub en bitbucket
 	* Gebruik jouw email-adres van de arteveldehogeschool.
 * Registreer je vervolgens in [Bitbucket]("https://bitbucket.org/account/signin/?next=/") via jouw reeds aangemaakt GitHub account.
 * Voeg een persoonlijk foto toe aan jouw account binnen GitHub en Bitbucket.
+* [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 Taak 2: Résumé Markdown Document
 --------------------------------
 
-* Maak een nieuwe repository in Bitbucket aan met de naam: `nmdadi_2015-2016`.
-* Geef de docenten Philippe De Pauw - Waterschoot, Jonas Pottie en Olivier Parent leestoegang tot deze repository. 
+> **Toon aan dat:**
+>
+> Een Git repository kan aanmaken
+> Git commando's kan toepassen
+> Markdown en Markdown extra onder de knie hebt
+
+
+* Maak een nieuwe repository in GitHub aan met de naam: `gdm-201516-nmdad1`. 
 * Geef aan deze repository een uniek logo.
-* Maak in deze aangemaakte repository het bestand resume.md aan.
+* Maak in deze aangemaakte repository een folder docs aan waarin we het bestand resume.md aanmaken.
+* Het resume.md bestand bevat:
+	* Biografie
+	* Portfolio
+	* Werkervaring
+	* Kennis webtechnologieën
+	* Softwarekennis
+	* Contactinformatie
