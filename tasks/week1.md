@@ -28,11 +28,11 @@ Taak 1: GitHub en bitbucket
 Taak 2: Résumé Markdown Document
 --------------------------------
 
-> **Toon aan dat:**
+> **Toon aan dat je:**
 >
-> Een Git repository kan aanmaken
-> Git commando's kan toepassen
-> Markdown en Markdown extra onder de knie hebt
+> * een Git repository kan aanmaken
+> * Git commando's kan toepassen
+> * Markdown en Markdown extra onder de knie hebt
 
 
 * Maak een nieuwe repository in GitHub aan met de naam: `gdm-201516-nmdad1`. 
