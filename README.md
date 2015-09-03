@@ -17,6 +17,8 @@ Documenten
 * [Inleiding](docs/inleiding.md)
 * [Werkstuk](docs/werkstuk.md)
 * [Werkstuk groepsindeling](docs/werkstuk_groepsindeling.md)
+* [Proxy instellingen Arteveldehogeschool](docs/proxysettings.md)
+* [Git](docs/git.md)
 * [Markdown](docs/markdown.md)
 * [CSS Preprocessors](docs/css_preprocessors.md)
 
