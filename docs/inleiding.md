@@ -21,7 +21,7 @@
 |Begincompetenties|2D Animation & Webdesign II|
 |ECTS-fiche|https://bamaflexweb.arteveldehs.be/BMFUIDetailxOLOD.aspx?a=47532&b=5&c=1|
 
-> **Een taak niet ingediend betekent automatisch -5/20. Dat betekent dat je maxmimaal 15/20 kan behalen op het opleidingsonderdeel New Media Design & Development I. Taken worden steeds ingediend via chamilo. De wijze van indienen verschilt per opdracht! De taken worden per lesweek beschreven in de [tasks folder](https://github.com/gdm-201516-mmp2/nmdad1/tasks). Indienen op chamilo de avond voor de volgende les.**
+> **Een taak niet ingediend betekent automatisch -5/20. Dat betekent dat je maxmimaal 15/20 kan behalen op het opleidingsonderdeel New Media Design & Development I. Taken worden steeds ingediend via chamilo. De wijze van indienen verschilt per opdracht! De taken worden per lesweek beschreven in de [tasks folder](../tasks). Indienen op chamilo de avond voor de volgende les.**
 
 ##Inhoud
 
