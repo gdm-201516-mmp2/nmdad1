@@ -14,7 +14,11 @@ New Media Design & Development I
 Documenten
 ----------
 
-* [CSS Preprocessors](css_preprocessors.md "CSS Preprocessors")
+* [CSS Preprocessors](docs/css_preprocessors.md "CSS Preprocessors")
+
+Taken
+-----
+* [Week 1](tasks/week1.md "Week 1")
 
 Auteurs
 --------
