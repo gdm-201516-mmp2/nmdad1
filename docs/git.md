@@ -19,7 +19,7 @@ Nieuwe versies van een app worden eerst **lokaal bewaard** in een **lokale copy 
 
 > **Git flow: **
 >  
->  ![Git flow](https://lh3.googleusercontent.com/-QJ8Ag3kMo_4/VDQpjQipAoI/AAAAAAAAAeQ/wIhx5fbKBwA/s0/gitflow.png "gitflow.png")
+>  ![Git flow](images/git_flow.png)
 
 **GitHub** is een webgebaseerde (web-based) service om software development projecten te herbergen (hosten) gebruik makend van het Git revisie (revision control) beheersysteem. Het wordt veel gebruikt voor open-source software development projecten. GitHub bevat de volgende plannen:
 
@@ -53,7 +53,7 @@ Door Ã©Ã©n van deze handelingen uit te voeren wordt er een configuratiebesta
 
 > **.gitconfig** bestand
 >  
->  ![.gitconfig bestand](https://lh6.googleusercontent.com/-aLFCUuMhef4/VIBf7a6kQLI/AAAAAAAAArM/-Uq1g4zBTdo/s0/gitconfig.PNG "gitconfig.PNG")
+>  ![.gitconfig bestand](images/git_config.png)
 
 Commando's
 ----------
