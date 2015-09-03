@@ -14,11 +14,15 @@ New Media Design & Development I
 Documenten
 ----------
 
-* [CSS Preprocessors](docs/css_preprocessors.md "CSS Preprocessors")
+* [Inleiding](docs/inleiding.md)
+* [Werkstuk](docs/werkstuk.md)
+* [Werkstuk groepsindeling](docs/werkstuk_groepsindeling.md)
+* [Markdown](docs/markdown.md)
+* [CSS Preprocessors](docs/css_preprocessors.md)
 
 Taken
 -----
-* [Week 1](tasks/week1.md "Week 1")
+* [Week 1](tasks/week1.md)
 
 Auteurs
 --------

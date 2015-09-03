@@ -22,7 +22,7 @@ Taak 1: GitHub en bitbucket
 	* Gebruik als username jouw loginnaam van de Arteveldehogeschool.
 	* Gebruik jouw email-adres van de arteveldehogeschool.
 * Registreer je vervolgens in [Bitbucket]("https://bitbucket.org/account/signin/?next=/") via jouw reeds aangemaakt GitHub account.
-* Voeg een persoonlijk foto van jouw gezicht toe aan jouw account binnen GitHub en Bitbucket.
+* Voeg een persoonlijk foto toe aan jouw account binnen GitHub en Bitbucket.
 
 Taak 2: Résumé Markdown Document
 --------------------------------
