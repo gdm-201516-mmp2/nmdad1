@@ -624,6 +624,8 @@ var bar = 0;
 - <http://fletcherpenney.net/multimarkdown/>
 - <http://markable.in/file/aa191728-9dc7-11e1-91c7-984be164924a/>
 - <http://mashable.com/2013/06/24/markdown-tools/>
+- <https://help.github.com/articles/github-flavored-markdown/>
+- <https://help.github.com/articles/writing-on-github/>
 >
 > **Markdown Extra:**
 >  

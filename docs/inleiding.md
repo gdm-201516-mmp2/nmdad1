@@ -39,26 +39,28 @@
 - <http://git-scm.com/>
 - <http://www.sourcetreeapp.com/>
 - <http://www.jetbrains.com/phpstorm/>
+- <https://github.com/>
 - <https://bitbucket.org/>
 - <http://courses.olivierparent.be/servermanagement/local-development-environment/installing-design-and-development-tools/source-control/>
 
 ##Technologieën
 
 - HTML
-- CSS
+- CSS 
 - JavaScript
 - CSS pre-processors
 - Static Site Generators
 - Commandline and Automation tools
-- JS bibliotheken & frameworks, zoals: jQuery, Normalize, Modernizr, Respond.js, Underscore.js, Lodash.js, Crossroads.js, Hashes.js, ...
+- JS bibliotheken & frameworks, zoals: jQuery, Normalize, Modernizr, Respond.js, Underscore.js, Lodash.js, Crossroads.js, Hasher.js, ...
 
 ##Software
 
 - **Adobe CC**
 - SublimeText
 - **PHP Storm 7+**
+- **Microsoft Visual Code**
 - ...
 
 ##Code PHPStorm
 
-Zie chamilo bij de aankondigingen cursus NMDAD-I
+Zie chamilo bij de aankondigingen cursus New Media Design & Development I
