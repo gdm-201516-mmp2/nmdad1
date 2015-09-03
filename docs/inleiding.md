@@ -25,9 +25,14 @@
 
 ##Studiemateriaal
 
-- Chamilo cursus NMDAD-I
-- Bitbucket Respository [NMDADI_201516](https://bitbucket.org/drdynscript/nmdadi_201516)
+- [Chamilo cursus New Media Design & Development I](http://chamilo.arteveldehs.be/index.php?application=weblcms&go=course_viewer&course=7639)
+- GitHub Respository [nmdad1](https://github.com/gdm-201516-mmp2/nmdad1)
 - Online links, tutorials, MOOC's and samples
+
+> Chamilo zal voornamelijk gebruikt worden om:
+> 
+> * Aankondigingen te versturen
+> * Opdrachten in te dienen
 
 ##Tools
 
