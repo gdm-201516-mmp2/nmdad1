@@ -1,16 +1,12 @@
-﻿Taken Week 1 - New Media Design & Development I
-===============================================
+﻿Taken Week 1
+============
 
-|Informatie||
-|----|-|
+|Info|  |
+|----|---|
+|Olod|New Media Design & Development I|
 |Auteur(s)|Philippe De Pauw - Waterschoot, Jonas Pottie|
-|Opleiding|Bachelor in de grafische en digitale media|
+|Opleiding|Bachelor in de Grafische en digitale media|
 |Academiejaar|2015-16|
-|Opleidingsonderdeel|New Media Design & Development I (NMDAD I)|
-
-***
-
-[TOC]
 
 ***
 
@@ -26,7 +22,7 @@ Taak 1: GitHub en bitbucket
 	* Gebruik als username jouw loginnaam van de Arteveldehogeschool.
 	* Gebruik jouw email-adres van de arteveldehogeschool.
 * Registreer je vervolgens in [Bitbucket]("https://bitbucket.org/account/signin/?next=/") via jouw reeds aangemaakt GitHub account.
-* Voeg een persoonlijk foto van jouw gezicht toe aan jouw account binnen Bitbucket.
+* Voeg een persoonlijk foto van jouw gezicht toe aan jouw account binnen GitHub en Bitbucket.
 
 Taak 2: Résumé Markdown Document
 --------------------------------
