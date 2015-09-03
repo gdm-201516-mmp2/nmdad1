@@ -10,6 +10,9 @@
 
 ***
 
+> **Een taak niet ingediend betekent automatisch -5/20. Dat betekent dat je maxmimaal 15/20 kan behalen op het opleidingsonderdeel New Media Design & Development I. Taken worden steeds ingediend via chamilo. De wijze van indienen verschilt per opdracht!**
+
+
 Taak 1: GitHub en bitbucket
 ---------------------------
 * Registreer je voor het [GitHub Student Developer Pack]("https://education.github.com/pack").
