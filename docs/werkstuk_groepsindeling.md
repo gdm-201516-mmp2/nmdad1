@@ -27,8 +27,9 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 **2MMPa**
 
 |Groepsnummer|Studenten|
+|------------|---------|
 |2MMPA-01||
-|2MMPA-02|
+|2MMPA-02||
 |2MMPA-03||
 |2MMPA-04||
 |2MMPA-05||
@@ -50,8 +51,9 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 **2MMPb**
 
 |Groepsnummer|Studenten|
+|------------|---------|
 |2MMPB-01||
-|2MMPB-02|
+|2MMPB-02||
 |2MMPB-03||
 |2MMPB-04||
 |2MMPB-05||
@@ -72,8 +74,9 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 **2MMPc**
 
 |Groepsnummer|Studenten|
+|------------|---------|
 |2MMPC-01||
-|2MMPC-02|
+|2MMPC-02||
 |2MMPC-03||
 |2MMPC-04||
 |2MMPC-05||
