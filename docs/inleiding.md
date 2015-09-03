@@ -11,8 +11,8 @@
 
 ***
 
-|Info||
-|--|--|
+|Info|  |
+|--|---|
 |Studiepunten|6|
 |Contacturen|4|
 |Docenten|Philippe De Pauw - Waterschoot, Jonas Pottie|
