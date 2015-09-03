@@ -26,6 +26,20 @@ Deze proxy settings zijn van toepassing op de verbindingen:
 
 **Arteveldehs Open heeft geen proxy instellingen (settings) nodig**. Nadeel: om de 15 minuten terug inloggen!  Thuis hebben we waarschijnlijk geen proxy server, waardoor deze proxy instellingen uitgeschakeld moeten worden!
 
+###Windows
+
+* Ga naar `Configuratiescherm\Systeem en beveiliging\Systeem`
+* Klik vervolgens op `Geavanceerde instellingen`
+* Klik binnen het venster `Systeemeigenschappen` op de `Omgevingsvariabelen` knop
+* Klik daarna op een item uit de `Systeemvariabelen` fieldset, waarna we op `Nieuw` knop drukken.
+* In het nieuwe venster kunnen we vervolgens een nieuwe systeemvariabele opegeven. 
+
+|Naam van de variabele|Waarde van de variabele|
+|--------|------|
+|HTTP_PROXY|http://proxy.arteveldehs.be:8080|
+|HTTPS_PROXY|http://proxy.arteveldehs.be:8080|
+|FTP_PROXY|http://proxy.arteveldehs.be:8080|
+
 Automation tools
 ---------------------
 
