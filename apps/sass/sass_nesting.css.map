@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,MAAG;EACF,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EAEV,SAAG;IACF,OAAO,EAAE,YAAY;IAErB,WAAE;MACD,OAAO,EAAE,KAAK;MACd,OAAO,EAAE,QAAQ;MACjB,eAAe,EAAE,IAAI;MACrB,UAAU,EAAC,IAAI;MACf,KAAK,EAAC,IAAI",
+"sources": ["sass_nesting.scss"],
+"names": [],
+"file": "sass_nesting.css"
+}
