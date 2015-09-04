@@ -52,13 +52,16 @@ Om de proxy instellingen te verwijderen volstaat het om de namen van de corespon
 	* `export HTTPS_PROXY='http://proxy.arteveldehs.be:8080'`
 	* `export https_proxy=$HTTPS_PROXY`
 	* `export FTP_PROXY='http://proxy.arteveldehs.be:8080'`
-	* `export FTP_proxy=$FTP_PROXY` 
+	* `export FTP_proxy=$FTP_PROXY`
+	
 	
 * Om de proxy instellingen te verwijderen voeren we de volgende commando's uit:
 	* `unset HTTP_PROXY`
 	* `unset http_proxy`
 	* `unset HTTPS_PROXY`
 	* `unset https_proxy`
+	* `unset FTP_PROXY`
+	* `unset ftp_proxy`
 
 * Globale custom functies voor AHS proxy:
 
@@ -70,6 +73,8 @@ function enable_ahs_proxy {
  export http_proxy=$HTTP_PROXY
  export HTTPS_PROXY='http://proxy.arteveldehs.be:8080' 
  export https_proxy=$HTTPS_PROXY
+ export FTP_PROXY='http://proxy.arteveldehs.be:8080' 
+ export ftp_proxy=$HTTPS_PROXY
  export AHS_PROXY="true"
 }
 function disable_ahs_proxy {
@@ -77,6 +82,8 @@ function disable_ahs_proxy {
  unset http_proxy
  unset HTTPS_PROXY
  unset https_proxy
+ unset FTP_PROXY
+ unset ftp_proxy
  export AHS_PROXY="false"
 }
 ```
@@ -84,3 +91,4 @@ function disable_ahs_proxy {
 Bibliografie
 ------------
 * [Bash proxy settings](http://blog.marcon.me/post/20217812089/bash-proxy-settings)
+* [Proxy Auto Config](https://en.wikipedia.org/wiki/Proxy_auto-config)
