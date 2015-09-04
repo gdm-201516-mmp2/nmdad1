@@ -83,7 +83,7 @@ Installatie:
 - `sudo apt-get install git`
 - of `sudo apt-get --only-upgrade install git`
 
-Als alternatief kunnen we (Linuxbrew)<https://github.com/Homebrew/linuxbrew> gebruiker!
+Als alternatief kunnen we (Linuxbrew)(https://github.com/Homebrew/linuxbrew) gebruiker!
 
 > De installatie van `git` kan getest worden door het commando `git` uit te voeren via commandline. 
 
@@ -96,7 +96,8 @@ Configuratie
 	- `git config --global user.email "drdynscript@gmail.com"`
 - Proxy servers
 	- `git config --global http.proxy "http://proxy.arteveldehs.be:8080"`
-	- `git config --global https.proxy "http://proxy.arteveldehs.be:8080"`    
+	- `git config --global https.proxy "http://proxy.arteveldehs.be:8080"`  
+	- > Deze commando's worden enkel uitgevoerd indien we geen globale proxy instellingen hebben toegevoegd. Zie document [proxy instellingen](proxysettings.md).  
 - Verwijderen van Proxy servers
 	- `git config --global --unset http.proxy`
 	- `git config --global --unset https.proxy`
