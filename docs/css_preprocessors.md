@@ -133,6 +133,32 @@ body {
 
 ###Mixins
 
+Via een mixin kunnen we CSS declaraties groeperen die we kunnen gebruiken in andere Sass bestanden. Een mixin is gelijkaardig met een JavaScript functie eventueel voorzien van argumenten, waardoor deze mixin flexibel wordt. Een goed voorbeeld van een mixin is het gebruik hiervan voor **vendor prefixes***.
+
+```
+@mixin transform-rotate($rotate){
+	-webkit-transform: rotate($rotate +'deg');
+	-moz-transform: rotate($rotate +'deg');
+	-ms-transform: rotate($rotate +'deg');
+	transform: rotate($rotate +'deg');
+}
+
+.box { 
+	@include transform-rotate(45); 
+}
+``` 
+
+Om een mixin aan te maken gebruiken we de `@mixin` directive gevolgd door een naam, in dit geval `transform-rotate`. Deze mixin bevat een argument `rotate`, waar we bij aanroep de rotatiehoek aan toekennen. De mixin kan gebruikt worden d.m.v. `@include` directive gevolgd door de naam van de mixin al dan niet aangevuld met waarden voor de desbetreffende argumenten.
+
+```
+.box {
+  -webkit-transform: rotate("45deg");
+  -moz-transform: rotate("45deg");
+  -ms-transform: rotate("45deg");
+  transform: rotate("45deg"); }
+```
+
+###Extend/Inheritance
 
 
 
