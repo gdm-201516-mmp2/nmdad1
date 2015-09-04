@@ -28,8 +28,64 @@ Nieuwe versies van een app worden eerst **lokaal bewaard** in een **lokale copy 
 - GitHub Enterprise (GitHub systeem opzetten op eigen servers)
 
 **Bitbucket** is een centraal systeem voor gedistribueerde versie control systeem. Het bevat o.a. **een issue tracker, wiki en integraties met andere populaire services, zoals Basecamp**. De gratis versie van Bitbucket bevat ook ondersteuning voor beschermde repositories, doch in aantal beperkt (max 5 op 7-10-2014). De community die GitHub gebruikt is ongeveer 5x zo groot dan deze die Bitbucket gebruiken (op 7-10-2014). GitHub private repositories zijn duurder dan deze uit Bitbucket, bron: <http://osintegrators.github.io/githubvbitbucket/>.
+	
+Installatie
+-----------
 
-De installatie van `git` kan getest worden door het commando `git` uit te voeren via commandline. 
+###Windows
+
+Download via: http://msysgit.github.io/
+
+* Vergeet niet de laatste of voorlaatste optie te selecteren tijdens de Git Setup Installatie Wizard. Op deze manier kunnen we het git commando overal aanspreken (Het pad naar de Git executable wordt aan de systeemvariabelen toegevoegd)!
+
+![Installatie van Git op Windows](images/gitinstallwindows.png)
+
+###OSX
+
+Op OSX is het aan te raden om een aantal tools, zoals: Ruby, gem, Git, ... te installeren via Homebrew.
+
+Links: <http://brew.sh/>, <https://github.com/Homebrew/homebrew/tree/master/share/doc/homebrew#readme>
+   
+Installatie:
+`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+- Geïnstalleerde Homebrew packages:
+	- `brew list`
+- Lijst van geïnstalleerde Homebrew packages zonder afhankelijkheden (dependencies):
+	- `brew leaves`
+- Zoeken naar Homebrew packages online:
+	- `brew search nodejs`
+- Toon de informatie van een package:
+	- `brew info nodejs`
+- Update van Homebrew
+	- `brew update`
+	
+**Installatie van Git via Homebrew**
+
+- `brew install git`
+
+**Installatie van Git via Homebrew achter een proxy-server**:
+
+- `sudo -E brew install git`
+
+###Linux OS, zoals UBUNTU
+
+**Installatie van Git via apt-get**:
+
+- `sudo apt-get install git`
+
+**Installatie van Git via apt-get achter een proxy-server**:
+
+- `sudo -E apt-get install git`
+
+**Update van Git**:
+
+- `sudo apt-get install git`
+- of `sudo apt-get --only-upgrade install git`
+
+Als alternatief kunnen we (Linuxbrew)<https://github.com/Homebrew/linuxbrew> gebruiker!
+
+> De installatie van `git` kan getest worden door het commando `git` uit te voeren via commandline. 
 
 Configuratie
 ------------
@@ -49,9 +105,9 @@ Configuratie
 - Editeren van `.gitconfig`
 	- **OSX:** `vi ~/.gitconfig` of 'grep ~/.gitconfig' (vi & grep zijn editors)
 
-Door Ã©Ã©n van deze handelingen uit te voeren wordt er een configuratiebestand geschreven op de locatie `~/.gitconfig` (of `~/.config/git/config`). `~` komt overeen met de homelocatie van een gebruiker, bv. op windows: `C:\Users\drdynscript`.
+Door één van deze handelingen uit te voeren wordt er een configuratiebestand geschreven op de locatie `~/.gitconfig` (of `~/.config/git/config`). `~` komt overeen met de homelocatie van een gebruiker, bv. op Windows: `C:\Users\drdynscript`.
 
-> **.gitconfig** bestand
+> **.gitconfig** bestand op Windows
 >  
 >  ![.gitconfig bestand](images/git_config.png)
 
