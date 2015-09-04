@@ -12,7 +12,6 @@
 
 > **Een taak niet ingediend betekent automatisch -5/20. Dat betekent dat je maxmimaal 15/20 kan behalen op het opleidingsonderdeel New Media Design & Development I. Taken worden steeds ingediend via chamilo. De wijze van indienen verschilt per opdracht!**
 
-
 Taak 1: GitHub en bitbucket
 ---------------------------
 * Registreer je voor het [GitHub Student Developer Pack]("https://education.github.com/pack").
@@ -48,3 +47,23 @@ Taak 2: Résumé Markdown Document
 	* Kennis webtechnologieën
 	* Softwarekennis
 	* Contactinformatie
+
+Indienen op Chamilo
+-------------------
+
+* nmdad1_week1.txt
+
+```
+================================================================================
+Naam: 	Philippe De Pauw - Waterschoot
+Klas:	2MMPA
+Olod:	New Media Design & Development I
+================================================================================
+Taken Week 1
+================================================================================
+Link GitHub Account: https://github.com/drdynscript
+Link Bitbucket Account: https://bitbucket.org/drdynscript/
+Link gdm-201516-nmdad1 repository: https://github.com/gdm-201516-mmp2/nmdad1
+Link resume.md Markdown document: https://github.com/gdm-201516-mmp2/nmdad1/blob/master/docs/inleiding.md
+================================================================================
+```
