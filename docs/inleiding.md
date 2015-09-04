@@ -25,6 +25,18 @@
 
 ##Inhoud
 
+- HTML5 en CSS3
+- Responsive en adaptive Web Design
+- CSS pre processors
+- Data formaten: CSV, XML, XSL-T, XPath, XSL-FO, JSON(P), BSON, Markdown, ...
+- SVG, SMIL, MathML
+- Cliend side templating, routing, ...
+- Geautomatiseerde workflows opzetten en toepassen, zoals: Git, gem, npm, bower, Gulp, PhantomJS, ...
+- Prototype-based programming (OOP)
+- AMD (Asynchronous Module Definition)
+- Consuming Data met JavaScript
+- User Experience Design
+
 ##Studiemateriaal
 
 - [Chamilo cursus New Media Design & Development I](http://chamilo.arteveldehs.be/index.php?application=weblcms&go=course_viewer&course=7639)
