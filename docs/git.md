@@ -105,6 +105,7 @@ Configuratie
 	- `git config --global url."https://github.com".insteadOf git://github.com`
 - Editeren van `.gitconfig`
 	- **OSX:** `vi ~/.gitconfig` of 'grep ~/.gitconfig' (vi & grep zijn editors)
+	- **Windows via Microsoft Visual Code:** `code %HOMEPATH%/.gitconfig`
 
 Door één van deze handelingen uit te voeren wordt er een configuratiebestand geschreven op de locatie `~/.gitconfig` (of `~/.config/git/config`). `~` komt overeen met de homelocatie van een gebruiker, bv. op Windows: `C:\Users\drdynscript`.
 
