@@ -1,0 +1,35 @@
+#main {
+  width: 97%; }
+  #main p, #main div {
+    font-size: 2rem; }
+    #main p a, #main div a {
+      font-weight: bold; }
+  #main blockquote {
+    font-size: 3rem; }
+
+a {
+  font-weight: 700;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+  body.chrome a {
+    font-weight: 300; }
+
+.btn {
+  border: 1px solid #bbb;
+  background: #bbb;
+  color: #333;
+  width: auto;
+  padding: 6px 12px; }
+  .btn--large {
+    width: 100%;
+    padding: 12px 24px; }
+  .btn__label {
+    font-size: 2rem;
+    font-weight: 700; }
+  .btn:hover {
+    border-color: #333;
+    background-color: #333;
+    color: #bbb; }
+
+/*# sourceMappingURL=sass_extension.css.map */

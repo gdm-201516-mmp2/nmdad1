@@ -160,8 +160,84 @@ Om een mixin aan te maken gebruiken we de `@mixin` directive gevolgd door een na
 
 ###Extend/Inheritance
 
+Overerving is één van de meest toegepast Sass feature. Met `@extend` kunnen we CSS eigenschappen delen van een selector naar een andere.
 
+```
+.message{
+	border:1px solid #bbb;
+	background:#ddd;
+	color:#333;
+	padding:6px 12px;
+}
+.success{
+	@extend .message;
+	
+	border-color:#3f3;
+	background-color:#3f3;
+}
+.warning{
+	@extend .message;
+	
+	border-color:#fa1;
+	background-color:#fa1;
+}
+.error{
+	@extend .message;
+	
+	border-color:#f11;
+	background-color:#f11;
+}
+```
 
+Generieke CSS eiegenschappen worden beschreven in de base selector in dit geval `.message`. Deze eigenschappen worden toegepast op de selectoren indien ze voorzien worden van de `@extend` directive.
+
+```
+.message, .success, .warning, .error {
+  border: 1px solid #bbb;
+  background: #ddd;
+  color: #333;
+  padding: 6px 12px; }
+
+.success {
+  border-color: #3f3;
+  background-color: #3f3; }
+
+.warning {
+  border-color: #fa1;
+  background-color: #fa1; }
+
+.error {
+  border-color: #f11;
+  background-color: #f11; }
+```
+
+###Operatoren
+
+Standaard wiskundige (Math) operatoren worden ondersteund: `+`, `-`, `*`, `/` en `%`.
+
+```
+section[role="main"] {
+  float: left;
+  width: 680px / 1140px * 100%;
+}
+
+aside[role="sidebar"] {
+  float: left;
+  width: 460px / 1140px * 100%;
+}
+```
+
+Resulteert in:
+
+```
+section[role="main"] {
+  float: left;
+  width: 59.64912%; }
+
+aside[role="sidebar"] {
+  float: left;
+  width: 40.35088%; }
+```
 
 Installatie
 -----------
@@ -185,6 +261,107 @@ Installatie van Sass via commandline:
 	* `gem install sass`
 	* `sudo gem install sass` (installatie als superuser)
 	* `sass -v` (nakijken versie sass)
+  
+CSS Extensions
+--------------
+
+###Nested
+
+```
+#main {
+  width: 97%;
+
+  p, div {
+    font-size: 2rem;
+    a { font-weight: bold; }
+  }
+
+  blockquote { font-size: 3rem; }
+}
+```
+
+```
+#main {
+  width: 97%; }
+  #main p, #main div {
+    font-size: 2rem; }
+    #main p a, #main div a {
+      font-weight: bold; }
+  #main blockquote {
+    font-size: 3rem; }
+```
+
+###Referencing parent selector: &
+
+```
+a {
+  font-weight: 700;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+  body.chrome & { font-weight: 300; }
+}
+```
+
+`&` wordt vervangen door de parent selector. Kan zowel voor een pseudoklasse als na een andere selector (spatie voorzien) toegevoegd worden.
+
+```
+a {
+  font-weight: 700;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+  body.chrome a {
+    font-weight: 300; }
+```
+
+```
+.btn {
+  border:1px solid #bbb;
+  background:#bbb;
+  color:#333;
+  width:auto;
+  padding:6px 12px;
+  
+  &--large {
+    width:100%;
+    padding:12px 24px;    
+  }
+  
+  &__label {
+    font-size:2rem;
+    font-weight:700;
+  }
+  
+  &:hover {
+    border-color:#333;
+    background-color:#333;
+    color:#bbb;
+  }
+}
+```
+
+```
+.btn {
+  border: 1px solid #bbb;
+  background: #bbb;
+  color: #333;
+  width: auto;
+  padding: 6px 12px; }
+  .btn--large {
+    width: 100%;
+    padding: 12px 24px; }
+  .btn__label {
+    font-size: 2rem;
+    font-weight: 700; }
+  .btn:hover {
+    border-color: #333;
+    background-color: #333;
+    color: #bbb; }
+```
+
+Comments
+--------
+
 
 Variabelen
 ----------

@@ -1,0 +1,19 @@
+.message, .success, .warning, .error {
+  border: 1px solid #bbb;
+  background: #ddd;
+  color: #333;
+  padding: 6px 12px; }
+
+.success {
+  border-color: #3f3;
+  background-color: #3f3; }
+
+.warning {
+  border-color: #fa1;
+  background-color: #fa1; }
+
+.error {
+  border-color: #f11;
+  background-color: #f11; }
+
+/*# sourceMappingURL=sass_inheritance.css.map */
