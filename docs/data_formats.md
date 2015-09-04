@@ -13,7 +13,7 @@ Courante dataformaten voor het web
 CSV
 ---
 
-CSV staat voor Comma-seperated values of character-seperated values. CSV wordt vaak omschreven als *Tabular* data in *plain text* vorm. Bevat geen algemene standaard, maar een paar suggesties worden aangeboden via RFC4180. CSV bestaat uit een verzameling van records (rijen) gescheiden door een *line break* of iets gelijkaardigs. Meestal hebben alle records hetzelfde aantal velden. Ieder record bestaat uit een aantal velden gesepareerd door een comma of iets gelijkaardigs, bijv: `tab`, `;` , ... . 
+CSV staat voor Comma-seperated values of character-seperated values. CSV wordt vaak omschreven als *Tabular* data in *plain text* vorm. Bevat geen algemene standaard, maar een paar suggesties worden aangeboden via RFC4180. CSV bestaat uit een verzameling van records (rijen) gescheiden door een *line break* of iets gelijkaardigs. Meestal hebben alle records hetzelfde aantal velden. Ieder record bestaat uit een aantal velden gesepareerd door een comma of iets gelijkaardigs, bijv: `tab`, `;` , ... . 
 
 Beschikbaar in vele applicaties via import/export functionaliteiten. Incompatibele programma*™s kunnen via CSV data met elkaar uitwisselen, bijv.: export van gegevens uit een databank en vervolgens import van deze gegevens via CSV in een spreadsheet.
 
