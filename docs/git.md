@@ -97,7 +97,7 @@ Configuratie
 - Proxy servers
 	- `git config --global http.proxy "http://proxy.arteveldehs.be:8080"`
 	- `git config --global https.proxy "http://proxy.arteveldehs.be:8080"`  
-	- > Deze commando's worden enkel uitgevoerd indien we geen globale proxy instellingen hebben toegevoegd. Zie document [proxy instellingen](proxysettings.md).  
+	- **Deze commando's worden enkel uitgevoerd indien we geen globale proxy instellingen hebben toegevoegd. Zie document [proxy instellingen](proxysettings.md)**.  
 - Verwijderen van Proxy servers
 	- `git config --global --unset http.proxy`
 	- `git config --global --unset https.proxy`
