@@ -254,3 +254,6 @@ Bibliografie
 >  
 - <https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf>
 - <http://courses.olivierparent.be/servermanagement/local-development-environment/installing-design-and-development-tools/source-control/>
+- <http://git-scm.com/docs/gitignore>
+- <http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository>
+- <https://github.com/github/gitignore>
