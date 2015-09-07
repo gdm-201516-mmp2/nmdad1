@@ -42,7 +42,7 @@ Deze proxy settings zijn van toepassing op de verbindingen:
 
 Om de proxy instellingen te verwijderen volstaat het om de namen van de coresponderende variabelen te veranderen, of gewoonweg de variabelen te verwijderen.
 
-**Global custom batch om Internet opties in te stellen via Registry key/value pairs (Dit is nuttig voor Chrome, Internet Explorer en Cartana):
+**Global custom batch om Internet opties in te stellen via Registry key/value pairs (Dit is nuttig voor Chrome, Internet Explorer en Cartana):**
 
 *Proxy On: [proxy_on.bat](../apps/win_proxy/proxy_on.bat)*
 ```
@@ -51,7 +51,7 @@ REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v Pr
 REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyOverride /t REG_SZ /d "<local>" /f
 ```
 
-*Proxy Off: [proxy_on.bat](../apps/win_proxy/proxy_on.bat)*
+*Proxy Off: [proxy_off.bat](../apps/win_proxy/proxy_off.bat)*
 ```
 REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 0 /f
 ```
