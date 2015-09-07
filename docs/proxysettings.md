@@ -1,5 +1,5 @@
-Proxy instellingen
-==================
+Globale Proxy instellingen
+==========================
 
 |Info|  |
 |----|---|
@@ -10,7 +10,7 @@ Proxy instellingen
 
 ***
 
-Globale proxy instellingen
+Inleiding
 ------------------------------------------------
 
 |Protocol|Proxy server|
@@ -26,7 +26,8 @@ Deze proxy settings zijn van toepassing op de verbindingen:
 
 **Arteveldehs Open heeft geen proxy instellingen (settings) nodig**. Nadeel: om de 15 minuten terug inloggen! Op de meeste plekken hebben we waarschijnlijk geen proxy server, waardoor deze proxy instellingen uitgeschakeld moeten worden!
 
-###Windows
+Instellingen Windows
+--------------------
 
 * Ga naar `Configuratiescherm\Systeem en beveiliging\Systeem`
 * Klik vervolgens op `Geavanceerde instellingen`
@@ -42,6 +43,8 @@ Deze proxy settings zijn van toepassing op de verbindingen:
 
 Om de proxy instellingen te verwijderen volstaat het om de namen van de coresponderende variabelen te veranderen, of gewoonweg de variabelen te verwijderen.
 
+###Batch
+
 **Global custom batch om Internet opties in te stellen via Registry key/value pairs (Dit is nuttig voor Chrome, Internet Explorer en Cartana):**
 
 *Proxy On: [proxy_on.bat](../apps/win_proxy/proxy_on.bat)*
@@ -56,7 +59,130 @@ REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v Pr
 REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 0 /f
 ```
 
-###OSX
+###Powershell
+
+**Custom Powershell Script om proxy in Internet opties te switchen (toggle):**
+```
+$internetSettingsRegKey="HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
+$currentProxyServer = ""
+$proxyServer = "http://proxy.arteveldehs.be:8080"
+
+Write-Host "Retrieve the proxy server ..."
+
+$currentProxyServer = Get-ItemProperty -path $internetSettingsRegKey ProxyServer -ErrorAction SilentlyContinue
+
+if([string]::IsNullOrEmpty($currentProxyServer))
+
+{
+
+    Write-Host "Proxy is actually disabled"
+
+    Set-ItemProperty -path $internetSettingsRegKey ProxyEnable -value 1
+
+    Set-ItemProperty -path $internetSettingsRegKey ProxyServer -value $proxyServer
+
+    Write-Host "Proxy is now enabled"
+
+}
+
+else
+
+{
+
+    Write-Host "Proxy is actually enabled, server: " + $currentProxyServer
+
+    Set-ItemProperty -path $internetSettingsRegKey ProxyEnable -value 0
+
+    Remove-ItemProperty -path $internetSettingsRegKey -name ProxyServer
+
+    Write-Host "Proxy is now disabled"
+
+}
+```
+
+Uit te voeren via commando `powershell -executionpolicy bypass -File proxy_toggle.ps1`.
+
+**Omgevingsvariabelen van de gebruiker instellen via powershell:**
+
+```
+[Environment]::SetEnvironmentVariable("HTTP_PROXY", $proxyServer, "User")
+[Environment]::SetEnvironmentVariable("HTTPS_PROXY", $proxyServer, "User")
+[Environment]::SetEnvironmentVariable("FTP_PROXY", $proxyServer, "User")
+```
+
+De omgevingsvariabelen kunnen hiermee via powershell eenvoudig toegevoegd/ingesteld worden. `$proxyServer` is de reeds aangemaakte variabele uit het vorige script.
+
+**Resulteert in de finale code (lees niks is finaal en optimalisatie is een helig woord voor een developer :) ):**
+
+```
+$internetSettingsRegKey="HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
+$currentProxyServer = ""
+$proxyServer = "http://proxy.arteveldehs.be:8080"
+
+Write-Host "========================================================"
+Write-Host "==    DRDYNSCRIPT'S PROXY TOGGLE POWERSHELL SCRIPT    =="
+Write-Host "========================================================"
+Write-Host "1. Retrieve the proxy server from the internet options ..."
+
+$currentProxyServer = Get-ItemProperty -path $internetSettingsRegKey ProxyServer -ErrorAction SilentlyContinue
+
+if([string]::IsNullOrEmpty($currentProxyServer))
+
+{
+
+    Write-Host "2. Internet options: Proxy is actually disabled"
+
+    Set-ItemProperty -path $internetSettingsRegKey ProxyEnable -value 1
+
+    Set-ItemProperty -path $internetSettingsRegKey ProxyServer -value $proxyServer
+
+    Write-Host "3. Internet options: Proxy is now enabled"
+        
+    [Environment]::SetEnvironmentVariable("HTTP_PROXY", $proxyServer, "User")
+    
+    [Environment]::SetEnvironmentVariable("HTTPS_PROXY", $proxyServer, "User")
+    
+    [Environment]::SetEnvironmentVariable("FTP_PROXY", $proxyServer, "User")
+    
+    Write-Host "4. Environment variables: Proxy is now enabled"
+        
+}
+
+else
+
+{
+
+    Write-Host "2. Internet options: Proxy is actually enabled, server: " + $currentProxyServer
+
+    Set-ItemProperty -path $internetSettingsRegKey ProxyEnable -value 0
+
+    Remove-ItemProperty -path $internetSettingsRegKey -name ProxyServer
+
+    Write-Host "3. Internet options: Proxy is now disabled"
+        
+    [Environment]::SetEnvironmentVariable("HTTP_PROXY", $null, "User")
+    
+    [Environment]::SetEnvironmentVariable("HTTPS_PROXY", $null, "User")
+    
+    [Environment]::SetEnvironmentVariable("FTP_PROXY", $null, "User")
+    
+    Write-Host "4. Environment variables: Proxy is now disabled"
+        
+
+}
+
+Write-Host "========================================================"
+```
+
+Uit te voeren via commando `powershell -executionpolicy bypass -File proxy_toggle.ps1`.
+
+Toekomstige uitbreiding op deze code is **het automatisch checken van het netwerk** tijdens de opstart van een **shell** of **terminal**.
+
+
+OSX
+---
+
+###.bashrc/.profile
 
 * Open het `.bashrc` of `.profile` bestad via een editor, bijvoorbeeld `vi` of `grep`.
 * `vi ~/.bashrc`
@@ -76,6 +202,8 @@ REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v Pr
 	* `unset https_proxy`
 	* `unset FTP_PROXY`
 	* `unset ftp_proxy`
+    
+###Making scripts better
 
 * Globale custom functies voor AHS proxy:
 
@@ -137,3 +265,4 @@ Bibliografie
 * [Bash proxy settings](http://blog.marcon.me/post/20217812089/bash-proxy-settings)
 * [Proxy Auto Config](https://en.wikipedia.org/wiki/Proxy_auto-config)
 * [.bashrc Olivier Parent](https://github.com/OlivierParent/artestead/blob/master/src/stubs/aliases)
+* [VBScript WShell Internet Options](http://blogs.technet.com/b/heyscriptingguy/archive/2005/05/19/how-can-i-switch-between-using-a-proxy-server-and-not-using-a-proxy-server.aspx)
