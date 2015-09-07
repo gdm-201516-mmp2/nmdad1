@@ -35,6 +35,12 @@ Auteurs
 * <http://bitbucket.org/drdynscript>
 * <https://www.linkedin.com/pub/philippe-de-pauw/6/a33/5a5>
 * <philippe.depauw@arteveldehs.be>
+	
+**Jonas Pottie**
+
+* <http://twitter.com/jonaspottie>
+* <https://www.linkedin.com/in/jonaspottie>
+* <jonas.pottie@arteveldehs.be>
 
 Arteveldehogeschool
 -------------------
