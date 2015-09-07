@@ -112,7 +112,7 @@ Uit te voeren via commando `powershell -executionpolicy bypass -File proxy_toggl
 
 De omgevingsvariabelen kunnen hiermee via powershell eenvoudig toegevoegd/ingesteld worden. `$proxyServer` is de reeds aangemaakte variabele uit het vorige script.
 
-**Resulteert in de finale code (lees niks is finaal en optimalisatie is een heilig woord voor een developers :) ):**
+**Resulteert in de finale code (lees niks is finaal en optimalisatie is een heilig woord voor developers :) ):**
 
 ```
 $internetSettingsRegKey="HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
