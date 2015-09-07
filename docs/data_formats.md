@@ -364,7 +364,7 @@ Een element is een basiseenheid die bestaat uit gegevens met opmaak. De opmaak 
 
 XML is dus net als HTML een opmaaktaal. XML is niet zomaar een opmaaktaal, maar een metaopmaaktaal:
 
-- Geen vaste set met tags die in alle situaties werken. Ontwikkelaars moeten zelf tags definiÃ«ren. XML bevat dus geen voorgedefinieerde tags.
+- Geen vaste set met tags die in alle situaties werken. Ontwikkelaars moeten zelf tags definiëren. XML bevat dus geen voorgedefinieerde tags.
 - Beschrijven van data en dus geen weergave of visualisatie van data. XML is complementair met HTML.
 - XML kan als basis voor een opmaaktaal gebruikt worden:
 	- **XHTML**
