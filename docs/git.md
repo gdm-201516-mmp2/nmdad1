@@ -135,6 +135,117 @@ Om een update te ontvangen van de cursus, navigeren we naar de aangemaakte folde
 
 Het resultaat van dit commando geeft de wijzigingen en toevoegingen weer per bestand. Uiteraard kunnen jullie niet via de `push` optie van het `git` commando wijzigingen aanbrengen in deze cursus, maar suggesties en opmerkingen zijn steeds welkom.
 
+.gitignore
+----------
+
+Via een `.gitignore` bestand in de root van een Git-enabled project vermelden we de folders en/of bestanden die we niet in de online repository willen overbrengen. Courante onderdelen binnen dit bestand zijn goed samengevat in deze [Gist .gitignore](https://gist.github.com/octocat/9257657).
+
+Het `.gitignore` bestand bevat meestal regels voor IDE's, zoals JetBrains, Miscrosoft Visual Code, Dreamweaver, ... . Daarnaast moet gecompileerde code, zoals exe, com, rar, ... vermeld worden. Packages, logs, cache, tijdelijke folders, ... maken ook deel uit van het `.gitignore` bestand. Het onderstaande bestand geeft een goede indicatie van een courant `.gitignore` bestand. Via [gitignore.io](https://www.gitignore.io/) kunnen we zo'n bestand genereren.
+
+```
+# Created by https://www.gitignore.io
+
+### PhpStorm ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+
+/*.iml
+
+## Directory-based project format:
+.idea/
+# if you remove the above rule, at least ignore the following:
+
+# User-specific stuff:
+# .idea/workspace.xml
+# .idea/tasks.xml
+# .idea/dictionaries
+
+# Sensitive or high-churn files:
+# .idea/dataSources.ids
+# .idea/dataSources.xml
+# .idea/sqlDataSources.xml
+# .idea/dynamic.xml
+# .idea/uiDesigner.xml
+
+# Gradle:
+# .idea/gradle.xml
+# .idea/libraries
+
+# Mongo Explorer plugin:
+# .idea/mongoSettings.xml
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+# Dreamweaver
+_notes
+dwsync.xml
+
+# Microsoft Visual Code
+.settings
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so 
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite 
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Sass
+.sass-cache
+*.css.map
+
+# Frontend Automation project
+.tmp
+tests
+```
+
+Naast dit lokaal bestand kunnen we ook een globaal `.gitignore` bestand aanmaken. Onder de **Home** folder (`~/.gitignore_global`) van de gebruiker maken we het bestand `.gitignore_global` aan waarin we de bovenvermelde inhoud toevoegen. Op deze manier hoeven we enkel in het lokaal bestand applicatiespecifieke instellingen toe te voegen.
+
+Opdat deze globale instellingen van kracht worden moeten we dit `.gitignore_global` bestand toevoegen aan de Git configuratie:
+
+`git config --global core.excludesfile ~/.gitignore_global`.
 
 Bibliografie
 -------------
