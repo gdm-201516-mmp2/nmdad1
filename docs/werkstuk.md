@@ -10,8 +10,8 @@
 
 ***
 
-|Info||
-|----|--|
+|Info|  |
+|----|---|
 |Werktitel|Open the gates for Data!|
 |Subtitel|Nader te bepalen...|
 |Milestone 1|**Week 6** Presentatie tussentijds productiedossier|
@@ -79,6 +79,24 @@ App structuur
 
 - **open_the_gates_for_data_app** (folder)
     - app (folder)
+        - data (folder)
+        - docs (folder)
+            - install.md
+        - images (folder)
+            - icons (folder)
+                - favicon.ico
+                - verschillende touch iconen
+        - scripts (folder)
+        - styles (folder)        
+            - images (folder)
+            - fonts (folder)
+            - scss (folder)
+        - 404.html
+        - humans.txt
+        - index.html
+        - manifest.webapp
+        - robots.txt
+        - sitemap.xml   
     - bower_components (folder - niet op Git)
     - dist (folder)
         - .gitkeep
@@ -94,27 +112,7 @@ App structuur
     - gulpfile.js
     - LICENSE
     - package.json
-    - README.md
-
-- app (folder)
-    - data (folder)
-    - docs (folder)
-        - install.md
-    - images (folder)
-        - icons (folder)
-            - favicon.ico
-            - verschillende touch iconen
-    - scripts (folder)
-    - styles (folder)        
-        - images (folder)
-        - fonts (folder)
-        - scss (folder)
-    - 404.html
-    - humans.txt
-    - index.html
-    - manifest.webapp
-    - robots.txt
-    - sitemap.xml       
+    - README.md    
     
 - **open_the_gates_for_data_docs** (folder)
     - dossier.md
