@@ -14,10 +14,11 @@
 |----|---|
 |Werktitel|Open the gates for Data!|
 |Subtitel|Nader te bepalen...|
-|Milestone 1|**Week 6** Presentatie tussentijds productiedossier|
-|Milestone 2|**Week 10** Presentatie alpha prototype|
-|Deadline|**23-12-2015** Opleveren opdracht (Online)|
-|Examen|Afgedrukt dossier, Poster, Bitbucket|
+|Milestone 1|**Week 6** Presentatie tussentijds productiedossier (Docent Pottie)|
+|Milestone 2|**Week 8** Presentatie visual designs (Docent Pottie)|
+|Milestone 3|**Week 10** Presentatie alpha versie app (Docent De Pauw - Waterschoot)|
+|Deadline|**23-12-2015** Opleveren opdracht (Bitbucket)|
+|Examen|Afgedrukt dossier, Poster, Bitbucket, Online werkende applicatie|
 
 Dossier
 -------
@@ -57,22 +58,25 @@ Technische specificaties
 - Storage: JSON bestanden, localstorage en/of IndexedDB
 - Bibliotheken: jQuery, underscore.js, lodash.js, crossroads.js, js-signals, Hasher.js, ...
 
-> Webapplicatie moet responsive zijn! Het responsive- framework alsook alle andere bestanden moeten zelf geïmplementeerd worden.
+> Webapplicatie moet responsive zijn! Het responsive framework alsook alle andere bestanden moeten zelf geïmplementeerd worden.
 
 Milestones
 ----------
 
 ###Milestone 1: Presentatie tussentijds productiedossier
 
-Week 6
+Week 6 - 5 min per groep. Klassikale feedback door de docent.
+Docent: Pottie
 
 ###Milestone 2: Presentatie visual designs
 
-Week 8
+Week 8 - 5 min per groep. Klassikale feedback door de docent.
+Docent: Pottie
 
 ###Milestone 3: Presentatie alpha versie app
 
-Week 10
+Week 10 - 8 min per groep. Klassikale feedback door de docent.
+Docent: De Pauw - Waterschoot
 
 App structuur
 -------------
@@ -80,6 +84,7 @@ App structuur
 - **open_the_gates_for_data_app** (folder)
     - app (folder)
         - data (folder)
+            - kan JSON bestanden bevatten
         - docs (folder)
             - install.md
         - images (folder)
