@@ -13,7 +13,7 @@
 |Info|  |
 |----|---|
 |Werktitel|Open the gates for Data!|
-|Subtitel|Nader te bepalen...|
+|Subtitel|The World Bank Data Catalog|
 |Milestone 1|**Week 6** Presentatie tussentijds productiedossier (Docent Pottie)|
 |Milestone 2|**Week 8** Presentatie visual designs (Docent Pottie)|
 |Milestone 3|**Week 10** Presentatie alpha versie app (Docent De Pauw - Waterschoot)|
@@ -130,9 +130,4 @@ App structuur
     - screenshot_800.png
     - screenshot_960.png
     - screenshot_1024.png
-    - screenshot_1280.png
-        
- Bibliografie
- ------------ 
-- <http://www.pttrns.com/>
-- <http://www.mobile-patterns.com/>
+    - screenshot_1280.png       
