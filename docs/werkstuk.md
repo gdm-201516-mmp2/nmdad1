@@ -20,6 +20,11 @@
 |Deadline|**23-12-2015** Opleveren opdracht (Bitbucket)|
 |Examen|Afgedrukt dossier, Poster, Bitbucket, Online werkende applicatie|
 
+Omschrijving
+------------
+
+
+
 Dossier
 -------
 >  - Moet geschreven worden in Markdown
@@ -57,6 +62,8 @@ Technische specificaties
 - Template engines: Jade, Haml, Swig of Handlebars
 - Storage: JSON bestanden, localstorage en/of IndexedDB
 - Bibliotheken: jQuery, underscore.js, lodash.js, crossroads.js, js-signals, Hasher.js, ...
+- Andere bibliotheken worden hierin aangevuld tijdens het semester!
+- Uitzonderingen mogelijk betreffende JavaScript bibliotheken mogelijk mits toelating!
 
 > Webapplicatie moet responsive zijn! Het responsive framework alsook alle andere bestanden moeten zelf geïmplementeerd worden.
 
