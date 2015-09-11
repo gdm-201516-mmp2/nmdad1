@@ -392,82 +392,10 @@ body {
   color: #111; }
 ```
 
-SassScript
-----------
+Sass documentatie en referentie
+-------------------------------
 
-
-###Variabelen
-
-Een variabele kunnen we ook binnen een bepaalde selector definiëren. De scope van deze variabele kunnen we globaal maken d.m.v. `!global` keyword.
-
-```
-#main {
-  $width: 760/16*1em !global;
-  width: $width;
-}
-
-#sidebar {
-  width: $width/2;
-}
-```
-
-Resultaat:
-
-```
-#main {
-  width: 47.5em; }
-
-#sidebar {
-  width: 23.75em; }
-```
-
-Willen we de lijnhoogte opgeven in het font CSS-attribuut via `/`, dan moeten we de variabelen omsluiten door `#{...}`.
-
-```
-$primary-font-family:    Helvetica, sans-serif;
-$primary-font-size:16px;
-$primary-font-lineheight:1.46;
-$primary-color: #333;
-
-body {
-  font: #{$primary-font-size}/#{$primary-font-lineheight} $primary-font-family;
-  color: $primary-color;
-}
-```
-
-Resultaat:
-
-```
-body {
-  font: 16px/1.46 Helvetica, sans-serif;
-  color: #333; }
-```
-
-###Datatypen
-
-* numbers (e.g. 1.2, 13, 10px)
-* strings of text, with and without quotes (e.g. "foo", 'bar', baz)
-* colors (e.g. blue, #04a3f9, rgba(255, 0, 0, 0.5))
-* booleans (e.g. true, false)
-* nulls (e.g. null)
-* lists of values, separated by spaces or commas (e.g. 1.5em 1em 0 2em, Helvetica, Arial, sans-serif)
-* maps from one value to another (e.g. (key1: value1, key2: value2))
-* alle andere typen van CSS eigenschapswaarden
-
-**Strings** kunnen vermeld worden tussen single quotes `'...'`, dubbele quotes `"..."` of zonder quotes, bv. `sans-serif`, `bold`, ... . Bij interpolatie `#{...}` worden de strings verwijderd!
-
-**Lijsten** worden in Sass geïmplementeerd via spaties tussen de waarden of comma's.
-
-**Maps** representeert een associatie tussen **keys en values**. De keys worden gebruikt om een bepaalde waarde op te vragen. Wordt voornamelijk gebruikt om genaamde groepen aan te maken. Maps moeten altijd omsloten worden door `(` en `)`. Maps kunnen niet geconverteerd worden naar CSS.
-
-`$map: (key1: value1, key2: value2, key3: value3);`
-
-Kleuren kunnen in Sass best beschreven worden in `HSL(A)` of `RGB(A)`. We voorzien altijd een spatie na de comma tussen de argumenten.
-
-`.sla{color:rgba(255, 0, 0);}`
-
-###Operatoren
-
+<http://sass-lang.com/documentation/file.SASS_REFERENCE.html> 
 
 
 Bronnen

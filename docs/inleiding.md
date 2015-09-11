@@ -29,7 +29,10 @@ Evaluatie
 - 30% Modelingen verdediging + Presentatie + Poster
 - 20% Werkstuk: Dossier
 
-> **Ontbrekend onderdeel bovenvermelde lijst** betekent maximaal 9/20!
+> **Ontbrekend onderdeel bovenvermelde lijst** betekent maximaal 9/20 op de eindscore van het opleidingsonderdeel NMDAD I!
+
+**Taken:**
+
 > **Een taak niet ingediend betekent automatisch -5/20**. Dat betekent dat je maxmimaal 15/20 kan behalen op het opleidingsonderdeel New Media Design & Development I. Taken worden steeds ingediend via chamilo. De wijze van indienen verschilt per opdracht! De taken worden per lesweek beschreven in de [tasks folder](../tasks). Indienen op chamilo de avond voor de volgende les.
 
 
@@ -39,6 +42,7 @@ Lesinhouden
 ###Development
 
 Docent: Mr. De Pauw - Waterschoot
+Aantal lestijden: 3
 
 |Lesweek|Omschrijving|
 |-------|------------|
@@ -59,12 +63,13 @@ Docent: Mr. De Pauw - Waterschoot
 ###Design
 
 Docent: Mr. Pottie
+Aantal lestijden: 1
 
 |Lesweek|Omschrijving|
 |-------|------------|
 |1|4d’s, maak een moodboard in 3 stijlen: grungy (afval), clean (gezondheidszorg), minimal (wegen) (typografie, beeldbewerking, navigatie, kleuren)<br />Opleveren eind van de les: **3 moodboards (individueel)**|
 |2|Conceptueel denken -> storytelling: 3 variabelen vormen 1 concept== beeld/tekst/grafiek — interactie?<br />Opleveren eind van de les: **concept (individueel)**|
-|3|Tonen typografie + icon = logo + typografie<br />Opleveren eind van de les:  **stijlblad met logo, typografie (style tile) (Individueel)** |
+|3|Tonen typografie + icon = logo + typografie<br />Opleveren eind van de les:  **stijlblad met logo, typografie (style tile) (individueel)** |
 |4|Wireframes maken op welke manier? Papier -> illu -> online tool|
 |5|Photoshop: Artboards & Layer comps maken|
 |6|Werkstuk - Milestone 1: Klassikale presentatie tussentijds productiedossier|
