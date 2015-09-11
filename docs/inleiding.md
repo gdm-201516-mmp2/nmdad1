@@ -21,7 +21,16 @@
 |Begincompetenties|2D Animation & Webdesign II|
 |ECTS-fiche|https://bamaflexweb.arteveldehs.be/BMFUIDetailxOLOD.aspx?a=47532&b=5&c=1|
 
-> **Een taak niet ingediend betekent automatisch -5/20. Dat betekent dat je maxmimaal 15/20 kan behalen op het opleidingsonderdeel New Media Design & Development I. Taken worden steeds ingediend via chamilo. De wijze van indienen verschilt per opdracht! De taken worden per lesweek beschreven in de [tasks folder](../tasks). Indienen op chamilo de avond voor de volgende les.**
+Evaluatie
+--------
+**Werkstuk:**
+
+- 50% Werkstuk: Applicatie
+- 30% Modelingen verdediging + Presentatie + Poster
+- 20% Werkstuk: Dossier
+
+> **Ontbrekend onderdeel bovenvermelde lijst** betekent maximaal 9/20!
+> **Een taak niet ingediend betekent automatisch -5/20**. Dat betekent dat je maxmimaal 15/20 kan behalen op het opleidingsonderdeel New Media Design & Development I. Taken worden steeds ingediend via chamilo. De wijze van indienen verschilt per opdracht! De taken worden per lesweek beschreven in de [tasks folder](../tasks). Indienen op chamilo de avond voor de volgende les.
 
 
 Lesinhouden
@@ -67,21 +76,9 @@ Docent: Mr. Pottie
 |12|Werkstuk - Milestone 4: Klassikale presentatie integratie|
 |13|Contactmomenten|
 
-##Inhoud
 
-- HTML5 en CSS3
-- Responsive en adaptive Web Design
-- CSS pre processors
-- Data formaten: CSV, XML, XSL-T, XPath, XSL-FO, JSON(P), BSON, Markdown, ...
-- SVG, SMIL, MathML
-- Cliend side templating, routing, ...
-- Geautomatiseerde workflows opzetten en toepassen, zoals: Git, gem, npm, bower, Gulp, PhantomJS, ...
-- Prototype-based programming (OOP)
-- AMD (Asynchronous Module Definition)
-- Consuming Data met JavaScript
-- User Experience Design
-
-##Studiemateriaal
+Studiemateriaal
+-----------------
 
 - [Chamilo cursus New Media Design & Development I](http://chamilo.arteveldehs.be/index.php?application=weblcms&go=course_viewer&course=7639)
 - GitHub Respository [nmdad1](https://github.com/gdm-201516-mmp2/nmdad1)
@@ -91,9 +88,11 @@ Docent: Mr. Pottie
 > Chamilo zal voornamelijk gebruikt worden om:
 > 
 > * Aankondigingen te versturen
+> * Powerpoints te delen
 > * Opdrachten in te dienen
 
-##Technologieën
+Technologieën
+---------------
 
 - HTML
 - CSS 
@@ -103,14 +102,12 @@ Docent: Mr. Pottie
 - Commandline and Automation tools
 - JS bibliotheken & frameworks, zoals: jQuery, Normalize, Modernizr, Respond.js, Underscore.js, Lodash.js, Crossroads.js, Hasher.js, ...
 
-##Software
+Software
+----------
 
 - **Adobe CC**
 - SublimeText
 - **PHP Storm 7+**
 - **Microsoft Visual Code**
 - ...
-
-##Code PHPStorm
-
-Zie chamilo bij de aankondigingen cursus New Media Design & Development I
+- Code PHPStorm: Zie chamilo bij de aankondigingen cursus New Media Design & Development I
