@@ -84,6 +84,98 @@ nav ul {
       color: #ddd; }
 ```
 
+```
+#main {
+  width: 97%;
+
+  p, div {
+    font-size: 2rem;
+    a { font-weight: bold; }
+  }
+
+  blockquote { font-size: 3rem; }
+}
+```
+
+```
+#main {
+  width: 97%; }
+  #main p, #main div {
+    font-size: 2rem; }
+    #main p a, #main div a {
+      font-weight: bold; }
+  #main blockquote {
+    font-size: 3rem; }
+```
+
+###Referencing parent selector: &
+
+```
+a {
+  font-weight: 700;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+  body.chrome & { font-weight: 300; }
+}
+```
+
+`&` wordt vervangen door de parent selector. Kan zowel voor een pseudoklasse als na een andere selector (spatie voorzien) toegevoegd worden.
+
+```
+a {
+  font-weight: 700;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+  body.chrome a {
+    font-weight: 300; }
+```
+
+```
+.btn {
+  border:1px solid #bbb;
+  background:#bbb;
+  color:#333;
+  width:auto;
+  padding:6px 12px;
+  
+  &--large {
+    width:100%;
+    padding:12px 24px;    
+  }
+  
+  &__label {
+    font-size:2rem;
+    font-weight:700;
+  }
+  
+  &:hover {
+    border-color:#333;
+    background-color:#333;
+    color:#bbb;
+  }
+}
+```
+
+```
+.btn {
+  border: 1px solid #bbb;
+  background: #bbb;
+  color: #333;
+  width: auto;
+  padding: 6px 12px; }
+  .btn--large {
+    width: 100%;
+    padding: 12px 24px; }
+  .btn__label {
+    font-size: 2rem;
+    font-weight: 700; }
+  .btn:hover {
+    border-color: #333;
+    background-color: #333;
+    color: #bbb; }
+```
+
 ###Partials en import
 
 Partials zijn kleine **snippets** van CSS die we kunnen integreren (include) in andere Sass bestanden. Op deze manier kunnen we CSS modulair maken waardoor deze gemakkelijker te onderhouden zijn. Naamconventie: `_naamvandepartial.scss`. De underscore `_` laat Sass weten dat dit een partial bestand is waardoor deze niet zal gecompileerd worden in een CSS bestand. Sass partials kunnen gebruikt worden via `@import` directive.
@@ -239,128 +331,7 @@ aside[role="sidebar"] {
   width: 40.35088%; }
 ```
 
-Installatie
------------
-
-|Applicaties||
-|-----------|---|
-|Koala|http://koala-app.com/|
-|Mixture|http://mixture.io/|
-|Scout|http://mhs.github.io/scout-app/|
-
-|Commandline||
-|-----------|---|
-|Linux|`sudo su -c "gem install sass"`|
-|Windows|via [Ruby Installer](http://rubyinstaller.org/)|
-|Mac|Pre-installed|
-
-Installatie van Sass via commandline:
-
-* Open terminal of command prompt
-* Installatie van sass
-	* `gem install sass`
-	* `sudo gem install sass` (installatie als superuser)
-	* `sass -v` (nakijken versie sass)
-  
-CSS Extensions
---------------
-
-###Nested
-
-```
-#main {
-  width: 97%;
-
-  p, div {
-    font-size: 2rem;
-    a { font-weight: bold; }
-  }
-
-  blockquote { font-size: 3rem; }
-}
-```
-
-```
-#main {
-  width: 97%; }
-  #main p, #main div {
-    font-size: 2rem; }
-    #main p a, #main div a {
-      font-weight: bold; }
-  #main blockquote {
-    font-size: 3rem; }
-```
-
-###Referencing parent selector: &
-
-```
-a {
-  font-weight: 700;
-  text-decoration: none;
-  &:hover { text-decoration: underline; }
-  body.chrome & { font-weight: 300; }
-}
-```
-
-`&` wordt vervangen door de parent selector. Kan zowel voor een pseudoklasse als na een andere selector (spatie voorzien) toegevoegd worden.
-
-```
-a {
-  font-weight: 700;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
-  body.chrome a {
-    font-weight: 300; }
-```
-
-```
-.btn {
-  border:1px solid #bbb;
-  background:#bbb;
-  color:#333;
-  width:auto;
-  padding:6px 12px;
-  
-  &--large {
-    width:100%;
-    padding:12px 24px;    
-  }
-  
-  &__label {
-    font-size:2rem;
-    font-weight:700;
-  }
-  
-  &:hover {
-    border-color:#333;
-    background-color:#333;
-    color:#bbb;
-  }
-}
-```
-
-```
-.btn {
-  border: 1px solid #bbb;
-  background: #bbb;
-  color: #333;
-  width: auto;
-  padding: 6px 12px; }
-  .btn--large {
-    width: 100%;
-    padding: 12px 24px; }
-  .btn__label {
-    font-size: 2rem;
-    font-weight: 700; }
-  .btn:hover {
-    border-color: #333;
-    background-color: #333;
-    color: #bbb; }
-```
-
-Comments
---------
+###Comments
 
 Multiline commentaren `/* ... */` worden na compilatie toegevoegd aan het CSS bestand. Single line commentaren `//` worden niet toegevoegd aan het CSS bestand na compilatie.
 
@@ -392,11 +363,43 @@ body {
   color: #111; }
 ```
 
-Sass documentatie en referentie
--------------------------------
+###Sass documentatie en referentie
 
 <http://sass-lang.com/documentation/file.SASS_REFERENCE.html> 
 
+
+Installatie
+-----------
+
+|Applicaties||
+|-----------|---|
+|Koala|http://koala-app.com/|
+|Mixture|http://mixture.io/|
+|Scout|http://mhs.github.io/scout-app/|
+
+|Commandline||
+|-----------|---|
+|Linux|`sudo su -c "gem install sass"`|
+|Windows|via [Ruby Installer](http://rubyinstaller.org/)|
+|Mac|Pre-installed|
+
+Installatie van Sass via commandline:
+
+* Open terminal of command prompt
+* Installatie van sass
+	* `gem install sass`
+	* `sudo gem install sass` (installatie als superuser)
+	* `sass -v` (nakijken versie sass)
+  
+Sass project structuur
+----------------------
+
+* [OOCSS, BEM, SMACSS, ACSS en Atomic Design](http://clubmate.fi/oocss-acss-bem-smacss-what-are-they-what-should-i-use/)
+* [CSS, Sass, SCSS, Compass, Less, BEM, SMACSS, OOCSS, ACSS, CCSS, WTFSS?](http://www.leemunroe.com/css/)
+* [Atomic design with Sass](http://www.smashingmagazine.com/2013/08/other-interface-atomic-design-sass/)
+* [BEM introductie](http://getbem.com/introduction/)
+* [Overview OOCSS, BEM, SMACSS](http://codetheory.in/an-overview-of-oocss-bem-smacss-css-methodologiespractices-with-references/)
+* [Organizing OOCSS, SMACSS and BEM](https://mattstauffer.co/blog/organizing-css-oocss-smacss-and-bem)
 
 Bronnen
 -------
