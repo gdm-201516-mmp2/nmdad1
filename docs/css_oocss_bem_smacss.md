@@ -317,21 +317,6 @@ Deze drie onderdelen vormen een kaart (organisme of component). We kunnen deze o
 ```
 
 
-
-
-
-
-
-
-
-
-
-[Get BEM](http://getbem.com/introduction/)
-[About HTML semantics and front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
-[Atomic OOBEMITSCSS](http://www.sitepoint.com/atomic-oobemitscss/)
-[Organizing CSS: OOCSS, SMACSS, and BEM](https://mattstauffer.co/blog/organizing-css-oocss-smacss-and-bem)
-[http://www.smashingmagazine.com/2013/08/other-interface-atomic-design-sass/](http://www.smashingmagazine.com/2013/08/other-interface-atomic-design-sass/)
-
 Bronnen
 -------
 
@@ -339,3 +324,9 @@ Bronnen
 [OOCSS Smashing Magazine](http://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
 [OOCSS Slideshare](http://www.slideshare.net/stubbornella/object-oriented-css)
 [Atomic OOBEMITSCSS](http://www.sitepoint.com/atomic-oobemitscss/)
+[Get BEM](http://getbem.com/introduction/)
+[About HTML semantics and front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
+[Atomic OOBEMITSCSS](http://www.sitepoint.com/atomic-oobemitscss/)
+[Organizing CSS: OOCSS, SMACSS, and BEM](https://mattstauffer.co/blog/organizing-css-oocss-smacss-and-bem)
+[http://www.smashingmagazine.com/2013/08/other-interface-atomic-design-sass/](http://www.smashingmagazine.com/2013/08/other-interface-atomic-design-sass/)
+[CSS guidelines](http://cssguidelin.es/)
