@@ -260,7 +260,64 @@ CSS:
 .img-link__img{display:block;}
 ```
 
-###Voorbeeld 2
+###Voorbeeld 2 (behance card)
+
+Behance Card uit een bepaald bord:
+
+![Behance Card](images/behance.png)
+
+De anatomy (atomen) van zo'n kaart bestaat uit:
+
+* afbeelding
+* titel
+* auteur(s)
+* divider
+* categorie(ën)
+* icoon + cijfer voor appreciatie
+* icoon + cijfer voor het aantal views
+* icoon + tooltip voor publicatiedatum
+
+De bovenstaande onderdelen kunnen we groeperen (moleculen):
+
+* afbeelding
+* info (titel + auteur)
+* metadata (categorieën + divider + [icoon + cijfers/tooltip]*3)
+
+Deze drie onderdelen vormen een kaart (organisme of component). We kunnen deze onderdelen in de volgende HTML structuur gieten:
+
+```
+<div class="card">
+	<section class="card__picture">
+		<a class="picture__link" href="">
+			<picture class="picture__element">
+				<img src="" alt="" />
+			</picture>
+		</a>		
+	</section>
+	<section class="card__info">
+		<h2 class="info__title">
+			<a class="title__link" href="">
+			</a>
+		</h2>
+		<p class="info__author">
+		</p>
+	</section>
+	<section class="card__metadata">
+		<section class="metadata__fields">
+			<a class="fields__field"></a>
+		</section>
+		<hr>
+		<section class="metadata__stats">
+			<span class="stats__likes"></span>
+			<span class="stats__views"></span>
+			<span class="stats__pub-date"></span>
+		</section>		
+	</section>
+</div>
+```
+
+
+
 
 
 
@@ -273,6 +330,7 @@ CSS:
 [About HTML semantics and front-end architecture](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
 [Atomic OOBEMITSCSS](http://www.sitepoint.com/atomic-oobemitscss/)
 [Organizing CSS: OOCSS, SMACSS, and BEM](https://mattstauffer.co/blog/organizing-css-oocss-smacss-and-bem)
+[http://www.smashingmagazine.com/2013/08/other-interface-atomic-design-sass/](http://www.smashingmagazine.com/2013/08/other-interface-atomic-design-sass/)
 
 Bronnen
 -------
