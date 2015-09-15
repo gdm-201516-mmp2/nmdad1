@@ -1,0 +1,178 @@
+/* *\
+ Grid system
+ ============================================================================
+\* */
+
+.grid__container {	
+	max-width: $grid-container-max-width;
+	margin: 0 auto;
+	padding-left: #{$grid_gutter}rem;
+	padding-right: #{$grid_gutter}rem;
+	@include clearfix;
+	
+	&--debug {
+		padding-top:#{$grid_gutter / 2}rem;
+		padding-bottom:#{$grid_gutter / 2}rem;
+				
+		background:rgba(255, 0, 255, 0.5);	
+	}
+}
+
+.grid__row {
+	margin-left: #{$grid_gutter/-2}rem;
+	margin-right: #{$grid_gutter/-2}rem;
+	@include clearfix;
+	
+	&--debug {	
+		padding-top:#{$grid_gutter}rem;
+			
+			
+		
+		
+	}
+	
+	.grid__row {
+		margin-left: #{$grid_gutter/-2}rem;
+		margin-right: #{$grid_gutter/-2}rem;
+		
+		&--debug {	
+			padding-top:0;				
+		}
+	}
+}
+
+
+
+
+@include make-grid-columns($grid-breakpoints, $grid_gutter, $grid-columns-amount);
+
+@include make-grid-queries($grid-breakpoints, $grid-columns-amount);
+
+@if $project-debug-mode {
+	
+	.grid__column--debug {
+	
+		&::before {
+			content:"mf-col12";	
+		
+			height: 260px;	
+			width: 100%;
+			display: block;
+			margin-bottom: #{$grid_gutter}rem;
+			
+			line-height: 260px;
+			text-align: center;
+			
+			background:rgba(255, 255, 0, 0.5);
+		}
+		
+		&-nested {
+			
+			&::before {
+				content: "" !important;
+				height: auto;	
+				line-height: auto;
+			}
+			
+			.grid__column--debug::before {
+				background:rgba(255, 0, 0, 0.5);
+			}
+		}
+		
+		-webkit-transition: all 268ms ease-in 0s;
+		-moz-transition: all 268ms ease-in 0s;
+		-ms-transition: all 268ms ease-in 0s;
+		-o-transition: all 268ms ease-in 0s;
+		transition: all 268ms ease-in 0s;
+		
+	}
+	
+	@include make-color-palettes($color-palettes);
+} 
+
+/* *\
+ Flex Grid system
+ ============================================================================
+\* */
+
+.flexgrid__container {	
+	max-width: $flexgrid-container-max-width;
+	margin: 0 auto;
+	padding-left: #{$flexgrid_gutter}rem;
+	padding-right: #{$flexgrid_gutter}rem;
+	
+	
+	&--debug {
+		padding-top:#{$grid_gutter / 2}rem;
+		padding-bottom:#{$grid_gutter / 2}rem;
+				
+		background:rgba(255, 0, 255, 0.5);	
+	}
+}
+
+.flexgrid__row {
+	
+	display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+	margin-left: #{$flexgrid_gutter/-2}rem;
+	margin-right: #{$flexgrid_gutter/-2}rem;	
+	
+	&--debug {	
+		padding-top:#{$flexgrid_gutter}rem;		
+	}
+	
+	.flexgrid__row {
+		margin-left: #{$flexgrid_gutter/-2}rem;
+		margin-right: #{$flexgrid_gutter/-2}rem;
+		
+		&--debug {	
+			padding-top:0;				
+		}
+	}
+}
+
+@include make-flexgrid-columns($flexgrid-breakpoints, $flexgrid_gutter, $flexgrid-columns-amount);
+
+@include make-flexgrid-queries($flexgrid-breakpoints, $flexgrid-columns-amount);
+
+@if $project-debug-mode {
+	
+	.flexgrid__column--debug {
+	
+		&::before {
+			content:"mf-col12";	
+		
+			height: 260px;	
+			width: 100%;
+			display: block;
+			margin-bottom: #{$grid_gutter}rem;
+			
+			line-height: 260px;
+			text-align: center;
+			
+			background:rgba(255, 255, 0, 0.5);
+		}
+		
+		&-nested {
+			
+			&::before {
+				content: "" !important;
+				height: auto;	
+				line-height: auto;
+			}
+			
+			.flexgrid__column--debug::before {
+				background:rgba(255, 0, 0, 0.5);
+			}
+		}
+		
+		-webkit-transition: all 268ms ease-in 0s;
+		-moz-transition: all 268ms ease-in 0s;
+		-ms-transition: all 268ms ease-in 0s;
+		-o-transition: all 268ms ease-in 0s;
+		transition: all 268ms ease-in 0s;
+		
+	}
+	
+} 

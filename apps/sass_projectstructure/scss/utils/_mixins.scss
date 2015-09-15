@@ -1,0 +1,229 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Clearfix technique: clear after floats
+/// @author Philippe De Pauw - Waterschoot
+@mixin clearfix {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+/// Make Grid Columns
+/// @author Philippe De Pauw - Waterschoot
+/// @param {Map} $breakpoints [$grid-breakpoints]
+@mixin make-grid-columns($breakpoints:$grid-breakpoints, $gutter:$grid_gutter, $columns-amount:$grid-columns-amount) {
+  
+  $list:".grid__column";
+  
+  @each $breakpoint-key, $breakpoint-val in $breakpoints {
+    @for $i from 1 through $columns-amount {
+      $list: "#{$list}, .grid__column-#{$breakpoint-key}-#{$i}";      
+    }
+  }
+  
+  #{$list} {
+    position: relative;
+    float:left;
+    width:100%;
+    min-height:1px;
+    padding-left: #{$gutter/2}rem;
+    padding-right: #{$gutter/2}rem;
+    overflow:hidden;
+  }
+  
+}
+
+
+
+
+/// Make Grid Media Queries
+/// @author Philippe De Pauw - Waterschoot
+/// @param {Map} $breakpoints [$grid-breakpoints]
+@mixin make-grid-queries($breakpoints:$grid-breakpoints, $columns-amount:$grid-columns-amount) {
+  
+  @each $breakpoint-key, $breakpoint-val in $breakpoints {
+    @media (min-width: $breakpoint-val) {
+      @for $i from 1 through $columns-amount {   
+           
+        .grid__column-#{$breakpoint-key}-#{$i} { 
+          
+          width: #{($i/$columns-amount)*100%}; 
+          
+          @if $project-debug-mode {
+            &::before { content: "#{$breakpoint-key}-col#{$i}" !important;; } 
+          } 
+        }   
+        
+        @if ( $i != $columns-amount ) {
+          .grid__offset-#{$breakpoint-key}-#{$i} {
+            margin-left: #{($i/$columns-amount)*100%}; 
+          }
+        }  
+             
+      }   
+    }   
+  }  
+}
+
+
+
+
+/// Make Flex Grid Columns
+/// @author Philippe De Pauw - Waterschoot
+/// @param {Map} $breakpoints [$flexgrid-breakpoints]
+@mixin make-flexgrid-columns($breakpoints:$flexgrid-breakpoints, $gutter:$flexgrid_gutter, $columns-amount:$flexgrid-columns-amount) {
+  
+  $list:".flexgrid__column";
+  
+  @each $breakpoint-key, $breakpoint-val in $breakpoints {
+    @for $i from 1 through $columns-amount {
+      $list: "#{$list}, .flexgrid__column-#{$breakpoint-key}-#{$i}";      
+    }
+  }
+  
+  #{$list} {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    padding-left: #{$gutter/2}rem;
+    padding-right: #{$gutter/2}rem;
+  }
+  
+}
+
+/// Make Flex Grid Media Queries
+/// @author Philippe De Pauw - Waterschoot
+/// @param {Map} $breakpoints [$flexgrid-breakpoints]
+@mixin make-flexgrid-queries($breakpoints:$flexgrid-breakpoints, $columns-amount:$flexgrid-columns-amount) {
+  
+  @each $breakpoint-key, $breakpoint-val in $breakpoints {
+    @media (min-width: $breakpoint-val) {
+      @for $i from 1 through $columns-amount {   
+           
+        .flexgrid__column-#{$breakpoint-key}-#{$i} { 
+          
+          flex-basis: #{($i/$columns-amount)*100%}; 
+          max-width: #{($i/$columns-amount)*100%}; 
+          
+          @if $project-debug-mode {
+            &::before { content: "#{$breakpoint-key}-col#{$i}"; } 
+          } 
+        }  
+        
+        @if ( $i != $columns-amount ) {
+          .flexgrid__offset-#{$breakpoint-key}-#{$i} {
+            margin-left: #{($i/$columns-amount)*100%}; 
+          }
+        }  
+            
+      }   
+    }   
+  }  
+}
+
+/// Make Grid Media Queries
+/// @author Philippe De Pauw - Waterschoot
+/// @param {Map} $palettes [$color-palettes]
+/// @param {Int} $variant-height [1.5rem]
+@mixin make-color-palettes($palettes: $color-palettes, $variant-height: 1.5rem) {
+  .color {
+    width: 100%;
+    height: 10rem;
+    display: block;
+    border: 2px solid rgba(0, 0, 0, 1);
+    position:relative;
+  
+    @each $color-key, $color-variants in $palettes {
+      $base-color-value: map-get($color-variants, 'base');  
+      
+      &--#{$color-key} {
+        background-color: $base-color-value;
+      
+        &::before { content: "#{$color-key}"; }
+        &::after { content: "#{$base-color-value}"; }
+        
+        $variant-gradient: (unquote("to bottom"),);
+      
+        $index: 0;
+        @each $variant-name, $variant-value in $color-variants {
+          $variant-gradient: append($variant-gradient, $variant-value $index * $variant-height);
+          $index: $index + 1;
+          $variant-gradient: append($variant-gradient, $variant-value $index * $variant-height);
+        }
+        
+        .variants {
+          border-left: 2px solid rgba(0, 0, 0, 1);;
+          border-bottom: 2px solid rgba(0, 0, 0, 1);;
+          position: absolute;
+          height: $variant-height * length($color-variants);
+          width: $variant-height;
+          right: 0;
+          top: 0;
+          background: linear-gradient(#{$variant-gradient});          
+        }      
+      }
+    }  
+  }
+}
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+/// Responsive manager
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+/// @link http://sass-guidelin.es/#breakpoint-manager Sass Guidelines - Breakpoint Manager
+@mixin respond-to($breakpoint) {
+  $query: map-get($breakpoints, $breakpoint);
+  
+  @if not $query {
+    @error 'No value found for `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.';
+  }
+
+  @media #{if(type-of($query) == 'string', unquote($query), inspect($query))} {
+    @content;
+  }
+}

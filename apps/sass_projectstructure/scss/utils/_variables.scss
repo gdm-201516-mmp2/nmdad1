@@ -1,0 +1,149 @@
+/// Project Settings
+/// ============================================================================
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$project-base-url: '/assets/' !default;
+$project-debug-mode: true !default;
+
+
+
+/// Modular Scale Settings
+/// ============================================================================
+/// based on http://modularscale.com/scale/?px1=16&px2=18&ra1=1.333&ra2=0
+
+$ms-3: 10.13 !default;
+$ms-2: 12.003 !default;
+$ms-1: 13.503 !default;
+$ms0: 16 !default;
+$ms1: 18 !default;
+$ms2: 21.328 !default;
+$ms3: 23.994 !default;
+$ms4: 28.43 !default;
+$ms5: 31.984 !default;
+$ms6: 37.897 !default;
+$ms7: 42.635 !default;
+$ms8: 50.517 !default;
+$ms10: 56.832 !default;
+$ms11: 67.34 !default;
+$ms12: 75.757 !default;
+$ms13: 89.764 !default;
+$ms14: 100.984 !default;
+
+
+
+
+/// Grid Settings
+/// ============================================================================
+/// Gutter between the columns
+$grid-breakpoints: (
+	"bp1": 320/$ms0*1rem,
+	"bp2": 480/$ms0*1rem,
+	"bp3": 680/$ms0*1rem,
+	"bp4": 960/$ms0*1rem,
+	"bp5": 1140/$ms0*1rem
+);
+$grid-container-max-width: map-get($grid-breakpoints, 'bp5') !default;
+$grid-gutter: 1 !default;
+$grid-columns-amount: 12 !default;
+
+
+
+
+/// Flex Grid Settings
+/// ============================================================================
+/// Gutter between the columns
+$flexgrid-breakpoints: (
+	"bp1": 320/$ms0*1rem,
+	"bp2": 480/$ms0*1rem,
+	"bp3": 680/$ms0*1rem,
+	"bp4": 960/$ms0*1rem,
+	"bp5": 1140/$ms0*1rem
+);
+$flexgrid-container-max-width: map-get($flexgrid-breakpoints, 'bp5') !default;
+$flexgrid-gutter: 1 !default;
+$flexgrid-columns-amount: 12 !default;
+
+
+
+
+/// Typography Settings
+/// ============================================================================
+
+/// Regular/Base font family
+/// @type List
+$font-family-base: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$font-size-base:$ms0 !default;
+$font-weight-base:400 !default;
+$line-height-base:1.42;
+
+/// Heading font family
+/// @type List
+$font-family-heading: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$font-weight-heading:700 !default;
+
+/// Code (monospace) font family
+/// @type List
+$font-family-code: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+
+
+
+/// Color Settings
+/// ============================================================================
+/// http://www.dtelepathy.com/blog/design/color-theory
+/// http://www.smashingmagazine.com/2010/02/color-theory-for-designer-part-3-creating-your-own-color-palettes/
+/// http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/
+/// http://jackiebalzer.com/color
+
+$color-interval: 10% !global;
+
+$color-default: #aaa !default;
+$color-primary: #337ab7 !default;
+$color-secondary: #5bc0de !default;
+$color-success: #5cb85c !default;
+$color-info: #5bc0de !default;
+$color-warning: #f0ad4e !default;
+$color-danger: #d9534f !default;
+
+$color-palettes: (
+	default: (
+		light: mix(white, $color-default, 80%),
+		mid-light: mix(white, $color-default, 40%),
+		base: $color-default,
+		mid-dark: mix(black, $color-default, 40%),
+		dark: mix(black, $color-default, 80%)
+	),
+	primary: (
+		light: mix(white, $color-primary, 40%),
+		base: $color-primary,
+		dark: mix(black, $color-primary, 40%)
+	),
+	secondary: (
+		light: mix(white, $color-secondary, 40%),
+		base: $color-secondary,
+		dark: mix(black, $color-secondary, 40%)
+	),
+	success: (
+		light: mix(white, $color-success, 40%),
+		base: $color-success,
+		dark: mix(black, $color-success, 40%)
+	),
+	info: (
+		light: mix(white, $color-info, 40%),
+		base: $color-info,
+		dark: mix(black, $color-info, 40%)
+	),
+	warning: (
+		light: mix(white, $color-warning, 40%),
+		base: $color-warning,
+		dark: mix(black, $color-warning, 40%)
+	),
+	danger: (
+		light: mix(white, $color-danger, 40%),
+		base: $color-danger,
+		dark: mix(black, $color-danger, 40%)
+	)	
+);

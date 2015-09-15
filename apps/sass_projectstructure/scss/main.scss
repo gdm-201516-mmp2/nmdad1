@@ -1,1 +1,29 @@
-@import 'utils/colors';
+@charset 'UTF-8';
+
+// 1. Vendors
+@import
+  'vendor/normalize';
+
+// 2. Utilities: Configuration and helpers
+@import
+  'utils/variables',
+  'utils/functions',
+  'utils/mixins';
+
+// 3. Base
+@import
+  'base/base',
+  'base/helpers', 
+  'base/grid',
+  'base/typography';
+
+// 4. Layout-related sections: Header, Footer, ...
+
+
+// 5. Components
+
+
+// 6. Page-specific styles
+
+
+// 7. Themes

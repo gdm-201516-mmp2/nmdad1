@@ -1,0 +1,27 @@
+/// Generic: Box sizing
+/// ============================================================================
+/// See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+
+html {
+    -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+* {
+    &,
+    &::before,
+    &::after {
+        -webkit-box-sizing: inherit;
+            -ms-box-sizing: inherit;
+           -moz-box-sizing: inherit;
+             -o-box-sizing: inherit;
+                box-sizing: inherit;
+    }
+}
+
+body {
+    background-color:color-palette('default', 'dark');
+}
