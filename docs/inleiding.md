@@ -41,7 +41,7 @@ Lesinhouden
 
 ###Development
 
-Docent: Mr. De Pauw - Waterschoot
+Docent: Mr. De Pauw - Waterschoot  
 Aantal lestijden: 3
 
 |Lesweek|Omschrijving|
@@ -62,7 +62,7 @@ Aantal lestijden: 3
 
 ###Design
 
-Docent: Mr. Pottie
+Docent: Mr. Pottie  
 Aantal lestijden: 1
 
 |Lesweek|Omschrijving|
