@@ -43,6 +43,15 @@ Omschrijving
 
 > Het werkstuk wordt op een Bitbucket-repository gepubliceerd dat toegankelijk is voor [Olivier Parent][https://bitbucket.org/olivierparent] en [Philippe De Pauw - Waterschoot][https://bitbucket.org/drdynscript].
 
+> Resources:
+> 
+> 
+* [Worldbank Data Catalog](http://datacatalog.worldbank.org/)
+* [Worldbank Data Catalog API](http://data.worldbank.org/developers/data-catalog-api)
+* [Worldbank Idicatoren](http://data.worldbank.org/indicator)
+* Voorbeeld aanvraag: `http://api.worldbank.org/countries?per_page=10&incomeLevel=LIC&format=jsonP&prefix=Getdata` (jsonP aanvraag), meer info [Worldbank aanvraagstructuur](http://data.worldbank.org/developers/api-overview/basic-call-structure)
+
+
 Dossier
 -------
 >  - Moet geschreven worden in Markdown
