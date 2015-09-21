@@ -28,4 +28,4 @@
 Leaderbords
 ------------------------------
 
-![Leaderbord 21-09-2015 om 21:30](images/leaderbord_21092015.png)
+![Leaderbord 21-09-2015 om 21:30](../docs/images/leaderbord_21092015.png)
