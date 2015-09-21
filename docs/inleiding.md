@@ -21,6 +21,42 @@
 |Begincompetenties|2D Animation & Webdesign II|
 |ECTS-fiche|https://bamaflexweb.arteveldehs.be/BMFUIDetailxOLOD.aspx?a=47532&b=5&c=1|
 
+valuatie
+--------
+
+**Werkstuk:**
+
+|  100 %    | Onderdeel                              |
+|----------:|:---------------------------------------|
+| **30 %**  | **Mondeling examen**                   |
+|   10 %    |   1. Presentatie                       |
+|   15 %    |   2. Productiedossier                  |
+|    5 %    |   3. Academische Poster                |
+| **70 %**  | **Werkstuk**                           |
+|   10 %    |   4. Automation                        |
+|   40 %    |   5. Frontend                          |
+|   20 %    |   6. Design & Concept                  |
+
+> **Ontbrekend onderdeel bovenvermelde lijst** betekent maximaal 9/20 op de eindscore van het opleidingsonderdeel NMDAD I!
+- Met weinig complexiteit wordt bedoeld dat het werkstuk niet verder gaat dan de eenvoudige voorbeelden uit de les. De eindscore wordt berekend en afgerond.
+- Als een vereist item uit de checklist ontbreekt, kan de eindscore nog maximaal 9/20 zijn.
+- Spellingsfouten in werkstuk, presentatie en/of poster: -1 (op 20) op eindscore.
+- Te laat indienen zonder geldige reden: -1 per dag (op 20) op eindscore.
+- **Een taak niet ingediend betekent automatisch -2/20**. Taken worden meestal ingediend via chamilo. De wijze van indienen verschilt per opdracht! De taken worden per lesweek beschreven in de [tasks folder](../tasks). Indienen op chamilo de avond voor de volgende les in de volgende lesweek. Taken voor Mr. Pottie worden meestal ingedien op het einden van diezelfde les.
+
+**Beoordelingsschaal**
+
+| Cijfer | Beoordeling           | Omschrijving                                                                         |
+|-------:|:----------------------|:-------------------------------------------------------------------------------------|
+|    7/7 | Overtreft verwachting | Geen of slechts enkele fouten/tekortkomingen en gaat verder dan de opdracht vereist. |
+|    6/7 | Zeer goed             | Enkele fouten/tekortkomingen en/of hoge compelexiteit.                               |
+|    5/7 | Goed                  | Overwegend goed met weinig fouten/tekortkomingen en/of gemiddelde complexiteit.      |
+|    4/7 | Voldoende             | Voldoende, maar belangrijke fouten/tekortkomingen en/of weinig complexiteit.         |
+|    3/7 | Onvoldoende           | Bijkomend werk nodig en/of te weinig complexiteit.                                   |
+|    2/7 | Zware onvoldoende     | Aanzienlijke hoeveelheid bijkomend werk nodig.                                       |
+|    1/7 | Aanwezig              | Aanwezig, maar komt niet overeen met opdracht.                                       |
+|    0/7 | Ontbreekt             | Niet aanwezig.    
+
 Evaluatie
 --------
 **Werkstuk:**
