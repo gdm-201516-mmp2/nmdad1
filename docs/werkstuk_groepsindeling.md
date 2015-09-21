@@ -17,23 +17,23 @@
 |Acar Zehra|3MMP-proDUCE|
 |Aliaj Gazmend|3MMP-proDUCE|
 |Asemota Osayuki|2MMP-proDUCEa|
-|Billiet Bram|2MMP-proDUCEa|
-|Blakaj Ismet|2MMP-proDUCEa|
+|Billiet Bram|2MMP-proDUCEa|x
+|Blakaj Ismet|2MMP-proDUCEa|x
 |Broekaert Simon|2MMP-proDEV|
 |Broekaert Thomas|3MMP-proDUCE|
 |Bruwier Artuur|2MMP-proDUCEb|
-|Caes Zeger|2MMP-proDUCEa|
+|Caes Zeger|2MMP-proDUCEa|x
 |Cambier Julien|2MMP-proDEV|
-|Dando Nicholas|2MMP-proDUCEa|
-|De Backer Bram|2MMP-proDUCEa|
-|De Busschere Giel|2MMP-proDUCEa|
+|Dando Nicholas|2MMP-proDUCEa|x
+|De Backer Bram|2MMP-proDUCEa|x
+|De Busschere Giel|2MMP-proDUCEa|x
 |De Clercq Jochen|2MMP-proDUCEb|
 |De Coster Jonas|2MMP-proDUCEb|
-|De Geyter Bruno|2MMP-proDUCEa|
-|De Greef Jodie|2MMP-proDUCEa|
+|De Geyter Bruno|2MMP-proDUCEa|x
+|De Greef Jodie|2MMP-proDUCEa|x
 |De Jans Frederick|2MMP-proDEV|
 |De Kerpel Glenn|3MMP-proDUCE|
-|De Knibber Nicky|2MMP-proDUCEa|
+|De Knibber Nicky|2MMP-proDUCEa|x
 |De Lange Matthias|2MMP-proDUCEb|
 |De Luyck Mickey|2MMP-proDEV|
 |De Meutter Ruben||	
@@ -41,53 +41,53 @@
 |De Meyere Famke|2MMP-proDUCEb|
 |De Neve Laurens|2MMP-proDUCEb|
 |de Poorter Simon|2MMP-proDUCEb|
-|De Rick Bram|2MMP-proDUCEa|
+|De Rick Bram|2MMP-proDUCEa|x
 |De Rouck Anthony|2MMP-proDUCEb|
 |De Smedt Sam|2MMP-proDEV|
 |De Soete Diederik|2MMP-proDUCEb|
 |De Troch Simen|2MMP-proDEV|
 |De Vlieger Stef|2MMP-proDUCEb|
-|De Vos Reinaert||	
-|De Vuyst Kevin|2MMP-proDUCEa|
+|De Vos Reinaert||x	
+|De Vuyst Kevin|2MMP-proDUCEa|x
 |Deboiserie Koen|2MMP-proDUCEb|
 |Decock Aurelio|2MMP-proDEV|
-|Dekeyser Feline|2MMP-proDUCEa|
+|Dekeyser Feline|2MMP-proDUCEa|x
 |Denys Lander|2MMP-proDUCEb|
-|Depelseneer Mathias|2MMP-proDUCEa|
+|Depelseneer Mathias|2MMP-proDUCEa|x
 |Dils Tom|3MMP-proDUCE|
 |Dossche Kevin|2MMP-proDUCEb|
 |Dreesen Stien||	
-|Dusselier Victor|2MMP-proDUCEa|
+|Dusselier Victor|2MMP-proDUCEa|x
 |Follet Lars|2MMP-proDUCEb|
-|Fonck Mathias|2MMP-proDUCEa|
+|Fonck Mathias|2MMP-proDUCEa|x
 |Gouhie Victor|2MMP-proDUCEb|
 |Haeghebaert Annelien|2MMP-proDEV|
 |Huysman Jens|2MMP-proDEV|
 |Janssens Shaun|2MMP-proDEV|
-|Janzegers Jonas|2MMP-proDUCEa|
+|Janzegers Jonas|2MMP-proDUCEa|x
 |Laflère Eben|2MMP-proDUCEb|
 |Lemoine Julien|2MMP-proDEV|
-|Lettens Kristof||	
+|Lettens Kristof||x	
 |Meersschaert Stijn|2MMP-proDEV|
-|Mehauden Rina|2MMP-proDUCEa|
+|Mehauden Rina|2MMP-proDUCEa|x
 |Mulaj Altin|2MMP-proDUCEb|
 |Muylaert Lode|2MMP-proDEV|
 |Naska Dejvi|2MMP-proDUCEb|
-|Nelis Fabian|2MMP-proDUCEa|
+|Nelis Fabian|2MMP-proDUCEa|x
 |Neukermans Brecht|2MMP-proDEV|
 |Nolf Brecht|3MMP-proDUCE|
 |Notaert Mathias|2MMP-proDUCEb|
-|Pauwelyn Alexander|2MMP-proDUCEb|
+|Pauwelyn Alexander|2MMP-proDUCEb|x
 |Pittoors Lisa|2MMP-proDEV|
 |Roelandt Celine|3MMP-proDUCE|
-|Rombaut Lotte|2MMP-proDUCEa|
+|Rombaut Lotte|2MMP-proDUCEa|x
 |Roosens Jef|2MMP-proDEV|
-|Rypens Bryony|2MMP-proDUCEa|
-|Sacré Cypriaan|2MMP-proDUCEa|
+|Rypens Bryony|2MMP-proDUCEa|x
+|Sacré Cypriaan|2MMP-proDUCEa|x
 |Schoenaers Emiel|2MMP-proDUCEb|
 |Seghers Matthias|2MMP-proDEV|
 |Smitz Basiel|2MMP-proDEV|
-|Steyaert Tristan|2MMP-proDUCEa|
+|Steyaert Tristan|2MMP-proDUCEa|x
 |Tijtgat Ellen|2MMP-proDUCEb|
 |Turpyn Arne|2MMP-proDUCEb|
 |Van Belle Michiel|2MMP-proDUCEb|
@@ -96,12 +96,12 @@
 |Van de Voorde Bram|2MMP-proDUCEb|
 |Van den Plas Valerie|2MMP-proDEV|
 |Van der Meeren Vincent|3MMP-proDUCE|
-|Van Der Sypt Thomas|2MMP-proDUCEa|
+|Van Der Sypt Thomas|2MMP-proDUCEa|x
 |Van Hecke Lee|2MMP-proDEV|
 |Van Kerckvoorde Mathias	
 |Van Limbergen Robin|2MMP-proDEV|
 |Van Meirvenne Tim||	
-|Van Raemdonck Laura|2MMP-proDUCEa|
+|Van Raemdonck Laura|2MMP-proDUCEa|x
 |Van Sele Mathias|2MMP-proDUCEb|
 |Van Steirteghem Dylan|2MMP-proDEV|
 |Vancoillie Tine|2MMP-proDEV|
