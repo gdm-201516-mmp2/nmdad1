@@ -65,15 +65,6 @@ Dossier
 Technische specificaties
 ------------------------
 
-###Versiebeheer
-
-- Maak een Team aan op **Bitbucket** met als team id het academiejaar gevolgd door de groepsnummer, bv.: **2015-16_2MMPA-01**.
-- Voeg vervolgens de groepsleden hieraan toe.
-- Maak een groepsfoto en voeg deze toe als avatar van het team.
-- Maak in dit team de volgende repositories aan:
-    - **open_the_gates_for_data_app**. Bevat de applicatie volgens de opgelegde mappenstructuur.
-    - **open_the_gates_for_data_docs**. Bevat productiedossier, screenshots, ... volgens de opgelegde structuur.
-
 ###Frontend
 
 - Core technologies: HTML5, CSS3 en JavaScript
@@ -85,8 +76,7 @@ Technische specificaties
 
 > Webapplicatie moet responsive zijn! Het responsive framework alsook alle andere bestanden moeten zelf geïmplementeerd worden.
 
-
-    
+   
 Source Code Management
 ----------------------
 
