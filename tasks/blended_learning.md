@@ -21,7 +21,14 @@
 	* JavaScript (https://www.codecademy.com/en/tracks/javascript)
 	* jQuery (https://www.codecademy.com/en/tracks/jquery)
 	* Make an Interactive Website (https://www.codecademy.com/en/skills/make-an-interactive-website)
-	* Make a Website Projects(https://www.codecademy.com/en/courses/html-css-prj) 
+	* Make a Website Projects(https://www.codecademy.com/en/courses/html-css-prj)
+	
+> Deze **Blended Learning** cursussen moeten allemaal voltooid zijn op 04-11-2015! Niet voltooid betekent -2 per week op 20 op de eindscore van het opleidingsonderdeel NMDAD I! 
+
+> Voor wat hoort wat op het einde van de rit:
+* 1ste plaats: + 2/20 op de eindscore
+* 2de plaats: + 1.5/20 op de eindscore
+* 3de plaats: + 1/20 op de eindscore
 
 ***
 
