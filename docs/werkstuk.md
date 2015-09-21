@@ -16,7 +16,7 @@
 |Subtitel|The World Bank Data Catalog|
 |Milestone 1|**Week 6** Presentatie tussentijds productiedossier (Docent Pottie)|
 |Milestone 2|**Week 8** Presentatie visual designs (Docent Pottie)|
-|Milestone 3|**Week 10** Presentatie alpha versie app (Docent De Pauw - Waterschoot)|
+|Milestone 3|**Week 11** Presentatie alpha versie app (Docent De Pauw - Waterschoot)|
 |Deadline|**23-12-2015** Opleveren opdracht (Bitbucket)|
 |Examen|Afgedrukt dossier, Poster, Bitbucket, Online werkende applicatie|
 

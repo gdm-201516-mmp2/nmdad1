@@ -24,7 +24,7 @@
 
 Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**.
 
-**2MMPa**
+**2MMPA = proDEV**
 
 |Groepsnummer|Studenten|
 |------------|---------|
@@ -48,7 +48,7 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 |2MMPA-18||
 |2MMPA-19||
 
-**2MMPb**
+**2MMPB = 2MMPBa**
 
 |Groepsnummer|Studenten|
 |------------|---------|
@@ -65,13 +65,8 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 |2MMPB-11|Steyaert Tristan, Blakaj Ismet|
 |2MMPB-12|De Rick Bram, De Knibber Nicky|
 |2MMPB-13|Sacré Cypriaan, Dusselier Victor|
-|2MMPB-14||
-|2MMPB-15||
-|2MMPB-16||
-|2MMPB-17||
-|2MMPB-18||
 
-**2MMPc**
+**2MMPC = 2MMPBb**
 
 |Groepsnummer|Studenten|
 |------------|---------|

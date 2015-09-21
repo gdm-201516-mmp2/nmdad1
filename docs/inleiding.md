@@ -55,8 +55,8 @@ Aantal lestijden: 3
 |7||
 |8||
 |9||
-|10|Werkstuk - Milestone 3: Klassikale presentatie alpha versie applicatie|
-|11|Contactmomenten|
+|10|Contactmomenten|
+|11|Werkstuk - Milestone 3: Klassikale presentatie alpha versie applicatie|
 |12|Contactmomenten|
 |13|Contactmomenten|
 
@@ -67,7 +67,7 @@ Aantal lestijden: 1
 
 |Lesweek|Omschrijving|
 |-------|------------|
-|1|4d’s, maak een moodboard in 3 stijlen: grungy, clean, minimal (typografie, beeldbewerking, navigatie, kleuren)<br />Opleveren eind van de les: **3 moodboards (individueel)**|
+|1|4d’s, maak een moodboard in 3 stijlen: grungy, clean, minimal  (typografie, beeldbewerking, navigatie, kleuren)<br />Opleveren eind van de les: **3 moodboards (individueel)**|
 |2|Conceptueel denken -> storytelling: 3 variabelen vormen 1 concept== beeld/tekst/grafiek — interactie?<br />Opleveren eind van de les: **concept (individueel)**|
 |3|Tonen typografie + icon = logo + typografie<br />Opleveren eind van de les:  **stijlblad met logo, typografie (style tile) (individueel)** |
 |4|Wireframes maken op welke manier? Papier -> illu -> online tool|
@@ -78,7 +78,7 @@ Aantal lestijden: 1
 |9|Favicons maken en genereren: van 512 naar 16. 16 opnieuw maken in PS (pixeltekenen) en converteren online|
 |10|Contactmomenten|
 |11|Contactmomenten|
-|12|Werkstuk - Milestone 4: Klassikale presentatie integratie|
+|12|Contactmomenten|
 |13|Contactmomenten|
 
 
