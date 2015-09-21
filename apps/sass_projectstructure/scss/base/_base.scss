@@ -22,6 +22,8 @@ html {
     }
 }
 
-body {
-    background-color:color-palette('default', 'dark');
-}
+@if $project-debug-mode {	
+	
+	@include make-color-palettes($color-palettes);
+    
+} 

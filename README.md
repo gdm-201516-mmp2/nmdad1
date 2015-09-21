@@ -23,7 +23,7 @@ Documenten
 
 Taken
 -----
-* [Development - Week 1](tasks/week1.md)
+* [Development - Week 1](tasks/week1.md) 
 
 Auteurs
 --------

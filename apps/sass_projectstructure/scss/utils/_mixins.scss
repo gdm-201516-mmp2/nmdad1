@@ -62,7 +62,7 @@
           width: #{($i/$columns-amount)*100%}; 
           
           @if $project-debug-mode {
-            &::before { content: "#{$breakpoint-key}-col#{$i}" !important;; } 
+            &::before { content: "#{$breakpoint-key}-col#{$i}" !important; } 
           } 
         }   
         
@@ -136,6 +136,34 @@
     }   
   }  
 }
+
+
+
+
+/// Make Masonry Grid Media Queries
+/// @author Philippe De Pauw - Waterschoot
+/// @param {Map} $breakpoints [$masorygrid-breakpoints]
+@mixin make-masonrygrid-queries($breakpoints:$masorygrid-breakpoints) {
+  
+  @each $breakpoint-key, $breakpoint-val in $breakpoints {
+    $breakpoint-w: map-get($breakpoint-val, 'w');
+    $breakpoint-c: map-get($breakpoint-val, 'c');
+    
+    @media (min-width: $breakpoint-w) {
+      
+      .masonrygrid__row {
+        -webkit-column-count: $breakpoint-c;
+        -moz-column-count: $breakpoint-c;  
+        -ms-column-count: $breakpoint-c;  
+        -o-column-count: $breakpoint-c;    
+        column-count: $breakpoint-c;      
+      }   
+    }   
+  }  
+}
+
+
+
 
 /// Make Grid Media Queries
 /// @author Philippe De Pauw - Waterschoot

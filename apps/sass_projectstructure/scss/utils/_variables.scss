@@ -68,6 +68,21 @@ $flexgrid-columns-amount: 12 !default;
 
 
 
+/// Masonry Grid Settings
+/// ============================================================================
+/// Gutter between the columns
+$masonrygrid-breakpoints: (
+	"bp1": ("w":320/$ms0*1rem,"c":1),
+	"bp2": ("w":480/$ms0*1rem,"c":2),
+	"bp3": ("w":680/$ms0*1rem,"c":3),
+	"bp4": ("w":960/$ms0*1rem,"c":4),
+	"bp5": ("w":1140/$ms0*1rem,"c":5)
+);
+$masonrygrid-container-max-width: map-get(map-get($masonrygrid-breakpoints, 'bp5'), 'w') !default;
+$masonrygrid-gutter: 1 !default;
+
+
+
 
 /// Typography Settings
 /// ============================================================================
@@ -98,15 +113,37 @@ $font-family-code: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono'
 /// http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/
 /// http://jackiebalzer.com/color
 
+// Cool
+$aqua:  #7fdbff;
+$blue:  #0074d9;
+$navy:  #001f3f;
+$teal:  #39cccc;
+$green: #2ecc40;
+$olive: #3d9970;
+$lime:  #01ff70;
+// Warm
+$yellow:  #ffdc00;
+$orange:  #ff851b;
+$red:     #ff4136;
+$fuchsia: #f012be;
+$purple:  #b10dc9;
+$maroon:  #85144b;
+// Gray Scale
+$white:  #fff;
+$silver: #ddd;
+$grey:   #aaa;
+$black:  #111;
+
 $color-interval: 10% !global;
 
-$color-default: #aaa !default;
-$color-primary: #337ab7 !default;
-$color-secondary: #5bc0de !default;
-$color-success: #5cb85c !default;
-$color-info: #5bc0de !default;
-$color-warning: #f0ad4e !default;
-$color-danger: #d9534f !default;
+$color-default: $grey !default;
+$color-primary: $blue !default;
+$color-secondary: $teal !default;
+$color-tertiary: $navy !default;
+$color-success: $lime !default;
+$color-info: $yellow !default;
+$color-warning: $orange !default;
+$color-danger: $red !default;
 
 $color-palettes: (
 	default: (
@@ -125,6 +162,11 @@ $color-palettes: (
 		light: mix(white, $color-secondary, 40%),
 		base: $color-secondary,
 		dark: mix(black, $color-secondary, 40%)
+	),
+	tertiary: (
+		light: mix(white, $color-tertiary, 40%),
+		base: $color-tertiary,
+		dark: mix(black, $color-tertiary, 40%)
 	),
 	success: (
 		light: mix(white, $color-success, 40%),

@@ -52,19 +52,19 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 
 |Groepsnummer|Studenten|
 |------------|---------|
-|2MMPB-01||
-|2MMPB-02||
-|2MMPB-03||
-|2MMPB-04||
-|2MMPB-05||
-|2MMPB-06||
-|2MMPB-07||
-|2MMPB-08||
-|2MMPB-09||
-|2MMPB-10||
-|2MMPB-11||
-|2MMPB-12||
-|2MMPB-13||
+|2MMPB-01|Caes Zeger, Dekeyser Feline, De Backer Bram|
+|2MMPB-02|Billiet Bram, Kevin Devuyst, Nelis Fabian|
+|2MMPB-03|Van Raemdonck Laura, Lettens Kristof, Pauwelyn Alexander|
+|2MMPB-04|Fonck Mathias|
+|2MMPB-05|Rypens Bryony|
+|2MMPB-06|Depelseneer Mathias, Mehauden Rina|
+|2MMPB-07|Rombaut Lotte, Van Der Sypt Thomas, De Vos Reinaert|
+|2MMPB-08|De Greef Jodie, Janzegers Jonas|
+|2MMPB-09|-|
+|2MMPB-10|Dando Nicholas, De Geyter Bruno, De Busschere Giel|
+|2MMPB-11|Steyaert Tristan, Blakaj Ismet|
+|2MMPB-12|De Rick Bram, De Knibber Nicky|
+|2MMPB-13|Sacré Cypriaan, Dusselier Victor|
 |2MMPB-14||
 |2MMPB-15||
 |2MMPB-16||

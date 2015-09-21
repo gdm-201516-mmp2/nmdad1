@@ -33,7 +33,7 @@ Evaluatie
 
 **Taken:**
 
-> **Een taak niet ingediend betekent automatisch -5/20**. Dat betekent dat je maxmimaal 15/20 kan behalen op het opleidingsonderdeel New Media Design & Development I. Taken worden steeds ingediend via chamilo. De wijze van indienen verschilt per opdracht! De taken worden per lesweek beschreven in de [tasks folder](../tasks). Indienen op chamilo de avond voor de volgende les.
+> **Een taak niet ingediend betekent automatisch -2/20**. Dat betekent dat je maxmimaal 18/20 kan behalen op het opleidingsonderdeel New Media Design & Development I. Taken worden steeds ingediend via chamilo. De wijze van indienen verschilt per opdracht! De taken worden per lesweek beschreven in de [tasks folder](../tasks). Indienen op chamilo de avond voor de volgende les.
 
 
 Lesinhouden
@@ -67,7 +67,7 @@ Aantal lestijden: 1
 
 |Lesweek|Omschrijving|
 |-------|------------|
-|1|4d’s, maak een moodboard in 3 stijlen: grungy (afval), clean (gezondheidszorg), minimal (wegen) (typografie, beeldbewerking, navigatie, kleuren)<br />Opleveren eind van de les: **3 moodboards (individueel)**|
+|1|4d’s, maak een moodboard in 3 stijlen: grungy, clean, minimal (typografie, beeldbewerking, navigatie, kleuren)<br />Opleveren eind van de les: **3 moodboards (individueel)**|
 |2|Conceptueel denken -> storytelling: 3 variabelen vormen 1 concept== beeld/tekst/grafiek — interactie?<br />Opleveren eind van de les: **concept (individueel)**|
 |3|Tonen typografie + icon = logo + typografie<br />Opleveren eind van de les:  **stijlblad met logo, typografie (style tile) (individueel)** |
 |4|Wireframes maken op welke manier? Papier -> illu -> online tool|
