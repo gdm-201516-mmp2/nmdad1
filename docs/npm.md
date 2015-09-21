@@ -81,11 +81,9 @@ Commando's
 	- `npm search grunt`  
 	
 
+Bronnen
+-------
 
-Bibliografie
--------------
-
-> **npm:**
 >  
 - <http://browsenpm.org/help>
 - <https://www.npmjs.org/>

@@ -247,7 +247,7 @@ Opdat deze globale instellingen van kracht worden moeten we dit `.gitignore_glob
 
 `git config --global core.excludesfile ~/.gitignore_global`.
 
-Bibliografie
+Bronnen
 -------------
 
 > **Git:**

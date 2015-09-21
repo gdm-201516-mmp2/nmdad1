@@ -57,20 +57,6 @@ valuatie
 |    1/7 | Aanwezig              | Aanwezig, maar komt niet overeen met opdracht.                                       |
 |    0/7 | Ontbreekt             | Niet aanwezig.    
 
-Evaluatie
---------
-**Werkstuk:**
-
-- 50% Werkstuk: Applicatie
-- 30% Modelingen verdediging + Presentatie + Poster
-- 20% Werkstuk: Dossier
-
-> **Ontbrekend onderdeel bovenvermelde lijst** betekent maximaal 9/20 op de eindscore van het opleidingsonderdeel NMDAD I!
-
-**Taken:**
-
-> **Een taak niet ingediend betekent automatisch -2/20**. Dat betekent dat je maxmimaal 18/20 kan behalen op het opleidingsonderdeel New Media Design & Development I. Taken worden steeds ingediend via chamilo. De wijze van indienen verschilt per opdracht! De taken worden per lesweek beschreven in de [tasks folder](../tasks). Indienen op chamilo de avond voor de volgende les.
-
 
 Lesinhouden
 -----------

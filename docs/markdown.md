@@ -16,7 +16,7 @@ Wordt gebruikt om o.a. "readme"-bestanden aan te maken, bv. op **GitHub, Bitbuck
 
 Er zijn redelijk wat online editoren beschikbaar om Markdown-bestanden aan te maken:
 
-- StackEdit  
+- StackEdit   
 https://stackedit.io/
 - Markable  
 http://markable.in/
@@ -614,7 +614,8 @@ Fenced code blocks zijn code blocks zonder extra spaties of tabs. We moeten een 
 var bar = 0;
 ```
 
-##Bibliografie
+Bronnen
+-------
 
 > **Markdown:**
 > 
