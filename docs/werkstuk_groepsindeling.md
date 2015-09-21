@@ -10,21 +10,117 @@
 
 ***
 
-##Ingeschreven studenten
+##Ingeschreven studenten (aanwezigheid, taken)
 
-**2MMPa alias proDEV (raming 35 studenten)**
-
-**2MMPb alias proDUCE (raming 44 studenten)**
-
-**2MMPc alias proDUCE (raming 44 studenten)**
-
-**2MMP onbekend**
+|Student|Klas| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12| 13|
+|-------|----|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|Acar Zehra|3MMP-proDUCE|
+|Aliaj Gazmend|3MMP-proDUCE|
+|Asemota Osayuki|2MMP-proDUCEa|
+|Billiet Bram|2MMP-proDUCEa|
+|Blakaj Ismet|2MMP-proDUCEa|
+|Broekaert Simon|2MMP-proDEV|
+|Broekaert Thomas|3MMP-proDUCE|
+|Bruwier Artuur|2MMP-proDUCEb|
+|Caes Zeger|2MMP-proDUCEa|
+|Cambier Julien|2MMP-proDEV|
+|Dando Nicholas|2MMP-proDUCEa|
+|De Backer Bram|2MMP-proDUCEa|
+|De Busschere Giel|2MMP-proDUCEa|
+|De Clercq Jochen|2MMP-proDUCEb|
+|De Coster Jonas|2MMP-proDUCEb|
+|De Geyter Bruno|2MMP-proDUCEa|
+|De Greef Jodie|2MMP-proDUCEa|
+|De Jans Frederick|2MMP-proDEV|
+|De Kerpel Glenn|3MMP-proDUCE|
+|De Knibber Nicky|2MMP-proDUCEa|
+|De Lange Matthias|2MMP-proDUCEb|
+|De Luyck Mickey|2MMP-proDEV|
+|De Meutter Ruben||	
+|De Meyer Emma|2MMP-proDEV|
+|De Meyere Famke|2MMP-proDUCEb|
+|De Neve Laurens|2MMP-proDUCEb|
+|de Poorter Simon|2MMP-proDUCEb|
+|De Rick Bram|2MMP-proDUCEa|
+|De Rouck Anthony|2MMP-proDUCEb|
+|De Smedt Sam|2MMP-proDEV|
+|De Soete Diederik|2MMP-proDUCEb|
+|De Troch Simen|2MMP-proDEV|
+|De Vlieger Stef|2MMP-proDUCEb|
+|De Vos Reinaert||	
+|De Vuyst Kevin|2MMP-proDUCEa|
+|Deboiserie Koen|2MMP-proDUCEb|
+|Decock Aurelio|2MMP-proDEV|
+|Dekeyser Feline|2MMP-proDUCEa|
+|Denys Lander|2MMP-proDUCEb|
+|Depelseneer Mathias|2MMP-proDUCEa|
+|Dils Tom|3MMP-proDUCE|
+|Dossche Kevin|2MMP-proDUCEb|
+|Dreesen Stien||	
+|Dusselier Victor|2MMP-proDUCEa|
+|Follet Lars|2MMP-proDUCEb|
+|Fonck Mathias|2MMP-proDUCEa|
+|Gouhie Victor|2MMP-proDUCEb|
+|Haeghebaert Annelien|2MMP-proDEV|
+|Huysman Jens|2MMP-proDEV|
+|Janssens Shaun|2MMP-proDEV|
+|Janzegers Jonas|2MMP-proDUCEa|
+|Laflère Eben|2MMP-proDUCEb|
+|Lemoine Julien|2MMP-proDEV|
+|Lettens Kristof||	
+|Meersschaert Stijn|2MMP-proDEV|
+|Mehauden Rina|2MMP-proDUCEa|
+|Mulaj Altin|2MMP-proDUCEb|
+|Muylaert Lode|2MMP-proDEV|
+|Naska Dejvi|2MMP-proDUCEb|
+|Nelis Fabian|2MMP-proDUCEa|
+|Neukermans Brecht|2MMP-proDEV|
+|Nolf Brecht|3MMP-proDUCE|
+|Notaert Mathias|2MMP-proDUCEb|
+|Pauwelyn Alexander|2MMP-proDUCEb|
+|Pittoors Lisa|2MMP-proDEV|
+|Roelandt Celine|3MMP-proDUCE|
+|Rombaut Lotte|2MMP-proDUCEa|
+|Roosens Jef|2MMP-proDEV|
+|Rypens Bryony|2MMP-proDUCEa|
+|Sacré Cypriaan|2MMP-proDUCEa|
+|Schoenaers Emiel|2MMP-proDUCEb|
+|Seghers Matthias|2MMP-proDEV|
+|Smitz Basiel|2MMP-proDEV|
+|Steyaert Tristan|2MMP-proDUCEa|
+|Tijtgat Ellen|2MMP-proDUCEb|
+|Turpyn Arne|2MMP-proDUCEb|
+|Van Belle Michiel|2MMP-proDUCEb|
+|Van Damme Sander|2MMP-proDEV|
+|Van de Velde Justine|2MMP-proDEV|
+|Van de Voorde Bram|2MMP-proDUCEb|
+|Van den Plas Valerie|2MMP-proDEV|
+|Van der Meeren Vincent|3MMP-proDUCE|
+|Van Der Sypt Thomas|2MMP-proDUCEa|
+|Van Hecke Lee|2MMP-proDEV|
+|Van Kerckvoorde Mathias	
+|Van Limbergen Robin|2MMP-proDEV|
+|Van Meirvenne Tim||	
+|Van Raemdonck Laura|2MMP-proDUCEa|
+|Van Sele Mathias|2MMP-proDUCEb|
+|Van Steirteghem Dylan|2MMP-proDEV|
+|Vancoillie Tine|2MMP-proDEV|
+|Vanden Bossche Nick|2MMP-proDEV|
+|Vanfleteren Senne|2MMP-proDEV|
+|Vanhaste Joran|2MMP-proDUCEb|
+|Verschorre Arne|2MMP-proDUCEb|
+|Verwerft Lotte|2MMP-proDEV|
+|Vinjé Jonathan|3MMP-proDUCE|
+|Yang Michael||	
+|Zancaner Ilona|2MMP-proDEV|
+|Zemarai Mohammad|2MMP-proDUCEb|
+|Zwart Mathias|2MMP-proDUCEb|
 
 ##Groepsindeling
 
 Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**.
 
-**2MMPA = proDEV**
+**2MMPA = 2MMP-proDEV**
 
 |Groepsnummer|Studenten|
 |------------|---------|
@@ -48,7 +144,7 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 |2MMPA-18||
 |2MMPA-19||
 
-**2MMPB = 2MMPBa**
+**2MMPB = 2MMP-proDUCEa**
 
 |Groepsnummer|Studenten|
 |------------|---------|
@@ -66,7 +162,7 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 |2MMPB-12|De Rick Bram, De Knibber Nicky|
 |2MMPB-13|Sacré Cypriaan, Dusselier Victor|
 
-**2MMPC = 2MMPBb**
+**2MMPC = 2MMP-proDUCEb**
 
 |Groepsnummer|Studenten|
 |------------|---------|
