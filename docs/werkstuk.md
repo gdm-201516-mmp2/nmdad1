@@ -43,7 +43,6 @@ Omschrijving
 
 > Het werkstuk wordt op een Bitbucket-repository gepubliceerd dat toegankelijk is voor [Olivier Parent][https://bitbucket.org/olivierparent] en [Philippe De Pauw - Waterschoot][https://bitbucket.org/drdynscript].
 
-
 Dossier
 -------
 >  - Moet geschreven worden in Markdown
@@ -92,11 +91,12 @@ Source Code Management
 ----------------------
 
 - Maak een team aan in bitbucket:
-    - gdm-1516-3prodev-01 
+    - gdm-1516-2MMPA-01 
+    - 2MMPA staat voor de klas (en is dus variabel), mogelijke waarden: 2MMPA, 2MMPB of 2MMPC.
     - 01 = groepsnummer en is dus variabel
 - Maak hierin de volgende repositories aan:
-    - **lets_app**. Bevat de applicatie volgens de opgelegde mappenstructuur.
-    - **lets_docs**. Bevat productiedossier, screenshots, ... volgens de opgelegde structuur.
+    - **open_the_gates_for_data_app**. Bevat de applicatie volgens de opgelegde mappenstructuur.
+    - **open_the_gates_for_data_docs**. Bevat productiedossier, screenshots, ... volgens de opgelegde structuur.
 
 ### Mappen en bestanden
 
@@ -180,7 +180,7 @@ Branch `account-feature`:
  - [FEATURE] Add user registration form and save data to db
  - [TASK] Rename field `lastname` to `familyname`   
  
- Timesheet
+Timesheet
 ----------
 
 > Klanten/werkgevers weten graag hoe lang je aan iets zal werken en hoe lang je er effectief aan gewerkt hebt. Een realistische inschatting maken van hoelang iets zal duren kan enkel op basis van (lange) werkervaring. Daarom is het belangrijk dat je nu al bijhoudt hoe lang iets duurt, zodat je deze skill leert. Dit is geen plezante bezigheid, maar maak er een gewoonte van om dit fequent bij te houden. Achteraf nog weten hoelang je aan iets gewerkt hebt is vaak nog lastiger.
