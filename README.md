@@ -23,6 +23,7 @@ Documenten
 
 Taken
 -----
+* [Blended Learning](tasks/blended_learning.md) 
 * [Development - Week 1](tasks/week1.md) 
 
 Auteurs

@@ -1,0 +1,31 @@
+﻿Taken Blended Learning
+======================
+
+|Info|  |
+|----|---|
+|Olod|New Media Design & Development I|
+|Auteur(s)|Philippe De Pauw - Waterschoot, Jonas Pottie|
+|Opleiding|Bachelor in de Grafische en digitale media|
+|Academiejaar|2015-16|
+
+***
+
+* Registreer je op [Codecademy](https://www.codecademy.com).
+	* Gebruik als naam jouw loginnaam van de Arteveldehogeschool.
+	* Gebruik jouw email-adres van de arteveldehogeschool.
+	* Pas jouw **Profile Picture** aan via [account](https://www.codecademy.com/account).
+	* Studenten worden door de docenten toegevoegd als **pupils**.
+* Doorloop de volgende eenheden (units) in Codecademy
+	* HTML & CSS (https://www.codecademy.com/en/tracks/web)
+	* Make a Website (https://www.codecademy.com/en/skills/make-a-website)
+	* JavaScript (https://www.codecademy.com/en/tracks/javascript)
+	* jQuery (https://www.codecademy.com/en/tracks/jquery)
+	* Make an Interactive Website (https://www.codecademy.com/en/skills/make-an-interactive-website)
+	* Make a Website Projects(https://www.codecademy.com/en/courses/html-css-prj) 
+
+***
+
+Leaderbords
+------------------------------
+
+![Leaderbord 21-09-2015 om 21:30](leaderbord_21092015.png)
