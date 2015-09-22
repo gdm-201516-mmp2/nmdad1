@@ -35,22 +35,22 @@
 |De Kerpel Glenn|3MMP-proDUCE|
 |De Knibber Nicky|2MMP-proDUCEa|x
 |De Lange Matthias|2MMP-proDUCEb|x
-|De Luyck Mickey|2MMP-proDEV|
+|De Luyck Mickey|2MMP-proDEV|x
 |De Meutter Ruben||	
-|De Meyer Emma|2MMP-proDEV|
+|De Meyer Emma|2MMP-proDEV|x
 |De Meyere Famke|2MMP-proDUCEb|x
 |De Neve Laurens|2MMP-proDUCEb|x
 |de Poorter Simon|2MMP-proDUCEb|
 |De Rick Bram|2MMP-proDUCEa|x
 |De Rouck Anthony|2MMP-proDUCEb|x
-|De Smedt Sam|2MMP-proDEV|
+|De Smedt Sam|2MMP-proDEV|x
 |De Soete Diederik|2MMP-proDUCEb|
-|De Troch Simen|2MMP-proDEV|
+|De Troch Simen|2MMP-proDEV|x
 |De Vlieger Stef|2MMP-proDUCEb|x
 |De Vos Reinaert||x	
 |De Vuyst Kevin|2MMP-proDUCEa|x
 |Deboiserie Koen|2MMP-proDUCEb|x
-|Decock Aurelio|2MMP-proDEV|
+|Decock Aurelio|2MMP-proDEV|x
 |Dekeyser Feline|2MMP-proDUCEa|x
 |Denys Lander|2MMP-proDUCEb|x
 |Depelseneer Mathias|2MMP-proDUCEa|x
@@ -61,63 +61,67 @@
 |Follet Lars|2MMP-proDUCEb|x
 |Fonck Mathias|2MMP-proDUCEa|x
 |Gouhie Victor|2MMP-proDUCEb|x
-|Haeghebaert Annelien|2MMP-proDEV|
-|Huysman Jens|2MMP-proDEV|
-|Janssens Shaun|2MMP-proDEV|
+|Haeghebaert Annelien|2MMP-proDEV|x
+|Huysman Jens|2MMP-proDEV|x
+|Janssens Shaun|2MMP-proDEV|x
 |Janzegers Jonas|2MMP-proDUCEa|x
 |Laflère Eben|2MMP-proDUCEb|x
-|Lemoine Julien|2MMP-proDEV|
+|Lemoine Julien|2MMP-proDEV|x
 |Lettens Kristof||x	
-|Meersschaert Stijn|2MMP-proDEV|
+|Meersschaert Stijn|2MMP-proDEV|x
 |Mehauden Rina|2MMP-proDUCEa|x
 |Mulaj Altin|2MMP-proDUCEb|x
-|Muylaert Lode|2MMP-proDEV|
+|Muylaert Lode|2MMP-proDEV|x
 |Naska Dejvi|2MMP-proDUCEb|x
 |Nelis Fabian|2MMP-proDUCEa|x
-|Neukermans Brecht|2MMP-proDEV|
+|Neukermans Brecht|2MMP-proDEV|x
 |Nolf Brecht|3MMP-proDUCE|
 |Notaert Mathias|2MMP-proDUCEb|x
 |Pauwelyn Alexander|2MMP-proDUCEb|x
-|Pittoors Lisa|2MMP-proDEV|
+|Pittoors Lisa|2MMP-proDEV|x
 |Roelandt Celine|3MMP-proDUCE|
 |Rombaut Lotte|2MMP-proDUCEa|x
-|Roosens Jef|2MMP-proDEV|
+|Roosens Jef|2MMP-proDEV|x
 |Rypens Bryony|2MMP-proDUCEa|x
 |Sacré Cypriaan|2MMP-proDUCEa|x
 |Schoenaers Emiel|2MMP-proDUCEb|
 |Seghers Matthias|2MMP-proDEV|
-|Smitz Basiel|2MMP-proDEV|
+|Smitz Basiel|2MMP-proDEV|x
 |Steyaert Tristan|2MMP-proDUCEa|x
 |Tijtgat Ellen|2MMP-proDUCEb|x
 |Turpyn Arne|2MMP-proDUCEb|x
 |Van Belle Michiel|2MMP-proDUCEb|x
-|Van Damme Sander|2MMP-proDEV|
-|Van de Velde Justine|2MMP-proDEV|
+|Van Damme Sander|2MMP-proDEV|x
+|Van de Velde Justine|2MMP-proDEV|x
 |Van de Voorde Bram|2MMP-proDUCEb|x
-|Van den Plas Valerie|2MMP-proDEV|
-|Van der Meeren Vincent|3MMP-proDUCE|
+|Van den Plas Valerie|2MMP-proDEV|x
+|Van der Meeren Vincent|3MMP-proDUCE|x
 |Van Der Sypt Thomas|2MMP-proDUCEa|x
-|Van Hecke Lee|2MMP-proDEV|
-|Van Kerckvoorde Mathias	
+|Van Hecke Lee|2MMP-proDEV|x
+|Van Kerckvoorde Mathias||x	
 |Van Limbergen Robin|2MMP-proDEV|
-|Van Meirvenne Tim||	
+|Van Meirvenne Tim||x	
 |Van Raemdonck Laura|2MMP-proDUCEa|x
 |Van Sele Mathias|2MMP-proDUCEb|x
-|Van Steirteghem Dylan|2MMP-proDEV|
-|Vancoillie Tine|2MMP-proDEV|
-|Vanden Bossche Nick|2MMP-proDEV|
-|Vanfleteren Senne|2MMP-proDEV|
+|Van Steirteghem Dylan|2MMP-proDEV|x
+|Vancoillie Tine|2MMP-proDEV|x
+|Vanden Bossche Nick|2MMP-proDEV|x
+|Vanfleteren Senne|2MMP-proDEV|x
 |Vanhaste Joran|2MMP-proDUCEb|x
 |Verschorre Arne|2MMP-proDUCEb|x
-|Verwerft Lotte|2MMP-proDEV|
+|Verwerft Lotte|2MMP-proDEV|x
 |Vinjé Jonathan|3MMP-proDUCE|
-|Yang Michael||	
+|Yang Michael||x
 |Zancaner Ilona|2MMP-proDEV|
 |Zemarai Mohammad|2MMP-proDUCEb|x
 |Zwart Mathias|2MMP-proDUCEb|x
 
 Rogiers Evert
 Bruggeman Eliaz
+Konings Robbe x
+Ballyn Lucas x
+Vandeveire Ellen x
+Hoornaert Simon x
 
 ##Groepsindeling
 
@@ -127,25 +131,25 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 
 |Groepsnummer|Studenten|
 |------------|---------|
-|2MMPA-01||
-|2MMPA-02||
-|2MMPA-03||
-|2MMPA-04||
-|2MMPA-05||
-|2MMPA-06||
-|2MMPA-07||
-|2MMPA-08||
-|2MMPA-09||
-|2MMPA-10||
-|2MMPA-11||
-|2MMPA-12||
-|2MMPA-13||
-|2MMPA-14||
-|2MMPA-15||
-|2MMPA-16||
-|2MMPA-17||
-|2MMPA-18||
-|2MMPA-19||
+|2MMPA-01|Roosens Jef, Konings Robbe|
+|2MMPA-02|De Troch Simen, Vanden Bossche Nick|
+|2MMPA-03|De Meyer Emma, Meersschaert Stijn|
+|2MMPA-04|Vancoillie Tine, De Jans Frederick|
+|2MMPA-05|De Luyck Mickey, Seghers Matthias, Van de Velde Justine|
+|2MMPA-06|Pittoors Lisa, Zancaner Ilona|
+|2MMPA-07|Van Hecke Lee, Vanfleteren Senne|
+|2MMPA-08|Yang Michael|
+|2MMPA-09|Ballyn Lucas, Broekaert Simon|
+|2MMPA-10|Cambier Julien, Smitz Basiel, Vandeveire Ellen|
+|2MMPA-11|Van Steirteghem Dylan, Van Kerckvoorde Mathias|
+|2MMPA-12|Van den Plas Valerie, Verwerft Lotte, De Smedt Sam|
+|2MMPA-13|Muylaert Lode, Huysman Jens, Hoornaert Simon|
+|2MMPA-14|Van Damme Sander|
+|2MMPA-15|Lemoine Julien, Neukermans Brecht|
+|2MMPA-16|Decock Aurelio, De Kerpel Glenn, Haeghebaert Annelien|
+|2MMPA-17|Van Meirvenne Tim|
+|2MMPA-18|Janssens Shaun|
+|2MMPA-19|Van der Meeren Vincent|
 
 **2MMPB = 2MMP-proDUCEa**
 
