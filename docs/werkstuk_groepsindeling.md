@@ -39,7 +39,7 @@
 |De Meutter Ruben||	
 |De Meyer Emma|2MMP-proDEV|
 |De Meyere Famke|2MMP-proDUCEb|x
-|De Neve Laurens|2MMP-proDUCEb|
+|De Neve Laurens|2MMP-proDUCEb|x
 |de Poorter Simon|2MMP-proDUCEb|
 |De Rick Bram|2MMP-proDUCEa|x
 |De Rouck Anthony|2MMP-proDUCEb|x
@@ -181,7 +181,7 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 |2MMPC-10|Acar Zehra, Roelandt Celine|
 |2MMPC-11|De Rouck Anthony, Dossche Kevin|
 |2MMPC-12|Gouhie Victor, Follet Lars|
-|2MMPC-13||
+|2MMPC-13|De Neve Laurens|
 |2MMPC-14||
 |2MMPC-15||
 |2MMPC-16||
