@@ -148,8 +148,8 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 |2MMPA-15|Lemoine Julien, Neukermans Brecht|
 |2MMPA-16|Decock Aurelio, De Kerpel Glenn, Haeghebaert Annelien|
 |2MMPA-17|Van Meirvenne Tim|
-|2MMPA-18|Janssens Shaun|
-|2MMPA-19|Van der Meeren Vincent|
+|2MMPA-18|Janssens Shaun, Van der Meeren Vincent|
+|2MMPA-19||
 
 **2MMPB = 2MMP-proDUCEa**
 
