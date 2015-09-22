@@ -15,7 +15,7 @@
 |Student|Klas| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10| 11| 12| 13|
 |-------|----|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |Acar Zehra|3MMP-proDUCE|x
-|Aliaj Gazmend|3MMP-proDUCE|
+|Aliaj Gazmend|3MMP-proDUCE|x
 |Asemota Osayuki|2MMP-proDUCEa|x
 |Billiet Bram|2MMP-proDUCEa|x
 |Blakaj Ismet|2MMP-proDUCEa|x
@@ -149,7 +149,7 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 |2MMPA-15|Lemoine Julien, Neukermans Brecht, Dils Tom|
 |2MMPA-16|Decock Aurelio, De Kerpel Glenn, Haeghebaert Annelien|
 |2MMPA-17|Van Meirvenne Tim|
-|2MMPA-18|Janssens Shaun, Van der Meeren Vincent|
+|2MMPA-18|Janssens Shaun, Van der Meeren Vincent, Aliaj Gazmend|
 |2MMPA-19|Broekaert Thomas, Vinjé Jonathan|
 |2MMPA-20|Meyers Andries|
 
