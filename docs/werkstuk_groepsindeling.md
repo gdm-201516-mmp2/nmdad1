@@ -20,7 +20,7 @@
 |Billiet Bram|2MMP-proDUCEa|x
 |Blakaj Ismet|2MMP-proDUCEa|x
 |Broekaert Simon|2MMP-proDEV|
-|Broekaert Thomas|3MMP-proDUCE|
+|Broekaert Thomas|3MMP-proDUCE|x
 |Bruwier Artuur|2MMP-proDUCEb|x
 |Caes Zeger|2MMP-proDUCEa|x
 |Cambier Julien|2MMP-proDEV|
@@ -54,7 +54,7 @@
 |Dekeyser Feline|2MMP-proDUCEa|x
 |Denys Lander|2MMP-proDUCEb|x
 |Depelseneer Mathias|2MMP-proDUCEa|x
-|Dils Tom|3MMP-proDUCE|
+|Dils Tom|3MMP-proDUCE|x
 |Dossche Kevin|2MMP-proDUCEb|x
 |Dreesen Stien||	
 |Dusselier Victor|2MMP-proDUCEa|x
@@ -110,7 +110,7 @@
 |Vanhaste Joran|2MMP-proDUCEb|x
 |Verschorre Arne|2MMP-proDUCEb|x
 |Verwerft Lotte|2MMP-proDEV|x
-|Vinjé Jonathan|3MMP-proDUCE|
+|Vinjé Jonathan|3MMP-proDUCE|x
 |Yang Michael||x
 |Zancaner Ilona|2MMP-proDEV|
 |Zemarai Mohammad|2MMP-proDUCEb|x
@@ -122,6 +122,7 @@ Konings Robbe x
 Ballyn Lucas x
 Vandeveire Ellen x
 Hoornaert Simon x
+Meyers Andries 
 
 ##Groepsindeling
 
@@ -145,11 +146,12 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 |2MMPA-12|Van den Plas Valerie, Verwerft Lotte, De Smedt Sam|
 |2MMPA-13|Muylaert Lode, Huysman Jens, Hoornaert Simon|
 |2MMPA-14|Van Damme Sander|
-|2MMPA-15|Lemoine Julien, Neukermans Brecht|
+|2MMPA-15|Lemoine Julien, Neukermans Brecht, Dils Tom|
 |2MMPA-16|Decock Aurelio, De Kerpel Glenn, Haeghebaert Annelien|
 |2MMPA-17|Van Meirvenne Tim|
 |2MMPA-18|Janssens Shaun, Van der Meeren Vincent|
-|2MMPA-19||
+|2MMPA-19|Broekaert Thomas, Vinjé Jonathan|
+|2MMPA-20|Meyers Andries|
 
 **2MMPB = 2MMP-proDUCEa**
 
