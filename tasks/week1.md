@@ -12,15 +12,15 @@
 
 Taak 1: GitHub en bitbucket
 ---------------------------
+* Registreer je in [GitHub]("https://github.com/join")
+	* Gebruik als username jouw loginnaam van de Arteveldehogeschool.
+	* Gebruik jouw email-adres van de arteveldehogeschool.
 * Registreer je voor het [GitHub Student Developer Pack]("https://education.github.com/pack").
 	* Gebruik als naam jouw loginnaam van de Arteveldehogeschool.
 	* Gebruik jouw email-adres van de arteveldehogeschool.
 	* In het veld School name tijp je hetvolgende in: Artevelde University College Ghent.
 	* In het veld Graduation year selecteer je 2017, 2018 of 2019.
 	* In het grote tekstveld (textarea) geef je aan waarvoor je dit aanbod wil gebruiken, bv.: `I will use this Student Developer Pack for usage in different courses`. Het aanvaarder van deze aanvraag kan enkele weken duren. Daarom zullen we ook rechtstreeks registereren in GitHub.
-* Registreer je in [GitHub]("https://github.com/join")
-	* Gebruik als username jouw loginnaam van de Arteveldehogeschool.
-	* Gebruik jouw email-adres van de arteveldehogeschool.
 * Registreer je vervolgens in [Bitbucket]("https://bitbucket.org/account/signin/?next=/") via jouw reeds aangemaakt GitHub account.
 * Voeg een persoonlijk foto toe aan jouw account binnen GitHub en Bitbucket.
 * [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
