@@ -252,11 +252,11 @@ Tutorial Resumé
 
 1. Maak een nieuwe Repository aan in jouw GitHub account met de naam `gdm-201516-nmdad1`.
 
-![Menu New Repository](images/git_newrepo.png)
+![Menu New Repository](images/git_newrepo.PNG)
 
 2. Vul de naam en de omschrijving in van deze nieuwe repo (repository)
 
-![Gegevens Repository](images/git_createrepo.png)
+![Gegevens Repository](images/git_createrepo.PNG)
 
 
 
