@@ -247,6 +247,23 @@ Opdat deze globale instellingen van kracht worden moeten we dit `.gitignore_glob
 
 `git config --global core.excludesfile ~/.gitignore_global`.
 
+README.md
+---------
+
+Op GitHub en BitBucket staat dit README.md bestand in de hoofdfolder (top-level directory). Dit bestand, met de markdown syntax, wordt automatisch geconverteerd naar HTML. Het wordt gepresenteerd wanneer we de Git repository bezoeken. Het `README.md` bestand bevat meestal informatie over andere bestanden, folders of archieven binnen dezelfde repository. De naam wordt meestal beschreven in capitalen (uppercase), behalve de extensie.
+
+Het `README.md` bestand bevat meestal één of meerdere onderwerpen als inhoud:
+
+* Omschrijving van de repository (project)
+* Oplijsting van aanwezige bestanden en folders
+* Configuratie en installatie instructies
+* Documentatie
+* Gekende bugs
+* Aanvragen voor toekomstige nieuwe features
+* Auteurs
+* Copyright en licentie
+
+
 Tutorial Resumé on GitHub via Git
 ---------------------------------
 
@@ -297,9 +314,70 @@ Tutorial Resumé on GitHub via Git
 	* De url die we aan dit commando toekennen staat vermeld in stap 3. Dit bevat meestal jouw GitHub loginnaam aangevuld met de naam van de aangemaakte repo + git extensie.
 	* Na deze actie is de lokale folder verbonden met de online repository. Synchronisatie echter gebeurt niet automatisch en moet gerealiseerd worden via een aantal Git commando's. De meest gebruikte commando's hierbij zijn `git add`, `git commit` en `git push`. Wens je een update uit te voeren van de lokale folder naar de online repository, dan moet je deze drie commando's steeds uitvoeren.
 	
-7. 
+7. We maken een bestand `.gitignore` aan in de lokale folder. De code vermeld in het hoofdstuk **.gitignore** kopiëren we als inhoud van dit bestand. Dit bestand kunnen we aanmaken via de verkenner of commandline: `echo # gdm-201516-nmdad1 >> .gitignore`. Na dit command staat er `# gdm-201516-nmdad1` als tekst in dit `.gitignore` bestand.
 
+8. De voorgaande handeling herhalen we voor een nieuw bestand met de naam `README.md`. 
 
+	```
+	D:\Hogeschool\2015-16\gdm-201516-nmdad1>echo Philippe De Pauw - Waterschoot >> README.md
+	```
+	
+	* Voeg de meest gekende onderdelen toe als inhoud voor dit `README.md` bestand. Vergeet ook niet later de toekomstige bestanden en folders hierin op te lijsten.
+	
+9. Op dit moment hebben we 2 bestanden aangemaakt in de lokale Git repository, namelijk: `.gitignore` en `README.md`. Deze staan echter nog niet in de online gekoppelde Git repository.
+
+	* Via `git add` kunnen we gewijzigde inhoud toevoegen aan de volgende commit. We kunnen bestand per bestand toevoegen `git add README.md`, folders of alle gewijzigde inhoud binnen deze lokale repository `git add *.*`.
+	* Om na te gaan welke bestanden gewijzig zijn kunnen we het commando `git status` uitvoeren.
+	
+		```
+		D:\Hogeschool\2015-16\gdm-201516-nmdad1>git status
+		On branch master
+		
+		Initial commit
+		
+		Untracked files:
+		(use "git add <file>..." to include in what will be committed)
+		
+				.gitignore
+				README.md
+		
+		nothing added to commit but untracked files present (use "git add" to track)
+		```
+		
+	* We voeren dus nu het commando `git add *.*` uit.
+	* Vervolgens voegen we de toegevoegde bestanden aan een nieuwe **commit** en beschrijven we in een string wat er gewijzigd is. De tekst begeleid dus deze **commit** en wordt ook weergegeven in GitHub naast de bestanden en/of folders die in deze commit aanwezig zijn.
+	
+		```
+		D:\Hogeschool\2015-16\gdm-201516-nmdad1>git commit -m "Intial commit: add README.md and .gitignore file"
+		[master (root-commit) c6f318d] Intial commit: add README.md and .gitignore file
+		2 files changed, 99 insertions(+)
+		create mode 100644 .gitignore
+		create mode 100644 README.md
+		```
+		
+	* Via `git push` commando kunnen we deze commit nu versturen naar de gekoppelde online Git repository.
+	
+		```
+		D:\Hogeschool\2015-16\gdm-201516-nmdad1>git commit -m "Intial commit: add README.md and .gitignore file"
+		[master (root-commit) c6f318d] Intial commit: add README.md and .gitignore file
+		2 files changed, 99 insertions(+)
+		create mode 100644 .gitignore
+		create mode 100644 README.md
+		
+		D:\Hogeschool\2015-16\gdm-201516-nmdad1>git push -u origin master
+		Username for 'https://github.com': drdynscript
+		Password for 'https://drdynscript@github.com':
+		Counting objects: 4, done.
+		Delta compression using up to 4 threads.
+		Compressing objects: 100% (4/4), done.
+		Writing objects: 100% (4/4), 1009 bytes | 0 bytes/s, done.
+		Total 4 (delta 0), reused 0 (delta 0)
+		To https://github.com/drdynscript/gdm-201516-nmdad1.git
+		* [new branch]      master -> master
+		Branch master set up to track remote branch master from origin.
+		```
+10. Refreshen we nu de online Git repo in the browser, zie stap 3., dan merken we op dat: de 2 bestanden: `README.md` en `.gitignore` toegevoegd zijn en dat de inhoud uit het `README.md` bestand getoond wordt. **We kunnen bij iedere lokale wijziging stap 9 en 10 herhalen.**
+![Repository na een push](images/git_afterpush.PNG)
 
 Bronnen
 -------------
@@ -313,3 +391,7 @@ Bronnen
 - <https://github.com/github/gitignore>
 - <http://git-scm.com/docs/git-init>
 - <http://git-scm.com/docs/git-remote>
+- <https://help.github.com/articles/create-a-repo/>
+- <http://git-scm.com/docs/git-add>
+- <http://git-scm.com/docs/git-commit>
+- <http://git-scm.com/docs/git-push>
