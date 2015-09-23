@@ -17,7 +17,7 @@ Git
 	- [Linux OS, zoals UBUNTU](linux-os-zoals-ubuntu)
 - [Configuratie](#configuratie)
 - [Commando's](#commandos)
-		- [Up-to-date blijven met de cursusinhoud](#up-to-date-blijven-met-de-cursusinhoud)
+	- [Up-to-date blijven met de cursusinhoud](#up-to-date-blijven-met-de-cursusinhoud)
 - [.gitignore](#gitignore)
 - [README.md](#readmemd)
 - [Tutorial Resumé on GitHub via Git](#tutorial-resum%C3%A9-on-github-via-git)
