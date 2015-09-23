@@ -127,9 +127,9 @@ Commando's
 
 **Eénmalig klonen van de cursus** 
 
-- `git clone https://github.com/gdm-201516-mmp2/nmdad1.git gdm-201516-nmdad1`
+- `git clone https://github.com/gdm-201516-mmp2/nmdad1.git cursus-gdm-201516-nmdad1`
 
-Om een update te ontvangen van de cursus, navigeren we naar de aangemaakte folder `gdm-201516-nmdad1`. Hierbinnen voeren we hetvolgende commando uit:
+Om een update te ontvangen van de cursus, navigeren we naar de aangemaakte folder `cursus-gdm-201516-nmdad1`. Hierbinnen voeren we hetvolgende commando uit:
 
 - `git pull origin master`
 
@@ -275,9 +275,29 @@ Tutorial Resumé on GitHub via Git
 	* Vervolgens maken we hierin een folder `gdm-201516-nmdad1` aan via het commando `mkdir`. `mkdir` betekent **Make Directory**.
 	* Om in deze nieuwe aangemaakte folder te geraken voeren we het commando `cd gdm-201516-nmdad1` uit, waarbij `gdm-201516-nmdad1` de naam van de folder is.
 	* __Om Git te activeren in deze folder moet de command prompt in deze folder zitten!__
-	* Dit is een voorbeeld van creatie van folders via command line. Op jouw kan je bijvoorbeeld geen `d:` partitie hebben. Waar je deze folder `gdm-201516-nmdad1` maakt niet uit, maar vergeet niet te navigeren in deze folder via de voorgaande stappen.
+	* Dit is een voorbeeld van creatie van folders via command line. Op jouw harde schijf kan je bijvoorbeeld geen `d:` partitie hebben. Waar je deze folder `gdm-201516-nmdad1` aanmaakt maakt niet uit, maar vergeet niet te navigeren in deze folder via de voorgaande stappen.
 	
-5. 
+5. Om van deze folder een Git repository te maken of te herinitialiseren, voeren we het commando `git init` uit.  
+
+	```
+	D:\Hogeschool\2015-16\gdm-201516-nmdad1>git init
+	Initialized empty Git repository in D:/Hogeschool/2015-16/gdm-201516-nmdad1/.git/
+	
+	D:\Hogeschool\2015-16\gdm-201516-nmdad1>
+	```
+	
+	* Na dit commando gedraagt deze folder zich als een Git repository.
+	
+6. We moeten nu de online aangemaakte GitHub repository met de naam `gdm-201516-nmdad1` verbinden met deze lokale folder. Dit is gelijkaardig met de applicaties **Google Drive**, **One Drive** en **Dropbox**. Om deze verbinding tot stand te brengen voeren we hetvolgende commando uit:
+
+	```
+	D:\Hogeschool\2015-16\gdm-201516-nmdad1>git remote add origin https://github.com/drdynscript/gdm-201516-nmdad1.git
+	```
+	
+	* De url die we aan dit commando toekennen staat vermeld in stap 3. Dit bevat meestal jouw GitHub loginnaam aangevuld met de naam van de aangemaakte repo + git extensie.
+	* Na deze actie is de lokale folder verbonden met de online repository. Synchronisatie echter gebeurt niet automatisch en moet gerealiseerd worden via een aantal Git commando's. De meest gebruikte commando's hierbij zijn `git add`, `git commit` en `git push`. Wens je een update uit te voeren van de lokale folder naar de online repository, dan moet je deze drie commando's steeds uitvoeren.
+	
+7. 
 
 
 
@@ -291,3 +311,5 @@ Bronnen
 - <http://git-scm.com/docs/gitignore>
 - <http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository>
 - <https://github.com/github/gitignore>
+- <http://git-scm.com/docs/git-init>
+- <http://git-scm.com/docs/git-remote>
