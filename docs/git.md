@@ -247,16 +247,37 @@ Opdat deze globale instellingen van kracht worden moeten we dit `.gitignore_glob
 
 `git config --global core.excludesfile ~/.gitignore_global`.
 
-Tutorial Resumé
----------------
+Tutorial Resumé on GitHub via Git
+---------------------------------
 
-1. Maak een nieuwe Repository aan in jouw GitHub account met de naam `gdm-201516-nmdad1`.
-
+1. Maak een nieuwe Repository aan in jouw GitHub account met de naam `gdm-201516-nmdad1`.  
 ![Menu New Repository](images/git_newrepo.PNG)
 
-2. Vul de naam en de omschrijving in van deze nieuwe repo (repository)
-
+2. Vul de naam en de omschrijving in van deze nieuwe repo (repository). Druk vervolgens op de `Create Repository` knop.  
 ![Gegevens Repository](images/git_createrepo.PNG)
+
+3. Dit resulteert in het volgende scherm:  
+![Repository aangemaakt](images/git_createdrepo.PNG)
+
+4. Maak een folder aan op jouw lokale harde schijf via verkenner (finder) of via commandline (WIN: Command Prompt, MAC: Terminal).  
+  
+	```	
+	C:\Users\drdyn>d:	
+	D:\>cd Hogeschool	
+	D:\Hogeschool>cd 2015-16	
+	D:\Hogeschool\2015-16>mkdir gdm-201516-nmdad1	
+	D:\Hogeschool\2015-16>cd gdm-201516-nmdad1	
+	D:\Hogeschool\2015-16\gdm-201516-nmdad1>
+	```
+	
+	* `cd` betekent **change directory**. In dit voorbeeld vertoeven we op de d-schijf en navigeren we naar de folder `Hogeschool`.
+	* In de `Hogeschool` folder navigeren we naar de folder `2015-16` via `cd` commando.
+	* Vervolgens maken we hierin een folder `gdm-201516-nmdad1` aan via het commando `mkdir`. `mkdir` betekent **Make Directory**.
+	* Om in deze nieuwe aangemaakte folder te geraken voeren we het commando `cd gdm-201516-nmdad1` uit, waarbij `gdm-201516-nmdad1` de naam van de folder is.
+	* __Om Git te activeren in deze folder moet de command prompt in deze folder zitten!__
+	* Dit is een voorbeeld van creatie van folders via command line. Op jouw kan je bijvoorbeeld geen `d:` partitie hebben. Waar je deze folder `gdm-201516-nmdad1` maakt niet uit, maar vergeet niet te navigeren in deze folder via de voorgaande stappen.
+	
+5. 
 
 
 
