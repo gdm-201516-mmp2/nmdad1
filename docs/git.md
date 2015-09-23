@@ -242,10 +242,23 @@ tests
 ```
 
 Naast dit lokaal bestand kunnen we ook een globaal `.gitignore` bestand aanmaken. Onder de **Home** folder (`~/.gitignore_global`) van de gebruiker maken we het bestand `.gitignore_global` aan waarin we de bovenvermelde inhoud toevoegen. Op deze manier hoeven we enkel in het lokaal bestand applicatiespecifieke instellingen toe te voegen.
-
+  
 Opdat deze globale instellingen van kracht worden moeten we dit `.gitignore_global` bestand toevoegen aan de Git configuratie:
 
 `git config --global core.excludesfile ~/.gitignore_global`.
+
+Tutorial Resumé
+---------------
+
+1. Maak een nieuwe Repository aan in jouw GitHub account met de naam `gdm-201516-nmdad1`.
+
+![Menu New Repository](images/git_newrepo.png)
+
+2. Vul de naam en de omschrijving in van deze nieuwe repo (repository)
+
+![Gegevens Repository](images/git_createrepo.png)
+
+
 
 Bronnen
 -------------
