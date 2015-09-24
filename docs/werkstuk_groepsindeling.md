@@ -116,6 +116,8 @@
 |Zemarai Mohammad|2MMP-proDUCEb|x
 |Zwart Mathias|2MMP-proDUCEb|x
 
+**Nog te betalen:**
+
 Rogiers Evert
 Bruggeman Eliaz
 Konings Robbe x
@@ -188,12 +190,3 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 |2MMPC-11|De Rouck Anthony, Dossche Kevin|
 |2MMPC-12|Gouhie Victor, Follet Lars|
 |2MMPC-13|De Neve Laurens|
-|2MMPC-14||
-|2MMPC-15||
-|2MMPC-16||
-|2MMPC-17||
-|2MMPC-18||
-|2MMPC-19||
-|2MMPC-19||
-
-
