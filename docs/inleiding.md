@@ -69,7 +69,7 @@ Aantal lestijden: 3
 |Lesweek|Omschrijving|
 |-------|------------|
 |1|<ul><li>Inleiding</li><li>Briefing werkstuk</li><li>Groepsindeling</li><li>Git</li><li>Markdown</li></ul>|
-|2||
+|2|<ul><li>JavaScript introductie</li></ul>|
 |3||
 |4||
 |5||

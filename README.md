@@ -57,4 +57,4 @@ Arteveldehogeschool
 Copyright and license
 ---------------------
 
-Code en documentatie copyright 2003-2016 [Arteveldehogeschool](http://www.arteveldehogeschool.be) | Opleiding Grafische en digitale media | drdynscript. Cursusmateriaal, zoals code, documenten, ... uitgebracht onder de [Apache licentie](LICENSE).
+Code en documentatie copyright 2003-2016 [Arteveldehogeschool](http://www.arteveldehogeschool.be) | Opleiding Grafische en digitale media | drdynscript. Cursusmateriaal, zoals code, documenten, ... uitgebracht onder de [MIT licentie](LICENSE).
