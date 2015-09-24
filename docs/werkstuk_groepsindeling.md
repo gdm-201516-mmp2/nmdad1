@@ -107,7 +107,7 @@
 |Vancoillie Tine|2MMP-proDEV|x
 |Vanden Bossche Nick|2MMP-proDEV|x
 |Vanfleteren Senne|2MMP-proDEV|x
-|Vanhaste Joran|2MMP-proDUCEb|x
+|Vanhaste Joran|2MMP-proDEV|x
 |Verschorre Arne|2MMP-proDUCEb|x
 |Verwerft Lotte|2MMP-proDEV|x
 |Vinjé Jonathan|3MMP-proDUCE|x
