@@ -20,6 +20,7 @@ Documenten
 * [Proxy instellingen Arteveldehogeschool](docs/proxysettings.md)
 * [Git](docs/git.md)
 * [Markdown](docs/markdown.md)
+* [JavaScript - Introductie](docs/js_introduction.md)
 
 Taken
 -----
