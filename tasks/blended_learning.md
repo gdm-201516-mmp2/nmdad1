@@ -24,7 +24,7 @@
 	* Make a Website Projects(https://www.codecademy.com/en/courses/html-css-prj)
 	* __Nieuw 24-09-2015: Learn the commandline__ (https://www.codecademy.com/en/courses/learn-the-command-line)
 	
-> Deze **Blended Learning** cursussen moeten allemaal voltooid zijn op 04-11-2015! Niet voltooid betekent -2 per week op 20 op de eindscore van het opleidingsonderdeel NMDAD I! 
+> Deze **Blended Learning** cursussen moeten allemaal voltooid zijn op **04-11-2015**! Niet voltooid betekent -2 per week op 20 op de eindscore van het opleidingsonderdeel NMDAD I! 
 
 > Voor wat hoort wat op het einde van de rit:
 * 1ste plaats: + 2/20 op de eindscore
