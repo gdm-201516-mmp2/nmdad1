@@ -76,6 +76,6 @@ Arteveldehogeschool
 Copyright and license
 ---------------------
 
-> Deze cursus mag niet gebruikt worden in andere opleidingen, hogescholen en universiteiten wereldweid. Indien dit het geval zou zijn zullen jullie juridische stappen ondergaan.
+> Deze cursus mag niet gebruikt worden in andere opleidingen, hogescholen en universiteiten wereldwijd. Indien dit het geval zou zijn zullen jullie juridische stappen ondergaan.
 >
 > Code en documentatie copyright 2003-2016 [Arteveldehogeschool](http://www.arteveldehogeschool.be) | Opleiding Bachelor in de grafische en digitale media | drdynscript. Cursusmateriaal, zoals code, documenten, ... uitgebracht onder de [MIT licentie](LICENSE).
