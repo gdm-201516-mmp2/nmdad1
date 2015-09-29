@@ -39,7 +39,12 @@ Taken
 	* [Design - proDUCEa](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=450836)
 	* [Design - proDUCEb](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=450837)
 * Week 2
-	* 
+	* Nader te bepalen
+	
+Uitdagingen
+-----------
+
+
 
 Auteurs
 --------

@@ -347,10 +347,74 @@ transform-origin:50% 50%;
 > **Output:**
 > ![enter image description here](https://lh5.googleusercontent.com/-muUBLdiSixA/VBwR1XP7mFI/AAAAAAAAAQ4/_qa_PoOZXq4/s0/ex6.PNG "ex6.PNG")
 
+CSS Animaties
+-------------
+
+In CSS kunnen we op twee manieren elementen animeren, namelijk via de `transition` methode en via de `animation` methode. Bij de `transition` is een actie noodzakelijk door de gebruiker om de animatie uit te voeren. Bij de `animation` methode is dit niet . Enkel de `animation` methode maakt gebruik van **keyframes**.
+
+###Transition
+
+Transitie via CSS laat toe om de transitie tussen twee statussen van een element te definiëren. Deze statussen kunnen gedefinieerd worden via bepaalde pseudo-klassen, zoals: `:hover` en `active` of via JavaScript (door het toevoegen of verwijderen van `class`-attribuut waarden.
+
+De `transition` eigenschap is een verkorte eigenschap voor de lijst van eigenschappen:  `transition-property`, `transition-duration`, `transition-timing-function`, en `transition-delay`.
+
+####Transition eigenschappen
+
+De `transition-property` eigenschap wordt gebruikt om de CSS-eigenschappen te definiëren waarop de transitie zal toegepast worden, bv.: all (op alle CSS-eigenschappen), top, left, background, color, ... .
+
+De `transition-duration` eigenschap wordt gebruikt om de duur van de transitie te specificeren. De default-waarde bedraagt `0s`. De waarden kunnen uitgedrukt worden in seconden of milliseconden.
+
+De `transition-timing-function` eigenschap wordt gebruikt om te beschrijven hoe de tussenliggende waarden van de CSS-eigenschappen beïnvloed worden door het transitie-effect. De snelheid van de transitie varieert over de duur van deze transitie door de acceleratie-curve, gekend als **easing-functies**.
+
+Veel gebruikte timing-functies zijn `linear`, `ease`, `ease-in`, `ease-out`, `ease-in-out`, `step-start` en `step-end`.
+
+|Timing-function|Curve|Description|
+|---------------|-----|-----------|
+|`linear`|![enter image description here](https://lh3.googleusercontent.com/-cRZFQb5Rmbs/VBw7HWfxTnI/AAAAAAAAAR0/mwvhKlCwKA8/s0/cubic-bezier,linear.png "cubic-bezier,linear.png")|Constante snelheid: `cubic-bezier(0.0, 0.0, 1.0, 1.0)`|
+|`ease`|![enter image description here](https://lh4.googleusercontent.com/-f_1Tl1DKnKA/VBw7NmRpZSI/AAAAAAAAASA/hV7DEo-9duc/s0/cubic-bezier,ease.png "cubic-bezier,ease.png")|Gelijkaardig met `ease-in-out`. De acceleratie in het begin is sneller en vanaf het midden treedt vertraging op:  `cubic-bezier(0.25, 0.1, 0.25, 1.0)`|
+|`ease-in`|![enter image description here](https://lh5.googleusercontent.com/-PlJzXZ8IEFc/VBw7TEikImI/AAAAAAAAASM/_uIt_xGhp18/s0/cubic-bezier,ease-in.png "cubic-bezier,ease-in.png")|De animatie begint traag waarna de acceleratie progressief toeneemt: `cubic-bezier(0.42, 0.0, 1.0, 1.0)`|
+|`ease-out`|![enter image description here](https://lh5.googleusercontent.com/-LqHUcNhapYI/VBw7ao3GbMI/AAAAAAAAASY/MrtLXN6eoFU/s0/cubic-bezer,ease-out.png "cubic-bezer,ease-out.png")|De annimatie start snel waarna de acceleratie progressief afneemt: `(0.0, 0.0, 0.58, 1.0)`|
+|`ease-in-out`|![enter image description here](https://lh4.googleusercontent.com/-l9cWvXJUsp4/VBw7fchyyII/AAAAAAAAASk/43HqEQIc7HU/s0/cubic-bezier,ease-in-out.png "cubic-bezier,ease-in-out.png")|De animatie start traag, accelereert dan, waarna het terug afneemt: `0.42, 0.0, 0.58, 1.0)`|
+|`step-start`|![enter image description here](https://lh6.googleusercontent.com/-ByeenXxNOuY/VBw7mYTwf5I/AAAAAAAAASw/2KJMC-VOJl4/s0/steps%281,start%29.png "steps&#40;1,start&#41;.png")|De animatie springt direct naar de eindstatus: `steps(1, start)`|
+|`step-end`|![enter image description here](https://lh3.googleusercontent.com/-ANu_sGKYv60/VBw7wnWgK5I/AAAAAAAAAS8/JLC8ExtsDQw/s0/steps%281,end%29.png "steps&#40;1,end&#41;.png")|De animatie blijft in de initiële status en springt pas op het einde naar zijn eindstatus: `steps(1, end)`|
+
+Naast deze gekende timing functies, zijn er nog twee functies toepasbaar, namelijk `cubic-bezier` en `steps`.
+
+De `cubic-bezier` functie definieert een **cubic bézier curve**. Deze curves worden vaak gebruikt om de snelheid in het begin en op het einde van de animatie langzaam toe- en af te laten nemen.
+
+|Timing-function|Curve|Description|
+|---------------|-----|-----------|
+|`cubic-bezier`|![enter image description here](https://lh5.googleusercontent.com/-F2KMVdtndp0/VBxVn-rdEPI/AAAAAAAAAUA/FOcN2ZwFy_Y/s0/cubic-bezier,+example+%281%29.png "cubic-bezier, example &#40;1&#41;.png")|P0 (0,0) Initiële status. P3 (1,1) Finale status. P1 en P2 hebben meestal een waarde tussen 0 en 1. Ligt deze waarde daarbuiten, dan zullen we waarschijnlijk een **bouncing-effect** realiseren.|
+
+```
+cubic-bezier(x1, y1, x2, y2)
+```
+
+- x1 en x2 moeten een waarde hebben tussen 0 en 1
+- y1 en y2 kunnen zowel postieve- als negatieve waarden bevatten
+
+```
+Enkele voorbeelden:
+
+cubic-bezier(0.1, 0.7, 1.0, 0.1)
+cubic-bezier(0, 0, 1, 1)
+cubic-bezier(0.1, -0.6, 0.2, 0)
+cubic-bezier(0, 1.1, 0.8, 4)
+```
+
+De `steps` functie definieert het aantal stappen dat binnen de timing functie uitgevoerd zullen worden. Deze functie is beter gekend als een **staircase** functie. De syntax: `steps(number_of_steps, direction)`. De `number_of_steps` is een positieve integer (1 of hoger), de `direction` is `start` of `end`. Dit laatste argument is facultatief en heeft `end` als standaard waarde.
+
+|Direction: start|Direction: end|
+|----------------|--------------|
+|`steps(2, start)`|`steps(4, end)`|
+|![enter image description here](https://lh6.googleusercontent.com/-K0GSlOfsX5A/VBxatqp3VlI/AAAAAAAAAUU/WkHU0V-bb58/s0/steps%282,start%29.png "steps&#40;2,start&#41;.png")|![enter image description here](https://lh3.googleusercontent.com/-AUqTseu1IKY/VBxayDDiG2I/AAAAAAAAAUg/UuBfX0C-dS8/s0/steps%284,end%29.png "steps&#40;4,end&#41;.png")|
+
+De `transition-delay` eigenschap wordt gebruikt om de transitie van een CSS-eigenschap een bepaalde duur uit te stellen. De default-waarde bedraagt `0s`. De waarden kunnen uitgedrukt worden in seconden of milliseconden.
+
 Bronnen
 -------
 
-> **2D-transformaties**
+> **2D-transformaties**:
 >
 > - <http://www.w3schools.com/css/css3_2dtransforms.asp>
 - <https://developer.mozilla.org/en-US/docs/Web/CSS/transform>
@@ -361,6 +425,11 @@ Bronnen
 - <https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin>
 - <https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function>
 >
-> **3D-transformaties:**
+> **3D-transformaties**:
 >
 > - <http://desandro.github.io/3dtransforms/docs/perspective.html>
+>
+> **2D-transities**:
+>
+> - <https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_transitions>
+- <http://css3.bradshawenterprises.com/transitions/>
