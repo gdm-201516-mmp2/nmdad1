@@ -44,10 +44,6 @@ body {
 .bit--active {
 	background: rgba(255, 255, 255, 1);
 }
-body:hover .avatar .bit {
-	transform:rotate(45deg);
-	transition:all 380ms ease-in-out 0s;
-}
 ```
 
 **JavaScript**:
@@ -154,10 +150,6 @@ body {
 }
 .bit--active {
     background: rgba(255, 255, 255, 1);
-}
-body:hover .avatar .bit {
-    transform:rotate(45deg);
-    transition:all 380ms ease-in-out 0s;
 }
 ```
 **JavaScript**:
