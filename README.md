@@ -21,6 +21,7 @@ Documenten
 * [Git](docs/git.md)
 * [Markdown](docs/markdown.md)
 * [JavaScript - Introductie](docs/js_introduction.md)
+* [JavaScript - Arcade Character](docs/js_arcadecharacter.md)
 
 Taken
 -----
