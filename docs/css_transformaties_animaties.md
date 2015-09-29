@@ -23,7 +23,7 @@ Transformaties kunnen toegekend worden aan een element via de transform eigensch
 |Mozilla|`-moz-`|
 |IE|`-ms-`|
 |Opera|`-o-`|
-|De standaard W3C|``|
+|De standaard W3C|Geen prefix!|
 
 ###2D-translatie
 
