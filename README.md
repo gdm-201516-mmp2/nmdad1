@@ -14,14 +14,17 @@ New Media Design & Development I
 Documenten
 ----------
 
-* [Inleiding](docs/inleiding.md)
-* [Werkstuk](docs/werkstuk.md)
-* [Werkstuk groepsindeling](docs/werkstuk_groepsindeling.md)
-* [Proxy instellingen Arteveldehogeschool](docs/proxysettings.md)
-* [Git](docs/git.md)
-* [Markdown](docs/markdown.md)
-* [JavaScript - Introductie](docs/js_introduction.md)
-* [JavaScript - Arcade Character](docs/js_arcadecharacter.md)
+* Week 1
+	* [Inleiding](docs/inleiding.md)
+	* [Werkstuk](docs/werkstuk.md)
+	* [Werkstuk groepsindeling](docs/werkstuk_groepsindeling.md)
+	* [Proxy instellingen Arteveldehogeschool](docs/proxysettings.md)
+	* [Git](docs/git.md)
+	* [Markdown](docs/markdown.md)
+* Week 2
+	* [JavaScript - Introductie](docs/js_introduction.md)
+	* [JavaScript - App: Arcade Character](docs/js_arcadecharacter.md)
+	* [CSS - Transformaties, transities en animaties](docs/css_transformaties_animaties.md)
 
 Taken
 -----
@@ -58,4 +61,4 @@ Arteveldehogeschool
 Copyright and license
 ---------------------
 
-Code en documentatie copyright 2003-2016 [Arteveldehogeschool](http://www.arteveldehogeschool.be) | Opleiding Grafische en digitale media | drdynscript. Cursusmateriaal, zoals code, documenten, ... uitgebracht onder de [MIT licentie](LICENSE).
+Code en documentatie copyright 2003-2016 [Arteveldehogeschool](http://www.arteveldehogeschool.be) | Opleiding Bachelor in de grafische en digitale media | drdynscript. Cursusmateriaal, zoals code, documenten, ... uitgebracht onder de [MIT licentie](LICENSE).
