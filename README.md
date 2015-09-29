@@ -21,15 +21,25 @@ Documenten
 	* [Proxy instellingen Arteveldehogeschool](docs/proxysettings.md)
 	* [Git](docs/git.md)
 	* [Markdown](docs/markdown.md)
+	
 * Week 2
 	* [JavaScript - Introductie](docs/js_introduction.md)
 	* [JavaScript - App: Arcade Character](docs/js_arcadecharacter.md)
 	* [CSS - Transformaties, transities en animaties](docs/css_transformaties_animaties.md)
+	* [Design - Slides](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=453321)
+	* [Design - Template](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=453322)
 
 Taken
 -----
-* [Blended Learning](tasks/blended_learning.md) 
-* [Development - Week 1](tasks/week1.md) 
+* Blended Learning
+	* [Blended Learning - Codecademy](tasks/blended_learning.md) 
+* Week 1
+	* [Development - Week 1](tasks/week1.md) 
+	* [Design - proDEV](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=446796)
+	* [Design - proDUCEa](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=450836)
+	* [Design - proDUCEb](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=450837)
+* Week 2
+	* 
 
 Auteurs
 --------
