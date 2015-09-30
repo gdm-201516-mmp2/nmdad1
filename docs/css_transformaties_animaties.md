@@ -87,23 +87,15 @@ Indien sy niet gespecifieerd wordt, zal sy = 1
 
 De waarden van schalen (sx, sy) moeten uitgedrukt worden met een getal (positief of negatief floating-point getal).
 
-```css
-…
-.eff1{
- -webkit-transform:translate(100%, 100%) rotate(45deg);
-  -moz-transform:translate(100%, 100%) rotate(45deg);
-  -ms-transform:translate(100%, 100%) rotate(45deg);
-  -o-transform:translate(100%, 100%) rotate(45deg);
-  transform:translate(100%, 100%) rotate(45deg);
-}
-```
+###Rotatie
 
-In het voorbeeld voeren we eerst een translatie uit van 100% in beide richtingen (x en y). Gevolgd door het roteren in uurwijzerzin met 45 graden (rotatiepunt ligt in het midden van het element)
-Overeenkomstige matrix: [cos(angle) sin(angle) -sin(angle) cos(angle) 0 0].
+Elementen kunnen geroteerd worden in de X- en/of Y-richting. Rotatie wordt in CSS gerealiseerd via de `rotate` methoden:
 
-> **Output in de browser:**
->
->  ![enter image description here](https://lh6.googleusercontent.com/-qNmnCdSZjY4/VBwFBVuEk1I/AAAAAAAAAOI/XhXo5TkOdD8/s0/scale1.PNG "scale1.PNG")
+- `rotate(rz)`
+- `rotateX(rx)`
+- `rotateY(ry)`
+
+De waarden van schalen (rx, ry, rz) moeten uitgedrukt worden met een getal (positief of negatief floating-point getal gevolgd door de suffix deg).
 
 ###2D-scheeftrekken
 
@@ -347,6 +339,35 @@ transform-origin:50% 50%;
 > **Output:**
 > ![enter image description here](https://lh5.googleusercontent.com/-muUBLdiSixA/VBwR1XP7mFI/AAAAAAAAAQ4/_qa_PoOZXq4/s0/ex6.PNG "ex6.PNG")
 
+In CSS kunnen we CSS transformaties uitvoeren in de 3D-ruimte. Configuratie van zo'n 3D-ruimte gebeurt via de `perspective` eigenschap. Het gedrag van de 2D-elementen in de 3D-ruimte moeten we hierna configureren .
+
+3D-translatie
+-------------
+
+Translatie of verschuiving van een element, in dit geval in de 3D-ruimte. Translatie wordt in CSS gerealiseerd via de translate methoden:
+
+- `translate3d(tx,ty,tz) `
+- `translateX(tx)`
+Translatie langs de X-as
+- `translateY(ty)`
+Translatie langs de Y-as
+- `translateZ(tz)`
+Translatie langs de Z-as
+
+De waarden van translatie (tx, ty, tz) kunnen uitgedrukt worden in een lengte (getal gevolgd door een lengte-eenheid, zoals: px, em, in, pt, mm, …) of in percentage (%).
+
+3D-schalen
+----------
+
+Elementen kunnen geschaald worden in de X- , Y-richting en/of Z-richting. Schalen wordt in CSS gerealiseerd via de scale methoden:
+
+- `scale3d(sx,sy,sz) `
+- `scaleX(sx)`
+- `scaleY(sy)`
+- `scaleZ(sz)`
+
+De waarden van schalen (sx, sy, sz) moeten uitgedrukt worden met een getal (positief of negatief floating-point getal).
+
 CSS Animaties
 -------------
 
@@ -428,6 +449,7 @@ Bronnen
 > **3D-transformaties**:
 >
 > - <http://desandro.github.io/3dtransforms/docs/perspective.html>
+- <http://www.w3schools.com/css/css3_3dtransforms.asp>
 >
 > **2D-transities**:
 >
