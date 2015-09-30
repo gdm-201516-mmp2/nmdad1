@@ -74,7 +74,7 @@ In dit voorbeeld verplaatsen we een element: 20px verschuiving langs de X-as, 50
 
 > **Output in de browser:**
 >
->  ![enter image description here](https://lh3.googleusercontent.com/-XhQh7vuBhZc/VBwDwnoUdrI/AAAAAAAAAN8/u-6OAzneuVg/s0/translate1.png "translate1.png")
+>  ![2D translatie](images/translatie.png)
 
 ###2D-schalen
 
@@ -125,7 +125,7 @@ In het voorbeeld voeren we eerst een translatie uit van 100% in beide richtingen
 
 > **Output in de browser:**
 >
->  ![enter image description here](https://lh4.googleusercontent.com/-bQ12SYxQGFg/VBwJ53GUOxI/AAAAAAAAAOg/iMlIQpRQ6BE/s0/skew.png "skew.png")
+>  ![2D skew](images/skew.png)
 
 ###2D-matrix
 
@@ -135,14 +135,14 @@ Transformaties kunnen ook voorzien worden via een 2D-matrix. Een matrix in CSS b
 
 >
 >
-> ![enter image description here](https://lh5.googleusercontent.com/-mS7ODlQMU2E/VBwL6fJPV7I/AAAAAAAAAO0/pdf0aYHjsfA/s0/matrix.png "matrix.png")
+> ![2D matrix](images/matrix.png)
 >
 > - a en d zorgen voor het schalen van een element
 - c en b zorgen voor het roteren of schuintrekken van een element
 - e en f zorgen voor de translatie in de X- en Y-richting
 - Default matrix: a = 1, c = 0, b = 0, d = 1, e = 0 en f = 0
 >
-> ![enter image description here](https://lh6.googleusercontent.com/-pf7D7GLAOA4/VBwMdAWR8JI/AAAAAAAAAPA/xFvP9pyJOyk/s0/matrix2.png "matrix2.png")
+> ![2D matrix voorbeeld](images/matrix2.png)
 
 Enkele voorbeelden:
 
@@ -200,7 +200,7 @@ In dit voorbeeld verplaatsen we het transformatiepunt naar de linkerbovenhoek va
 
 > **Output in de browser:**
 >
->  ![enter image description here](https://lh6.googleusercontent.com/-XQ_bNlIDH6g/VBwNqdDgNII/AAAAAAAAAPc/2EM_7v4TReE/s0/transformatiepunt.png "transformatiepunt.png")
+>  ![2D transformatiepunt](images/transformatiepunt.png)
 
 ###2D-voorbeelden
 
@@ -225,7 +225,7 @@ transform:translate(0, -50px);
 ```
 
 > **Output:**
-> ![enter image description here](https://lh3.googleusercontent.com/-e1UvaCjKh9E/VBwRUjOYeKI/AAAAAAAAAP4/D2R0TLI4Ph4/s0/ex1.PNG "ex1.PNG")
+> ![enter image description here](images/ex1.png)
 
 ###"Voorbeeld 2: rotatie
 
@@ -243,7 +243,7 @@ transform:rotate(-36deg);
 ```
 
 > **Output:**
-> ![enter image description here](https://lh4.googleusercontent.com/-I3_s3anQVxk/VBwRajtRf0I/AAAAAAAAAQE/h3fGf2Ytc6s/s0/ex2.PNG "ex2.PNG")
+> ![enter image description here](images/ex2.png)
 
 ####Voorbeeld 3: schalen
 
@@ -266,7 +266,7 @@ transform:scaleY(-1);
 ```
 
 > **Output:**
-> ![enter image description here](https://lh3.googleusercontent.com/-jclSH0UimFE/VBwRpRBdM4I/AAAAAAAAAQQ/oJI5oK8q650/s0/ex3.PNG "ex3.PNG")
+> ![enter image description here](images/ex3.png)
 
 ####Voorbeeld 4: scheeftrekken
 
@@ -289,7 +289,7 @@ transform:skewY(-30deg);
 ```
 
 > **Output:**
-> ![enter image description here](https://lh3.googleusercontent.com/-hSg2oQBMrKQ/VBwRtq682pI/AAAAAAAAAQg/cFE6_7UHBMM/s0/ex4.PNG "ex4.PNG")
+> ![enter image description here](images/ex4.png)
 
 ####Voorbeeld 5: transformatiepunt met rotatie
 
@@ -321,7 +321,7 @@ transform-origin:80% bottom;
 ```
 
 > **Output:**
-> ![enter image description here](https://lh4.googleusercontent.com/-j-Y8D_9xeio/VBwRxTY-c5I/AAAAAAAAAQs/jmcUY2op2rk/s0/ex5.PNG "ex5.PNG")
+> ![enter image description here](images/ex5.png)
 
 ####Voorbeeld 6: combinatie van transformatiemethoden
 
@@ -337,7 +337,7 @@ transform-origin:50% 50%;
 ```
 
 > **Output:**
-> ![enter image description here](https://lh5.googleusercontent.com/-muUBLdiSixA/VBwR1XP7mFI/AAAAAAAAAQ4/_qa_PoOZXq4/s0/ex6.PNG "ex6.PNG")
+> ![enter image description here](images/ex6.png)
 
 In CSS kunnen we CSS transformaties uitvoeren in de 3D-ruimte. Configuratie van zo'n 3D-ruimte gebeurt via de `perspective` eigenschap. Het gedrag van de 2D-elementen in de 3D-ruimte moeten we hierna configureren .
 
@@ -391,13 +391,13 @@ Veel gebruikte timing-functies zijn `linear`, `ease`, `ease-in`, `ease-out`, `ea
 
 |Timing-function|Curve|Description|
 |---------------|-----|-----------|
-|`linear`|![enter image description here](https://lh3.googleusercontent.com/-cRZFQb5Rmbs/VBw7HWfxTnI/AAAAAAAAAR0/mwvhKlCwKA8/s0/cubic-bezier,linear.png "cubic-bezier,linear.png")|Constante snelheid: `cubic-bezier(0.0, 0.0, 1.0, 1.0)`|
-|`ease`|![enter image description here](https://lh4.googleusercontent.com/-f_1Tl1DKnKA/VBw7NmRpZSI/AAAAAAAAASA/hV7DEo-9duc/s0/cubic-bezier,ease.png "cubic-bezier,ease.png")|Gelijkaardig met `ease-in-out`. De acceleratie in het begin is sneller en vanaf het midden treedt vertraging op:  `cubic-bezier(0.25, 0.1, 0.25, 1.0)`|
-|`ease-in`|![enter image description here](https://lh5.googleusercontent.com/-PlJzXZ8IEFc/VBw7TEikImI/AAAAAAAAASM/_uIt_xGhp18/s0/cubic-bezier,ease-in.png "cubic-bezier,ease-in.png")|De animatie begint traag waarna de acceleratie progressief toeneemt: `cubic-bezier(0.42, 0.0, 1.0, 1.0)`|
-|`ease-out`|![enter image description here](https://lh5.googleusercontent.com/-LqHUcNhapYI/VBw7ao3GbMI/AAAAAAAAASY/MrtLXN6eoFU/s0/cubic-bezer,ease-out.png "cubic-bezer,ease-out.png")|De annimatie start snel waarna de acceleratie progressief afneemt: `(0.0, 0.0, 0.58, 1.0)`|
-|`ease-in-out`|![enter image description here](https://lh4.googleusercontent.com/-l9cWvXJUsp4/VBw7fchyyII/AAAAAAAAASk/43HqEQIc7HU/s0/cubic-bezier,ease-in-out.png "cubic-bezier,ease-in-out.png")|De animatie start traag, accelereert dan, waarna het terug afneemt: `0.42, 0.0, 0.58, 1.0)`|
-|`step-start`|![enter image description here](https://lh6.googleusercontent.com/-ByeenXxNOuY/VBw7mYTwf5I/AAAAAAAAASw/2KJMC-VOJl4/s0/steps%281,start%29.png "steps&#40;1,start&#41;.png")|De animatie springt direct naar de eindstatus: `steps(1, start)`|
-|`step-end`|![enter image description here](https://lh3.googleusercontent.com/-ANu_sGKYv60/VBw7wnWgK5I/AAAAAAAAAS8/JLC8ExtsDQw/s0/steps%281,end%29.png "steps&#40;1,end&#41;.png")|De animatie blijft in de initiële status en springt pas op het einde naar zijn eindstatus: `steps(1, end)`|
+|`linear`|![enter image description here](images/linear.png)|Constante snelheid: `cubic-bezier(0.0, 0.0, 1.0, 1.0)`|
+|`ease`|![enter image description here](images/ease.png)|Gelijkaardig met `ease-in-out`. De acceleratie in het begin is sneller en vanaf het midden treedt vertraging op:  `cubic-bezier(0.25, 0.1, 0.25, 1.0)`|
+|`ease-in`|![enter image description here](images/easein.png)|De animatie begint traag waarna de acceleratie progressief toeneemt: `cubic-bezier(0.42, 0.0, 1.0, 1.0)`|
+|`ease-out`|![enter image description here](images/easeout.png)|De annimatie start snel waarna de acceleratie progressief afneemt: `(0.0, 0.0, 0.58, 1.0)`|
+|`ease-in-out`|![enter image description here](images/easeinoutpng)|De animatie start traag, accelereert dan, waarna het terug afneemt: `0.42, 0.0, 0.58, 1.0)`|
+|`step-start`|![enter image description here](images/stepstart.png)|De animatie springt direct naar de eindstatus: `steps(1, start)`|
+|`step-end`|![enter image description here](images/stepend.png)|De animatie blijft in de initiële status en springt pas op het einde naar zijn eindstatus: `steps(1, end)`|
 
 Naast deze gekende timing functies, zijn er nog twee functies toepasbaar, namelijk `cubic-bezier` en `steps`.
 
@@ -405,7 +405,7 @@ De `cubic-bezier` functie definieert een **cubic bézier curve**. Deze curves wo
 
 |Timing-function|Curve|Description|
 |---------------|-----|-----------|
-|`cubic-bezier`|![enter image description here](https://lh5.googleusercontent.com/-F2KMVdtndp0/VBxVn-rdEPI/AAAAAAAAAUA/FOcN2ZwFy_Y/s0/cubic-bezier,+example+%281%29.png "cubic-bezier, example &#40;1&#41;.png")|P0 (0,0) Initiële status. P3 (1,1) Finale status. P1 en P2 hebben meestal een waarde tussen 0 en 1. Ligt deze waarde daarbuiten, dan zullen we waarschijnlijk een **bouncing-effect** realiseren.|
+|`cubic-bezier`|![enter image description here](images/bezier.png)|P0 (0,0) Initiële status. P3 (1,1) Finale status. P1 en P2 hebben meestal een waarde tussen 0 en 1. Ligt deze waarde daarbuiten, dan zullen we waarschijnlijk een **bouncing-effect** realiseren.|
 
 ```
 cubic-bezier(x1, y1, x2, y2)
@@ -428,7 +428,7 @@ De `steps` functie definieert het aantal stappen dat binnen de timing functie ui
 |Direction: start|Direction: end|
 |----------------|--------------|
 |`steps(2, start)`|`steps(4, end)`|
-|![enter image description here](https://lh6.googleusercontent.com/-K0GSlOfsX5A/VBxatqp3VlI/AAAAAAAAAUU/WkHU0V-bb58/s0/steps%282,start%29.png "steps&#40;2,start&#41;.png")|![enter image description here](https://lh3.googleusercontent.com/-AUqTseu1IKY/VBxayDDiG2I/AAAAAAAAAUg/UuBfX0C-dS8/s0/steps%284,end%29.png "steps&#40;4,end&#41;.png")|
+|![Steps: start](images/steps1.png)|![Steps: end](images/steps2.png)|
 
 De `transition-delay` eigenschap wordt gebruikt om de transitie van een CSS-eigenschap een bepaalde duur uit te stellen. De default-waarde bedraagt `0s`. De waarden kunnen uitgedrukt worden in seconden of milliseconden.
 
