@@ -142,7 +142,6 @@ Transformaties kunnen ook voorzien worden via een 2D-matrix. Een matrix in CSS b
 - e en f zorgen voor de translatie in de X- en Y-richting
 - Default matrix: a = 1, c = 0, b = 0, d = 1, e = 0 en f = 0
 >
-> ![2D matrix voorbeeld](images/matrix2.png)
 
 Enkele voorbeelden:
 
@@ -168,7 +167,7 @@ De matrix resulteert in een translatie van 100 pixels in de Y- en de X-richting,
 
 > **Output in de browser:**
 >
->  ![enter image description here](https://lh6.googleusercontent.com/-QQ5AlCYZyq4/VBwMyOetRTI/AAAAAAAAAPM/WrLUqD6-EUU/s0/matrix3.png "matrix3.png")
+> ![2D matrix voorbeeld](images/matrix2.png)
 
 
 ###2D-transformatiepunt
