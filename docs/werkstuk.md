@@ -189,14 +189,18 @@ Timesheet
 
 Houd dagelijks een timesheet bij in Excel en post naar je Bitbucket-repository. Vermeld **per dag** de (deel)functionaliteit(en) waaraan je gewerkt hebt en hoe lang (de kleinste opdeling is een kwartier: 0,25 uur). 
 
+### Prestatieuren
+
+Iedere student moet minimaal 102 uur besteden aan deze opdracht buiten de lesuren. Dat komt ongeveer 102 uur presteren neer op 8 uur per week, indien spreiding voorzien. Alle studenten binnen een groep moeten een gelijkaardig aandeel hebben in het **dev** en **design** gedeelte. Bij ondermaatse prestatie (kwaliteit, uren, dev/design gedeelte) wordt dit afgerekend! 
+
 ### Voorbeeld
 
-| Datum      | Student |   Taak                        |         Tijd   |
+|Datum|Student|Domein|Taak|Tijd|
 |-----------:|:--------|:----------------------|---------------:|
-| 2015-09-22 | Philippe De Pauw |   Doctrinemigration voor user |     0,25 uur   |
-| 2015-09-22 | Jonas Pottie |  Registratieformulier        |     3,75 uur   |
-| â€¦          | Student x |   â€¦                           |            â€¦   |
-| 2015-12-21 | Alle studenten | **Totaal**                    | **137,00 uur** |  
+|2015-09-22|Philippe De Pauw|DEV|Doctrinemigration voor user|0,25 uur|
+|2015-09-22|Jonas Pottie|DES|Registratieformulier|3,75 uur|
+|â€¦|Student x|â€¦DEV|x|â€¦|
+|2015-12-21|Alle studenten|-|**Totaal**|**306 uur**|  
 
 Academische Poster
 ------------------
