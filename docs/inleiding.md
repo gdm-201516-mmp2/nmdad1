@@ -21,8 +21,8 @@
 |Begincompetenties|2D Animation & Webdesign II|
 |ECTS-fiche|https://bamaflexweb.arteveldehs.be/BMFUIDetailxOLOD.aspx?a=47532&b=5&c=1|
 
-valuatie
---------
+Evaluatie
+---------
 
 **Werkstuk:**
 

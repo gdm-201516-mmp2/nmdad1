@@ -41,7 +41,9 @@ Docent: Philippe De Pauw - Waterschoot
 Omschrijving
 ------------
 
-> Het werkstuk wordt op een Bitbucket-repository gepubliceerd dat toegankelijk is voor [Olivier Parent][https://bitbucket.org/olivierparent] en [Philippe De Pauw - Waterschoot][https://bitbucket.org/drdynscript].
+Maak een **responsive mobile-first webapplicatie** waarin minimaal 7 datasets, afkomstig uit de dataset-pool van de **Worldbank**  , verwerkt zijn. Conceptueel denken is heel belangrijk in deze applicatie. Dit betekent dat jullie verbanden moeten leggen tussen deze datasets. Het is louter niet alleen het oplijsten en visualiseren van deze datasets, er moet een **concept** rond gebouwd worden.
+
+Deze applicatie is bestemd voor **+18 jarigen** waarbij de gebruiksvriendelijkheid, interactiviteit, uitbreidbaarheid en schaalbaarheid van belang zijn.
 
 > Resources:
 > 
@@ -51,6 +53,19 @@ Omschrijving
 * [Worldbank Idicatoren](http://data.worldbank.org/indicator)
 * Voorbeeld aanvraag: `http://api.worldbank.org/countries?per_page=10&incomeLevel=LIC&format=jsonP&prefix=Getdata` (jsonP aanvraag), meer info [Worldbank aanvraagstructuur](http://data.worldbank.org/developers/api-overview/basic-call-structure)
 
+Technische specificaties
+------------------------
+
+###Frontend
+
+- Core technologies: HTML5, CSS3 en JavaScript
+- Template engines: Jade, Haml, Swig of Handlebars
+- Storage: JSON bestanden, localstorage en/of IndexedDB
+- Bibliotheken: jQuery, underscore.js, lodash.js, crossroads.js, js-signals, Hasher.js, ...
+- Andere bibliotheken worden hierin aangevuld tijdens het semester!
+- Uitzonderingen mogelijk betreffende JavaScript bibliotheken mogelijk mits toelating!
+
+> Webapplicatie moet responsive zijn! Het responsive framework alsook alle andere bestanden moeten zelf geïmplementeerd worden.
 
 Dossier
 -------
@@ -71,23 +86,11 @@ Dossier
 - Screenshots snippets HTML (1x), CSS (1x) en JavaScript (3x)
 - Tijdsbesteding per student
 
-Technische specificaties
-------------------------
-
-###Frontend
-
-- Core technologies: HTML5, CSS3 en JavaScript
-- Template engines: Jade, Haml, Swig of Handlebars
-- Storage: JSON bestanden, localstorage en/of IndexedDB
-- Bibliotheken: jQuery, underscore.js, lodash.js, crossroads.js, js-signals, Hasher.js, ...
-- Andere bibliotheken worden hierin aangevuld tijdens het semester!
-- Uitzonderingen mogelijk betreffende JavaScript bibliotheken mogelijk mits toelating!
-
-> Webapplicatie moet responsive zijn! Het responsive framework alsook alle andere bestanden moeten zelf geïmplementeerd worden.
-
    
 Source Code Management
 ----------------------
+
+> Het werkstuk wordt op een Bitbucket-repository gepubliceerd dat toegankelijk is voor [Olivier Parent][https://bitbucket.org/olivierparent] en [Philippe De Pauw - Waterschoot][https://bitbucket.org/drdynscript].
 
 - Maak een team aan in bitbucket:
     - gdm-1516-2MMPA-01 
@@ -188,12 +191,12 @@ Houd dagelijks een timesheet bij in Excel en post naar je Bitbucket-repository. 
 
 ### Voorbeeld
 
-| Datum      |   Taak                        |         Tijd   |
-|-----------:|:------------------------------|---------------:|
-| 2015-09-22 |   Doctrinemigration voor user |     0,25 uur   |
-| 2015-09-22 |   Registratieformulier        |     3,75 uur   |
-| â€¦          |   â€¦                           |            â€¦   |
-| 2015-12-21 | **Totaal**                    | **137,00 uur** |  
+| Datum      | Student |   Taak                        |         Tijd   |
+|-----------:|:--------|:----------------------|---------------:|
+| 2015-09-22 | Philippe De Pauw |   Doctrinemigration voor user |     0,25 uur   |
+| 2015-09-22 | Jonas Pottie |  Registratieformulier        |     3,75 uur   |
+| â€¦          | Student x |   â€¦                           |            â€¦   |
+| 2015-12-21 | Alle studenten | **Totaal**                    | **137,00 uur** |  
 
 Academische Poster
 ------------------
