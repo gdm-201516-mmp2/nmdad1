@@ -196,7 +196,7 @@ Iedere student moet minimaal 102 uur besteden aan deze opdracht buiten de lesure
 ### Voorbeeld
 
 |Datum|Student|Domein|Taak|Tijd|
-|-----------:|:--------|:----------------------|---------------:|
+|----:|:------|:-----|:--|----:|
 |2015-09-22|Philippe De Pauw|DEV|Doctrinemigration voor user|0,25 uur|
 |2015-09-22|Jonas Pottie|DES|Registratieformulier|3,75 uur|
 |â€¦|Student x|â€¦DEV|x|â€¦|
