@@ -39,7 +39,7 @@ Taken
 	* [Design - proDUCEa](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=450836)
 	* [Design - proDUCEb](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=450837)
 * Week 2
-	* Enkel opdracht voor het Design onderdeel. Blended learning cursus loopt door tot 04-11-2015. Kijk naar de uitdagingingen om zich niet te vervelen, maar vooral om jullie kennis betreffende ebtechnologie uit te breiden.
+	* Enkel opdracht voor het Design onderdeel. Blended learning cursus loopt door tot 04-11-2015. Kijk naar de uitdagingingen om zich niet te vervelen, maar vooral om jullie kennis betreffende webtechnologieën uit te breiden.
 	
 Uitdagingen
 -----------
