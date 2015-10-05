@@ -41,7 +41,7 @@ Docent: Philippe De Pauw - Waterschoot
 Omschrijving
 ------------
 
-Maak een **responsive mobile-first webapplicatie** waarin minimaal 7 datasets, afkomstig uit de dataset-pool van de **Worldbank**  , verwerkt zijn. Conceptueel denken is heel belangrijk in deze applicatie. Dit betekent dat jullie verbanden moeten leggen tussen deze datasets. Het is louter niet alleen het oplijsten en visualiseren van deze datasets, er moet een **concept** rond gebouwd worden.
+Maak een **responsive mobile-first webapplicatie** waarin minimaal 3 datasets (1x groep) - 6 datasets (2x groep) - 9 datasets (3x groep), afkomstig uit de dataset-pool van de **Worldbank**  , verwerkt zijn. Conceptueel denken is heel belangrijk in deze applicatie. Dit betekent dat jullie verbanden moeten leggen tussen deze datasets. Het is louter niet alleen het oplijsten en visualiseren van deze datasets, er moet een **concept** rond gebouwd worden.
 
 Deze applicatie is bestemd voor **+18 jarigen** waarbij de gebruiksvriendelijkheid, interactiviteit, uitbreidbaarheid en schaalbaarheid van belang zijn.
 
@@ -80,10 +80,22 @@ Dossier
 - Indeëenborden + keuze uit ideëenborden resulterend in een Moodboard
 - Sitemap
 - Wireframes
-- Style Tiles (2x)
+- Style Tiles
+    * 3x groep van 3 studenten + finaal 1 resulterende style tile
+    * 2x groep van 2 studenten + finaal 1 resulterende style tile
+    * 1x groep van 1 studenten
 - Visual designs
+    * 3x groep van 3 studenten + finaal 1 resulterende visual design
+    * 2x groep van 2 studenten + finaal 1 resulterende visual design
+    * 1x groep van 1 studenten
 - Screenshots eindresultaat
+    * 18x groep van 3 studenten
+    * 12x groep van 2 studenten
+    * 6x groep van 1 studenten
 - Screenshots snippets HTML (1x), CSS (1x) en JavaScript (3x)
+    * 9x groep van 3 studenten
+    * 6x groep van 2 studenten
+    * 3x groep van 1 studenten
 - Tijdsbesteding per student
 
    
