@@ -78,6 +78,9 @@ Dossier
 - Functionele specificaties
 - Persona's (+ scenario): Gebruiker (User) (3x)
 - Indeëenborden + keuze uit ideëenborden resulterend in een Moodboard
+    * 3x groep van 3 studenten + finaal 1 resulterende style tile
+    * 2x groep van 2 studenten + finaal 1 resulterende style tile
+    * 1x groep van 1 studenten
 - Sitemap
 - Wireframes
 - Style Tiles
