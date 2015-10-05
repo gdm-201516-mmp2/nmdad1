@@ -37,13 +37,18 @@ Taken
 -----
 * Blended Learning
 	* [Blended Learning - Codecademy](tasks/blended_learning.md) 
+	
 * Week 1
 	* [Development - Week 1](tasks/week1.md) 
 	* [Design - proDEV](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=446796)
 	* [Design - proDUCEa](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=450836)
 	* [Design - proDUCEb](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=450837)
+	
 * Week 2
 	* Enkel opdracht voor het Design onderdeel. Blended learning cursus loopt door tot 04-11-2015. Kijk naar de uitdagingingen om zich niet te vervelen, maar vooral om jullie kennis betreffende webtechnologieën uit te breiden.
+
+* Week 3
+	* [Design - promo](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=assignment&go=course_viewer&browser=table&tool_action=submitters_browser&publication=458615)
 	
 Uitdagingen
 -----------
