@@ -28,6 +28,10 @@ Documenten
 	* [CSS - Transformaties, transities en animaties](docs/css_transformaties_animaties.md)
 	* [Design - Slides](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=453321)
 	* [Design - Template](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=453322)
+	
+* Week 3
+	* [Responsive Apps](docs/responsive_apps.md)
+	* [Design - Maak promo](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=458593)
 
 Taken
 -----
@@ -43,8 +47,11 @@ Taken
 	
 Uitdagingen
 -----------
-* Maak een analoge clock m.b.v. HTML, CSS en JavaScript
 
+* Week 2 & 3	
+	* Development - Maak een digitale clock m.b.v. HTML, CSS en JavaScript
+	* Development - Maak een analoge clock m.b.v. HTML, CSS en JavaScript
+	* Development - Maak een behance template m.b.v. de leerstof uit lesweek 3 en eigen portfolio werk (schetsen, designs, foto's, video's, animaties). Design based on behance en dribbble.
 
 Auteurs
 --------
