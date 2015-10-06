@@ -53,6 +53,15 @@ Deze applicatie is bestemd voor **+18 jarigen** waarbij de gebruiksvriendelijkhe
 * [Worldbank Idicatoren](http://data.worldbank.org/indicator)
 * Voorbeeld aanvraag: `http://api.worldbank.org/countries?per_page=10&incomeLevel=LIC&format=jsonP&prefix=Getdata` (jsonP aanvraag), meer info [Worldbank aanvraagstructuur](http://data.worldbank.org/developers/api-overview/basic-call-structure)
 
+Briefing & Analyse
+------------------
+
+
+Functionele specificaties
+------------------------
+
+
+
 Technische specificaties
 ------------------------
 
@@ -67,15 +76,18 @@ Technische specificaties
 
 > Webapplicatie moet responsive zijn! Het responsive framework alsook alle andere bestanden moeten zelf geïmplementeerd worden.
 
+###Backend
+
+> Er is geen backend aanwezig in deze webapplicatie.
+
 Dossier
 -------
 >  - Moet geschreven worden in Markdown
 >  - Ook Websafe PDF versie door export via In-Design (net voor de deadline toevoegen aan BitBucket Repository)
 
-- Briefing
-- Analyse
-- Technische specificaties
+- Briefing & Analyse
 - Functionele specificaties
+- Technische specificaties
 - Persona's (+ scenario): Gebruiker (User) (3x)
 - Indeëenborden + keuze uit ideëenborden resulterend in een Moodboard
     * 3x groep van 3 studenten + finaal 1 resulterende Moodboard

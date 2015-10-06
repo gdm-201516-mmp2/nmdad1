@@ -177,11 +177,11 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 
 |Groepsnummer|Studenten|
 |------------|---------|
-|2MMPC-01|De Vlieger Stef, Turpyn Arne|
+|2MMPC-01|De Vlieger Stef, Turpyn Arne, Zemarai Mohammad|
 |2MMPC-02|Zwart Mathias, Verschorre Arne, Rogiers Evert|
 |2MMPC-03|Tijtgat Ellen, Notaert Mathias, De Lange Matthias|
 |2MMPC-04|Denys Lander, Mulaj Altin, Laflère Eben|
-|2MMPC-05|Van Sele Mathias, Vanhaste Joran, Zemarai Mohammad|
+|2MMPC-05|Van Sele Mathias, Vanhaste Joran|
 |2MMPC-06|Bruggeman Eliaz, Asemota Osayuki, Naska Dejvi|
 |2MMPC-07|De Meyere Famke, De Coster Jonas, De Soete Diederik|
 |2MMPC-08|Van de Voorde Bram, de Poorter Simon, Deboiserie Koen|
