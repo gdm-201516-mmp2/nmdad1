@@ -67,6 +67,11 @@ Technische specificaties
 
 > Webapplicatie moet responsive zijn! Het responsive framework alsook alle andere bestanden moeten zelf geïmplementeerd worden.
 
+Functionele specificaties
+-------------------------
+
+- 
+
 Dossier
 -------
 >  - Moet geschreven worden in Markdown
