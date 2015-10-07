@@ -56,11 +56,20 @@ Deze applicatie is bestemd voor **+18 jarigen** waarbij de gebruiksvriendelijkhe
 Briefing & Analyse
 ------------------
 
+Het hoofdstuk briefing omdat de eigenlijke briefing uit het hoofdstuk omschrijving. De analyse van deze briefing is heel belangrijk om de inhoud, functionaliteit en uiterlijke te bepalen. Hanteer de kennis uit WDAD1 en WDAD2 om dit hoofdstuk en volgend goed te voltooien.
+
 
 Functionele specificaties
 ------------------------
 
-
+* One Page Webapplication (bookmark routes) of een webapplicatie bestaande uit verschillende pagina's
+* Preloaders/Loaders
+    * Om de app in te laden
+    * Tijdens het inladen van JSON(P)
+* GEO-location
+    * Toon de locatie van de gebruiker op een Map
+    * Hou rekening met deze locatie in andere onderdelen van deze app
+* Google Maps integratie of gelijkaardig (custom look-and-feel)
 
 Technische specificaties
 ------------------------
