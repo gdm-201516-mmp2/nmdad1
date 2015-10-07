@@ -666,7 +666,7 @@ var xhr = typeof XMLHttpRequest != undefined
     : new ActiveXObject('Microsoft.XMLHTTP');
 ```
 
-Na het instantiÃ«ren van het `XMLHttpRequest` object, openen we een connectie naar een bepaalde URL via de `open` methode. Deze methode bevat minimaal twee parameters:
+Na het instantiëren van het `XMLHttpRequest` object, openen we een connectie naar een bepaalde URL via de `open` methode. Deze methode bevat minimaal twee parameters:
 
 ```javascript
 open(HTTP methode, URL, asynschroon[, Gebruikersnaam, Paswoord])
@@ -708,7 +708,7 @@ send(data)
 
 Wensen we geen data te sturen naar de server, dan geven we `null` als waarde aan deze parameter.
 
-Wanneer we de aanvraag asynchroon versturen kunnen gebruik maken van de `onreadystatechange` gebeurtenis luisteraar (event listener). Deze luisteraar wordt telkens geÃ¯nvokeerd indien een bepaalde status plaats zal vinden tijdens het afhandelen van de aanvraag door de server.
+Wanneer we de aanvraag asynchroon versturen kunnen gebruik maken van de `onreadystatechange` gebeurtenis luisteraar (event listener). Deze luisteraar wordt telkens geïnvokeerd indien een bepaalde status plaats zal vinden tijdens het afhandelen van de aanvraag door de server.
 
 Het veranderen van deze statussen gaat als volgt:
 
@@ -771,7 +771,7 @@ Het `XMLHttpRequest` object laat toe om te luisteren naar verschillende gebeurte
 De gebeurtenissen:
 
 - `progress`  
-Progressie van de verzendingen tussen de cliÃ«nt en de server, zowel upload als download.
+Progressie van de verzendingen tussen de cliënt en de server, zowel upload als download.
 - `load`  
 Het antwoord is succesvol geladen.
 - `error`  
@@ -914,8 +914,8 @@ REST gebruikt de standaarden:
 
 - HTTP(S)
 - URL
-- XML, (X)HTML, GIF, JPEG, JSON(P), â€¦ (Resources)
-- Mime types: text/xml, text/html, image/gif, image/jpeg, â€¦
+- XML, (X)HTML, GIF, JPEG, JSON(P), ...¦ (Resources)
+- Mime types: text/xml, text/html, image/gif, image/jpeg, ...¦
 
 De architecturale elementen binnen een REST service:
 
