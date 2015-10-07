@@ -23,6 +23,7 @@ Responsive Apps
     * [Media queries](#media-queries)
     * [Responsive images](#responsive-images)
     * [Responsive Mobile First grid-systeem](#responsive-mobile-first-grid-systeem)
+
 ***
 
 Apps
