@@ -33,6 +33,12 @@ Documenten
 	* [Responsive Apps](docs/responsive_apps.md)
 	* [Werken met data](docs/data_workingwith.md)
 	* [Design - Maak promo](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=458593)
+	
+Applicaties
+-----------
+
+* Week 3
+	* [Responsive Mobile First Gridsysteem](apps/responsive)
 
 Taken
 -----
