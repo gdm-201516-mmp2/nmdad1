@@ -93,7 +93,7 @@ body {
 }
 .grid__column--debug>div {
 	 background: rgba(26, 188, 156, 1.0);
-	 height: 100%;
+	 min-height: 100%;
 }
 
 /* 
