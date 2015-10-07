@@ -1,0 +1,105 @@
+/* 
+    Webfonts
+    ===========================
+*/
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto+Condensed:400,700,400italic,300italic,300);
+
+/* 
+    Html, body
+    ===========================
+*/
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+html{
+    font-size:10px;
+    font-family:'Roboto Condensed', sans-serif;
+    line-height:1.42;
+}
+
+
+/*
+	Fullscreen
+    ===========================
+*/
+.fullscreen {
+    width:100%;
+    min-height:100%;
+}
+.tcontainer{
+    display:table;
+    height:100%;
+    overflow:hidden;
+}
+.theader, .tmain, .tfooter {
+    display:table-row;
+    width:100%;
+}
+.theader, .tfooter {
+    height:1px;
+}
+.tmain{
+    height:100%;
+}
+.tcentered {
+    display:table-cell;
+    position:relative;
+    vertical-align:middle;
+    text-align:center;
+}
+.background{
+    background-position:center bottom;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+/*
+	Weather Widget
+    ===========================
+*/
+.weather-widget {
+	display: table;
+	width: 100%;
+    background: rgba(22, 160, 133,1.0);
+    color: rgba(255, 255, 255, 1);
+}
+.weather-widget__header {
+	display: table;
+	width: 100%;
+}
+.weather-widget__main {
+	display: table;
+	width: 100%;
+}
+.weather-widget__footer {
+	display: table;
+}
+.now__code {
+    font-size: 6em;
+}
+.now__code>span {
+    display: none;
+}
+.now__temp {
+    font-size: 8rem;
+    text-align: right;
+    padding-right: 2rem;
+    line-height: 1;
+}
+.now__wind-speed {
+    font-size: 3rem;
+    text-align: left;
+    padding-left: 2rem;
+    line-height: 1;
+    margin-top: 8px;
+}
+.now__humidity {
+    font-size: 3rem;
+    text-align: left;
+    padding-left: 2rem;
+    line-height: 1;
+    margin-top: 8px;
+}
