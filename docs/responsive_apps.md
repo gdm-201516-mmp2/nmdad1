@@ -18,11 +18,11 @@ Responsive Apps
     * [Relative lay-out](#relative-lay-out)
     * [Grid-systeem](#grid-systeem)
     * [Fixed lay-out met een grid-systeem](#fixed-lay-out-met-een-grid-systeem)
-    * [Responsive webdesign](#fixed-lay-out-met-een-grid-systeem)
-        * [Progressive enhancement](#progressive-enhancement)
-        * [Media queries](#media-queries)
-        * [Responsive images](#responsive-images)
-        * [Responsive Mobile First grid-systeem](#responsive-mobile-first-grid-systeem)
+* [Responsive webdesign](#responsive-webdesign)
+    * [Progressive enhancement](#progressive-enhancement)
+    * [Media queries](#media-queries)
+    * [Responsive images](#responsive-images)
+    * [Responsive Mobile First grid-systeem](#responsive-mobile-first-grid-systeem)
 ***
 
 Apps
@@ -507,7 +507,8 @@ Vervolgens maken we de webpagina aan waarmee we de grid kunnen testen.
 We merken op dat de som van de geneste kolommen gelijk is aan het aantal kolommen van de ouder (parent), bijv.: ouder col-3, de geneste kolommen col-2 en col-1.
 
 
-###Responsive webdesign
+Responsive webdesign
+--------------------
 
 Voorheen investeerde vele bedrijven in één aparte mobiele website, die inhoudelijk in grote mate gelijk was aan de originele desktop-website.  Door het vele aanbod aan resoluties volstaat één mobile website niet meer. In plaats van te werken met absolute vaste afmetingen is het veel nuttiger om websites te implementeren met relatieve eenheden, zoals: percentages, em of rem.
 
@@ -521,7 +522,7 @@ Een responsive website gebruikt o.a.:
 
 Een fluid grid gerbuikt relatieve eenheden, zoals percentages, om het grid-systeem op te bouwen. Flexibele afbeeldingen zijn afbeeldingen waarvan de schaal zodanig wordt aangepast, zodat deze passen binnen hun container. Media queries laat ons toe om andere CSS-stijlregels te gebruiken gebaseerd op de karakteristieken van het toestel. De meest gehanteerde karakteristiek is de breedte van de browser op het toestel.
 
-####Progressive enhancement
+###Progressive enhancement
 
 Progressive enhancement is een strategie in webdesign en omvat toegankelijkheid, semantische html-markup, externe stijl- en scriptbestanden. Het gaat ervan uit dat iedereen toegang heeft tot de basisinhoud en basisfunctionaliteit van een webpagina via een browser. Afhankelijk van de mogelijkheden van smartphones, tablets of pc's wordt deze basis webpagina uitgebreid met extra features. Deze werkt dus overal goed dit in tegenstelling tot **graceful degradation** waarbij we starten met een webpagina die alle inhoud en functionaliteiten bevat waarin we alle functionaliteiten uitschakelen die niet door het toestel wordt ondersteund na het optreden van fouten.
 
@@ -576,7 +577,7 @@ Indien de container, waarin we de toekomstige op toevoegen, aanwezig is en de gl
 
 In **mobile-first webdesign** wordt eerst de basisinhoud en functionaliteit ontwikkeld die werken op de 1ste generatie mobiele toestellen. Daarna wordt deze inhoud en functionaliteit uitgebreid afhankelijk van de features die het mobiel toestel of pc ondersteunen. Het is daarom dat ook de termen progressive enhancement en mobile-first webdesign nauw verweven zijn met responsive webdesign.
 
-####Media queries
+###Media queries
 
 Een media query bestaat uit een mediatype en tenminste één expressie die de scope van stijlbestanden beperkt door gebruik van media-eigenschappen, zoals: width, height en kleur. 
 
@@ -713,17 +714,30 @@ Mogelijke waarden voor de viewport `portrait` of `landscape`.
 - `resolution, min-resolution en max-resolution`
 De resolution van het device gespecificeerd als dots-per-inch (dpi), dots-per-centimeter (dpcm) of dots-per-pixel (dppx).
 
-####Responsive images
+###Responsive images
 
 **Responsive images** zijn images of afbeeldingen die zich aanpassen aan de beschikbare ruimte waarin deze vervat zitten. Deze afbeeldingen behouden hun initiële bestandsgrootte, maar passen hun dimensie aan zodat ze passen binnen een bepaalde container.
 
-####Responsive Mobile First grid-systeem
+###Responsive Mobile First grid-systeem
 
+**HTML:**
+```html	
 
+```
 
-###Adaptive webdesign
+**CSS:**
+```css	
+```
 
-###Contextual webdesign
+Adaptive webdesign
+------------------
+
+> Volgt later!
+
+Contextual webdesign
+--------------------
+
+> Volgt later!
 
 Bronnen
 -------
