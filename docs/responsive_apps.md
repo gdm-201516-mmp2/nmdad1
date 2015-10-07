@@ -10,6 +10,21 @@ Responsive Apps
 
 ***
 
+* [Apps](#apps)
+    * [Soorten Apps](#soorten)
+    * [Mobiele platformen](#mobiele-platformen)
+* [Lay-outs](#lay-outs)
+    * [Fixed lay-out](#fixed-lay-out)
+    * [Relative lay-out](#relative-lay-out)
+    * [Grid-systeem](#grid-systeem)
+    * [Fixed lay-out met een grid-systeem](#fixed-lay-out-met-een-grid-systeem)
+    * [Responsive webdesign](#fixed-lay-out-met-een-grid-systeem)
+        * [Progressive enhancement](#progressive-enhancement)
+        * [Media queries](#media-queries)
+        * [Responsive images](#responsive-images)
+        * [Responsive Mobile First grid-systeem](#responsive-mobile-first-grid-systeem)
+***
+
 Apps
 ----
 
@@ -52,7 +67,7 @@ Een **webapp**:
 > - Administratie van de geldstromen moeten we zelf afhandelen.
 
 
-Een **Native app **:
+Een **Native app**:
 
 - is een applicatie die draait op een mobiel toestel of device, zoals op een smartphone of tablet.
 - draait rechtstreeks op het besturingssysteem van het toestel zelf, en dus niet via een webbrowser.
@@ -101,9 +116,9 @@ Een **Hybride app**:
 
 Een platform is een computersysteem waarop applicaties werken. Een besturingssysteem vormt een belangrijk onderdeel van een platform en is afhankelijk van de hardware, en in het bijzonder de processorarchitectuur.
 
-In mobiele toestellen worden meestal RISC[^RISC] processoren toegepast. De ontwikkeling van deze processoren hebben zich de laatste jaren gefocust op efficiÃ«ntie, waardoor ze energiezuinig zijn, ideaal voor mobiele toestellen.
+In mobiele toestellen worden meestal RISC[^RISC] processoren toegepast. De ontwikkeling van deze processoren hebben zich de laatste jaren gefocust op efficiëntie, waardoor ze energiezuinig zijn, ideaal voor mobiele toestellen.
 
-Een RISC processor bevat Ã©Ã©n van de volgende architecturen:
+Een RISC processor bevat één van de volgende architecturen:
 
 - ARM-architectuur[^ARM]
 - MIPS-architectuur[^MIPS]
@@ -116,15 +131,15 @@ Een mobiel besturingssysteem is een besturingssysteem die aangepast moet worden 
 |---------|------------|----|
 |Android|Gebaseerd op de Linux kernel. Voor ARM-, MIPS- en x86-processoren.|<http://www.android.com/>|
 |Android Wear|Angepaste Android-versie voor wearables zoals bijv. smartwatches|<http://developer.android.com/wear/index.html>
-|MIUI|EÃ©n van de vele alternatieve versies van Android die door de consument geÃ¯nstalleerd kan worden.|<http://en.miui.com/>|
+|MIUI|Eén van de vele alternatieve versies van Android die door de consument geÃ¯nstalleerd kan worden.|<http://en.miui.com/>|
 |Fire OS|Een fork van Android die gebruikt wordt voor de tablets van Amazon|<https://developer.amazon.com/public/solutions/platforms/android-fireos>|
 |Chrome OS|Gebaseerd op het opensource Chromium OS| <http://www.chromium.org/chromium-os, <http://www.youtube.com/watch?v=0QRO3gKj3qw>|
 |iOS|Besturingssysteem voor alle Apple devices die een ARM-processor hebben.|<https://www.apple.com/benl/ios/>|
-|Windows RT|Windows voor (tablet)computers die met ARM-processoren in plaats van x86-processoren.De naam staat waarschijnlijk voor â€˜RunTimeâ€™.|<http://windows.microsoft.com/nl-be/windows/rt>|
+|Windows RT|Windows voor (tablet)computers die met ARM-processoren in plaats van x86-processoren. De naam staat waarschijnlijk voor RunTime™.|<http://windows.microsoft.com/nl-be/windows/rt>|
 |Windows Phone|Voor devices met een ARM-processor. Deelt een aantal onderdelen met Windows RT.|<http://www.windowsphone.com/nl-be>|
 |Blackberry OS|Het besturingssysteem van de Canadese firma Research in Motion, makers van BlackBerry smartphones.|<http://nl.blackberry.com/software/smartphones/blackberry-10-os.html>|
 |Tizen|Leden van de Tizen Association zijn o.m. Samsung, Intel en Huawei. Opvolger van MeeGo (Intel & Nokia).Samsung wil op (korte) termijn Android en Bada vervangen door Tizen.|<https://www.tizen.org/>, <https://www.tizenassociation.org/members/>|
-|Bada|Als Ã©Ã©n van de belangrijkste smartphone fabrikanten wil Samsung minder afhankelijk zijn van Google en Microsoft. Samsung is wil dit besturingssysteem laten samensmelten met Tizen.|<http://www.bada.com/>|
+|Bada|Als één van de belangrijkste smartphone fabrikanten wil Samsung minder afhankelijk zijn van Google en Microsoft. Samsung is wil dit besturingssysteem laten samensmelten met Tizen.|<http://www.bada.com/>|
 |Sailfish OS|Op Linux gebaseerd opensource besturingssysteem. Ontstaan uit Mer dat op zijn beurt ontstaan is toen Linux Foundation MeeGo opgaf ten voordele van Tizen.|<https://sailfishos.org/>|
 |Firefox OS|Nu de Firefox browser niet meer zo populair is als weleer, zoekt Mozilla nieuwe afzetterreinen zoals de goedkopere smartphones.|<http://www.mozilla.org/en-US/firefox/os/>
 |Ubuntu Touch|Nu Linux definitief de Desktop niet zal veroveren, richt Canonical zijn pijlen op phones en tablets.|<http://www.ubuntu.com/phone>, <http://www.ubuntu.com/tablet>|
@@ -137,7 +152,8 @@ Verwacht in 2016 (wereldwijd)[^mobileosmarket]:
 - 3,0% Bada
 - 2 % BlackBerry OS
 
-##Lay-outs
+Lay-outs
+----------
 
 ###Fixed lay-out
 
@@ -257,15 +273,13 @@ Vermits meestal het aantal kolommen, de breedte van de container en de breedte v
 > COLw = (CONw - nc*Gw - 2*CONpw - 2*ROWmw)/nc
 > $
 
-
-
 ###Fixed lay-out met een grid-systeem
 
 Voor de aanmaak van een fixed lay-out m.b.v. een grid-systeem bepalen we eerste de breedte van de container en van de gutter. In dit voorbeeld heeft de container een breedte van 1140 pixels en de gutter 24 pixels. De linker- en rechter padding van een container bedraagt de helft van de gutter, namelijk 12 pixels. Een rij bevat geen marges.
 
 Via de universele selector (*) in CSS geven we aan alle html-elementen een initiële marge van 0 pixels en aan de padding ook 0 pixels. Daarnaast maken de linker- en rechter padding alsook de border breedte links en rechts deel uit van de opgegeven of gecalculeerde breedte van een html-element en dit via de eigenschap `box-sizing` met als waarde `border-box`. De container heeft een breedte van 1140 pixels en wordt centraal geplaatst in het browservenster.
 
-**CSS voor de herkenbare termen uit een grid-systeem:**
+**CSS voor de herkenbare termen uit een grid-systeem (margin gebruikt als gutter):**
 
 ```css
 * {
@@ -493,7 +507,7 @@ Vervolgens maken we de webpagina aan waarmee we de grid kunnen testen.
 We merken op dat de som van de geneste kolommen gelijk is aan het aantal kolommen van de ouder (parent), bijv.: ouder col-3, de geneste kolommen col-2 en col-1.
 
 
-##Responsive webdesign
+###Responsive webdesign
 
 Voorheen investeerde vele bedrijven in één aparte mobiele website, die inhoudelijk in grote mate gelijk was aan de originele desktop-website.  Door het vele aanbod aan resoluties volstaat één mobile website niet meer. In plaats van te werken met absolute vaste afmetingen is het veel nuttiger om websites te implementeren met relatieve eenheden, zoals: percentages, em of rem.
 
@@ -507,7 +521,7 @@ Een responsive website gebruikt o.a.:
 
 Een fluid grid gerbuikt relatieve eenheden, zoals percentages, om het grid-systeem op te bouwen. Flexibele afbeeldingen zijn afbeeldingen waarvan de schaal zodanig wordt aangepast, zodat deze passen binnen hun container. Media queries laat ons toe om andere CSS-stijlregels te gebruiken gebaseerd op de karakteristieken van het toestel. De meest gehanteerde karakteristiek is de breedte van de browser op het toestel.
 
-###Progressive enhancement
+####Progressive enhancement
 
 Progressive enhancement is een strategie in webdesign en omvat toegankelijkheid, semantische html-markup, externe stijl- en scriptbestanden. Het gaat ervan uit dat iedereen toegang heeft tot de basisinhoud en basisfunctionaliteit van een webpagina via een browser. Afhankelijk van de mogelijkheden van smartphones, tablets of pc's wordt deze basis webpagina uitgebreid met extra features. Deze werkt dus overal goed dit in tegenstelling tot **graceful degradation** waarbij we starten met een webpagina die alle inhoud en functionaliteiten bevat waarin we alle functionaliteiten uitschakelen die niet door het toestel wordt ondersteund na het optreden van fouten.
 
@@ -562,7 +576,7 @@ Indien de container, waarin we de toekomstige op toevoegen, aanwezig is en de gl
 
 In **mobile-first webdesign** wordt eerst de basisinhoud en functionaliteit ontwikkeld die werken op de 1ste generatie mobiele toestellen. Daarna wordt deze inhoud en functionaliteit uitgebreid afhankelijk van de features die het mobiel toestel of pc ondersteunen. Het is daarom dat ook de termen progressive enhancement en mobile-first webdesign nauw verweven zijn met responsive webdesign.
 
-###Media queries
+####Media queries
 
 Een media query bestaat uit een mediatype en tenminste één expressie die de scope van stijlbestanden beperkt door gebruik van media-eigenschappen, zoals: width, height en kleur. 
 
@@ -699,24 +713,40 @@ Mogelijke waarden voor de viewport `portrait` of `landscape`.
 - `resolution, min-resolution en max-resolution`
 De resolution van het device gespecificeerd als dots-per-inch (dpi), dots-per-centimeter (dpcm) of dots-per-pixel (dppx).
 
-###Fixed lay-out bij ieder breekpunt (media query)
-
-
-
-###Fluid lay-out
-
-Een fluid lay-out is een lay-out dat percentages gebruikt als maateenheid. Het percentage wordt berekend t.o.v. de container waarin het element vervat zit.
-
-
-###Responsive images
+####Responsive images
 
 **Responsive images** zijn images of afbeeldingen die zich aanpassen aan de beschikbare ruimte waarin deze vervat zitten. Deze afbeeldingen behouden hun initiële bestandsgrootte, maar passen hun dimensie aan zodat ze passen binnen een bepaalde container.
 
-##Adaptive webdesign
+####Responsive Mobile First grid-systeem
 
-##Contextual webdesign
 
-##Bibliografie
+
+###Adaptive webdesign
+
+###Contextual webdesign
+
+Bronnen
+-------
+
+[^RISC]: Reduced Instruction Set Computing
+
+[^ARM]: Acorn RISC Machine
+Fabrikanten: Apple (A-reeks), Qualcomm (Snapdragon), Nvidia (Tegra), Samsung (Exynos), â€¦
+
+[^MIPS]: Microprocessor without Interlocked Pipeline Stages
+Fabrikanten: Imagination Technologies (Warrior), â€¦
+
+[^CISC]: Complex Instruction Set Computing
+
+[^x86]:Om het onderscheid te maken met 32-bits versies, werden 64-bits versies soms x86-64 of x64 genoemd.
+Fabrikanten: Intel (Atom, Core, Xeon), AMD (A-reeks, Phenom, Athlon), VIA Technologies (Nano, Eden, C7, C3)
+
+[^mobileosmarket]:[Gartner](http://www.forbes.com/sites/louiscolumbus/2013/01/17/2013-roundup-of-mobility-forecasts-and-market-estimates/
+)
+
+[^now]: 26/08/2014
+
+[^pollw3]: Poll resoluties w3schools: http://www.w3schools.com/browsers/browsers_display.asp
 
 - http://www.thesitewizard.com/webdesign/liquid-elastic-fixed-relative-layout.shtml
 - http://www.smashingmagazine.com/2009/06/02/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/
@@ -746,33 +776,3 @@ Een fluid lay-out is een lay-out dat percentages gebruikt als maateenheid. Het p
 - https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries
 - http://dev.w3.org/csswg/mediaqueries/#mf-dimensions
 - http://code-tricks.com/css-media-queries-for-common-devices/
-
-
-
-
-
-
-
-[^now]: 26/08/2014
-
-[^pollw3]: Poll resoluties w3schools: http://www.w3schools.com/browsers/browsers_display.asp
-
-> Written with [StackEdit](https://stackedit.io/).
-Bronnen
--------
-
-[^RISC]: Reduced Instruction Set Computing
-
-[^ARM]: Acorn RISC Machine
-Fabrikanten: Apple (A-reeks), Qualcomm (Snapdragon), Nvidia (Tegra), Samsung (Exynos), â€¦
-
-[^MIPS]: Microprocessor without Interlocked Pipeline Stages
-Fabrikanten: Imagination Technologies (Warrior), â€¦
-
-[^CISC]: Complex Instruction Set Computing
-
-[^x86]:Om het onderscheid te maken met 32-bits versies, werden 64-bits versies soms x86-64 of x64 genoemd.
-Fabrikanten: Intel (Atom, Core, Xeon), AMD (A-reeks, Phenom, Athlon), VIA Technologies (Nano, Eden, C7, C3)
-
-[^mobileosmarket]:[Gartner](http://www.forbes.com/sites/louiscolumbus/2013/01/17/2013-roundup-of-mobility-forecasts-and-market-estimates/
-)
