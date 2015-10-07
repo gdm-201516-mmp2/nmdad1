@@ -892,7 +892,7 @@ getJSONByPromise(url).then(
 
 ###Services
 
-Een service is een applicatie die diensten levert aan andere applicaties in een netwerk, zoals bv. mobiele applicaties en/of websites. Een web service is een manier van communicatie tussen twee elektronische entiteiten over het WWW. Een service is een softwaresysteem ontworpen om uitwisselbare (interoprable) machine-naar-machine interacties over een netwerk te voorzien. Een webservice is een Service-oriented Architecture (SOA), waarbij XML en JSON worden vaak gebruikt worden als uitwisselingsformaten. XML en JSON worden vaak gebruikt als uitwisselingsformaten. Cloud computing is een afgeleide van SOAâ€™s. De functionaliteiten binnen een service intrageren best niet met elkaar en dit om concurrency te voorkomen. TechnologieÃ«n die ondersteund kunnen worden in webservices zijn:
+Een service is een applicatie die diensten levert aan andere applicaties in een netwerk, zoals bv. mobiele applicaties en/of websites. Een web service is een manier van communicatie tussen twee elektronische entiteiten over het WWW. Een service is een softwaresysteem ontworpen om uitwisselbare (interoprable) machine-naar-machine interacties over een netwerk te voorzien. Een webservice is een Service-oriented Architecture (SOA), waarbij XML en JSON worden vaak gebruikt worden als uitwisselingsformaten. XML en JSON worden vaak gebruikt als uitwisselingsformaten. Cloud computing is een afgeleide van SOA's. De functionaliteiten binnen een service intrageren best niet met elkaar en dit om concurrency te voorkomen. Technologieën die ondersteund kunnen worden in webservices zijn:
 
 * WSDL ("Web Service Description Language" - Beschrijft de beschikbare services)
 , SOAP ("Simple Object Access Protocol" - Beschrijft de protocollen om te communiceren)
@@ -906,9 +906,9 @@ Een service is een applicatie die diensten levert aan andere applicaties in een 
 
 ####REST services
 
-REST staat voor "Representational State Transfer". Het is een architecturale stijl voor softwareapplicaties in een netwerk, dus nog geen standaard. Het laat verschillende softwarearchitecturen toe. Het werd voor het eerst geÃ¯ntroduceerd door Roy T. Fielding in zijn thesis "Architectural Styles and the Design of Network-based Software Architectures". Het is bij uitstek de voornaamste architecturale stijl voor online services, omwille van de minder grote- en minder complexe aanvragen (requests).
+REST staat voor "Representational State Transfer". Het is een architecturale stijl voor softwareapplicaties in een netwerk, dus nog geen standaard. Het laat verschillende softwarearchitecturen toe. Het werd voor het eerst geïntroduceerd door Roy T. Fielding in zijn thesis "Architectural Styles and the Design of Network-based Software Architectures". Het is bij uitstek de voornaamste architecturale stijl voor online services, omwille van de minder grote- en minder complexe aanvragen (requests).
 
-Het WWW bestaat uit entiteiten (resources). Een entiteit wordt beschikbaar gesteld via een URL, bv.: http://www.arteveldehs.be/opleidingen/gdm. Zoâ€™n entiteit kan een enkele entiteit, collectie of eender wat zijn, als het maar een object is. Het bezoeken van zoâ€™n URL geeft de representatie van zoâ€™n entiteit terug, waardoor de cliÃ«nt in een bepaalde status (state) verkeerd. Klikt de gebruiker op een aanwezige link binnen de voorgaande representatie, dan krijgt deze cliÃ«nt een nieuwe representatie en verkeerd dus hierdoor in een nieuwe status!
+Het WWW bestaat uit entiteiten (resources). Een entiteit wordt beschikbaar gesteld via een URL, bv.: http://www.arteveldehs.be/opleidingen/gdm. Zo'n entiteit kan een enkele entiteit, collectie of eender wat zijn, als het maar een object is. Het bezoeken van zo'n URL geeft de representatie van zo'n entiteit terug, waardoor de cliënt in een bepaalde status (state) verkeerd. Klikt de gebruiker op een aanwezige link binnen de voorgaande representatie, dan krijgt deze cliënt een nieuwe representatie en verkeerd dus hierdoor in een nieuwe status!
 
 REST gebruikt de standaarden:
 
@@ -926,33 +926,33 @@ Meestal URI (Uniform Resource Identifier): URL (Uniform Resource Locator) + URN 
 - Resource Metadata
 Link naar de bron, alternatieven en varianten
 - Representation
-Een document (XML, (X)HTML, JSON(P), â€¦)
+Een document (XML, (X)HTML, JSON(P), ...)
 - Representation Metadata
-Mediatype (text/xml, text/html, â€¦)
+Mediatype (text/xml, text/html, ...)
 
 ![REST communicatie](https://lh5.googleusercontent.com/-3CeIXE2wWPk/VFNgNtyfoBI/AAAAAAAAAlk/oTOnazOr-WA/s0/REST.png "REST.png")
 
-> Een cliÃ«nt doet een aanvraag naar een resource via de resource identifier of URI. De controller, die verbonden is aan deze URI, verwerkt de aanvraag en haalt via de Service laag de noodzakelijke data op. Deze data wordt vervolgens in de controller geconverteerd of getransformeerd naar het aangevraagde formaat. Tenslotte wordt deze data verstuurd naar de cliÃ«nt die deze data zal verwerken via scripts.
+> Een cliënt doet een aanvraag naar een resource via de resource identifier of URI. De controller, die verbonden is aan deze URI, verwerkt de aanvraag en haalt via de Service laag de noodzakelijke data op. Deze data wordt vervolgens in de controller geconverteerd of getransformeerd naar het aangevraagde formaat. Tenslotte wordt deze data verstuurd naar de cliënt die deze data zal verwerken via scripts.
 
 ####RESTful
 
-REST is een abstracte architecturale stijl die toepasbaar is in vele technologieÃ«n.  Als men de principes van REST toepast in combinatie met HTTP (HyperText Transfer Protocol), dan spreekt men over RESTful HTTP of kortweg RESTful. 
+REST is een abstracte architecturale stijl die toepasbaar is in vele technologieën.  Als men de principes van REST toepast in combinatie met HTTP (HyperText Transfer Protocol), dan spreekt men over RESTful HTTP of kortweg RESTful. 
 
 De RESTful URL's identificeren de dingen waarop we willen inwerken. Een URL identificeert een resource:
  
 - `/students`
 Identificatie van alle studenten
 - `/students/phildp`  
-Identificeert een student, genaamd â€œphildpâ€
+Identificeert een student, genaamd phildp
 In dit geval moet de identificatie uniek zijn, vandaar dat we hier de gebruikersnaam gebruiken
-- De â€œresource identifierâ€ moet uniek zijn over het gehele WWW
+- De resource identifier moet uniek zijn over het gehele WWW
 - Aanvraag (request) van een resource naar een host  
 `GET /students/phildp HTTP/1.1`, Host: `arteveldehs.be`
 
-In RESTful beschrijven we het "resource path" m.b.v. zelfstandige naamwoorden (nouns) en dus niet via het omschrijven van acties:  `/students/add`. Dit is dus een ongeldig â€œresource pathâ€ in RESTful applicaties.
-De URLs moeten zo precies mogelijk omschreven worden, alles wat de resource uniek maakt zou in de URL aanwezig moeten zijn, zoals bv.: primaire sleutels, gebruikersnamen, â€¦ .
+In RESTful beschrijven we het "resource path" m.b.v. zelfstandige naamwoorden (nouns) en dus niet via het omschrijven van acties:  `/students/add`. Dit is dus een ongeldig resource path in RESTful applicaties.
+De URLs moeten zo precies mogelijk omschreven worden, alles wat de resource uniek maakt zou in de URL aanwezig moeten zijn, zoals bv.: primaire sleutels, gebruikersnamen, ... .
 
-Bij iedere aanvraag of "request" specificeren we een bepaalde HTTP verb of methode in de "request header". Deze HTTP method is het eerste woord, in hoofdletters, in de "request header". De HTTP methoden vertellen de â€œserverâ€ wat deze moet doen met de data geÃ¯dentificeerd door de URL. De "request" kan daarnaast ook data bevatten die mee verstuurd zal worden. Deze data brengen we onder in de "request body".
+Bij iedere aanvraag of "request" specificeren we een bepaalde HTTP verb of methode in de "request header". Deze HTTP method is het eerste woord, in hoofdletters, in de "request header". De HTTP methoden vertellen de server wat deze moet doen met de data geïdentificeerd door de URL. De "request" kan daarnaast ook data bevatten die mee verstuurd zal worden. Deze data brengen we onder in de "request body".
 
 |Databasebewerkingen|SQL keyword|HTTP methods|Omschrijving|
 |-------------------|-----------|------------|------------|
