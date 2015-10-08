@@ -59,7 +59,7 @@ Deze applicatie is bestemd voor **+18 jarigen** waarbij de gebruiksvriendelijkhe
     * Yahoo Query Language (YQL)
     * Wikipedia
     * TV Maze, themoviedb, Subtitleseeker, Open Movie Database
-    * Flickr, Instagram
+    * Flickr, Foursquare, Google Places
     * ... (vraag toelating aan de docenten op een eventueel andere API's extra aan te spreken)
     
      
@@ -87,6 +87,9 @@ Functionele specificaties
 * GEO-location
     * Toon de locatie van de gebruiker op een Map
     * Hou rekening met deze locatie in andere onderdelen van deze app
+* Social Media Bookmarking (Open Graph)
+* Animaties via SVG en/of Canvas
+* Lokaal caching van data en bronbestanden (cache manifest)
 
 
 Technische specificaties
