@@ -52,6 +52,17 @@ Deze applicatie is bestemd voor **+18 jarigen** waarbij de gebruiksvriendelijkhe
 * [Worldbank Data Catalog API](http://data.worldbank.org/developers/data-catalog-api)
 * [Worldbank Idicatoren](http://data.worldbank.org/indicator)
 * Voorbeeld aanvraag: `http://api.worldbank.org/countries?per_page=10&incomeLevel=LIC&format=jsonP&prefix=Getdata` (jsonP aanvraag), meer info [Worldbank aanvraagstructuur](http://data.worldbank.org/developers/api-overview/basic-call-structure)
+* Buiten deze verplicht aantal datasets uit de Wereldbank (waarrond het concept gebouwd moet worden) kan men ook extra databanken raadplegen ter ondersteuning van dit concept:
+    * UN Data
+    * YouTube, Vimeo
+    * Soundcloud
+    * Yahoo Query Language (YQL)
+    * Wikipedia
+    * TV Maze, themoviedb, Subtitleseeker, Open Movie Database
+    * Flickr, Instagram
+    * ... (vraag toelating aan de docenten op een eventueel andere API's extra aan te spreken)
+    
+     
 
 Briefing & Analyse
 ------------------
