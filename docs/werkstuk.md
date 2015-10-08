@@ -60,9 +60,7 @@ Deze applicatie is bestemd voor **+18 jarigen** waarbij de gebruiksvriendelijkhe
     * Wikipedia
     * TV Maze, themoviedb, Subtitleseeker, Open Movie Database
     * Flickr, Foursquare, Google Places
-    * ... (vraag toelating aan de docenten op een eventueel andere API's extra aan te spreken)
-    
-     
+    * ... (vraag toelating aan de docenten om eventueel andere API's extra aan te spreken)
 
 Briefing & Analyse
 ------------------
@@ -90,6 +88,17 @@ Functionele specificaties
 * Social Media Bookmarking (Open Graph)
 * Animaties via SVG en/of Canvas
 * Lokaal caching van data en bronbestanden (cache manifest)
+* Gebruiker ervaart een interactief webapplicatie
+* Gebruiker kan favoriete data lokaal bewaren
+* Gebruiker kan de webapplicatie bookmarken in browser, bureaublad en als native app in het overzicht
+* Automation verplicht!
+    * Componenten worden via Bower toegevoegd in de components folder van de app folder
+    * SASS bestanden worden automatisch omgezet in corresponderende CSS-bestanden
+    * CSS-bestanden worden met elkaar verbonden in één bestand en geminified
+    * De JS code wordt automatisch nagekeken op syntax fouten
+    JS-bestanden worden met elkaar verbonden in één bestand en geminified
+    * De dist-folder wordt automatisch aangevuld met bestanden en folders via Grunt of Gulp
+    * Screenshots van de verschillende breekpunten worden automatisch uitgevoerd via Phantom, Casper of andere bibliotheken
 
 
 Technische specificaties
