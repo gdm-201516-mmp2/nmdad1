@@ -1,0 +1,41 @@
+body {
+	background: #F5F5F5;	
+}
+.ghent-births>ul,
+.ghent-deaths>ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ghent-births>ul>li,
+.ghent-deaths>ul>li {
+	background: #EEEEEE;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+.ghent-births>ul>li:last-of-type,
+.ghent-deaths>ul>li:last-of-type {
+	margin-bottom: 0;
+}
+.ghent-births>ul>li>article>h3,
+.ghent-deaths>ul>li>article>h3 {
+	margin: 0 0 1rem;
+	padding: 0;
+}
+.ghent-births>ul>li>article>table,
+.ghent-deaths>ul>li>article>table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.ghent-births>ul>li>article>table>thead>tr,
+.ghent-deaths>ul>li>article>table>thead>tr {
+	background: #E0E0E0;
+}
+.ghent-births>ul>li>article>table tr td,
+.ghent-births>ul>li>article>table tr th,
+.ghent-deaths>ul>li>article>table tr td,
+.ghent-deaths>ul>li>article>table tr th {
+	padding: 0.5rem;
+	border: 1px solid #E0E0E0;
+}

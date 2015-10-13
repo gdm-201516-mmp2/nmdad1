@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bevolking Gent (1999 - 2009)</title>
+	<!-- 	Normalize CSS
+			Used for global reset of default CSS rendering in browsers
+	-->
+	<link rel="stylesheet" href="css/vendor/normalize.css">
+	<!-- 	Grid CSS
+			CSS for constructing a Grid system
+	-->
+	<link rel="stylesheet" href="css/grid.css">
+	<!-- 	Main CSS
+			Only for the app
+	-->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- 	Modernizr JS: feature detection 
+			The only script in <head> when app is non-native
+	-->
+	<script src="js/vendor/modernizr.min.js"></script>
+</head>
+<body>
+	<div class="grid__wrapper">
+		<div class="grid__container">
+			<div class="grid__row">
+				<main class="grid__column-bp1-12">
+					<div class="grid__row">
+						<section class="ghent-births">
+						</section>
+					</div>
+					<div class="grid__row">
+						<section class="ghent-deaths">
+						</section>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+	<!-- 	Utilties JS
+			Loading data via XMLHttpRequest, Promises, ...
+	-->
+	<script src="js/utilities.js"></script>
+	<!-- 	Main JS
+			Only for the app
+	-->
+	<script src="js/main.js"></script>
+</body>
+</html>
