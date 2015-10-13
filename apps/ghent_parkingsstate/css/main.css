@@ -32,14 +32,16 @@ body {
 	top: 0;
 	height: 3.3rem;
 	line-height: 3.3rem;
-	padding: 0 0.5rem;
+	color: #EEEEEE;
+	min-width: 3.3rem;
+	text-align: center;
 }
 .parking__state--green {
-	color: #558B2F;
+	background: #558B2F;
 }
 .parking__state--orange {
-	color: #EF6C00;
+	background: #EF6C00;
 }
 .parking__state--red {
-	color: #c62828;
+	background: #c62828;
 }
