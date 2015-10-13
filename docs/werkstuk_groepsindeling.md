@@ -192,4 +192,4 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 |2MMPC-11|De Rouck Anthony, Dossche Kevin|
 |2MMPC-12|Gouhie Victor, Follet Lars|
 |2MMPC-13|De Neve Laurens|
-|2MMPC-14|Gouhie Victor|
+|2MMPC-14|Merckx Glenn|
