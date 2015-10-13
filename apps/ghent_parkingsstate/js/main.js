@@ -34,12 +34,20 @@ http://datatank.stad.gent/4/mobiliteit/bezettingparkeergaragesv11.json
 		"updateUI": function() {
 			
 			// Get the Array of parkings from JSON object
-			var parkings = this._ghentParkingsStateData.Parkings.parkings, parking = null;
+			var parkings = this._ghentParkingsStateData.Parkings.parkings;
+			// Temporary variable for the current parking in the Array
+			var parking = null;
+			// Temporary variable for building a string
+			var tempStr = '';
+			tempStr += '<ul>';
+			// Loop the parkings
 			for(var i = 0;i < parkings.length;i++) {
 				parking = parkings[i];
-				console.log(parking);
+				tempStr += '<li>' + parking.name + '</li>';
 			}
-			
+			tempStr += '</ul>';
+			// Write in the DOM via specific container / selector
+			document.querySelector('.ghent-parkings-state').innerHTML = tempStr;
 		}
 		
 	};
