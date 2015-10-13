@@ -17,3 +17,25 @@ function getJSONByPromise(url){
         xhr.send();
     });
 }
+
+function convertGhentParkingsStateToString(availableCapacity, totalCapacity) {
+    var prec = availableCapacity/totalCapacity*100;
+    if(prec > 60) {
+        return 'VRIJ';
+    } else if (prec < 10) {
+        return 'VOL';
+    } else {
+        return availableCapacity;
+    }
+}
+
+function convertGhentParkingsStateToSelector(availableCapacity, totalCapacity) {
+    var prec = availableCapacity/totalCapacity*100;
+    if(prec > 40) {
+        return 'parking__state--green';
+    } else if (prec < 10) {
+        return 'parking__state--red';
+    } else {
+        return 'parking__state--orange';
+    }
+}

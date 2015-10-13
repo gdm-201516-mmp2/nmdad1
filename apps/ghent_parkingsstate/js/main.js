@@ -43,7 +43,13 @@ http://datatank.stad.gent/4/mobiliteit/bezettingparkeergaragesv11.json
 			// Loop the parkings
 			for(var i = 0;i < parkings.length;i++) {
 				parking = parkings[i];
-				tempStr += '<li>' + parking.name + '</li>';
+				if(parking.availableCapacity != null) {
+					tempStr += '<li class="parking">';
+					tempStr += '<span class="parking__name">' + parking.description + '</span>';
+					tempStr += '<span class="parking__code">' + parking.name.split(' ')[0] + '</span>';
+					tempStr += '<span class="parking__state ' + convertGhentParkingsStateToSelector(parking.availableCapacity, parking.totalCapacity) + '">' + convertGhentParkingsStateToString(parking.availableCapacity, parking.totalCapacity) + '</span>';
+					tempStr += '</li>';
+				}
 			}
 			tempStr += '</ul>';
 			// Write in the DOM via specific container / selector
