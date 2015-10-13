@@ -37,16 +37,19 @@ http://datatank.stad.gent/4/mobiliteit/bezettingparkeergaragesv11.json
 			var parkings = this._ghentParkingsStateData.Parkings.parkings;
 			// Temporary variable for the current parking in the Array
 			var parking = null;
+			// Temporary variable for the code of the current parking
+			var parkingCode = null;
 			// Temporary variable for building a string
 			var tempStr = '';
 			tempStr += '<ul>';
 			// Loop the parkings
 			for(var i = 0;i < parkings.length;i++) {
 				parking = parkings[i];
+				parkingCode = parking.name.split(' ')[0];
 				if(parking.availableCapacity != null) {
-					tempStr += '<li class="parking">';
+					tempStr += '<li class="parking" data-id="' + parkingCode + '">';
 					tempStr += '<span class="parking__name">' + parking.description + '</span>';
-					tempStr += '<span class="parking__code">' + parking.name.split(' ')[0] + '</span>';
+					tempStr += '<span class="parking__code">' + parkingCode + '</span>';
 					tempStr += '<span class="parking__state ' + convertGhentParkingsStateToSelector(parking.availableCapacity, parking.totalCapacity) + '">' + convertGhentParkingsStateToString(parking.availableCapacity, parking.totalCapacity) + '</span>';
 					tempStr += '</li>';
 				}

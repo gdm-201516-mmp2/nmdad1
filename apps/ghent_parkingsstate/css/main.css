@@ -1,6 +1,47 @@
+/* Import Google Webfonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,300italic,300);
+
+/* Body */
 body {
 	background: #FAFAFA;
+	
+	font-family: 'Roboto', sans-serif;
 }
+
+/* Header */
+.header-wrapper {
+	background: #283593;
+	color: #FAFAFA;
+	margin-bottom: 1rem;
+}
+.header-wrapper header {
+	margin-bottom: -1rem;
+}
+.header__logo>h1>span {
+	display: none;
+}
+.header__logo>h1::before {
+	content: "P";
+	
+	display: inline;
+	padding: 0.5rem;
+	
+	background: #0097A7;
+	color: #283593;
+}
+.header__logo>h1::after {
+	content: "Gent";
+	
+	display: inline;
+	padding: 0.5rem;
+	
+	color: #0097A7;
+}
+.header__logo>h2 {
+	display: none;
+}
+
+/* Ghent parkings */
 .ghent-parkings-state>ul {
 	list-style: none;
 	margin: 0;
