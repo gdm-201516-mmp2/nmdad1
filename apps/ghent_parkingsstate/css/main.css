@@ -1,0 +1,45 @@
+body {
+	background: #FAFAFA;
+}
+.ghent-parkings-state>ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ghent-parkings-state>ul>li {
+	padding: 0.5rem 1rem;
+	background: #EEEEEE;
+	margin-bottom: 0.5rem;
+}
+.ghent-parkings-state>ul>li:last-of-type {
+	margin-bottom: 0;
+}
+.parking {
+	position: relative;
+}
+.parking__name {
+	display: block;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+.parking__code {
+	display: block;
+	font-size: 0.8rem;
+}
+.parking__state {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	padding: 0 0.5rem;
+}
+.parking__state--green {
+	color: #558B2F;
+}
+.parking__state--orange {
+	color: #EF6C00;
+}
+.parking__state--red {
+	color: #c62828;
+}

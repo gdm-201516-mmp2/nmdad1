@@ -70,6 +70,7 @@
 |Lettens Kristof||	
 |Meersschaert Stijn|2MMP-proDEV|
 |Mehauden Rina|2MMP-proDUCEa|
+|Merckx Glenn|2MMP-proDUCEb|
 |Mulaj Altin|2MMP-proDUCEb|
 |Muylaert Lode|2MMP-proDEV|
 |Naska Dejvi|2MMP-proDUCEb|
@@ -125,6 +126,7 @@ Ballyn Lucas
 Vandeveire Ellen 
 Hoornaert Simon 
 Meyers Andries 
+Merckx Glenn
 
 ##Groepsindeling
 
@@ -190,3 +192,4 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 |2MMPC-11|De Rouck Anthony, Dossche Kevin|
 |2MMPC-12|Gouhie Victor, Follet Lars|
 |2MMPC-13|De Neve Laurens|
+|2MMPC-14|Merckx Glenn|

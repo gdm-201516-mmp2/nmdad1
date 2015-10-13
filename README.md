@@ -62,10 +62,12 @@ Taken
 Uitdagingen
 -----------
 
-* Week 2 & 3	
+* Week 2, 3 & 4	
 	* Development - Maak een digitale clock m.b.v. HTML, CSS en JavaScript
 	* Development - Maak een analoge clock m.b.v. HTML, CSS en JavaScript
 	* Development - Maak een behance template m.b.v. de leerstof uit lesweek 3 en eigen portfolio werk (schetsen, designs, foto's, video's, animaties). Design based on behance en dribbble.
+	* Development - Maak een app m.b.v. bevolkingsinformatie stad Gent.
+	* Development - Maak een app met alle mobiliteitsdata stad Gent.
 
 Auteurs
 --------
