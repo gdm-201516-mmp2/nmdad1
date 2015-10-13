@@ -39,8 +39,9 @@ Applicaties
 
 * Week 3
 	* [Responsive Mobile First Gridsysteem](apps/responsive)
+	* [Behance met gridsysteem](apps/behance)
 * Week 4
-	* [Bevolking Stad Gent (Geboortes, ...)](apps/bevolking)
+	* [Bevolking Stad Gent (Geboortes, ...)](apps/ghent_bevolking)
 	* [Sportlocaties Stad Gent](apps/ghent_sportlocations)
 	* [Perkeergarages bezetting Stad Gent](apps/ghent_parkingsstate)
 
