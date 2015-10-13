@@ -26,7 +26,20 @@
 			
 		},
 		"updateUI": function() {
-			alert('UPDATE UI');
+			
+			if(this._ghentSportlocationsData != null) {
+				var tempStr = '', sportLocation = null;
+				tempStr += '<ul>';
+				for(var i = 0;i < this._ghentSportlocationsData.features.length;i++) {
+					sportLocation = this._ghentSportlocationsData.features[i];
+					tempStr += '<li>';
+					tempStr += sportLocation.properties.Naam;
+					tempStr += '</li>';
+				}
+				tempStr += '</ul>';
+				document.querySelector('.ghent-sportlocations').innerHTML = tempStr;
+			}			
+			
 		}	
 	};
 	App.init();
