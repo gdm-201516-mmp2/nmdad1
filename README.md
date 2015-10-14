@@ -32,18 +32,15 @@ Documenten
 * Week 3
 	* [Responsive Apps](docs/responsive_apps.md)
 	* [Werken met data](docs/data_workingwith.md)
+	* [App - Responsive Mobile First Gridsysteem](apps/responsive)
+	* [App - Behance met gridsysteem](apps/behance)
 	* [Design - Maak promo](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=458593)
 	
-Applicaties
------------
-
-* Week 3
-	* [Responsive Mobile First Gridsysteem](apps/responsive)
-	* [Behance met gridsysteem](apps/behance)
 * Week 4
-	* [Bevolking Stad Gent (Geboortes, ...)](apps/ghent_bevolking)
-	* [Sportlocaties Stad Gent](apps/ghent_sportlocations)
-	* [Perkeergarages bezetting Stad Gent](apps/ghent_parkingsstate)
+	* [App - Bevolking Stad Gent (Geboortes, ...)](apps/ghent_bevolking)
+	* [App - Sportlocaties Stad Gent](apps/ghent_sportlocations)
+	* [App - Perkeergarages bezetting Stad Gent](apps/ghent_parkingsstate)
+	* [Design - Maak wireframes (mobile, smartwatches, ...)](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=463293)
 
 Taken
 -----
@@ -62,13 +59,21 @@ Taken
 * Week 3
 	* [Design - promo](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=assignment&go=course_viewer&browser=table&tool_action=submitters_browser&publication=458615)
 	
+* Week 4	
+	* [Design - Wireframes - proDEV](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=assignment&go=course_viewer&browser=table&tool_action=submitters_browser&publication=463329)
+	
+
 Uitdagingen
 -----------
 
-* Week 2, 3 & 4	
+* Week 2
 	* Development - Maak een digitale clock m.b.v. HTML, CSS en JavaScript
 	* Development - Maak een analoge clock m.b.v. HTML, CSS en JavaScript
+	
+* Week 3	
 	* Development - Maak een behance template m.b.v. de leerstof uit lesweek 3 en eigen portfolio werk (schetsen, designs, foto's, video's, animaties). Design based on behance en dribbble.
+	
+* Week 4	
 	* Development - Maak een app m.b.v. bevolkingsinformatie stad Gent.
 	* Development - Maak een app met alle mobiliteitsdata stad Gent.
 
