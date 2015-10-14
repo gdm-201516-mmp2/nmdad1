@@ -1,41 +1,83 @@
+/* Import Google Webfonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,300italic,300);
+
+/* Body */
 body {
-	background: #F5F5F5;	
+	background: #FAFAFA;
+	
+	font-family: 'Roboto', sans-serif;
 }
-.ghent-births>ul,
-.ghent-deaths>ul {
-	list-style: none;
+
+/* Header */
+.header-wrapper {
+	background: #283593;
+	color: #FAFAFA;
+	margin-bottom: 1rem;
+}
+.header-wrapper header {
+	margin-bottom: -1rem;
+}
+.header__logo>h1>span {
+	display: none;
+}
+.header__logo>h1::before {
+	content: "B";
+	
+	display: inline;
+	padding: 0.5rem;
+	
+	background: #0097A7;
+	color: #283593;
+}
+.header__logo>h1::after {
+	content: "Gent";
+	
+	display: inline;
+	padding: 0.5rem;
+	
+	color: #0097A7;
+}
+.header__logo>h2 {
+	display: none;
+}
+
+/* List, Listitem */
+.list {
 	margin: 0;
 	padding: 0;
 }
-.ghent-births>ul>li,
-.ghent-deaths>ul>li {
+.listitem {
 	background: #EEEEEE;
-	border-radius: 0.5rem;
+	
+	list-style-type: none;
+	
 	padding: 1rem;
 	margin-bottom: 1rem;
 }
-.ghent-births>ul>li:last-of-type,
-.ghent-deaths>ul>li:last-of-type {
+.listitem:last-of-type {
 	margin-bottom: 0;
 }
-.ghent-births>ul>li>article>h3,
-.ghent-deaths>ul>li>article>h3 {
+.listitem>article>h3 {
 	margin: 0 0 1rem;
 	padding: 0;
 }
-.ghent-births>ul>li>article>table,
-.ghent-deaths>ul>li>article>table {
+
+/* Table */
+.table {
 	border-collapse: collapse;
 	width: 100%;
 }
-.ghent-births>ul>li>article>table>thead>tr,
-.ghent-deaths>ul>li>article>table>thead>tr {
+.table>thead>tr {
 	background: #E0E0E0;
 }
-.ghent-births>ul>li>article>table tr td,
-.ghent-births>ul>li>article>table tr th,
-.ghent-deaths>ul>li>article>table tr td,
-.ghent-deaths>ul>li>article>table tr th {
+.table tr td,
+.table tr th {
 	padding: 0.5rem;
+	
 	border: 1px solid #E0E0E0;
+}
+
+/* Gent births */
+.ghent-births-total {
+	margin-bottom: 1rem;
 }

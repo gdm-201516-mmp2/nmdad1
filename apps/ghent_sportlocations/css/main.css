@@ -1,0 +1,70 @@
+/* Import Google Webfonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,300italic,300);
+
+/* Body */
+body {
+	background: #FAFAFA;
+	
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+.header-wrapper {
+	background: #283593;
+	color: #FAFAFA;
+	margin-bottom: 1rem;
+}
+.header-wrapper header {
+	margin-bottom: -1rem;
+}
+.header__logo>h1>span {
+	display: none;
+}
+.header__logo>h1::before {
+	content: "S";
+	
+	display: inline;
+	padding: 0.5rem;
+	
+	background: #0097A7;
+	color: #283593;
+}
+.header__logo>h1::after {
+	content: "Gent";
+	
+	display: inline;
+	padding: 0.5rem;
+	
+	color: #0097A7;
+}
+.header__logo>h2 {
+	display: none;
+}
+
+/* Ghent sportlocations */
+.ghent-sportlocations>ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.ghent-sportlocations>ul>li {
+	padding: 0.5rem 1rem;
+	background: #EEEEEE;
+	margin-bottom: 0.5rem;
+}
+.ghent-sportlocations>ul>li:last-of-type {
+	margin-bottom: 0;
+}
+.sportlocation__name {
+	display: block;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+.sportlocation__district {
+	display: block;
+	font-size: 1rem;
+}
+.sportlocation__sport {
+	display: block;
+	font-size: 0.8rem;
+}

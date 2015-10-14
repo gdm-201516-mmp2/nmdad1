@@ -27,13 +27,25 @@
 		},
 		"updateUI": function() {
 			
-			if(this._ghentSportlocationsData != null) {
+			if(this._ghentSportlocationsData != null && this._ghentSportlocationsData.features != null) {
+				// Soring the data on description of the parking
+				this._ghentSportlocationsData.features.sort(function(a, b) {
+					if (a.properties.Naam > b.properties.Naam) {
+						return 1;
+					}
+					if (a.properties.Naam < b.properties.Naam) {
+						return -1;
+					}
+					return 0;
+				});
 				var tempStr = '', sportLocation = null;
 				tempStr += '<ul>';
 				for(var i = 0;i < this._ghentSportlocationsData.features.length;i++) {
 					sportLocation = this._ghentSportlocationsData.features[i];
-					tempStr += '<li>';
-					tempStr += sportLocation.properties.Naam;
+					tempStr += '<li class="sportlocation" data-id="' + sportLocation.properties.NUMMER + '">';
+					tempStr += '<span class="sportlocation__name">' + sportLocation.properties.Naam + '</span>';
+					tempStr += '<span class="sportlocation__district">' + sportLocation.properties.Wijk + '</span>';
+					tempStr += '<span class="sportlocation__sport">' + sportLocation.properties.Sport + '</span>';
 					tempStr += '</li>';
 				}
 				tempStr += '</ul>';
