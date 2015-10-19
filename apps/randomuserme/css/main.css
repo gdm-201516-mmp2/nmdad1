@@ -89,6 +89,7 @@ body {
 	font-size: 1.2rem;
 	font-weight: 700;
 	line-height: 48px;
+	text-transform: capitalize;
 }
 .user__details-link {
 	position: absolute;
