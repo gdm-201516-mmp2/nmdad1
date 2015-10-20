@@ -17,3 +17,25 @@ function getJSONByPromise(url){
         xhr.send();
     });
 }
+
+// Extend Number function
+Number.prototype.padWithDigits = function (n) {  
+	var txt = this.toString();
+	while(txt.length < n) {
+		txt = '0' + txt;
+	}	
+	return txt;  
+};
+
+// Extend Date function
+Date.prototype.toShortDateString = function () {  
+	var tempStr = '';
+    
+	var dayOfTheMonth = this.getDate();
+	var month = this.getMonth();
+	var year = this.getFullYear();
+    
+    tempStr += dayOfTheMonth.padWithDigits(2) + '-' + month.padWithDigits(2) + '-' + year.padWithDigits(4);
+    
+	return tempStr;  
+};
