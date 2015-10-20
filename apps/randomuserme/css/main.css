@@ -21,7 +21,7 @@ body {
 	display: none;
 }
 .header__logo>h1::before {
-	content: "\f258";
+	content: "\f0c0";
 	
 	font-family: Fontawesome;
 	
@@ -43,7 +43,7 @@ body {
 	display: none;
 }
 
-/* RandomUserMe poeples */
+/* Random Users */
 .rum-users>ul {
 	list-style: none;
 	margin: 0;
@@ -57,9 +57,6 @@ body {
 .rum-users>ul>li:last-of-type {
 	margin-bottom: 0;
 }
-.user {
-	position: relative;
-}
 .user::before, .user::after {
     content: "\0020";
     display: block;
@@ -72,38 +69,31 @@ body {
 .user__picture {
 	width: 48px;
 	height: 48px;
-	border-top-right-radius: 50%;
-	border-top-left-radius: 50%;
-	border-bottom-left-radius: 50%;
+	display: block;
 	overflow: hidden;
-	display:block;
-	float: left;
-	margin-right: 1rem;
+	float:left;
+	
+	border-radius: 100%;
 	border: 4px solid #0097A7;
 }
-.user__picture>img {
+.user__picture img {
 	width: 100%;
 }
 .user__name {
+	float: left;
 	display: block;
+	margin-left: 1rem;
+	
 	font-size: 1.2rem;
 	font-weight: 700;
-	line-height: 48px;
-	text-transform: capitalize;
+	line-height: 48px;	
 }
 .user__details-link {
-	position: absolute;
-	right: 8px;
-	top: 0;
-	text-decoration: none;
+	float: right;
+	
+	line-height: 48px;
+	color: #0097A7;
 }
 .user__details-link:hover {
-	text-decoration: none;
-}
-.user__details-link .fa {
-	display: block;
-	font-size: 1.2rem;
-	font-weight: 700;
-	line-height: 64px;
-	color: #0097A7;
+	color: #283593;
 }
