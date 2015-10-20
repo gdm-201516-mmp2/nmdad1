@@ -5,8 +5,14 @@
 			
 			this.URLRANDOMUSERME = 'http://api.randomuser.me/?results=200';// Cache the url with random users in variable URLRANDOMUSERME
 			this._randomUsersData = null;// Cached data for random users
-			this.loadRandomUsers();// Callback: Load dataset RandomUsersMe via API
 			this.hbsCache = {};// Handlebars cache for templates
+			this.hbsParialsCache = {};// Handlebars Partial cache for templates
+			this.loadHbsPartials(); // Load Handlebars Partials and cache them
+			this.loadRandomUsers();// Callback: Load dataset RandomUsersMe via API
+		},
+		"loadHbsPartials": function() {
+			var src = document.querySelector('#user-details-template').innerHTML;// Get the contents from the specified hbs template
+			Handlebars.registerPartial('user-details', src);
 		},
 		"loadRandomUsers": function() {
 			

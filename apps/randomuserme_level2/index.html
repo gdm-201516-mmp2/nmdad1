@@ -101,19 +101,51 @@
 					<picture class="user__picture">
 						<img src="{{user.picture.medium}}" alt="Picture for the user: {{user.name.last}}" />
 					</picture>
-					<span class="user__name">{{user.name.last}}</span>
+					<span class="user__name">{{fullName user.name}}</span>
 					<a class="user__details-link" href="#" title="Details for the user: {{user.name.last}}">
 						<span class="fa fa-chevron-right"></span>
 					</a>
+					{{>user-details user}}
 				</li>
 				{{/each}}
 			</ul>
 			{{else}}
 				<p>No Random users present in the cloud API!</p>
 			{{/if}}
+		</script>		
+		<script id="user-details-template" type="text/x-handlebars-template">
+			<section class="user__details">
+				<ul>
+					<li>
+						<span class="fa fa-user"></span>{{username}}
+					</li>
+					<li>
+						<span class="fa fa-envelope"></span>{{email}}
+					</li>
+					<li>
+						<span class="fa fa-lock"></span>{{password}}
+					</li>
+					<li>
+						<span class="fa fa-calendar"></span>{{toShortDateString dob}}
+					</li>
+					<li>
+						<span class="fa fa-phone"></span>{{phone}}
+					</li>
+					<li>
+						<span class="fa fa-mobile-phone"></span>{{cell}}
+					</li>
+					<li>
+						<span class="fa fa-map-marker"></span>{{address location}}
+					</li>
+					<li>
+						<span class="fa fa-registered"></span>{{toShortDateString registered}}
+					</li>
+				</ul>
+			</section>
 		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
 		<script src="js/utilities.js"></script>		
+		<script src="js/helpers.js"></script>	
 		<script src="js/main.js"></script>
 	</body>
 </html>
