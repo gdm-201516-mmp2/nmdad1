@@ -41,6 +41,11 @@ Documenten
 	* [App - Sportlocaties Stad Gent](apps/ghent_sportlocations)
 	* [App - Perkeergarages bezetting Stad Gent](apps/ghent_parkingsstate)
 	* [Design - Maak wireframes (mobile, smartwatches, ...)](http://chamilo.arteveldehs.be/index.php?application=weblcms&course=7639&tool=document&go=course_viewer&browser=table&tool_action=viewer&publication=463293)
+	
+* Week 5
+	* [App - RandomUserMe](apps/randomuserme)
+	* [App - RandomUserMe - Level 2 (Handlebars)](apps/randomuserme_level2)
+	* Feedback - Concept Werkstuk: Open The Gates For Data (Individuele feedback per groep, eigen notities noodzakelijk)
 
 Taken
 -----
@@ -76,6 +81,9 @@ Uitdagingen
 * Week 4	
 	* Development - Maak een app m.b.v. bevolkingsinformatie stad Gent.
 	* Development - Maak een app met alle mobiliteitsdata stad Gent.
+	
+* Week 5
+	* Maak de app met alle mobiliteitsdata m.b.v. Handlebars
 
 Auteurs
 --------
