@@ -3,40 +3,26 @@
 	var App = {
 		"init" : function() {
 			
+			this.URLRANDOMUSERME = 'http://api.randomuser.me/?results=200';// Cache the url with random users in variable URLRANDOMUSERME
 			// Create the TweetsDbContext object via clone
 			this._tweetsDbContext = TweetsDbContext;
 			// Initialize the TweetsDbContext given a certain namespace aka connection string
 			this._tweetsDbContext.init('dds.tweets');
 			
-			// TEST
-			var tweet = new Object();
-			tweet.content = '@ Alle Arteveldestudenten De Lijn & NMBS verwachten resp. op 7 & 9 oktober dat de dienstverlening verstoord zal zijn, check ook \'Mijn Dinar\'';
-			tweet.Mood = 0;
-			tweet.CreatedAt = new Date().getTime();
-			tweet.UpdatedAt = null;
-			tweet.DeletedAt = null;
-			
-			this._tweetsDbContext.addTweet(tweet);
-			
-			// Get tweet by Id
-			var tweet1 = this._tweetsDbContext.getTweetById('5d645b5a-7fcc-4dab-83bd-4679daab79ae');
-			console.log(tweet1);
-			
-			// Update tweet
-			var result = this._tweetsDbContext.updateTweet(tweet1);
-			tweet1 = this._tweetsDbContext.getTweetById('5d645b5a-7fcc-4dab-83bd-4679daab79ae');
-			console.log(tweet1);
-			
-			// Soft delete tweet
-			var result = this._tweetsDbContext.softDeleteTweet(tweet1.Id);
-			tweet1 = this._tweetsDbContext.getTweetById('5d645b5a-7fcc-4dab-83bd-4679daab79ae');
-			console.log(tweet1);
-			
-			// Soft undelete tweet
-			var result = this._tweetsDbContext.softUnDeleteTweet(tweet1.Id);
-			tweet1 = this._tweetsDbContext.getTweetById('5d645b5a-7fcc-4dab-83bd-4679daab79ae');
-			console.log(tweet1);
-		}
+			this.hbsCache = {};// Handlebars cache for templates
+			this.hbsParialsCache = {};// Handlebars Partial cache for templates
+			this.updateTweetsUI();// Callback: Load Tweets from DbContext
+		},
+		"updateTweetsUI": function() {
+			var tweets = this._tweetsDbContext.getTweets(); // Get all tweets
+			if(tweets != null) {	
+				if(!this.hbsCache['tweets']) {
+					var src = document.querySelector('#tweets-template').innerHTML;// Get the contents from the specified hbs template
+					this.hbsCache['tweets'] = Handlebars.compile(src);// Compile the source and add it to the hbs cache
+				}
+				document.querySelector('.tweets').innerHTML = this.hbsCache['tweets'](tweets);
+			}
+		}	
 	};
 	App.init();
 	 
