@@ -12,7 +12,7 @@ var TweetsDbContext = {
 			"tweets": [],
 			"postweets": [],
 			"negtweets": [],
-			"seetings": {}
+			"settings": {}
 		};
 		// Get the stored data. If not present store the value of the _tweetsData in the localstorage
 		if(Utils.store(this._connString) != null) {
@@ -77,6 +77,6 @@ var TweetsDbContext = {
 	},
 	// Save
 	save: function() {
-		
+		Utils.store(this._connString, this._tweetsData);
 	}	
 };
