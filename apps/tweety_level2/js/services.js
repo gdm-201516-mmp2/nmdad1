@@ -53,7 +53,11 @@ var TweetsDbContext = {
 	},
 	// Add a new tweet
 	addTweet: function(tweet) {
-		
+		if(this.getTweetById(tweet.Id) == null) {
+			this._tweetsData.tweets.push(tweet);
+			this.save();
+		}
+		return null;
 	},
 	// Update an exisiting tweet
 	updateTweet: function(tweet) {
@@ -71,8 +75,8 @@ var TweetsDbContext = {
 	softUnDeleteTweet: function(id) {
 		
 	},
-	// Save a tweet
-	saveTweet: function(tweet) {
+	// Save
+	save: function() {
 		
 	}	
 };
