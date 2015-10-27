@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="nl-be" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tweets Application | NMDADI | drdynscript</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+		<link rel="stylesheet" href="css/vendor/normalize.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-custom.js"></script>
+	</head>
+	<body>
+		<div class="grid__wrapper header-wrapper">
+			<div class="grid__container">
+				<div class="grid__row">
+					<div class="grid__column-bp1-12">
+						<header>
+							<section class="header__logo">
+								<h1><span>RandomUserMe</span></h1>
+								<h2>Random user generator</h2>
+							</section>
+						</header>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid__wrapper">
+			<div class="grid__container">
+				<div class="grid__row">
+					<div class="grid__column-bp1-12">
+						<section class="rum-users">
+							<ul>
+								<li class="user" data-id="bomenfluisteraar">
+									<picture class="user__picture">
+										<img src="http://lorempixel.com/200/200/people/9/" alt="Picture for the user: Bosfee" />
+									</picture>
+									<span class="user__name">Bosfee</span>
+									<a class="user__details-link" href="#" title="Details for the user: Bosfee">
+										<span class="fa fa-chevron-right"></span>
+									</a>
+									<section class="user__details">
+										<ul>
+											<li>
+												<span class="fa fa-user  "></span>bomenfluisteraar
+											</li>
+											<li>
+												<span class="fa fa-envelope  "></span>philippe.depauw@arteveldehs.be
+											</li>
+											<li>
+												<span class="fa fa-lock  "></span>slakoolraap
+											</li>
+											<li>
+												<span class="fa fa-calendar  "></span>12/06/1979
+											</li>
+											<li>
+												<span class="fa fa-phone  "></span>0495 62 358
+											</li>
+											<li>
+												<span class="fa fa-mobile-phone  "></span>04965 32 65
+											</li>
+											<li>
+												<span class="fa fa-map-marker  "></span>Industrieweg 232
+											</li>
+											<li>
+												<span class="fa fa-registered  "></span>16/11/2015
+											</li>
+										</ul>
+									</section>
+								</li>
+								<li class="user" data-id="jonagold">
+									<picture class="user__picture">
+										<img src="http://lorempixel.com/200/200/people/8/" alt="Picture for the user: Jorn Brak" />
+									</picture>
+									<span class="user__name">Jona Gold</span>
+									<a class="user__details-link" href="#" title="Details for the user: Jorn Brak">
+										<span class="fa fa-chevron-right"></span>
+									</a>
+								</li>
+								<li class="user" data-id="draco12">
+									<picture class="user__picture">
+										<img src="http://lorempixel.com/200/200/people/7/" alt="Picture for the user: Dries Mertens" />
+									</picture>
+									<span class="user__name">Dries Mertens</span>
+									<a class="user__details-link" href="#" title="Details for the user: Dries Mertens">
+										<span class="fa fa-chevron-right"></span>
+									</a>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Handlebars Template -->
+		<script id="users-template" type="text/x-handlebars-template">
+			{{#if this}}
+			<ul>
+				{{#each this}}
+				<li class="user" data-id="{{user.username}}">
+					<picture class="user__picture">
+						<img src="{{user.picture.medium}}" alt="Picture for the user: {{user.name.last}}" />
+					</picture>
+					<span class="user__name">{{fullName user.name}}</span>
+					<a class="user__details-link" href="#" title="Details for the user: {{user.name.last}}">
+						<span class="fa fa-chevron-right"></span>
+					</a>
+					{{>user-details user}}
+				</li>
+				{{/each}}
+			</ul>
+			{{else}}
+				<p>No Random users present in the cloud API!</p>
+			{{/if}}
+		</script>		
+		<script id="user-details-template" type="text/x-handlebars-template">
+			<section class="user__details">
+				<ul>
+					<li>
+						<span class="fa fa-user"></span>{{username}}
+					</li>
+					<li>
+						<span class="fa fa-envelope"></span>{{email}}
+					</li>
+					<li>
+						<span class="fa fa-lock"></span>{{password}}
+					</li>
+					<li>
+						<span class="fa fa-calendar"></span>{{toShortDateString dob}}
+					</li>
+					<li>
+						<span class="fa fa-phone"></span>{{phone}}
+					</li>
+					<li>
+						<span class="fa fa-mobile-phone"></span>{{cell}}
+					</li>
+					<li>
+						<span class="fa fa-map-marker"></span>{{address location}}
+					</li>
+					<li>
+						<span class="fa fa-registered"></span>{{toShortDateString registered}}
+					</li>
+				</ul>
+			</section>
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
+		<script src="js/utilities.js"></script>		
+		<script src="js/helpers.js"></script>	
+		<script src="js/services.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
