@@ -10,7 +10,6 @@
 			
 			// TEST
 			var tweet = new Object();
-			tweet.Id = 1;
 			tweet.content = '@ Alle Arteveldestudenten De Lijn & NMBS verwachten resp. op 7 & 9 oktober dat de dienstverlening verstoord zal zijn, check ook \'Mijn Dinar\'';
 			tweet.Mood = 0;
 			tweet.CreatedAt = new Date().getTime();
