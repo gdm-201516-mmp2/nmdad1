@@ -70,6 +70,7 @@ var TweetsDbContext = {
 		if(index == -1) {
 			return false;
 		}
+		tweet.UpdatedAt = new Date().getTime();
 		this._tweetsData.tweets[index] = tweet;
 		this.save();
 		return true;
