@@ -66,36 +66,67 @@ var TweetsDbContext = {
 		if(originalTweet == null) {
 			return false;
 		}
+		var index = this.findIndexOfTweetById(tweet.Id);
+		if(index == -1) {
+			return false;
+		}
+		this._tweetsData.tweets[index] = tweet;
+		this.save();
+		return true;
+	},
+	// Delete an exisiting tweet by id
+	deleteTweet: function(id) {
+		var originalTweet = this.getTweetById(id);
+		if(originalTweet == null) {
+			return false;
+		}
+		var index = this.findIndexOfTweetById(id);
+		if(index == -1) {
+			return false;
+		}
+		this._tweetsData.tweets.splice(index, 1);
+		this.save();
+		return true;
+	},
+	// Soft delete a tweet
+	softDeleteTweet: function(id) {
+		var index = this.findIndexOfTweetById(id);
+		if(index == -1) {
+			return false;
+		}
+		var tweet = this._tweetsData.tweets[index];
+		tweet.DeletedAt = new Date().getTime();
+		this._tweetsData.tweets[index] = tweet;
+		this.save();
+		return true;
+	},
+	// Soft undelete a tweet
+	softUnDeleteTweet: function(id) {
+		var index = this.findIndexOfTweetById(id);
+		if(index == -1) {
+			return false;
+		}
+		var tweet = this._tweetsData.tweets[index];
+		tweet.DeletedAt = null;
+		this._tweetsData.tweets[index] = tweet;
+		this.save();
+		return true;
+	},
+	findIndexOfTweetById: function(id) {
 		var tweets = this.getTweets();
 		if(tweets == null) {
-			return false;
+			return -1;
 		}
 		var index = -1, match = false, i = 0;
 		while(!match && i < tweets.length) {
-			if(tweet.Id == tweets[i].Id) {
+			if(tweets[i].Id == id) {
 				match = true;	
 				index = i;			
 			} else {
 				i++;
 			}
 		}
-		if(index == -1) {
-			return false;
-		}
-		this._tweetsData.tweets[index] = tweet;
-		return true;
-	},
-	// Delete an exisiting tweet by id
-	deleteTweet: function(id) {
-		
-	},
-	// Soft delete a tweet
-	softDeleteTweet: function(id) {
-		
-	},
-	// Soft undelete a tweet
-	softUnDeleteTweet: function(id) {
-		
+		return index;
 	},
 	// Save
 	save: function() {
