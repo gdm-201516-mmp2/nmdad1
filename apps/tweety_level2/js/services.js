@@ -53,10 +53,8 @@ var TweetsDbContext = {
 	},
 	// Add a new tweet
 	addTweet: function(tweet) {
-		console.log(tweet);
 		if(tweet !=null && (tweet.Id == undefined || this.getTweetById(tweet.Id) == null)) {
 		 	tweet.Id = Utils.guid();
-			 console.log(tweet);
 			this._tweetsData.tweets.push(tweet);
 			this.save();
 		}
@@ -64,7 +62,28 @@ var TweetsDbContext = {
 	},
 	// Update an exisiting tweet
 	updateTweet: function(tweet) {
-		
+		var originalTweet = this.getTweetById(tweet.Id);
+		if(originalTweet == null) {
+			return false;
+		}
+		var tweets = this.getTweets();
+		if(tweets == null) {
+			return false;
+		}
+		var index = -1, match = false, i = 0;
+		while(!match && i < tweets.length) {
+			if(tweet.Id == tweets[i].Id) {
+				match = true;	
+				index = i;			
+			} else {
+				i++;
+			}
+		}
+		if(index == -1) {
+			return false;
+		}
+		this._tweetsData.tweets[index] = tweet;
+		return true;
 	},
 	// Delete an exisiting tweet by id
 	deleteTweet: function(id) {
