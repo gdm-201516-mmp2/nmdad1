@@ -23,11 +23,33 @@ var TweetsDbContext = {
 	},
 	// Get All Tweets
 	getTweets: function() {
+		var tweets = this._tweetsData.tweets;
 		
+		if(tweets == null || (tweets != null && tweets.length == 0)) {
+			return null;
+		}
+		
+		return tweets;
 	},
 	// Get a specific tweet by id
-	getTweetById: function() {
+	getTweetById: function(id) {
+		var tweets = this.getTweets();
 		
+		if(tweets == null) {
+			return null;
+		}
+		
+		var match = false, i = 0, tweet = null;
+		while(!match && i < tweets.length) {
+			tweet = tweets[i];
+			if(tweet.Id == id) {
+				match = true;
+			} else {
+				i++;
+			}
+		}
+		
+		return tweet;
 	},
 	// Add a new tweet
 	addTweet: function(tweet) {
