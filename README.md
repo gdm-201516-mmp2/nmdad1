@@ -45,7 +45,11 @@ Documenten
 * Week 5
 	* [App - RandomUserMe](apps/randomuserme)
 	* [App - RandomUserMe - Level 2 (Handlebars)](apps/randomuserme_level2)
-	* Feedback - Concept Werkstuk: Open The Gates For Data (Individuele feedback per groep, eigen notities noodzakelijk)
+	* Feedback - Concept Werkstuk: Open The Gates For Data (Individuele feedback per groep, eigen notities noodzakelijk
+	
+* Week 6
+	* Milestone 1: presentatie tussentijds productiedossier (van Briefing tot en met Style Tiles)
+	* [App - Tweety](apps/tweety_level2)
 
 Taken
 -----
@@ -84,6 +88,9 @@ Uitdagingen
 	
 * Week 5
 	* Maak de app met alle mobiliteitsdata m.b.v. Handlebars
+	
+* Week 6
+	* Maak de Tweety App m.b.v. utilities, helpers, services, models, Handlebars, loDash, ... denk aan de Moodswings (pos, neg, ...)
 
 Auteurs
 --------
