@@ -37,10 +37,12 @@ var PetsDbContext = {
 		}
 	},
 	addDogToilet: function(dogToilet) {
+		dogToilet.id = Utils.guid();// Create unique id
+		
 		this._appData.dogstoilets.push(dogToilet);// Add to array
-		this.save(); // Save in localstorage
+		this.save(); // Save in localstorage via save method
 	},
 	save: function() {
-		Utils.store(this._connString, this._appData);
+		Utils.store(this._connString, this._appData); //Save in localstorage
 	}	
 };

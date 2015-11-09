@@ -33,7 +33,6 @@
 						switch(type) {
 							case 'Hondentoilet':
 								dogtoilet = {
-									"id": Utils.guid(), 
 									"description": hondenvoorzieningen[i].ExtendedData.SchemaData.SimpleData[6]['@text'],
 									"body": hondenvoorzieningen[i].description['@text'], 
 									"geolocation": {
