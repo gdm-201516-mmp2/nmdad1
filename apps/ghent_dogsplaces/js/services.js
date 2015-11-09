@@ -36,28 +36,28 @@ var PetsDbContext = {
 			Utils.store(this._connString, this._appData);
 		}
 	},
-	addDogToilet: function(dogToilet) {
-		dogToilet.id = Utils.guid();// Create unique id
+	addDogsToilet: function(dogsToilet) {
+		dogsToilet.id = Utils.guid();// Create unique id
 		
-		this._appData.dogstoilets.push(dogToilet);// Add to array
+		this._appData.dogstoilets.push(dogsToilet);// Add to array
 		this.save(); // Save in localstorage via save method
 	},
-	getDogToilets: function() {
-		return 	this._appData.dogtoilets;
+	getDogsToilets: function() {
+		return 	this._appData.dogstoilets;
 	},
-	getDogToiletById: function(id) {
-		var dogToilet = null, match = false, i = 0;
+	getDogsToiletById: function(id) {
+		var dogsToilet = null, match = false, i = 0;
 		
-		while(!match && i < this._appData.dogtoilets.length) {
-			dogToilet = this._appData.dogtoilets[i];
-			if(dogToilet.id == id) {
+		while(!match && i < this._appData.dogstoilets.length) {
+			dogsToilet = this._appData.dogstoilets[i];
+			if(dogsToilet.id == id) {
 				match = true;
 			} else {
 				i++;
 			}
 		}
 		
-		return dogToilet;
+		return dogsToilet;
 	},
 	save: function() {
 		Utils.store(this._connString, this._appData); //Save in localstorage

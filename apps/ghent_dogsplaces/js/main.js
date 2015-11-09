@@ -19,7 +19,7 @@
 			this._petsDbContext = PetsDbContext;
 			this._petsDbContext.init('dds.ghent.pets');
 			// Call API if no dogstoilets present in database (localstorage)
-			if(this._petsDbContext.getDogToilets() == null || this._petsDbContext.getDogToilets().length == 0) {
+			if(this._petsDbContext.getDogsToilets() == null || this._petsDbContext.getDogsToilets().length == 0) {
 				this.getHondenvoorzieningenFromAPI();
 			} else {
 				this.renderDogsToilets();
@@ -54,7 +54,7 @@
 					
 					// Add dogs toilets
 					for(var j = 0;j < dogstoilets.length;j++) {
-						self._petsDbContext.addDogToilet(dogstoilets[j]);
+						self._petsDbContext.addDogsToilet(dogstoilets[j]);
 					}
 				},
 				function(error) {
