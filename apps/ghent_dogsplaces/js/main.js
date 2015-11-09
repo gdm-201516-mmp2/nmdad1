@@ -24,7 +24,18 @@
 		getHondenvoorzieningenFromAPI: function() {
 			this._hondenvoorzieningenAPI.getHondenvoorzieningen().then(
 				function(data) {
-					console.log(data);
+					var dogstoilets = [], type = null;
+					var hondenvoorzieningen = data.Document.Folder.Placemark;
+					
+					for(var i = 0;i < hondenvoorzieningen.length;i++) {
+						type = hondenvoorzieningen[i].ExtendedData.SchemaData.SimpleData[3]['@text'];
+						
+						switch(type) {
+							case 'Hondentoilet':
+								
+								break;
+						}
+					}
 				},
 				function(error) {
 					
