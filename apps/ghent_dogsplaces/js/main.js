@@ -22,6 +22,8 @@
 			this.getHondenvoorzieningenFromAPI();
 		},
 		getHondenvoorzieningenFromAPI: function() {
+			var self = this;
+			
 			this._hondenvoorzieningenAPI.getHondenvoorzieningen().then(
 				function(data) {
 					var dogstoilets = [], type = null, dogtoilet = null;
@@ -44,7 +46,11 @@
 								break;
 						}
 					}
-					console.log(dogstoilets);
+					
+					// Add dogs toilets
+					for(var j = 0;j < dogstoilets.length;j++) {
+						self._petsDbContext.addDogToilet(dogstoilets[j]);
+					}
 				},
 				function(error) {
 					
