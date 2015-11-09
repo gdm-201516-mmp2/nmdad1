@@ -21,7 +21,7 @@ body {
 	display: none;
 }
 .header__logo>h1::before {
-	content: "\f258";
+	content: "\f118 ";
 	
 	font-family: Fontawesome;
 	
