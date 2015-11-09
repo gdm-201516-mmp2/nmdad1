@@ -19,7 +19,15 @@ var PetsDbContext = {
 		this._connString = connString;// Connection string to localstorage
 		// Application Data object
 		this._appData = {
-			"sla": "tomaat"	
+			"information": {
+				"title": "Ghent Pets Application",
+				"modified": "05-11-2015",
+				"version": "1.0.0",
+				"author": "Philippe De Pauw - Waterschoot"
+			},
+			"dogstoilets": [],
+			"dogsfields": [],
+			"settings": {}
 		};
 		// Get application data from the localstorage
 		if(Utils.store(this._connString) != null) {
