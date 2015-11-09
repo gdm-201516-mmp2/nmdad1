@@ -42,6 +42,23 @@ var PetsDbContext = {
 		this._appData.dogstoilets.push(dogToilet);// Add to array
 		this.save(); // Save in localstorage via save method
 	},
+	getDogToilets: function() {
+		return 	this._appData.dogtoilets;
+	},
+	getDogToiletById: function(id) {
+		var dogToilet = null, match = false, i = 0;
+		
+		while(!match && i < this._appData.dogtoilets.length) {
+			dogToilet = this._appData.dogtoilets[i];
+			if(dogToilet.id == id) {
+				match = true;
+			} else {
+				i++;
+			}
+		}
+		
+		return dogToilet;
+	},
 	save: function() {
 		Utils.store(this._connString, this._appData); //Save in localstorage
 	}	
