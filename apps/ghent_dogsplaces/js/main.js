@@ -15,6 +15,18 @@
 			// Create the services via a corresponding clone
 			this._hondenvoorzieningenAPI = HondenvoorzieningenAPI;
 			this._hondenvoorzieningenAPI.init('http://datatank.stad.gent/4/infrastructuur/hondenvoorzieningen.json');
+			// Call API
+			this.getHondenvoorzieningenFromAPI();
+		},
+		getHondenvoorzieningenFromAPI: function() {
+			this._hondenvoorzieningenAPI.getHondenvoorzieningen().then(
+				function(data) {
+					console.log(data);
+				},
+				function(error) {
+					
+				}
+			);
 		}	
 	};
 	
