@@ -34,6 +34,7 @@
 							case 'Hondentoilet':
 								dogtoilet = {
 									"description": hondenvoorzieningen[i].ExtendedData.SchemaData.SimpleData[6]['@text'],
+									"body": hondenvoorzieningen[i].description['@text'],
 									"geolocation": {
 										"lat": hondenvoorzieningen[i].Point.coordinates['@text'].split(',')[1],
 										"lng": hondenvoorzieningen[i].Point.coordinates['@text'].split(',')[0]
