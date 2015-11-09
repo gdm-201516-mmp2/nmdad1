@@ -23,15 +23,27 @@
 						</header>
 					</div>
 				</div>
-				<div class="grid__row row--edit">
+			</div>
+		</div>
+		<div class="grid__wrapper tweet-create-wrapper">
+			<div class="grid__container">
+				<div class="grid__row">
 					<div class="grid__column-bp1-12">
 						<div class="tweet-create">
-							<form id="frm-tweet-create">
+							<form id="tweet-create-frm">
 								<fieldset>
 									<legend>Create a new Tweet</legend>
-									<textarea rows="4" rows="20"
-									placeholder="Type your tweet here ...">
-									</textarea>
+									<textarea id="txtTweetContent" name="txtTweetContent" rows="4" cols="50" placeholder="Write your tweet here ..." maxlength="280" minlength="4" required="required"></textarea>
+									<div class="rdbg-mood">
+										<input type="radio" name="mood" value="Neutral" id="mood-neutral" required="required"/>
+										<label for="mood-neutral">Neutral mood</label>
+										<input type="radio" name="mood" value="Happy" id="mood-happy" />
+										<label for="mood-happy">Happy mood</label>
+										<input type="radio" name="mood" value="Sad" id="mood-sad" />
+										<label for="mood-sad">Sad mood</label>
+									</div>
+									<button type="submit" class="btn btn--primary"><span class="fa fa-edit"></span>Tweet</button>
+									<span class="txtAmountChars">280</span>
 								</fieldset>
 							</form>
 						</div>
@@ -54,8 +66,16 @@
 			{{#if this}}
 			<ul>
 				{{#each this}}
-					<li class="tweet" data-id="{{this.Id}}">
+					<li class="tweet tweet-mood-{{this.Mood}}" data-id="{{this.Id}}">
+						<span class="tweet__createdAt">{{timeToTwitterDateTimeString this.CreatedAt}}</span>
 						<span class="tweet__content">{{this.Content}}</span>
+						<span class="tweet__edit-form"></span>
+						<a href="#" title="Remove tweet" class="tweet__remove">
+							<span class="fa fa-remove"></span>
+						</a>
+						<a href="#" title="Edit tweet" class="tweet__edit">
+							<span class="fa fa-edit"></span>
+						</a>
 					</li>
 				{{/each}}
 			</ul>
@@ -66,6 +86,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
 		<script src="js/utilities.js"></script>		
 		<script src="js/helpers.js"></script>	
+		<script src="js/models.js"></script>	
 		<script src="js/services.js"></script>
 		<script src="js/main.js"></script>
 	</body>

@@ -6,4 +6,7 @@ Handlebars.registerHelper('toShortDateString', function(dob) {
 });
 Handlebars.registerHelper('address', function(location) {
    return location.street + ', ' + location.zip + ' ' + location.city
+})
+Handlebars.registerHelper('timeToTwitterDateTimeString', function(time) {
+   return Utils.timeToTwitterDateTimeString(time)
 });

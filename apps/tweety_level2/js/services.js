@@ -55,8 +55,10 @@ var TweetsDbContext = {
 	addTweet: function(tweet) {
 		if(tweet !=null && (tweet.Id == undefined || this.getTweetById(tweet.Id) == null)) {
 		 	tweet.Id = Utils.guid();
+			tweet.CreatedAt = new Date().getTime();
 			this._tweetsData.tweets.push(tweet);
 			this.save();
+			return tweet;
 		}
 		return null;
 	},
