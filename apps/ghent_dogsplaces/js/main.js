@@ -33,8 +33,9 @@
 						switch(type) {
 							case 'Hondentoilet':
 								dogtoilet = {
+									"id": Utils.guid(), 
 									"description": hondenvoorzieningen[i].ExtendedData.SchemaData.SimpleData[6]['@text'],
-									"body": hondenvoorzieningen[i].description['@text'],
+									"body": hondenvoorzieningen[i].description['@text'], 
 									"geolocation": {
 										"lat": parseFloat(hondenvoorzieningen[i].Point.coordinates['@text'].split(',')[1]),
 										"lng": parseFloat(hondenvoorzieningen[i].Point.coordinates['@text'].split(',')[0])

@@ -33,7 +33,14 @@ var PetsDbContext = {
 		if(Utils.store(this._connString) != null) {
 			this._appData = Utils.store(this._connString);
 		} else {
-			Utils.store(this._connString, this._appData)
+			Utils.store(this._connString, this._appData);
 		}
+	},
+	addDogToilet: function(dogToilet) {
+		this._appData.dogstoilets.push(dogToilet);// Add to array
+		this.save(); // Save in localstorage
+	},
+	save: function() {
+		Utils.store(this._connString, this._appData);
 	}	
 };
