@@ -15,6 +15,9 @@
 			// Create the services via a corresponding clone
 			this._hondenvoorzieningenAPI = HondenvoorzieningenAPI;
 			this._hondenvoorzieningenAPI.init('http://datatank.stad.gent/4/infrastructuur/hondenvoorzieningen.json');
+			// Create PetsDbContext by clone
+			this._petsDbContext = PetsDbContext;
+			this._petsDbContext.init('dds.ghent.pets');
 			// Call API
 			this.getHondenvoorzieningenFromAPI();
 		},
