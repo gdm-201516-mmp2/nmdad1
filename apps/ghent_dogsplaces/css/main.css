@@ -1,0 +1,149 @@
+/* Import Google Webfonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,300italic,300);
+
+/* Body */
+body {
+	background: #FAFAFA;
+	
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+.header-wrapper {
+	background: #283593;
+	color: #FAFAFA;
+	margin-bottom: 1rem;
+}
+.header-wrapper header {
+	margin-bottom: -1rem;
+}
+.header__logo>h1>span {
+	display: none;
+}
+.header__logo>h1::before {
+	content: "\f258";
+	
+	font-family: Fontawesome;
+	
+	display: inline;
+	padding: 0.5rem;
+	
+	background: #0097A7;
+	color: #283593;
+}
+.header__logo>h1::after {
+	content: "Ghent Dogsplaces";
+	
+	display: inline;
+	padding: 0.5rem;
+	
+	color: #0097A7;
+}
+.header__logo>h2 {
+	display: none;
+}
+
+/* Random Users */
+.rum-users>ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.rum-users>ul>li {
+	padding: 0.5rem 1rem;
+	background: #EEEEEE;
+	margin-bottom: 0.5rem;
+}
+.rum-users>ul>li:last-of-type {
+	margin-bottom: 0;
+}
+.user::before, .user::after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; 
+}
+.user::after {
+	clear: both; 
+}
+.user__picture {
+	width: 48px;
+	height: 48px;
+	display: block;
+	overflow: hidden;
+	float:left;
+	
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border: 4px solid #0097A7;
+}
+.user__picture img {
+	width: 100%;
+}
+.user__name {
+	float: left;
+	display: block;
+	margin-left: 1rem;
+	
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 48px;	
+	text-transform: capitalize;
+}
+.user__details-link {
+	float: right;
+	
+	line-height: 48px;
+	color: #0097A7;
+	
+	transition: all 680ms ease-out 0s; 
+}
+.user__details-link:hover {
+	color: #283593;
+}
+.user__details {
+	display: block;
+	float: left;
+	width: 100%;
+	margin-top: 0.5rem;
+	overflow: hidden;
+	
+	background: rgba(189, 195, 199, 1.0);
+	
+	height: 0;
+	transition: all 680ms ease-out 0s; 
+}
+.user.collapsed .user__details {
+	transform: scaleY(1);
+	height: 288px;
+	transition: all 680ms ease-out 0s; 
+}
+.user.collapsed .user__details-link {
+	
+	transform: rotate(90deg);
+	transition: all 680ms ease-out 0s; 
+}
+.user__details>ul {
+	margin: 1rem;
+	padding: 0;
+	
+	list-style: none;
+}
+.user__details>ul>li {
+	margin-bottom: 0.5rem;
+}
+.user__details>ul>li:last-of-type {
+	margin-bottom: 0;
+}
+.user__details>ul>li>.fa {
+	margin-right: 1rem;
+	width: 24px;
+	height: 24px;
+	
+	font-size: 1.2rem;
+	line-height: 24px;
+	text-align: center;
+	
+	color: #0097A7;
+}
