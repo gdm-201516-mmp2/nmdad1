@@ -18,8 +18,13 @@
 			// Create PetsDbContext by clone
 			this._petsDbContext = PetsDbContext;
 			this._petsDbContext.init('dds.ghent.pets');
-			// Call API
-			this.getHondenvoorzieningenFromAPI();
+			// Call API if no dogstoilets present in database (localstorage)
+			if(this._petsDbContext.getDogToilets() == null || this._petsDbContext.getDogToilets().length == 0) {
+				this.getHondenvoorzieningenFromAPI();
+			} else {
+				this.renderDogsToilets();
+			}
+			
 		},
 		getHondenvoorzieningenFromAPI: function() {
 			var self = this;
@@ -56,6 +61,9 @@
 					
 				}
 			);
+		},
+		renderDogsToilets: function() {
+			
 		}	
 	};
 	
