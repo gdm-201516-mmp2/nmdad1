@@ -24,7 +24,7 @@
 		getHondenvoorzieningenFromAPI: function() {
 			this._hondenvoorzieningenAPI.getHondenvoorzieningen().then(
 				function(data) {
-					var dogstoilets = [], type = null;
+					var dogstoilets = [], type = null, dogtoilet = null;
 					var hondenvoorzieningen = data.Document.Folder.Placemark;
 					
 					for(var i = 0;i < hondenvoorzieningen.length;i++) {
@@ -32,10 +32,18 @@
 						
 						switch(type) {
 							case 'Hondentoilet':
-								
+								dogtoilet = {
+									"description": hondenvoorzieningen[i].ExtendedData.SchemaData.SimpleData[6]['@text'],
+									"geolocation": {
+										"lat": hondenvoorzieningen[i].Point.coordinates['@text'].split(',')[1],
+										"lng": hondenvoorzieningen[i].Point.coordinates['@text'].split(',')[0]
+									}
+								};
+								dogstoilets.push(dogtoilet);
 								break;
 						}
 					}
+					console.log(dogstoilets);
 				},
 				function(error) {
 					
