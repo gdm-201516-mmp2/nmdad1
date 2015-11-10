@@ -19,8 +19,12 @@
 			// Create the DbContext for Ecoplan by clone
 			this._ecoplanDbContext = EcoplanDbContext;
 			this._ecoplanDbContext.init('dds.ghent.ecoplan');
-			// Call the method getEcoplanFromAPI in order to load the JSON data
-			this.getEcoplanFromAPI();
+			// Call the method getEcoplanFromAPI in order to load the JSON data if no data present in localstorage
+			if(this._ecoplanDbContext.getEcoplan() == null || (this._ecoplanDbContext.getEcoplan() != null && this._ecoplanDbContext.getEcoplan().length == 0)) {
+				this.getEcoplanFromAPI();
+			} else {
+				
+			}			
 		},
 		getEcoplanFromAPI: function() {
 			var self = this;
