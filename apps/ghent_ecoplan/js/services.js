@@ -37,5 +37,19 @@ var EcoplanDbContext = {
 		} else {
 			Utils.store(this._connString, this._appData);
 		}
+	},
+	getEcoplan: function() {
+		return this._appData.ecoplan;
+	},
+	addEcoplanPlace: function(ecoplanPlace) {
+		ecoplanPlace.id = Utils.guid();// Create an unique id
+		ecoplanPlace.createdAt = new Date();// Creation Date for the current ecoplan place
+		
+		this._appData.ecoplan.push(ecoplanPlace);// Add to array
+		this.save();// Save in the localstorage
+		
+	},
+	save: function() {
+		Utils.store(this._connString, this._appData);
 	}
 }
