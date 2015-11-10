@@ -49,6 +49,8 @@ var TreesDbContext = {
 		tree.id = Utils.guid();// Create your own primary key for a tree
 		tree.createdAt = new Date();// Add the creation date to the tree object
 		
+		this._appData.treesinventory.push(tree);// Add tree to the trees inventory
+		
 		if(this.save() == 0) {
 			return null;
 		}// Save to the tree to the localstorage

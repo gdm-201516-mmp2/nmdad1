@@ -19,6 +19,25 @@
 			// Create the Db context classes via the corresponding clones
 			this._treesDbContext = TreesDbContext;
 			this._treesDbContext.init('dds.ghent.trees');
+			// Call the API
+			this.getTreesInventoryFromAPI();
+		},
+		getTreesInventoryFromAPI: function() {
+			var self = this;
+			this._treesInventoryAPI.getTreesInventory().then(
+				function(data) {
+					var treesInventoryOriginal = data.Document.Folder.Placemark;
+					var l = 50;//max 4 MB in localstorage
+					var treeOriginal = null;
+					for(var i = 0; i < l; i++) {
+						treeOriginal = treesInventoryOriginal[i];// Get the current tree in the array by index
+						self._treesDbContext.addTreeToInventory(treeOriginal);// Add tree to localstorage
+					}
+				},
+				function(error) {
+					
+				}
+			);
 		}		
 	};
 	
