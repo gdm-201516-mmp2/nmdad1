@@ -13,6 +13,8 @@
 	// Describe an App object with own functionalities
 	var App = {
 		init: function() {
+			// Geolocation
+			this._geoLocation = null;
 			this._hbsCache = {};// Handlebars cache for templates
 			this._hbsPartialsCache = {};// Handlebars cache for partials
 			// Create the services via the corresponding clones
@@ -21,12 +23,45 @@
 			// Create the Db context classes via the corresponding clones
 			this._treesDbContext = TreesDbContext;
 			this._treesDbContext.init('dds.ghent.trees');
+			// Get the geolocation of the user
+			if(this._geoLocation == null) {
+				this.getGeoLocation();
+			}
 			// Call the API if no treesinventory is present in the database (localstorage)
 			if(this._treesDbContext.getTreesInventory() == null || (this._treesDbContext.getTreesInventory() != null && this._treesDbContext.getTreesInventory().length == 0)) {
 				this.getTreesInventoryFromAPI();
 			} else {
 				this.renderTreesIventoryUI();// Render UI for trees iventory
 			}			
+		},
+		getGeoLocation: function() {
+			var self = this;
+			
+			Utils.getGEOLocationByPromise().then(
+				function(location) {
+					self._geoLocation = location;
+					// Loop throught the elements
+					self.showGeoDistanceinUI();
+				},
+				function(error) {
+					self._geoLocation = null;
+				}
+			)
+		},
+		showGeoDistanceinUI: function() {
+			var nodes = document.querySelectorAll('.trees-inventory-list .tree');
+			
+			if(nodes != null && nodes.length > 0) {
+				var node, lng = 0, lat = 0, d = 0;
+				
+				for(var i = 0; i < nodes.length; i++) {
+					node = nodes[i];
+					lng = node.dataset.lng;
+					lat = node.dataset.lat;
+					d = Utils.calculateDistanceBetweenTwoCoordinates(lat, lng, this._geoLocation.coords.latitude, this._geoLocation.coords.longitude);
+					node.querySelector('.tree__geo-distance').innerHTML = d.toFixed(3);
+				}
+			} 
 		},
 		getTreesInventoryFromAPI: function() {
 			var self = this;

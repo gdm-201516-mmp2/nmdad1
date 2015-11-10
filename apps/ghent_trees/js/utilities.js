@@ -6,6 +6,9 @@ Number.prototype.padWithDigits = function (n) {
 	}	
 	return txt;  
 };
+Number.prototype.toRad = function () {  
+	return this * Math.PI/180; 
+};
 
 // Extend Date function
 Date.prototype.toShortDateString = function () {  

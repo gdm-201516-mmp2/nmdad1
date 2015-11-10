@@ -41,7 +41,7 @@
 			<ul class="grid__row">
 				{{#each this}}
 				<li class="grid__column-bp1-12 grid__column-bp2-6 grid__column-bp3-4 grid__column-bp4-3">
-					<div class="tree" data-id="{{id}}">
+					<div class="tree" data-id="{{id}}" data-lat="{{geolocation.lat}}" data-lng="{{geolocation.lng}}">
 						<section class="tree__title">
 							<h3>{{name}} <small>({{ghentid}}-{{ghentcode}})</small></h3>
 						</section>
@@ -57,6 +57,7 @@
 								<span class="other__dayofbirth">{{dayofbirth}}</span>
 							</section>
 						</section>
+						<span class="tree__geo-distance"></span>
 					</div>
 				</li>
 				{{/each}}
