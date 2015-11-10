@@ -52,39 +52,53 @@ body {
 	display: none;
 }
 
-/* List, ListItem */
-.list {
-	list-style: none;
-	margin: 0;
+/* Tree */
+.tree {
+	position: relative;
+    min-height: 200px;
+    overflow: hidden;
+    z-index: 1;
+	box-sizing: border-box;
+	
+	font-size: 1rem;
+    font-weight: 400;
+    
+    background: #fff;
+    border-radius: 2px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+.tree__title {
+	padding: 1rem;
+}
+.tree__title > h3 {
 	padding: 0;
+	margin: 0;
 }
-.listitem {
-	position:relative;
-	padding: 0.5rem 1rem;
+.tree__text {
+	padding: 1rem;
+}
+.tree__meta {
+	border-top:1px solid #a0a0a0;
+	padding: 1rem;
+}
+.meta__dimensions {
 	margin-bottom: 0.5rem;
-	
-	background: #EEEEEE;
 }
-.listitem:last-of-type {
-	margin-bottom: 0;
+.dimensions__height {
+	margin-right: 1rem;
 }
-.listitem::before, .listitem::after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; 
+.dimensions__height::before {
+	content: '\f034';
+	font-family: FontAwesome;
+	margin-right: 0.5rem;
 }
-.listitem::after {
-	clear: both; 
+.dimensions__diameter::before {
+	content: '\f1ce';
+	font-family: FontAwesome;
+	margin-right: 0.5rem;
 }
-.listitem__details-link {
-	float: right;
-	
-	line-height: 48px;
-	color: #0097A7;
-	
-	transition: all 680ms ease-out 0s; 
-}
-.listitem__details-link:hover {
-	color: #283593;
+.other__dayofbirth::before {
+	content: '\f073 ';
+	font-family: FontAwesome;
+	margin-right: 0.5rem;
 }

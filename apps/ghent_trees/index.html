@@ -29,12 +29,42 @@
 			<div class="grid__container">
 				<div class="grid__row">
 					<div class="grid__column-bp1-12">
-						<section class="trees-list">
+						<section class="trees-inventory-list">
 						</section>
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
+		<!-- Handlebars Templates -->
+		<script id="trees-inventory-list-template" type="text/x-handlebars-template">
+			{{#if this}}
+			<ul class="grid__row">
+				{{#each this}}
+				<li class="grid__column-bp1-12 grid__column-bp2-6 grid__column-bp3-4 grid__column-bp4-3">
+					<div class="tree" data-id="{{id}}">
+						<section class="tree__title">
+							<h3>{{name}} <small>({{ghentid}}-{{ghentcode}})</small></h3>
+						</section>
+						<section class="tree__text">
+							{{namenl}}
+						</section>
+						<section class="tree__meta">
+							<section class="meta__dimensions">
+								<span class="dimensions__height">{{dimensions.height}}</span>
+								<span class="dimensions__diameter">{{dimensions.diameter}} cm</span>
+							</section>
+							<section class="meta__other">
+								<span class="other__dayofbirth">{{dayofbirth}}</span>
+							</section>
+						</section>
+					</div>
+				</li>
+				{{/each}}
+			</ul>
+			{{else}}
+				<p>No trees inventory present in the database!</p>
+			{{/if}}
+		</script>			
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
 		<script src="js/utilities.js"></script>		
 		<script src="js/helpers.js"></script>	

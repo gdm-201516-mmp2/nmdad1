@@ -87,5 +87,48 @@ var Utils = {
         else{
             return new Date(time).toLocaleDateString();
         }
+    },
+    calculateDistanceBetweenTwoCoordinates: function(lat1, lng1, lat2, lng2){
+        var R = 6371; // km
+        var lat1 = parseFloat(lat1);
+        var lng1 = parseFloat(lng1);
+        var lat2 = parseFloat(lat2);
+        var lng2 = parseFloat(lng2);
+
+        var dLat = (lat2-lat1).toRad();
+        var dLon = (lng2-lng1).toRad();
+        var lat1 = lat1.toRad();
+        var lat2 = lat2.toRad();
+
+        var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2);
+        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        var d = R * c
+        return d;//in km
+    },
+    getGEOLocationByPromise: function(){
+        return new Promise(function(resolve, reject) {
+            if(Modernizr.geolocation){
+                navigator.geolocation.getCurrentPosition(
+                    function(position){
+                        resolve(position);
+                    },
+                    function(error){
+                        switch(error.code)
+                        {
+                            case error.PERMISSION_DENIED: console.log("User did not share geolocation data");break;
+                            case error.POSITION_UNAVAILABLE: console.log("Could not detect current position");break;
+                            case error.TIMEOUT: console.log("Retrieving position timed out");break;
+                            default: console.log("Unknown Error");break;
+                        }
+                        reject(error);
+                    },
+                    {timeout:10000,enableHighAccuracy:true}
+                )
+            }
+            else{
+                reject("HTML5 Geolocation not supported!");
+            }
+        });
     }
 }

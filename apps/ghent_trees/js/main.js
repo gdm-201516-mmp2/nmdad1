@@ -13,6 +13,8 @@
 	// Describe an App object with own functionalities
 	var App = {
 		init: function() {
+			this._hbsCache = {};// Handlebars cache for templates
+			this._hbsPartialsCache = {};// Handlebars cache for partials
 			// Create the services via the corresponding clones
 			this._treesInventoryAPI = TreesInventoryAPI;
 			this._treesInventoryAPI.init('http://datatank.stad.gent/4/milieuennatuur/bomeninventaris.json');
@@ -60,7 +62,11 @@
 			);
 		},
 		renderTreesIventoryUI: function() {
-			
+			if(!this._hbsCache['trees-inventory-list']) {
+				var src = document.querySelector('#trees-inventory-list-template').innerHTML;// Get the contents from the specified hbs template
+				this._hbsCache['trees-inventory-list'] = Handlebars.compile(src);// Compile the source and add it to the hbs cache
+			}	
+			document.querySelector('.trees-inventory-list').innerHTML = this._hbsCache['trees-inventory-list'](this._treesDbContext.getTreesInventory());
 		}		
 	};
 	
