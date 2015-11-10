@@ -40,12 +40,14 @@ var TreesDbContext = {
 		}
 	},
 	getTreesInventory: function() {
-		
+		return this._appData.treesinventory;
 	}, 
 	getTreeFromInventoryById: function(id) {
 		
 	},
 	addTreeToInventory: function(tree) {
+		tree.id = Utils.guid();// Create your own primary key for a tree
+		tree.createdAt = new Date();// Add the creation date to the tree object
 		
 		if(this.save() == 0) {
 			return null;
