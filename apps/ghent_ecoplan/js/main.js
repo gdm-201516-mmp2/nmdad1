@@ -23,10 +23,15 @@
 			this.getEcoplanFromAPI();
 		},
 		getEcoplanFromAPI: function() {
+			var self = this;
 			// Load the JSON data from API
 			this._ecoplanAPI.getEcoplan().then(
 				function(data) {
-					console.log(data);
+					var ecoplanPlace = null;
+					for(var i = 0; i < data.length; i++) {
+						ecoplanPlace = data[i];
+						self._ecoplanDbContext.addEcoplanPlace(ecoplanPlace);
+					}
 				},
 				function(error) {
 					
