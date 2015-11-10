@@ -1,0 +1,90 @@
+/* Import Google Webfonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,300italic,300);
+
+/* Body */
+body {
+	background: #FAFAFA;
+	
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Buttons */
+.btn {
+	padding: 0.5rem 1rem;
+	background: #0097A7;
+	color: #FAFAFA;
+	border: 0;
+}
+
+/* Header */
+.header-wrapper {
+	background: #283593;
+	color: #FAFAFA;
+	
+	margin-bottom: 1rem;
+}
+.header-wrapper header {
+	margin-bottom: -1rem;
+}
+.header__logo>h1>span {
+	display: none;
+}
+.header__logo>h1::before {
+	content: "\f099";
+	
+	font-family: Fontawesome;
+	
+	display: inline;
+	padding: 0.5rem;
+	
+	background: #0097A7;
+	color: #283593;
+}
+.header__logo>h1::after {
+	content: "Ecoplan";
+	
+	display: inline;
+	padding: 0.5rem;
+	
+	color: #0097A7;
+}
+.header__logo>h2 {
+	display: none;
+}
+
+/* List, ListItem */
+.list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.listitem {
+	position:relative;
+	padding: 0.5rem 1rem;
+	margin-bottom: 0.5rem;
+	
+	background: #EEEEEE;
+}
+.listitem:last-of-type {
+	margin-bottom: 0;
+}
+.listitem::before, .listitem::after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; 
+}
+.listitem::after {
+	clear: both; 
+}
+.listitem__details-link {
+	float: right;
+	
+	line-height: 48px;
+	color: #0097A7;
+	
+	transition: all 680ms ease-out 0s; 
+}
+.listitem__details-link:hover {
+	color: #283593;
+}
