@@ -28,8 +28,14 @@ var EcoplanDbContext = {
 				"version": "1.0.0",
 				"author": "Philippe De Pauw - Waterschoot"
 			},
-			
+			"ecoplan": [],
 			"settings": {}	
 		};
+		// Get the application data from the localstorage, if not present save the data above in the localstorage
+		if(Utils.store(this._connString) != null) {
+			this._appData = Utils.store(this._connString);
+		} else {
+			Utils.store(this._connString, this._appData);
+		}
 	}
 }
