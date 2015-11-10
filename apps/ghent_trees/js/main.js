@@ -23,7 +23,7 @@
 			if(this._treesDbContext.getTreesInventory() == null || (this._treesDbContext.getTreesInventory() != null && this._treesDbContext.getTreesInventory().length == 0)) {
 				this.getTreesInventoryFromAPI();
 			} else {
-				
+				this.renderTreesIventoryUI();// Render UI for trees iventory
 			}			
 		},
 		getTreesInventoryFromAPI: function() {
@@ -52,11 +52,15 @@
 						}; 
 						self._treesDbContext.addTreeToInventory(tree);// Add tree to localstorage
 					}
+					self.renderTreesIventoryUI();// Render UI for trees iventory
 				},
 				function(error) {
 					
 				}
 			);
+		},
+		renderTreesIventoryUI: function() {
+			
 		}		
 	};
 	

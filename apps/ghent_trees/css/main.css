@@ -41,7 +41,7 @@ body {
 	color: #283593;
 }
 .header__logo>h1::after {
-	content: "Ecoplan";
+	content: "Trees";
 	
 	display: inline;
 	padding: 0.5rem;
