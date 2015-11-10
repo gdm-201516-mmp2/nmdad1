@@ -45,11 +45,23 @@ Documenten
 * Week 5
 	* [App - RandomUserMe](apps/randomuserme)
 	* [App - RandomUserMe - Level 2 (Handlebars)](apps/randomuserme_level2)
-	* Feedback - Concept Werkstuk: Open The Gates For Data (Individuele feedback per groep, eigen notities noodzakelijk
+	* Design: Feedback - Concept Werkstuk: Open The Gates For Data (Individuele feedback per groep, eigen notities noodzakelijk
 	
 * Week 6
 	* Milestone 1: presentatie tussentijds productiedossier (van Briefing tot en met Style Tiles)
 	* [App - Tweety](apps/tweety_level2)
+	
+* Week 7
+	* Design: Feedback - Visual designs
+	* [App - Dogs places](apps/ghent_dogsplaces)
+	* [App - Ecoplan](apps/ghent_ecoplan)
+	* [App - Trees](apps/ghent_trees)
+		* API
+		* DbContext
+		* localstorage (max 4MB per app)
+		* Geolocation
+		* Distance calculator between two coordinates
+		* Templating with Handlebars
 
 Taken
 -----
