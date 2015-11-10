@@ -31,9 +31,27 @@
 			// Load the JSON data from API
 			this._ecoplanAPI.getEcoplan().then(
 				function(data) {
-					var ecoplanPlace = null;
+					var ecoplanPlaceOriginal = null, ecoplanPlace = null;
 					for(var i = 0; i < data.length; i++) {
-						ecoplanPlace = data[i];
+						ecoplanPlaceOriginal = data[i];
+						ecoplanPlace = {
+							"name": ecoplanPlaceOriginal.NAAM,
+							"description": ecoplanPlaceOriginal.opmerkingen,
+							"category": ecoplanPlaceOriginal.CATEGORIE,
+							"tags": ecoplanPlaceOriginal.LABEL,
+							"address": {
+								"street": ecoplanPlaceOriginal.STRAAT,
+								"housenr": ecoplanPlaceOriginal.NUMMER,
+								"postalcode": ecoplanPlaceOriginal.POSTCODE,
+								"city": ecoplanPlaceOriginal.GEMEENTE,
+								"geolocation": {
+									"lat": parseFloat(ecoplanPlaceOriginal.lat),
+									"lng": parseFloat(ecoplanPlaceOriginal.lng)
+								}
+							},
+							"url": ecoplanPlaceOriginal.WEBADRES,
+							"tel": ecoplanPlaceOriginal.telefoon		
+						};
 						self._ecoplanDbContext.addEcoplanPlace(ecoplanPlace);
 					}
 				},
