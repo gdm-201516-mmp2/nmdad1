@@ -62,6 +62,7 @@ Documenten
 		* Geolocation
 		* Distance calculator between two coordinates
 		* Templating with Handlebars
+		* Filters via loDash
 
 Taken
 -----
