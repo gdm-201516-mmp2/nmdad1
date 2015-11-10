@@ -4,7 +4,7 @@
 *	Version: 1.0.0
 *	Author: Philippe De Pauw - Waterschoot
 * 	-----------------------------------------------
-*	Ecoplan API: http://datatank.stad.gent/4/milieuennatuur/ecoplan.json
+*	Ghent Bomen Inventaris API: http://datatank.stad.gent/4/milieuennatuur/bomeninventaris.json
 */
 
 // Anonymous function executed when document loaded
