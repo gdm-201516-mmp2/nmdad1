@@ -19,15 +19,19 @@
 			// Create the Db context classes via the corresponding clones
 			this._treesDbContext = TreesDbContext;
 			this._treesDbContext.init('dds.ghent.trees');
-			// Call the API
-			this.getTreesInventoryFromAPI();
+			// Call the API if no treesinventory is present in the database (localstorage)
+			if(this._treesDbContext.getTreesInventory() == null || (this._treesDbContext.getTreesInventory() != null && this._treesDbContext.getTreesInventory().length == 0)) {
+				this.getTreesInventoryFromAPI();
+			} else {
+				
+			}			
 		},
 		getTreesInventoryFromAPI: function() {
 			var self = this;
 			this._treesInventoryAPI.getTreesInventory().then(
 				function(data) {
 					var treesInventoryOriginal = data.Document.Folder.Placemark;
-					var l = 50;//max 4 MB in localstorage
+					var l = 2000;//max 4 MB in localstorage
 					var treeOriginal = null, tree = null;
 					for(var i = 0; i < l; i++) {
 						treeOriginal = treesInventoryOriginal[i];// Get the current tree in the array by index
@@ -45,9 +49,8 @@
 								"lat": parseFloat(treeOriginal.Point.coordinates['@text'].split(',')[1]),
 								"lng": parseFloat(treeOriginal.Point.coordinates['@text'].split(',')[0])
 							}
-						};
-						console.log(tree);
-						//self._treesDbContext.addTreeToInventory(tree);// Add tree to localstorage
+						}; 
+						self._treesDbContext.addTreeToInventory(tree);// Add tree to localstorage
 					}
 				},
 				function(error) {
