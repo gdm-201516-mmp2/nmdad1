@@ -53,6 +53,10 @@ body {
 }
 
 /* Tree */
+.trees-inventory-list>ul {
+	margin: 0;
+	padding: 0;
+}
 .tree {
 	position: relative;
     min-height: 200px;
