@@ -16,6 +16,9 @@
 			// Create the service via a corresponding clone
 			this._ecoplanAPI = EcoplanAPI;
 			this._ecoplanAPI.init('http://datatank.stad.gent/4/milieuennatuur/ecoplan.json');
+			// Create the DbContext for Ecoplan by clone
+			this._ecoplanDbContext = EcoplanDbContext;
+			this._ecoplanDbContext.init('dds.ghent.ecoplan');
 			// Call the method getEcoplanFromAPI in order to load the JSON data
 			this.getEcoplanFromAPI();
 		},
