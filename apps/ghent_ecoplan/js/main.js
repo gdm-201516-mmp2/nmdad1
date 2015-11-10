@@ -23,7 +23,7 @@
 			if(this._ecoplanDbContext.getEcoplan() == null || (this._ecoplanDbContext.getEcoplan() != null && this._ecoplanDbContext.getEcoplan().length == 0)) {
 				this.getEcoplanFromAPI();
 			} else {
-				
+				this.renderEcoplanUI();// Render Ecoplan User Interface
 			}			
 		},
 		getEcoplanFromAPI: function() {
@@ -54,11 +54,16 @@
 						};
 						self._ecoplanDbContext.addEcoplanPlace(ecoplanPlace);
 					}
+					
+					self.renderEcoplanUI();// Render Ecoplan User Interface
 				},
 				function(error) {
 					
 				}
 			)
+		},
+		renderEcoplanUI: function() {
+			
 		}	
 	};
 	
