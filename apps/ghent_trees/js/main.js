@@ -60,6 +60,7 @@
 					lat = node.dataset.lat;
 					d = Utils.calculateDistanceBetweenTwoCoordinates(lat, lng, this._geoLocation.coords.latitude, this._geoLocation.coords.longitude);
 					node.querySelector('.tree__geo-distance').innerHTML = d.toFixed(3);
+					node.dataset.geodistance = d.toFixed(3);
 				}
 			} 
 		},

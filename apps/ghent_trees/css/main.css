@@ -102,7 +102,21 @@ body {
 	margin-right: 0.5rem;
 }
 .other__dayofbirth::before {
-	content: '\f073 ';
+	content: '\f073';
 	font-family: FontAwesome;
 	margin-right: 0.5rem;
+}
+.tree__geo-distance {
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+}
+.tree__geo-distance::before {
+	content: '\f14e';
+	font-family: FontAwesome;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tree__geo-distance::after {
+	content: ' km';
 }
