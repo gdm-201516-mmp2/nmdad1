@@ -25,6 +25,33 @@
 				</div>
 			</div>
 		</div>
+		<div class="grid__wrapper">
+			<div class="grid__container">
+				<div class="grid__row">
+					<div class="grid__column-bp1-12">
+						<section class="ecoplan-list">
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Handlebars Template -->
+		<script id="ecoplan-list-template" type="text/x-handlebars-template">
+			{{#if this}}
+			<ul class="list">
+				{{#each this}}
+				<li class="listitem ecoplan-place" data-id="{{id}}">
+					<h3 class="ecoplan-place__name">{{name}}</span>
+					<a class="listitem__details-link" href="#" title="Details for the Ecoplan place: {{name}}">
+						<span class="fa fa-chevron-right"></span>
+					</a>
+				</li>
+				{{/each}}
+			</ul>
+			{{else}}
+				<p>No Ecoplan places present in the cloud API!</p>
+			{{/if}}
+		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
 		<script src="js/utilities.js"></script>		
 		<script src="js/helpers.js"></script>	

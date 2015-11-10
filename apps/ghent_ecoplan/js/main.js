@@ -13,6 +13,8 @@
 	// Declare an App object
 	var App = {
 		init: function() {
+			this._hbsCache = {};// Handlebars cache for templates
+			this._hbsPartialsCache = {};// Handlebars cache for partials
 			// Create the service via a corresponding clone
 			this._ecoplanAPI = EcoplanAPI;
 			this._ecoplanAPI.init('http://datatank.stad.gent/4/milieuennatuur/ecoplan.json');
@@ -63,7 +65,11 @@
 			)
 		},
 		renderEcoplanUI: function() {
-			
+			if(!this._hbsCache['ecoplan-list']) {
+				var src = document.querySelector('#ecoplan-list-template').innerHTML;// Get the contents from the specified hbs template
+				this._hbsCache['ecoplan-list'] = Handlebars.compile(src);// Compile the source and add it to the hbs cache
+			}
+			document.querySelector('.ecoplan-list').innerHTML = this._hbsCache['ecoplan-list'](this._ecoplanDbContext.getEcoplan());
 		}	
 	};
 	

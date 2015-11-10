@@ -52,174 +52,39 @@ body {
 	display: none;
 }
 
-/* Add New Tweet */
-.tweet-create-wrapper {	
-}
-.tweet-create-wrapper .grid__row>div {
-	margin-bottom: 0;
-}
-.tweet-create-wrapper .tweet-create {
-	background: rgba(236, 240, 241, 1.0);
-	border-top-left-radius: 0.5rem;
-	border-top-right-radius: 0.5rem;
-	border:1px solid rgba(149, 165, 166, 0.6);
-	padding: 1rem;
-}
-#tweet-create-frm {
-	color: #283593;
-}
-#tweet-create-frm>fieldset {
-	border: none;
-	margin: 0;
-	padding: 0;
-}
-#tweet-create-frm>fieldset>legend {
-	display: none;
-}
-#tweet-create-frm textarea {
-	width: 100%;
-	max-width: 100%;
-	resize: vertical;
-	padding: 0.5rem;
-	
-	border:1px solid rgba(26, 188, 156, 0.1);
-}
-#tweet-create-frm textarea:focus {
-	outline: 0;
-	
-	border:1px solid rgba(26, 188, 156, 0.6);
-}
-#tweet-create-frm button {
-	float: right;
-	border:1px solid rgba(26, 188, 156, 0.1);
-}
-.txtAmountChars {
-	float: right;	
-	padding: 0.5rem 1rem;
-}
-#tweet-create-frm button:focus {
-	outline: 0;
-	
-	border:1px solid rgba(26, 188, 156, 0.6);
-}
-.rdbg-mood {
-	float:left;
-	padding: 0.5rem 1rem 0.5rem 0;
-}
-input[type=radio] {
-	visibility: hidden;
-	position: absolute;
-}
-input[type=radio] + label::before {
-	display: inline-block;
-	height: 16px;
-	min-width: 16px;
-	margin-right: 8px;
-	
-	text-align: center;
-	vertical-align: middle;
-	line-height: 16px;
-	font-family: FontAwesome;
-	font-weight: normal;
-	font-size: 16px;
-	color: #2091cf;
-	
-	border-radius: 50%;
-}
-input[value="Neutral"] + label::before {
-	border: 2px solid #0097A7;
-	color: #0097A7;
-	content: "\f11a";
-}
-input[value="Sad"] + label::before {
-	border: 2px solid rgba(230, 126, 34, 1.0);
-	color: rgba(230, 126, 34, 1.0);
-	content: "\f119";
-}
-input[value="Happy"] + label::before {
-	border: 2px solid rgba(46, 204, 113, 1.0);
-	color: rgba(46, 204, 113, 1.0);
-	content: "\f118";
-}
-input[value="Neutral"]:checked + label::before {
-	background: #0097A7;
-	color: #f1f1f1;
-}
-input[value="Sad"]:checked + label::before {
-	background: rgba(230, 126, 34, 1.0);
-	color: #f1f1f1;
-}
-input[value="Happy"]:checked + label::before {
-	background: rgba(46, 204, 113, 1.0);
-	color: #f1f1f1;
-}
-label[for="mood-neutral"] {
-	color: #0097A7;
-}
-label[for="mood-sad"] {
-	color: rgba(230, 126, 34, 1.0);
-}
-label[for="mood-happy"] {
-	color: rgba(46, 204, 113, 1.0);
-}
-
-/* Tweets */
-.tweets>ul {
+/* List, ListItem */
+.list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	
-	border-left: 1px solid rgba(149, 165, 166, 0.6);
-	border-right: 1px solid rgba(149, 165, 166, 0.6);
 }
-.tweets>ul>li {
+.listitem {
+	position:relative;
 	padding: 0.5rem 1rem;
-
-	background: #fcfcfc;
-	border-bottom: 1px solid rgba(149, 165, 166, 0.6);
+	margin-bottom: 0.5rem;
+	
+	background: #EEEEEE;
 }
-.tweets>ul>li:last-of-type {
+.listitem:last-of-type {
 	margin-bottom: 0;
 }
-.tweet-mood-0 {
-	border-left: 8px solid #0097A7;
-}
-.tweet-mood-1 {
-	border-left: 8px solid rgba(46, 204, 113, 1.0);
-}
-.tweet-mood-2 {
-	border-left: 8px solid rgba(230, 126, 34, 1.0);
-}
-.tweet::before, .tweet::after {
+.listitem::before, .listitem::after {
     content: "\0020";
     display: block;
     height: 0;
     overflow: hidden; 
 }
-.tweet::after {
+.listitem::after {
 	clear: both; 
 }
-.tweet__createdAt {
-	float:left;
-	margin-right: 1rem;
-}
-.tweet__content {
-	margin-right: 4rem;
-	
-	font-weight: 500;
-}
-.tweet__edit {
+.listitem__details-link {
 	float: right;
 	
-	font-size: 1.4rem;
-	font-weight: 500;
-	color: rgba(39, 174, 96, 1.0);
+	line-height: 48px;
+	color: #0097A7;
+	
+	transition: all 680ms ease-out 0s; 
 }
-.tweet__remove {
-	float: right;
-	margin-left: 1rem;
-
-	font-size: 1.4rem;
-	font-weight: 500;
-	color: rgba(231, 76, 60, 1.0);
+.listitem__details-link:hover {
+	color: #283593;
 }
