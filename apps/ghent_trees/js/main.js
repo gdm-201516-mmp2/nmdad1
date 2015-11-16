@@ -15,25 +15,107 @@
 		init: function() {
 			// Geolocation
 			this._geoLocation = null;
+			// Google Maps
+			this._gMap = null;
+			// Handlebars Cache
 			this._hbsCache = {};// Handlebars cache for templates
 			this._hbsPartialsCache = {};// Handlebars cache for partials
+			// Create the pages lib via the corresponding clone
+			this._pages = Pages;
+			this._pages.init();
 			// Create the services via the corresponding clones
 			this._treesInventoryAPI = TreesInventoryAPI;
 			this._treesInventoryAPI.init('http://datatank.stad.gent/4/milieuennatuur/bomeninventaris.json');
 			// Create the Db context classes via the corresponding clones
 			this._treesDbContext = TreesDbContext;
 			this._treesDbContext.init('dds.ghent.trees');
+			// Check Google Maps Initialized
+			if(this._gMap == null) {
+				this.checkGoogleMapsInitialized();
+			}
 			// Get the geolocation of the user
 			if(this._geoLocation == null) {
 				this.getGeoLocation();
 			}
+			// Register tree inventory sort listeners
+			this.registerTreesSortListeners();
 			// Call the API if no treesinventory is present in the database (localstorage)
 			if(this._treesDbContext.getTreesInventory() == null || (this._treesDbContext.getTreesInventory() != null && this._treesDbContext.getTreesInventory().length == 0)) {
 				this.getTreesInventoryFromAPI();
 			} else {
-				this.renderTreesIventoryUI();// Render UI for trees iventory
-			}			
+				this.renderTreesInventoryUI(this._treesDbContext.getTreesInventory());// Render UI for trees iventory
+				this.renderTreesInventoryOnGMap(this._treesDbContext.getTreesInventory());// Render Markers for trees iventory
+			}	
+			this._pages.setActivePageState('pages__trees-inventory', 'list');
 		},
+		registerTreesSortListeners: function() {
+			var self = this;
+			var sortNodes = document.querySelectorAll('.trees-inventory-sort a');
+			var sortNode = null, data = null;
+			if(sortNodes != null && sortNodes.length > 0) {
+				for(var i = 0; i < sortNodes.length; i++) {
+					sortNode = sortNodes[i];
+					sortNode.addEventListener('click', function(ev) {
+						ev.preventDefault();
+						
+						self.sortTreesInventory(this.getAttribute('href'));
+						
+						return false;
+					});
+				}
+			}
+		},
+		sortTreesInventory: function(sort) {
+			var treesInventory = this._treesDbContext.getTreesInventory();
+			var self = this;
+			switch(sort) {
+				case '#name':default:
+					treesInventory = _.sortBy(treesInventory, function(tree) {
+						return tree.name;
+					});
+					break;
+				case '#height':
+					treesInventory = _.sortBy(treesInventory, function(tree) {
+						return tree.dimensions.height;
+					});
+					break;
+				case '#diameter':
+					treesInventory = _.sortBy(treesInventory, function(tree) {
+						return tree.dimensions.diameter;
+					});
+					break;
+				case '#dayofbirth':
+					treesInventory = _.sortBy(treesInventory, function(tree) {
+						return tree.dayofbirth;
+					});
+					break;
+				case '#distance':
+					treesInventory = _.sortBy(treesInventory, function(tree) {
+						if(self._geoLocation != null && self._geoLocation.coords != null) {
+							return Utils.calculateDistanceBetweenTwoCoordinates(tree.geolocation.lat, tree.geolocation.lng, self._geoLocation.coords.latitude, self._geoLocation.coords.longitude);
+						} else {
+							return tree.name;
+						}
+					});
+					break;
+			}
+			this.renderTreesInventoryUI(treesInventory);
+			if(this._geoLocation != null) {
+				// Loop throught the elements
+				this.showGeoDistanceinUI();
+			}
+		},
+		checkGoogleMapsInitialized: function() {
+            var self = this;
+
+            if(!window._googleMapsInitialized) {
+                window.setTimeout(function(){self.checkGoogleMapsInitialized()}, 1000);
+            } else {
+                this._gMap = GMap;
+                this._gMap.init('gmap-canvas');
+				this.renderTreesInventoryOnGMap(this._treesDbContext.getTreesInventory());// Render Markers for trees iventory
+            }
+        },
 		getGeoLocation: function() {
 			var self = this;
 			
@@ -42,6 +124,10 @@
 					self._geoLocation = location;
 					// Loop throught the elements
 					self.showGeoDistanceinUI();
+					// Add Marker to Goole Maps
+					if(self._gMap != null) {
+						self._gMap.addMarkerGeoLocation(location);
+					}
 				},
 				function(error) {
 					self._geoLocation = null;
@@ -89,20 +175,26 @@
 						}; 
 						self._treesDbContext.addTreeToInventory(tree);// Add tree to localstorage
 					}
-					self.renderTreesIventoryUI();// Render UI for trees iventory
+					self.renderTreesInventoryUI(self._treesDbContext.getTreesInventory());// Render UI for trees iventory
+					self.renderTreesInventoryOnGMap(self._treesDbContext.getTreesInventory());// Render markers for trees iventory
 				},
 				function(error) {
 					
 				}
 			);
 		},
-		renderTreesIventoryUI: function() {
+		renderTreesInventoryUI: function(treesInventory) {
 			if(!this._hbsCache['trees-inventory-list']) {
 				var src = document.querySelector('#trees-inventory-list-template').innerHTML;// Get the contents from the specified hbs template
 				this._hbsCache['trees-inventory-list'] = Handlebars.compile(src);// Compile the source and add it to the hbs cache
 			}	
-			document.querySelector('.trees-inventory-list').innerHTML = this._hbsCache['trees-inventory-list'](this._treesDbContext.getTreesInventory());
-		}		
+			document.querySelector('.trees-inventory-list').innerHTML = this._hbsCache['trees-inventory-list'](treesInventory);
+		},
+		renderTreesInventoryOnGMap: function(treesInventory) {
+			if(this._gMap != null) {
+				this._gMap.addMarkersForTreesInventory(treesInventory);
+			}
+		}
 	};
 	
 	App.init();// Intialize the application

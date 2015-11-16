@@ -10,27 +10,61 @@ body {
 
 /* Buttons */
 .btn {
-	padding: 0.5rem 1rem;
+	display: inline-block;
+	padding: 0.5rem;
+	
 	background: #0097A7;
+	border-bottom: 0.25rem solid #283593;
+	border-radius: 0.5rem;
+	
 	color: #FAFAFA;
-	border: 0;
+}
+.btn:hover {
+	border-bottom-color: #0097A7;
+	background: #283593;
+}
+.btn:active {
+	background: rgba(26,35,126 ,1);
+	border-bottom-color: #283593;
+}
+.btn-fa>span {
+	display: none;
+}
+.btn-fa::before {
+	content: '\f1ce';
+	font-family: FontAwesome;
+}
+.btn-fa-name::before {
+	content: '\f15d';
+}
+.btn-fa-height::before {
+	content: '\f034';
+}
+.btn-fa-diameter::before {
+	content: '\f1ce';
+}
+.btn-fa-dayofbirth::before {
+	content: '\f073';
+}
+.btn-fa-distance::before {
+	content: '\f14e';
 }
 
 /* Header */
-.header-wrapper {
+.page-header {
 	background: #283593;
 	color: #FAFAFA;
 	
-	margin-bottom: 1rem;
+	margin-bottom: 0;
 }
-.header-wrapper header {
+.page-header header {
 	margin-bottom: -1rem;
 }
 .header__logo>h1>span {
 	display: none;
 }
 .header__logo>h1::before {
-	content: "\f099";
+	content: "\f1bb";
 	
 	font-family: Fontawesome;
 	
@@ -41,7 +75,7 @@ body {
 	color: #283593;
 }
 .header__logo>h1::after {
-	content: "Trees";
+	content: "Ghent Trees";
 	
 	display: inline;
 	padding: 0.5rem;
@@ -52,14 +86,28 @@ body {
 	display: none;
 }
 
+/* Google Maps */
+#gmap-canvas {
+	height: 280px;
+}
+
+/* Tree Sort */
+.trees-inventory-sort__wrapper {
+	background: #f0f0f0;
+}
+.trees-inventory-sort {
+	margin-top: 1rem;
+}
+.trees-inventory-sort a {
+	text-decoration: none;
+}
+
 /* Tree */
 .trees-inventory-list>ul {
-	margin: 0;
 	padding: 0;
 }
 .tree {
 	position: relative;
-    min-height: 200px;
     overflow: hidden;
     z-index: 1;
 	box-sizing: border-box;
@@ -68,11 +116,13 @@ body {
     font-weight: 400;
     
     background: #fff;
+	border: 1px solid #c0c0c0;
     border-radius: 2px;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 .tree__title {
 	padding: 1rem;
+	min-height: 106px;
 }
 .tree__title > h3 {
 	padding: 0;
@@ -82,11 +132,12 @@ body {
 	padding: 1rem;
 }
 .tree__meta {
-	border-top:1px solid #a0a0a0;
+	border-top:1px solid #c0c0c0;
 	padding: 1rem;
 }
 .meta__dimensions {
 	margin-bottom: 0.5rem;
+	font-size: 0.86rem;
 }
 .dimensions__height {
 	margin-right: 1rem;
@@ -101,8 +152,23 @@ body {
 	font-family: FontAwesome;
 	margin-right: 0.5rem;
 }
+.meta__other {
+	font-size: 0.86rem;
+}
 .other__dayofbirth::before {
 	content: '\f073 ';
 	font-family: FontAwesome;
 	margin-right: 0.5rem;
+}
+.tree__geo-distance {
+	position: absolute;
+	padding: 0.25rem 0.5rem;
+	right: 0;
+	bottom: 0;
+	
+	background: #f0f0f0;
+	border-top: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
+	
+	font-size: 0.86rem;
 }
