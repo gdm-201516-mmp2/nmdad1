@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl-be" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Paging &amp; Routing | NMDAD-I</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+		<link rel="stylesheet" href="css/vendor/normalize.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/crosswalker.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-custom.js"></script>
+	</head>
+	<body>
+		
+		<!-- Off Canvas -->
+		<div class="offcanvas">
+			<header class="offcanvas-header">
+				<h1>
+					<a href="#" title="Terug naar de startpagina">
+						<i class="fa fa-paw"></i>Ghent Pets
+					</a>
+				</h1>
+				<h2 class="hidden">
+					Dierenartsen, hondentoiletten en losloopweiden in Stad Gent.
+				</h2>
+			</header>
+			<nav class="offcanvas-navigation">
+				<ul>
+					<li>
+						<a href="#/home" title="">
+							<i class="fa fa-home"></i>Home
+						</a>
+					</li>
+					<li>
+						<a href="#/blog" title="">
+							<i class="fa fa-paw"></i>blog
+						</a>
+					</li>
+					<li>
+						<a href="#/portfolio" title="">
+							<i class="fa fa-fire"></i>Portfolio
+						</a>
+					</li>
+					<li>
+						<a href="#/about" title="">
+							<i class="fa fa-user"></i>About
+						</a>
+					</li>
+					<li>
+						<a href="#/contact" title="">
+							<i class="fa fa-envelope"></i>Contact
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		
+		<!-- Page: Home -->
+    	<div class="page active" id="home">
+			<!-- Page Header -->
+			<div class="grid__wrapper page-header">
+				<div class="grid__container">
+					<div class="grid__row">
+						<div class="grid__column-bp1-12">
+							<header>
+								<section>
+									<a class="offcanvas-toggle" href=".offcanvas" title="Toggle Off Canvas"><i class="fa fa-bars"></i></a>
+								</section>
+								<section class="header__logo">
+									<h1><span>Application CrossWalker</span></h1>
+									<h2>Testing Routes, Pages, Page States in HTML, CSS and JS</h2>
+								</section>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div><!-- End Page Header -->
+			<!-- Page State Navigation -->
+			<div class="grid__wrapper page-state-navigation">
+				<div class="grid__container">
+					<div class="grid__row">
+						<div class="grid__column-bp1-12">
+							<h2>HOME</h2>
+							<nav>
+								<ul>
+									<li>
+										<a class="page-state-navigation__item active" href="#" data-pagestate="list" data-page="home">
+											<i class="fa fa-list"></i>List
+										</a>
+									</li>
+									<li>
+										<a class="page-state-navigation__item" href="#" data-pagestate="map" data-page="home">
+											<i class="fa fa-map-marker"></i>Map
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div><!-- End Page State Navigation -->
+			<!-- Page State Contents -->
+			<div class="page-state-contents">
+				<!-- Page State Content -->
+				<div class="page-state-content active" data-pagestate="list">
+					LIST STATE
+				</div><!-- End Page State Content -->
+				<!-- Page State Content -->
+				<div class="page-state-content" data-pagestate="map">
+					MAP STATE
+				</div><!-- End Page State Content -->
+			</div><!-- End Page State Contents -->
+    	</div><!-- End page: Home -->
+		
+		<!-- Page: Blog -->
+    	<div class="page" id="blog">
+			<!-- Page Header -->
+			<div class="grid__wrapper page-header">
+				<div class="grid__container">
+					<div class="grid__row">
+						<div class="grid__column-bp1-12">
+							<header>
+								<section>
+									<a class="offcanvas-toggle" href=".offcanvas" title="Toggle Off Canvas"><i class="fa fa-bars"></i></a>
+								</section>
+								<section class="header__logo">
+									<h1><span>Application CrossWalker</span></h1>
+									<h2>Testing Routes, Pages, Page States in HTML, CSS and JS</h2>
+								</section>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div><!-- End Page Header -->
+			<!-- Page State Navigation -->
+			<div class="grid__wrapper page-state-navigation">
+				<div class="grid__container">
+					<div class="grid__row">
+						<div class="grid__column-bp1-12">
+							<h2>BLOG</h2>
+							<nav>
+								<ul>
+									<li>
+										<a class="page-state-navigation__item active" href="#" data-pagestate="list" data-page="blog">
+											<i class="fa fa-list"></i>List
+										</a>
+									</li>
+									<li>
+										<a class="page-state-navigation__item" href="#" data-pagestate="map" data-page="blog">
+											<i class="fa fa-map-marker"></i>Map
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div><!-- End Page State Navigation -->
+			<!-- Page State Contents -->
+			<div class="page-state-contents">
+				<!-- Page State Content -->
+				<div class="page-state-content active" data-pagestate="list">
+					LIST STATE
+				</div><!-- End Page State Content -->
+				<!-- Page State Content -->
+				<div class="page-state-content" data-pagestate="map">
+					MAP STATE
+				</div><!-- End Page State Content -->
+			</div><!-- End Page State Contents -->
+    	</div><!-- End page: Blog -->
+		
+		<!-- Page: Portfolio -->
+    	<div class="page" id="portfolio">
+    	</div><!-- End page: Portfolio -->
+		
+		<!-- Page: About -->
+    	<div class="page" id="about">
+    	</div><!-- End page: About -->
+					
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+		<script src="js/utilities.js"></script>		
+		<script src="js/helpers.js"></script>	
+		<script src="js/models.js"></script>	
+		<script src="js/services.js"></script>
+		<script src="js/vendor/signals.js"></script>
+		<script src="js/vendor/hasher.js"></script>
+		<script src="js/vendor/crossroads.js"></script>
+		<script src="js/crosswalker.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

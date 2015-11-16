@@ -7,34 +7,91 @@
 		<link rel="stylesheet" href="css/vendor/normalize.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/page.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/vendor/modernizr-custom.js"></script>
 	</head>
 	<body>
-		<div class="grid__wrapper header-wrapper">
-			<div class="grid__container">
-				<div class="grid__row">
-					<div class="grid__column-bp1-12">
-						<header>
-							<section class="header__logo">
-								<h1><span>Trees</span></h1>
-								<h2>Bomen in Gent</h2>
-							</section>
-						</header>
+		<div class="grid__wrapper page active" id="page-trees-inventory">
+			<!-- Page Header -->
+			<div class="grid__wrapper page-header">
+				<div class="grid__container">
+					<div class="grid__row">
+						<div class="grid__column-bp1-12">
+							<header>
+								<section class="header__logo">
+									<h1><span>Trees</span></h1>
+									<h2>Bomen in Gent</h2>
+								</section>
+							</header>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="grid__wrapper">
-			<div class="grid__container">
-				<div class="grid__row">
-					<div class="grid__column-bp1-12">
-						<section class="trees-inventory-list">
-						</section>
+			</div><!-- End Page Header -->
+			<!-- Page State Navigation -->
+			<div class="grid__wrapper page-state-navigation">
+				<div class="grid__container">
+					<div class="grid__row">
+						<div class="grid__column-bp1-12">
+							<nav>
+								<ul>
+									<li>
+										<a class="page-state-navigation__item active" href="#" data-pagestate="list" data-page="page-trees-inventory">
+											<i class="fa fa-list"></i>List
+										</a>
+									</li>
+									<li>
+										<a class="page-state-navigation__item" href="#" data-pagestate="map" data-page="page-trees-inventory">
+											<i class="fa fa-map-marker"></i>Map
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
 					</div>
 				</div>
-			</div>
+			</div><!-- End Page State Navigation -->
+			<!-- Page State Contents -->
+			<div class="page-state-contents">
+				<!-- Page State Content -->
+				<div class="page-state-content active" data-pagestate="list">
+					<div class="grid__wrapper trees-inventory-sort__wrapper">
+						<div class="grid__container">
+							<div class="grid__row">
+								<div class="grid__column-bp1-12 trees-inventory-sort">
+									<a class="btn btn-fa btn-fa-name" href="#name"><span>Name</span></a>
+									<a class="btn btn-fa btn-fa-height" href="#height"><span>Height</span></a>
+									<a class="btn btn-fa btn-fa-diameter" href="#diameter"><span>Diameter</span></a>
+									<a class="btn btn-fa btn-fa-dayofbirth" href="#dayofbirth"><span>Day of birth</span></a>
+									<a class="btn btn-fa btn-fa-distance" href="#distance"><span>Distance</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__wrapper">
+						<div class="grid__container">
+							<div class="grid__row">
+								<div class="grid__column-bp1-12">
+									<section class="trees-inventory-list">
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- End Page State Content -->
+				<!-- Page State Content -->
+				<div class="grid__wrapper page-state-content" data-pagestate="map">
+					<div class="grid__container">
+						<div class="grid__row">
+							<div class="grid__column-bp1-12">
+								<section id="gmap-canvas"></section>
+							</div>
+						</div>
+					</div>
+				</div><!-- End Page State Content -->
+			</div><!-- End Page State Contents -->
 		</div>
+		
 		<!-- Handlebars Templates -->
 		<script id="trees-inventory-list-template" type="text/x-handlebars-template">
 			{{#if this}}
@@ -46,7 +103,11 @@
 							<h3>{{name}} <small>({{ghentid}}-{{ghentcode}})</small></h3>
 						</section>
 						<section class="tree__text">
-							{{namenl}}
+							{{#if namenl}}
+								{{namenl}}
+							{{else}}
+								&nbsp;
+							{{/if}}
 						</section>
 						<section class="tree__meta">
 							<section class="meta__dimensions">
@@ -57,7 +118,7 @@
 								<span class="other__dayofbirth">{{dayofbirth}}</span>
 							</section>
 						</section>
-						<span class="tree__geo-distance"></span>
+						<section class="tree__geo-distance"><span class="fa fa-question"></span></section>
 					</div>
 				</li>
 				{{/each}}
@@ -67,10 +128,14 @@
 			{{/if}}
 		</script>			
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
 		<script src="js/utilities.js"></script>		
 		<script src="js/helpers.js"></script>	
 		<script src="js/models.js"></script>	
 		<script src="js/services.js"></script>
+		<script src="js/pages.js"></script>
+		<script src="js/vendor/markerclusterer.js"></script>
+		<script src="js/google_maps.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

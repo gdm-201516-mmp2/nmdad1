@@ -12,24 +12,26 @@
 	var App = {
 		// Initialize the application
 		init: function() {
+			this._hbsCache = {};// Handlebars cache for templates
+			this._hbsPartialsCache = {};// Handlebars cache for partials
 			// Create the services via a corresponding clone
-			this._hondenvoorzieningenAPI = HondenvoorzieningenAPI;
-			this._hondenvoorzieningenAPI.init('http://datatank.stad.gent/4/infrastructuur/hondenvoorzieningen.json');
+			this._hondenVoorzieningenAPI = HondenVoorzieningenAPI;
+			this._hondenVoorzieningenAPI.init('http://datatank.stad.gent/4/infrastructuur/hondenvoorzieningen.json');
 			// Create PetsDbContext by clone
 			this._petsDbContext = PetsDbContext;
 			this._petsDbContext.init('dds.ghent.pets');
-			// Call API if no dogstoilets present in database (localstorage)
-			if(this._petsDbContext.getDogsToilets() == null || this._petsDbContext.getDogsToilets().length == 0) {
-				this.getHondenvoorzieningenFromAPI();
+			// Call API if no dogstoilets are present in database (localstorage), and then add it to the localstorage via DbContext
+			if(this._petsDbContext.getDogsToilets() == null || (this._petsDbContext.getDogsToilets() != null &&this._petsDbContext.getDogsToilets().length == 0)) {
+				this.getHondenVoorzieningenFromAPI();
 			} else {
 				this.renderDogsToilets();
 			}
 			
 		},
-		getHondenvoorzieningenFromAPI: function() {
+		getHondenVoorzieningenFromAPI: function() {
 			var self = this;
 			
-			this._hondenvoorzieningenAPI.getHondenvoorzieningen().then(
+			this._hondenVoorzieningenAPI.getHondenVoorzieningen().then(
 				function(data) {
 					var dogstoilets = [], type = null, dogtoilet = null;
 					var hondenvoorzieningen = data.Document.Folder.Placemark;
@@ -52,10 +54,13 @@
 						}
 					}
 					
-					// Add dogs toilets
+					// Add dogs toilets to localstorage via DbContext
 					for(var j = 0;j < dogstoilets.length;j++) {
 						self._petsDbContext.addDogsToilet(dogstoilets[j]);
 					}
+					
+					// Render the interface
+					self.renderDogsToilets();
 				},
 				function(error) {
 					
@@ -63,7 +68,11 @@
 			);
 		},
 		renderDogsToilets: function() {
-			
+			if(!this._hbsCache['dogs-toilets']) {
+				var src = document.querySelector('#dogs-toilets-template').innerHTML;// Get the contents from the specified hbs template
+				this._hbsCache['dogs-toilets'] = Handlebars.compile(src);// Compile the source and add it to the hbs cache
+			}
+			document.querySelector('#dogs-toilets-list').innerHTML = this._hbsCache['dogs-toilets'](this._petsDbContext.getDogsToilets());
 		}	
 	};
 	

@@ -1,11 +1,11 @@
 /*
 Load Datasets From Ghent
 */
-var HondenvoorzieningenAPI = {
+var HondenVoorzieningenAPI = {
 	init: function(connString) {
 		this._connString = connString;
 	},
-	getHondenvoorzieningen: function() {
+	getHondenVoorzieningen: function() {
 		var url = this._connString;
 		return Utils.getJSONByPromise(url);
 	}	
@@ -38,6 +38,7 @@ var PetsDbContext = {
 	},
 	addDogsToilet: function(dogsToilet) {
 		dogsToilet.id = Utils.guid();// Create unique id
+		dogsToilet.CreatedAt = new Date();// Create Date for CreatedAt property
 		
 		this._appData.dogstoilets.push(dogsToilet);// Add to array
 		this.save(); // Save in localstorage via save method

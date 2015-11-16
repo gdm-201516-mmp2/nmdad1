@@ -2,7 +2,7 @@
 <html lang="nl-be" dir="ltr">
 	<head>
 		<meta charset="UTF-8">
-		<title>Random user generator | RandomUserMe | API</title>
+		<title>Ghent Pets | Gent | API</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
 		<link rel="stylesheet" href="css/vendor/normalize.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -17,8 +17,8 @@
 					<div class="grid__column-bp1-12">
 						<header>
 							<section class="header__logo">
-								<h1><span>RandomUserMe</span></h1>
-								<h2>Random user generator</h2>
+								<h1><span>Ghent Pets</span></h1>
+								<h2>Locations in Ghent for pets</h2>
 							</section>
 						</header>
 					</div>
@@ -29,10 +29,27 @@
 			<div class="grid__container">
 				<div class="grid__row">
 					<div class="grid__column-bp1-12">
+						<section id="dogs-toilets-list">
+						</section>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Handlebars Templates -->
+		<script id="dogs-toilets-template" type="text/x-handlebars-template">
+			{{#if this}}
+			<ul class="list">
+				{{#each this}}
+				<li class="dogs-toilet dogs-service" data-id="{{id}}">
+					<h3 class="dogs-toilet__description">{{description}}</h3>
+					<section class="dogs-toilet__body">{{{body}}}</section>
+				</li>
+				{{/each}}
+			</ul>
+			{{else}}
+				<p>No Dogs Toilets present in the database!</p>
+			{{/if}}
+		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
 		<script src="js/utilities.js"></script>		
 		<script src="js/helpers.js"></script>
