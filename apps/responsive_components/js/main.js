@@ -26,6 +26,8 @@
 					toggle.addEventListener('click', function(ev) {
 						ev.preventDefault();
 						
+						this.classList.toggle('open');
+						
 						navid = this.dataset.navid;
 						document.querySelector('#' + navid).classList.toggle('open');
 						
