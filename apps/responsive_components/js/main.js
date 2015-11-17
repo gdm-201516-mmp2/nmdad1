@@ -13,18 +13,7 @@
 	// Describe an App object with own functionalities
 	var App = {
 		init: function() {
-			// Geolocation
-			this._geoLocation = null;
-			// Google Maps
-			this._gMap = null;
-			// Handlebars Cache
-			this._hbsCache = {};// Handlebars cache for templates
-			this._hbsPartialsCache = {};// Handlebars cache for partials
-			// Create the crosswalker variable via the corresponding clone
-			this._crossWalker = CrossWalker;
-			this._crossWalker.init();
-			this._crossWalker.setActivePage('home');
-			this._crossWalker.setActivePageState('home', 'list');
+			
 		}
 	};
 	
