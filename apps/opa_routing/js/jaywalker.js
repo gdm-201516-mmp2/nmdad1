@@ -15,11 +15,11 @@ var JayWalker = {
 		
 		// Router settings: Register routes
 		var homeRoute = this._router.addRoute('/', function() {
-			
+			console.log('HOME');
 		});
 		var sectionRoute = this._router.addRoute('/{section}');// Add section route to the router (crossroads)
 		sectionRoute.matched.add(function(section) {
-			
+			console.log(section);
 		});
 		
 		//Hasher settings
@@ -36,5 +36,6 @@ var JayWalker = {
 				document.querySelector('body').classList.remove('headernav-open');
 			}
 		});// Parse changes in the hash
+		this._hasher.init();// Start listening to the hashes
 	}	
 };

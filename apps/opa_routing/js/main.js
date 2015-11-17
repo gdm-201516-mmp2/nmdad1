@@ -15,6 +15,9 @@
 		init: function() {
 			this.registerNavigationToggleListeners();// Register All Navigation Toggle Listeners
 			this.registerWindowListeners();// Register All Navigation Toggle Listeners
+			// Create a clone from the JayWalker object
+			this._jayWalker = JayWalker;
+			this._jayWalker.init();
 		},
 		registerNavigationToggleListeners: function() {
 			var toggles = document.querySelectorAll('.navigation-toggle');
