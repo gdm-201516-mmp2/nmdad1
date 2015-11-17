@@ -16,7 +16,7 @@
 			this.registerNavigationToggleListeners();// Register All Navigation Toggle Listeners
 		},
 		registerNavigationToggleListeners: function() {
-			var toggles = document.querySelectorAll('.header__navigation-toggle');
+			var toggles = document.querySelectorAll('.navigation-toggle');
 			
 			if(toggles != null && toggles.length > 0) {
 				var toggle = null, navid = null;
