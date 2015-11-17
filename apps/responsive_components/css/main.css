@@ -35,7 +35,7 @@ body {
 	
 	transition: all 320ms ease-out 0s;
 }
-.offcanvas.open {
+.offcanvas-open .offcanvas {
 	right: 0;
 	
 	transition: all 320ms ease-out 0s;
@@ -170,7 +170,7 @@ body {
 	
 	transition: all 320ms ease-out 0s;
 }
-#header__navigation-toggle.open::before {
+.offcanvas-open #header__navigation-toggle::before {
 	transform: rotate(90deg);
 	transition: all 320ms ease-out 0s;
 }
