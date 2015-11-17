@@ -102,7 +102,7 @@ li:nth-of-type(4) .navigation__item {
 li:nth-of-type(5) .navigation__item {
 	background: rgba(150,61,151, 1);
 }
-@media (min-width: 29.99999rem) {
+@media (min-width: 30rem) {
 	#header__navigation {
 		width: 100%;
 	}
