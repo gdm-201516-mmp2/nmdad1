@@ -6,24 +6,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
 		<link rel="stylesheet" href="css/vendor/normalize.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/helpers.css">
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/jaywalker.css">
 		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/offcanvas.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/vendor/modernizr-custom.js"></script>
 	</head>
 	<body>
 		<!-- Offcanvas -->
-		<div class="offcanvas" id="offcanvas">
+		<div class="offcanvas">
 			<!-- Offcanvas Header -->
-			<section id="offcanvas__header">
+			<section class="offcanvas__header">
 				<h1>633|&lt;</h1>
-				<a id="offcanvas__navigation-toggle" class="navigation-toggle" href="#" title="Close the offcanvas" data-navtype="offcanvas-open">
+				<a class="navigation-toggle offcanvas__navigation-toggle" href="#" title="Close the offcanvas" data-navtype="offcanvas-open">
 					<span>Close</span>
 				</a>
 			</section>
 			<!-- Offcanvas Navigation -->
-			<nav id="offcanvas__navigation">
+			<nav class="offcanvas__navigation">
 				<ul class="clearfix">
 					<li><a class="navigation__item" href="#/home" title="Back to the homepage"><span class="fa fa-home"></span>Home</a></li>
 					<li><a class="navigation__item" href="#/blog" title="Read my blog"><span class="fa fa-sticky-note"></span>Blog</a></li>
@@ -35,13 +37,13 @@
 		</div><!-- End Offcanvas -->
 		
 		<!-- Header Wrapper -->
-		<div class="grid__wrapper" id="header-wrapper">
+		<div class="grid__wrapper header-wrapper">
 			<div class="grid__container">
 				<div class="grid__row">
 					<div class="grid__column-bp1-12">
-						<header id="header">
+						<header class="header">
 							<!-- Header Logo -->
-							<section id="header__logo">
+							<section class="header__logo">
 								<h1><a href="index.html" title="Back to the homepage"><span>Responsive Components</span></a></h1>
 								<h2>Responsive grid, navigation, images, ...</h2>
 							</section><!-- End Header Logo -->
@@ -49,11 +51,11 @@
 							data-navtype="headernav-open" when responsive push down menu
 							data-navtype="offcanvas-open" when responsive offcanvas
 							-->
-							<a id="header__navigation-toggle" class="navigation-toggle" href="#" data-navtype="offcanvas-open">
+							<a class="navigation-toggle header__navigation-toggle" href="#" data-navtype="offcanvas-open">
 								<span>Toggle</span>
 							</a><!-- End Navigation Toggle -->
 							<!-- Navigation -->
-							<nav id="header__navigation">
+							<nav class="header__navigation">
 								<ul class="clearfix">
 									<li><a class="navigation__item" href="#/home" title="Back to the homepage">Home</a></li>
 									<li><a class="navigation__item" href="#/blog" title="Read my blog">Blog</a></li>

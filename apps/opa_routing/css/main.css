@@ -6,141 +6,36 @@ body {
 }
 
 /*
-* Helpers
-*/
-.clearfix::before, .clearfix::after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden; 
-}
-.clearfix::after {
-	clear: both; 
-}
-
-/*
-* Offcanvas
-*/
-.offcanvas {
-	position: fixed;
-	z-index: 999;
-	right: 0;
-	top: 0;
-	max-width: 320px;
-	width: 70%;
-	min-height: 100%;
-	right: -100%;
-	
-	background: rgba(245,245,245 ,1);
-	
-	transition: all 320ms ease-out 0s;
-}
-.offcanvas-open .offcanvas {
-	right: 0;
-	
-	transition: all 320ms ease-out 0s;
-}
-#offcanvas__header {
-	position:relative;
-	height: 104px;
-	width: 100%;
-	
-	background: url('images/m1.jpg') no-repeat top left;
-	background-size: cover;
-}
-#offcanvas__header > h1 {
-	position: absolute;
-	margin: 0;
-	bottom: 1rem;
-	left: 1rem;
-	
-	font-size: 2rem;
-	color: rgba(245,245,245 ,1);
-}
-#offcanvas__navigation-toggle {
-	position: absolute;
-	top: 0.5rem;
-	right: 0.5rem;
-	
-	text-decoration: none;
-	color: rgba(245,245,245 ,1);
-}
-#offcanvas__navigation-toggle > span {
-	display: none;
-}
-#offcanvas__navigation-toggle::before {
-	display: block;
-	content: '\f00d';
-	
-	font-family: FontAwesome;
-	font-size: 2rem;
-	
-	transition: all 320ms ease-out 0s;
-}
-#offcanvas__navigation > ul {
-	list-style: none;
-	
-	margin: 0;
-	padding: 0;
-}
-#offcanvas__navigation > ul > li {
-	width: 100%;
-}
-#offcanvas__navigation .navigation__item {
-	display: block;
-	height: 32px;
-	line-height: 32px;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	
-	background: rgba(26,41,44, 1);
-	border-bottom: 1px solid rgba(245,245,245 ,1);
-	
-	text-decoration: none;
-	color: rgba(245,245,245 ,1);
-	font-weight: 700;
-	text-transform: uppercase;
-}
-#offcanvas__navigation .navigation__item .fa {
-	margin-right: 1rem;
-	width: 2rem;
-	text-align: center;
-}
-#offcanvas__navigation > ul > li:last-of-type .navigation__item {
-	border-bottom: none;
-}
-
-/*
 * Header
 */
-#header-wrapper {
+.header-wrapper {
 	background: rgba(250,250,250 ,1);
 	-webkit-box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px -1px 16px 0px rgba(0,0,0,0.75);
 }
-#header-wrapper > div > div > div {
+.header-wrapper > div > div > div {
 	margin-bottom: 0;
 }
-#header::before, #header::after {
+.header::before, #header::after {
     content: "\0020";
     display: block;
     height: 0;
     overflow: hidden; 
 }
-#header::after {
+.header::after {
 	clear: both; 
 }
-#header__logo {
+.header__logo {
 	float: left;
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 }
-#header__logo > h1 {
+.header__logo > h1 {
 	margin: 0;
 	padding: 0;
 }
-#header__logo > h1 > a {
+.header__logo > h1 > a {
 	display: block;
 	width: 32.72727px;
 	height: 36px;
@@ -148,20 +43,20 @@ body {
 	background: url('images/logo.png') no-repeat top left;
 	background-size: cover;
 }
-#header__logo > h1 > a > span {
+.header__logo > h1 > a > span {
 	display: none;
 }
-#header__logo > h2 {
+.header__logo > h2 {
 	display: none;
 }
-#header__navigation-toggle {
+.header__navigation-toggle {
 	float:right;
 	margin-top: 0.5rem;
 	
 	text-decoration: none;
 	color: rgba(0,157,220, 1);
 }
-#header__navigation-toggle::before {
+.header__navigation-toggle::before {
 	display: block;
 	content: '\f0c9';
 	
@@ -170,15 +65,15 @@ body {
 	
 	transition: all 320ms ease-out 0s;
 }
-.offcanvas-open #header__navigation-toggle::before,
-.headernav-open #header__navigation-toggle::before {
+.offcanvas-open .header__navigation-toggle::before,
+.headernav-open .header__navigation-toggle::before {
 	transform: rotate(90deg);
 	transition: all 320ms ease-out 0s;
 }
-#header__navigation-toggle > span {
+.header__navigation-toggle > span {
 	display: none;
 }
-#header__navigation {
+.header__navigation {
 	float: right;
 	width: 100%;
 	display: none;	
@@ -186,17 +81,17 @@ body {
 .headernav-open #header__navigation {
 	display: block;
 }
-#header__navigation > ul {
+.header__navigation > ul {
 	list-style: none;
 	
 	margin: 0;
 	padding: 0;
 }
-#header__navigation > ul > li {
+.header__navigation > ul > li {
 	float: left;
 	width: 100%;
 }
-#header__navigation .navigation__item {
+.header__navigation .navigation__item {
 	display: block;
 	height: 32px;
 	line-height: 32px;
@@ -210,33 +105,33 @@ body {
 	font-weight: 700;
 	text-transform: uppercase;
 }
-#header__navigation li:nth-of-type(2) .navigation__item {
+.header__navigation li:nth-of-type(2) .navigation__item {
 	background: rgba(253,184,39, 1);
 }
-#header__navigation li:nth-of-type(3) .navigation__item {
+.header__navigation li:nth-of-type(3) .navigation__item {
 	background: rgba(245,130,31, 1);
 }
-#header__navigation li:nth-of-type(4) .navigation__item {
+.header__navigation li:nth-of-type(4) .navigation__item {
 	background: rgba(224,58,62, 1);
 }
-#header__navigation li:nth-of-type(5) .navigation__item {
+.header__navigation li:nth-of-type(5) .navigation__item {
 	background: rgba(150,61,151, 1);
 }
 @media (min-width: 30rem) {
-	#header__logo > h1 > a {
+	.header__logo > h1 > a {
 		width: 78.81818px;
 		height: 86px;
 	}
-	#header__navigation {
+	.header__navigation {
 		width: 100%;
 	}
-	#header__navigation > ul > li {
+	.header__navigation > ul > li {
 		width: 50%;
 	}
-	#header__navigation > ul > li:last-of-type {
+	.header__navigation > ul > li:last-of-type {
 		width: 100%;
 	}
-	#header__navigation .navigation__item {
+	.header__navigation .navigation__item {
 		height: 64px;
 		line-height: 64px;
 		
@@ -244,27 +139,27 @@ body {
 	}
 }
 @media (min-width: 42.5rem) {
-	#offcanvas {
+	.offcanvas {
 		display: none;
 	}
-	#header__logo > h1 > a {
+	.header__logo > h1 > a {
 		width: 101.81818px;
 		height: 112px;
 	}
-	#header__navigation-toggle {
+	.header__navigation-toggle {
 		display: none;
 	}
-	#header__navigation {
+	.header__navigation {
 		width: auto;
 		display: block;
 	}
-	#header__navigation > ul > li {
+	.header__navigation > ul > li {
 		width: auto;
 	}
-	#header__navigation > ul > li:last-of-type {
+	.header__navigation > ul > li:last-of-type {
 		width: auto;
 	}
-	#header__navigation .navigation__item {
+	.header__navigation .navigation__item {
 		height: 128px;
 		line-height: 128px;
 		
