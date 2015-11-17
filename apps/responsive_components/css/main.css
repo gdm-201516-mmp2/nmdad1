@@ -75,9 +75,12 @@ body {
 	
 	font-family: FontAwesome;
 	font-size: 2rem;
+	
+	transition: all 320ms ease-out 0s;
 }
 .header__navigation-toggle.open::before {
 	transform: rotate(90deg);
+	transition: all 320ms ease-out 0s;
 }
 .header__navigation-toggle > span {
 	display: none;
