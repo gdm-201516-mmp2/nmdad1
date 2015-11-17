@@ -100,3 +100,34 @@ li:nth-of-type(4) .navigation__item {
 li:nth-of-type(5) .navigation__item {
 	background: rgba(150,61,151, 1);
 }
+@media (max-width: 29.99999rem) {
+	#header__navigation {
+		width: 100%;
+	}
+	#header__navigation > ul > li {
+		width: 100%;
+	}
+	.navigation__item {
+		height: 64px;
+		line-height: 64px;
+		
+		text-align: center;
+	}
+}
+@media (min-width: 30rem) and (max-width: 42.5rem) {
+	#header__navigation {
+		width: 100%;
+	}
+	#header__navigation > ul > li {
+		width: 50%;
+	}
+	#header__navigation > ul > li:last-of-type {
+		width: 100%;
+	}
+	.navigation__item {
+		height: 64px;
+		line-height: 64px;
+		
+		text-align: center;
+	}
+}
