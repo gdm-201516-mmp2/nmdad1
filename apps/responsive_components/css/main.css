@@ -78,10 +78,25 @@ body {
 	display: block;
 	height: 128px;
 	line-height: 128px;
-	
-	border: 1px solid #a0a0a0;
-	
-	text-decoration: none;
 	padding-left: 1rem;
 	padding-right: 1rem;
+	
+	background: rgba(97,187,70,1);
+	
+	text-decoration: none;
+	color: rgba(250,250,250, 1);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+li:nth-of-type(2) .navigation__item {
+	background: rgba(253,184,39, 1);
+}
+li:nth-of-type(3) .navigation__item {
+	background: rgba(245,130,31, 1);
+}
+li:nth-of-type(4) .navigation__item {
+	background: rgba(224,58,62, 1);
+}
+li:nth-of-type(5) .navigation__item {
+	background: rgba(150,61,151, 1);
 }
