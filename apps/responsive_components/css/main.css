@@ -80,7 +80,8 @@ body {
 }
 #header__navigation {
 	float: right;
-	width: 100%;	
+	width: 100%;
+	display: none;	
 }
 #header__navigation > ul {
 	list-style: none;
@@ -141,8 +142,12 @@ li:nth-of-type(5) .navigation__item {
 		width: 101.81818px;
 		height: 112px;
 	}
+	.header__navigation-toggle {
+		display: none;
+	}
 	#header__navigation {
 		width: auto;
+		display: block;
 	}
 	#header__navigation > ul > li {
 		width: auto;
