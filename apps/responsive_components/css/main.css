@@ -83,6 +83,9 @@ body {
 	width: 100%;
 	display: none;	
 }
+#header__navigation.open {
+	display: block;
+}
 #header__navigation > ul {
 	list-style: none;
 	
