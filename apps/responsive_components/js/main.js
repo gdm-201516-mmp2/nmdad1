@@ -39,6 +39,10 @@
 				if(document.querySelector('body').classList.contains('offcanvas-open')) {
 					document.querySelector('body').classList.remove('offcanvas-open');
 				}
+				
+				if(document.querySelector('body').classList.contains('headernav-open')) {
+					document.querySelector('body').classList.remove('headernav-open');
+				}
 			});
 		}
 	};

@@ -170,7 +170,8 @@ body {
 	
 	transition: all 320ms ease-out 0s;
 }
-.offcanvas-open #header__navigation-toggle::before {
+.offcanvas-open #header__navigation-toggle::before,
+.headernav-open #header__navigation-toggle::before {
 	transform: rotate(90deg);
 	transition: all 320ms ease-out 0s;
 }
@@ -182,7 +183,7 @@ body {
 	width: 100%;
 	display: none;	
 }
-#header__navigation.open {
+.headernav-open #header__navigation {
 	display: block;
 }
 #header__navigation > ul {
