@@ -38,7 +38,19 @@ var JayWalker = {
 		});// Parse changes in the hash
 		this._hasher.init();// Start listening to the hashes
 	},
-	setActivePage: function(page) {
-		
+	setActivePage: function(pageId) {
+		var pages = document.querySelectorAll('.page');
+		if(pages != null && pages.length > 0) {
+			var page = null;
+			for(var i = 0; i < pages.length;i++) {
+				page = pages[i];
+				
+				if(page.id == pageId) {
+					page.classList.add('active');
+				} else {
+					page.classList.remove('active');
+				}
+			}
+		}
 	}	
 };
