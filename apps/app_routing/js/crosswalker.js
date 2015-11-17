@@ -39,12 +39,10 @@ var CrossWalker = {
 		//Crossroads settings
 		var homeRoute = this._router.addRoute('/',function(){
 			self.setActivePage('home');// Set the active page where id is equal to the route
-			self.setActiveNavigationLink('home');// Set the active menuitem where href is equal to the route
 		});
 		var sectionRoute = this._router.addRoute('/{section}');// Add the section route to crossroads
 		sectionRoute.matched.add(function(section) {
-			self.setActivePage(section);// Set the active page where id is equal to the route
-			self.setActiveNavigationLink(section);// Set the active menuitem where href is equal to the route
+			self.setActivePage(section);// Set the active page where id is 
 		});// Hash matches to section route
 
 		// Hash settings
@@ -84,11 +82,10 @@ var CrossWalker = {
 				}
 			});
 		}
-	},
-	setActiveNavigationLink:function(section){
-		var navLinks = document.querySelectorAll('.page-navigation__item');
+		
+		var navLinks = document.querySelectorAll('.navigation__item');
 		if(navLinks != null && navLinks.length > 0){
-			var effLink = '#/' + section;
+			var effLink = '#/' + pageId;
 			_.each(navLinks, function(navLink){
 				if(navLink.getAttribute('href') == effLink){
 					navLink.classList.add('active');

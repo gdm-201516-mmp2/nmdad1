@@ -2,54 +2,55 @@
 <html lang="nl-be" dir="ltr">
 	<head>
 		<meta charset="UTF-8">
-		<title>Paging &amp; Routing | NMDAD-I</title>
+		<title>CrossWalker | Router, Hasher, Crossroads, Page and Navigation |NMDAD-I</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
 		<link rel="stylesheet" href="css/vendor/normalize.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/crosswalker.css">
+		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/vendor/modernizr-custom.js"></script>
 	</head>
 	<body>
 		
-		<!-- Off Canvas -->
+		<!-- Off Canvas Menu -->
 		<div class="offcanvas">
-			<header class="offcanvas-header">
+			<header class="offcanvas__header">
 				<h1>
 					<a href="#" title="Terug naar de startpagina">
-						<i class="fa fa-paw"></i>Ghent Pets
+						<span class="fa fa-paw"></span>Ghent Pets
 					</a>
 				</h1>
 				<h2 class="hidden">
 					Dierenartsen, hondentoiletten en losloopweiden in Stad Gent.
 				</h2>
 			</header>
-			<nav class="offcanvas-navigation">
+			<nav class="offcanvas__navigation">
 				<ul>
 					<li>
-						<a href="#/home" title="">
-							<i class="fa fa-home"></i>Home
+						<a class="navigation__item" href="#/home" title="">
+							<span class="fa fa-home"></span>Home
 						</a>
 					</li>
 					<li>
-						<a href="#/blog" title="">
-							<i class="fa fa-paw"></i>blog
+						<a class="navigation__item" href="#/blog" title="">
+							<span class="fa fa-paw"></span>blog
 						</a>
 					</li>
 					<li>
-						<a href="#/portfolio" title="">
-							<i class="fa fa-fire"></i>Portfolio
+						<a class="navigation__item" href="#/portfolio" title="">
+							<span class="fa fa-fire"></span>Portfolio
 						</a>
 					</li>
 					<li>
-						<a href="#/about" title="">
-							<i class="fa fa-user"></i>About
+						<a class="navigation__item" href="#/about" title="">
+							<span class="fa fa-user"></span>About
 						</a>
 					</li>
 					<li>
-						<a href="#/contact" title="">
-							<i class="fa fa-envelope"></i>Contact
+						<a class="navigation__item" href="#/contact" title="">
+							<span class="fa fa-envelope"></span>Contact
 						</a>
 					</li>
 				</ul>
@@ -64,8 +65,8 @@
 					<div class="grid__row">
 						<div class="grid__column-bp1-12">
 							<header>
-								<section>
-									<a class="offcanvas-toggle" href=".offcanvas" title="Toggle Off Canvas"><i class="fa fa-bars"></i></a>
+								<section class="header__offcanvas">
+									<a class="offcanvas-toggle" href=".offcanvas" title="Toggle Off Canvas"><span class="fa fa-bars"></span></a>
 								</section>
 								<section class="header__logo">
 									<h1><span>Application CrossWalker</span></h1>
@@ -86,12 +87,12 @@
 								<ul>
 									<li>
 										<a class="page-state-navigation__item active" href="#" data-pagestate="list" data-page="home">
-											<i class="fa fa-list"></i>List
+											<span class="fa fa-list"></span>List
 										</a>
 									</li>
 									<li>
 										<a class="page-state-navigation__item" href="#" data-pagestate="map" data-page="home">
-											<i class="fa fa-map-marker"></i>Map
+											<span class="fa fa-map-marker"></span>Map
 										</a>
 									</li>
 								</ul>
@@ -121,8 +122,8 @@
 					<div class="grid__row">
 						<div class="grid__column-bp1-12">
 							<header>
-								<section>
-									<a class="offcanvas-toggle" href=".offcanvas" title="Toggle Off Canvas"><i class="fa fa-bars"></i></a>
+								<section class="header__offcanvas">
+									<a class="offcanvas-toggle" href=".offcanvas" title="Toggle Off Canvas"><span class="fa fa-bars"></span></a>
 								</section>
 								<section class="header__logo">
 									<h1><span>Application CrossWalker</span></h1>
@@ -143,12 +144,12 @@
 								<ul>
 									<li>
 										<a class="page-state-navigation__item active" href="#" data-pagestate="list" data-page="blog">
-											<i class="fa fa-list"></i>List
+											<span class="fa fa-list"></span>List
 										</a>
 									</li>
 									<li>
 										<a class="page-state-navigation__item" href="#" data-pagestate="map" data-page="blog">
-											<i class="fa fa-map-marker"></i>Map
+											<span class="fa fa-map-marker"></span>Map
 										</a>
 									</li>
 								</ul>

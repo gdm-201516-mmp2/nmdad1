@@ -1,6 +1,3 @@
-/* Import Google Webfonts */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,300italic,300);
-
 /* Body */
 body {
 	background: #FAFAFA;
@@ -8,57 +5,25 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-/* Buttons */
-.btn {
-	display: inline-block;
-	padding: 0.5rem;
-	
-	background: #0097A7;
-	border-bottom: 0.25rem solid #283593;
-	border-radius: 0.5rem;
-	
-	color: #FAFAFA;
-}
-.btn:hover {
-	border-bottom-color: #0097A7;
-	background: #283593;
-}
-.btn:active {
-	background: rgba(26,35,126 ,1);
-	border-bottom-color: #283593;
-}
-.btn-fa>span {
-	display: none;
-}
-.btn-fa::before {
-	content: '\f1ce';
-	font-family: FontAwesome;
-}
-.btn-fa-name::before {
-	content: '\f15d';
-}
-.btn-fa-height::before {
-	content: '\f034';
-}
-.btn-fa-diameter::before {
-	content: '\f1ce';
-}
-.btn-fa-dayofbirth::before {
-	content: '\f073';
-}
-.btn-fa-distance::before {
-	content: '\f14e';
-}
-
 /* Header */
 .page-header {
-	background: #283593;
+	background: rgba(40,53,147 ,1);
 	color: #FAFAFA;
 	
 	margin-bottom: 0;
 }
 .page-header header {
 	margin-bottom: -1rem;
+}
+.header__offcanvas {
+	float: left;
+	margin-right: 1rem;
+	
+	font-size: 2rem;
+	color: rgba(0,151,167 ,1);
+}
+.header__offcanvas a {
+	color: rgba(0,151,167 ,1);
 }
 .header__logo>h1>span {
 	display: none;
@@ -71,8 +36,8 @@ body {
 	display: inline;
 	padding: 0.5rem;
 	
-	background: #0097A7;
-	color: #283593;
+	background: rgba(0,151,167 ,1);
+	color: rgba(26,35,126 ,1);
 }
 .header__logo>h1::after {
 	content: "Ghent Trees";
@@ -80,7 +45,7 @@ body {
 	display: inline;
 	padding: 0.5rem;
 	
-	color: #0097A7;
+	color: rgba(0,151,167 ,1);
 }
 .header__logo>h2 {
 	display: none;
