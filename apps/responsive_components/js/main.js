@@ -19,17 +19,14 @@
 			var toggles = document.querySelectorAll('.navigation-toggle');
 			
 			if(toggles != null && toggles.length > 0) {
-				var toggle = null, navid = null;
+				var toggle = null;
 				
 				for(var i = 0; i < toggles.length; i++ ) {
 					toggle = toggles[i];
 					toggle.addEventListener('click', function(ev) {
 						ev.preventDefault();
 						
-						this.classList.toggle('open');
-						
-						navid = this.dataset.navid;
-						document.querySelector('#' + navid).classList.toggle('open');
+						document.querySelector('body').classList.toggle(this.dataset.navtype);
 						
 						return false;
 					});	
