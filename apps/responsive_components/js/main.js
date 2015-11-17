@@ -14,6 +14,7 @@
 	var App = {
 		init: function() {
 			this.registerNavigationToggleListeners();// Register All Navigation Toggle Listeners
+			this.registerWindowListeners();// Register All Navigation Toggle Listeners
 		},
 		registerNavigationToggleListeners: function() {
 			var toggles = document.querySelectorAll('.navigation-toggle');
@@ -32,6 +33,13 @@
 					});	
 				}
 			}
+		},
+		registerWindowListeners: function() {
+			window.addEventListener('resize', function(ev) {
+				if(document.querySelector('body').classList.contains('offcanvas-open')) {
+					document.querySelector('body').classList.remove('offcanvas-open');
+				}
+			});
 		}
 	};
 	
