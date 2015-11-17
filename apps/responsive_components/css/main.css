@@ -33,6 +33,10 @@ body {
 #header__logo {
 	float: left;
 }
+#header__logo > h1 {
+	margin: 0;
+	padding: 0;
+}
 #header__logo > h1 > a {
 	display: block;
 	width: 101.81818px;
