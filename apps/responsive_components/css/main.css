@@ -5,149 +5,65 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-/* Header */
-.page-header {
-	background: rgba(40,53,147 ,1);
-	color: #FAFAFA;
-	
-	margin-bottom: 0;
+/*
+* Helpers
+*/
+.clearfix::before, .clearfix::after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; 
 }
-.page-header header {
-	margin-bottom: -1rem;
+.clearfix::after {
+	clear: both; 
 }
-.header__offcanvas {
+
+/*
+* Header
+*/
+#header::before, #header::after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; 
+}
+#header::after {
+	clear: both; 
+}
+#header__logo {
 	float: left;
-	margin-right: 1rem;
+}
+#header__logo > h1 > a {
+	display: block;
+	width: 101.81818px;
+	height: 112px;
 	
-	font-size: 2rem;
-	color: rgba(0,151,167 ,1);
+	background: url('images/logo.png') no-repeat top left;
+	background-size: cover;
 }
-.header__offcanvas a {
-	color: rgba(0,151,167 ,1);
-}
-.header__logo>h1>span {
+#header__logo > h1 > a > span {
 	display: none;
 }
-.header__logo>h1::before {
-	content: "\f1bb";
-	
-	font-family: Fontawesome;
-	
-	display: inline;
-	padding: 0.5rem;
-	
-	background: rgba(0,151,167 ,1);
-	color: rgba(26,35,126 ,1);
-}
-.header__logo>h1::after {
-	content: "Ghent Trees";
-	
-	display: inline;
-	padding: 0.5rem;
-	
-	color: rgba(0,151,167 ,1);
-}
-.header__logo>h2 {
+#header__logo > h2 {
 	display: none;
 }
-
-/* Google Maps */
-#gmap-canvas {
-	height: 280px;
+#header__navigation {
+	float: right;	
 }
-
-/* Tree Sort */
-.trees-inventory-sort__wrapper {
-	background: #f0f0f0;
-}
-.trees-inventory-sort {
-	margin-top: 1rem;
-}
-.trees-inventory-sort a {
-	text-decoration: none;
-}
-
-/* Tree */
-.trees-inventory-list>ul {
-	padding: 0;
-}
-.tree {
-	position: relative;
-    overflow: hidden;
-    z-index: 1;
-	box-sizing: border-box;
+#header__navigation > ul {
+	list-style: none;
 	
-	font-size: 1rem;
-    font-weight: 400;
-    
-    background: #fff;
-	border: 1px solid #c0c0c0;
-    border-radius: 2px;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-}
-.tree__title {
-	padding: 1rem;
-	min-height: 106px;
-}
-.tree__title > h3 {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
-.tree__text {
-	padding: 1rem;
+#header__navigation > ul > li {
+	float: left;
 }
-.tree__meta {
-	border-top:1px solid #c0c0c0;
-	padding: 1rem;
-}
-.meta__dimensions {
-	margin-bottom: 0.5rem;
-	font-size: 0.86rem;
-}
-.dimensions__height {
-	margin-right: 1rem;
-}
-.dimensions__height::before {
-	content: '\f034';
-	font-family: FontAwesome;
-	margin-right: 0.5rem;
-}
-.dimensions__diameter::before {
-	content: '\f1ce';
-	font-family: FontAwesome;
-	margin-right: 0.5rem;
-}
-.meta__other {
-	font-size: 0.86rem;
-}
-.other__dayofbirth::before {
-	content: '\f073';
-	font-family: FontAwesome;
-	margin-right: 0.5rem;
-}
-.tree__geo-distance {
-	position: absolute;
-<<<<<<< HEAD
-	right: 1rem;
-	bottom: 1rem;
-}
-.tree__geo-distance::before {
-	content: '\f14e';
-	font-family: FontAwesome;
-	margin-right: 0.5rem;
-	font-size: 1.2rem;
-}
-.tree__geo-distance::after {
-	content: ' km';
-=======
-	padding: 0.25rem 0.5rem;
-	right: 0;
-	bottom: 0;
+.navigation__item {
+	display: block;
+	padding: 0.5rem 1rem;
 	
-	background: #f0f0f0;
-	border-top: 1px solid #c0c0c0;
-	border-left: 1px solid #c0c0c0;
+	border: 1px solid #a0a0a0;
 	
-	font-size: 0.86rem;
->>>>>>> a65ca31f925f894de372de3d83a0c67c83f3036c
+	text-decoration: none;
 }
