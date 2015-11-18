@@ -1,0 +1,66 @@
+/*
+* Home
+*/
+body {
+	font-size: 14px;
+}
+#home header > h1 {
+	display: inline-block;
+	padding: 0.5rem;
+	
+	font-size: 1.4rem;
+	color: rgba(250, 250, 250, 1);
+	text-shadow: 0 0 2px rgba(0, 0, 0, 1);
+	text-transform: uppercase;
+	
+	background: rgba(0,157,220, 0.68);
+}
+#home .baseline {
+	color: rgba(0,0,0, 1);
+	text-shadow: 0 0 2px rgba(250, 250, 250, 1);
+}
+#home .godown {
+	color: rgba(250, 250, 250, 1);
+}
+#home .btn-readmore {
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+#home .btn-subscribe {
+	width: 100%;
+}
+#home .btn-godown {
+	margin-bottom: 1rem;
+}
+
+/*
+* Media queries
+* Mobile first and then upscaling
+*/
+@media (min-width: 30rem) {
+	#home header > h1 {
+		padding: 0.5rem;
+		
+		font-size: 1.6rem;
+	}
+	#home .baseline {
+		font-size: 1.2rem;
+	}
+	#home .btn-readmore {
+		width: auto;
+		margin-bottom: 0;
+	}
+	#home .btn-subscribe {
+		width: auto;
+	}
+}
+@media (min-width: 42.5rem) {
+	#home header > h1 {
+		padding: 1rem;
+		
+		font-size: 2rem;
+	}
+	#home .baseline {
+		font-size: 1.4rem;
+	}
+}

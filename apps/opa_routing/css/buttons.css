@@ -39,34 +39,33 @@
     
     transition: all 246ms ease-in 0s;
 }
-.btn-readmore {
+.btn-primary {
     background-color: rgba(97,187,70, 0.46);
 }
-.btn-subscribe {
-    background-color: rgba(253,184,39, 0.46);
-}
-.btn-readmore:hover {
+.btn-primary:hover {
     background-color: rgba(97,187,70, 0.86);
     color: hsla(0,0%,100%,1);
 	border-color: hsla(0,0%,100%,1);
 	
     transition: all 246ms ease-out 0s;
 }
-.btn-subscribe:hover {
+.btn-secundary {
+    background-color: rgba(253,184,39, 0.46);
+}
+.btn-secundary:hover {
     background-color: rgba(253,184,39, 0.86);
     color: hsla(0, 0%, 100%, 1);
 	border-color: hsla(0, 0%, 100%, 1);
 	
     transition: all 246ms ease-out 0s;
 }
-.btn-godown {
-    padding: 0.5rem 1rem;
-    margin: 0.5rem; 
-    
-    font-size: 1.24rem;
-    
+.btn-tertiary {
     background-color: rgba(150,61,151, 0.46);
 }
-.btn-godown:hover {
+.btn-tertiary:hover {
     background-color: rgba(150,61,151, 0.86);
+    color: hsla(0,0%,100%,1);
+	border-color: hsla(0,0%,100%,1);
+	
+    transition: all 246ms ease-out 0s;
 }
