@@ -1,0 +1,72 @@
+/* Ghost Buttons
+===========================
+*/
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-decoration: none;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 1);
+    
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-ghost {
+	padding: 1rem 1.5rem;
+	
+    background: rgba(97,187,70, 0.16);
+    border-color: hsla(0,0%,100%,1);
+	
+    color: hsla(0,0%,100%,1);
+    text-transform: uppercase;
+    font-size: 1.36rem;
+    
+    transition: all 246ms ease-in 0s;
+}
+.btn-readmore {
+    background-color: rgba(97,187,70, 0.46);
+}
+.btn-subscribe {
+    background-color: rgba(253,184,39, 0.46);
+}
+.btn-readmore:hover {
+    background-color: rgba(97,187,70, 0.86);
+    color: hsla(0,0%,100%,1);
+	border-color: hsla(0,0%,100%,1);
+	
+    transition: all 246ms ease-out 0s;
+}
+.btn-subscribe:hover {
+    background-color: rgba(253,184,39, 0.86);
+    color: hsla(0, 0%, 100%, 1);
+	border-color: hsla(0, 0%, 100%, 1);
+	
+    transition: all 246ms ease-out 0s;
+}
+.btn-godown {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem; 
+    
+    font-size: 1.24rem;
+    
+    background-color: rgba(150,61,151, 0.46);
+}
+.btn-godown:hover {
+    background-color: rgba(150,61,151, 0.86);
+}

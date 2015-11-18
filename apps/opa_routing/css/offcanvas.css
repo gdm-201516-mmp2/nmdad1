@@ -45,6 +45,7 @@
 	text-decoration: none;
 	color: rgba(245,245,245 ,1);
 }
+
 .offcanvas__navigation-toggle > span {
 	display: none;
 }
@@ -55,7 +56,12 @@
 	font-family: FontAwesome;
 	font-size: 2rem;
 	
-	transition: all 320ms ease-out 0s;
+	transform: rotate(0deg);
+	transition: all 160ms ease-out 0s;
+}
+.offcanvas-open .offcanvas__navigation-toggle::before {
+	transform: rotate(360deg);
+	transition: all 160ms ease-out 0s;
 }
 .offcanvas__navigation > ul {
 	list-style: none;
