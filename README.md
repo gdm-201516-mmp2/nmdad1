@@ -75,21 +75,29 @@ Documenten
 	* Development: Herhaling
 	
 * Week 9
-	* Design: Feedback
+	* Design: Feedback, Tips and tricks
 	* Development: Herhaling
+	* ...
 	
 * Week 10
-	* Design: Feedback
+	* Design: Feedback, Tips and tricks
 	* Development: Herhaling
+	* ...
 	
 * Week 11
-	* Design: Feedback
+	* Design: Feedback, Tips and tricks
+	* Development: Herhaling
+	* ...
 	
 * Week 12
-	* Design: Feedback
+	* Design: Feedback, Tips and tricks
+	* Development: Herhaling
+	* ...
 			
 * Week 13
-	* Design: Feedback
+	* Design: Feedback, Tips and tricks
+	* Development: Herhaling
+	* ...
 	
 
 Taken
