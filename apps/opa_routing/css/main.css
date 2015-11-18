@@ -133,7 +133,7 @@ body {
 * baseline
 */
 .baseline {
-	font-size: 1.4rem;
+	font-size: 1rem;
 }
 
 /*
@@ -141,9 +141,9 @@ body {
 */
 #home header > h1 {
 	display: inline-block;
-	padding: 1rem;
+	padding: 0.5rem;
 	
-	font-size: 2rem;
+	font-size: 1.4rem;
 	color: rgba(250, 250, 250, 1);
 	text-shadow: 0 0 2px rgba(0, 0, 0, 1);
 	text-transform: uppercase;
@@ -153,6 +153,9 @@ body {
 #home .baseline {
 	color: rgba(0,0,0, 1);
 	text-shadow: 0 0 2px rgba(250, 250, 250, 1);
+}
+#home .godown {
+	color: rgba(250, 250, 250, 1);
 }
 
 /*
@@ -178,6 +181,17 @@ body {
 		line-height: 64px;
 		
 		text-align: center;
+	}
+	/*
+	* Home
+	*/
+	#home header > h1 {
+		padding: 0.5rem;
+		
+		font-size: 1.6rem;
+	}
+	#home .baseline {
+		font-size: 1.2rem;
 	}
 }
 @media (min-width: 42.5rem) {
@@ -206,5 +220,16 @@ body {
 		line-height: 128px;
 		
 		text-align: left;
+	}
+	/*
+	* Home
+	*/
+	#home header > h1 {
+		padding: 1rem;
+		
+		font-size: 2rem;
+	}
+	#home .baseline {
+		font-size: 1.4rem;
 	}
 }
