@@ -137,28 +137,6 @@ body {
 }
 
 /*
-* Home
-*/
-#home header > h1 {
-	display: inline-block;
-	padding: 0.5rem;
-	
-	font-size: 1.4rem;
-	color: rgba(250, 250, 250, 1);
-	text-shadow: 0 0 2px rgba(0, 0, 0, 1);
-	text-transform: uppercase;
-	
-	background: rgba(0,157,220, 0.68);
-}
-#home .baseline {
-	color: rgba(0,0,0, 1);
-	text-shadow: 0 0 2px rgba(250, 250, 250, 1);
-}
-#home .godown {
-	color: rgba(250, 250, 250, 1);
-}
-
-/*
 * Media queries
 * Mobile first and then upscaling
 */

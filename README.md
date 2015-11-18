@@ -52,7 +52,7 @@ Documenten
 	* [App - Tweety](apps/tweety_level2)
 	
 * Week 7
-	* Design: Feedback - Visual designs
+	* Design: Feedback - Concepts
 	* [App - Dogs places](apps/ghent_dogsplaces)
 	* [App - Ecoplan](apps/ghent_ecoplan)
 	* [App - Trees](apps/ghent_trees)
@@ -63,6 +63,34 @@ Documenten
 		* Distance calculator between two coordinates
 		* Templating with Handlebars
 		* Filters via loDash
+		
+* Week 8
+	* Design: Feedback - Visual designs
+	* [App - Responsive components](apps/responsive_components)
+	* [App - OPA Routing](apps/opa_routing)
+		* Crossroads
+		* Hasher + Signals
+		* JayWalker
+		* Project structure
+	* Development: Herhaling
+	
+* Week 9
+	* Design: Feedback
+	* Development: Herhaling
+	
+* Week 10
+	* Design: Feedback
+	* Development: Herhaling
+	
+* Week 11
+	* Design: Feedback
+	
+* Week 12
+	* Design: Feedback
+			
+* Week 13
+	* Design: Feedback
+	
 
 Taken
 -----
