@@ -24,7 +24,7 @@
 }
 .country__title {
 	padding: 1rem;
-	min-height: 106px;
+	min-height: 112px;
 	margin-right: 5rem;
 }
 .country__title > h3 {
@@ -34,12 +34,16 @@
 .country__place {
 	border-top:1px solid #c0c0c0;
 	padding: 1rem;
+	min-height: 96px;
 }
 .country__money {
 	border-top:1px solid #c0c0c0;
 	padding: 1rem;
 }
 .place__region {
+	display: block;
+}
+.place__city {
 	display: block;
 }
 .place__region::before {
@@ -51,6 +55,12 @@
 	content: '\f1ad';
 	font-family: FontAwesome;
 	margin-right: 0.5rem;
+}
+.money__income-level {
+	display: block;
+}
+.money__lending-type {
+	display: block;
 }
 .money__income-level::before {
 	content: '\f0d6';

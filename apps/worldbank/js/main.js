@@ -35,8 +35,25 @@
 			Utils.getJSONPByPromise(this.WBCOUNTRIESAPIURL).then(
 				function(data) {
 					if(data != null) {
-						self._dataCountries = data[1];// Assign data as value flor global variable _dataCountries within the App
-						console.log(self._dataCountries);
+						var countries = data[1]; // Get the countries from JSON (second item from array, first item is paging)
+						var countriesFiltered = _.filter(countries, function(country) {
+							return !(/\d/.test(country.iso2Code));
+						});// First remove weird countries with LoDash + Assign data as value flor global variable _dataCountries within the App
+						var badISO2Codes = ['XT', 'XN', 'ZG', 'ZF', 'OE', 'XS', 'XR', 'XU', 'XQ', 'XP', 'ZQ', 'XO', 'XN', 'XM', 'XL', 'ZJ', 'XJ', 'XY', 'XE', 'EU', 'XC', 'JG', 'XD'];
+						self._dataCountries = _.filter(countriesFiltered, function(country) {
+							var validCountry = true, i = 0;
+							
+							while(validCountry && i < badISO2Codes.length) {
+								if(country.iso2Code == badISO2Codes[i]) {
+									validCountry = false;
+								} else {
+									i++;
+								}
+							}
+							
+							return validCountry;
+						});
+						// Filter (weird codes: XT, XN, ZG, ZF, OE, XS, XR, XU, XQ, XP, ZQ, XO, XN, XM, XL, ZJ, XJ, XY, XE, EU, XC, JG)
 						self.updateCountriesUI();// Call updateCountriesUI method when successful*/	
 					}	
 				},
