@@ -52,9 +52,12 @@
 							}
 							
 							return validCountry;
-						});
-						// Filter (weird codes: XT, XN, ZG, ZF, OE, XS, XR, XU, XQ, XP, ZQ, XO, XN, XM, XL, ZJ, XJ, XY, XE, EU, XC, JG)
-						self.updateCountriesUI();// Call updateCountriesUI method when successful*/	
+						});// Filter (weird codes: XT, XN, ZG, ZF, OE, XS, XR, XU, XQ, XP, ZQ, XO, XN, XM, XL, ZJ, XJ, XY, XE, EU, XC, JG)
+						self._dataCountries = _.sortBy(self._dataCountries, function(country) {
+							return country.name;
+						});// Sorting on country name
+						self.updateCountriesUI('countries-tiles-list', '#countries-tiles-template');// Call updateCountriesUI method when successful*/	
+						//self.updateCountriesUI('countries-list', '#countries-list-template');// Call updateCountriesUI method when successful*/	
 					}	
 				},
 				function(status) {
@@ -62,12 +65,12 @@
 				}
 			);
 		},
-		updateCountriesUI: function() {
-			if(!this._hbsCache['countries-list']) {
-				var src = document.querySelector('#countries-list-template').innerHTML;// Get the contents from the specified hbs template
-				this._hbsCache['countries-list'] = Handlebars.compile(src);// Compile the source and add it to the hbs cache
+		updateCountriesUI: function(hbsTmplName, hbsTmplId) {
+			if(!this._hbsCache[hbsTmplName]) {
+				var src = document.querySelector(hbsTmplId).innerHTML;// Get the contents from the specified hbs template
+				this._hbsCache[hbsTmplName] = Handlebars.compile(src);// Compile the source and add it to the hbs cache
 			}	
-			document.querySelector('.countries-list').innerHTML = this._hbsCache['countries-list'](this._dataCountries);
+			document.querySelector('.countries-list').innerHTML = this._hbsCache[hbsTmplName](this._dataCountries);
 		}
 	};
 	

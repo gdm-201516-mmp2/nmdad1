@@ -88,12 +88,12 @@
 		</div><!-- End Page: Countries -->	
 		
 		<!-- Handlebars Templates -->
-		<script id="countries-list-template" type="text/x-handlebars-template">
+		<script id="countries-tiles-template" type="text/x-handlebars-template">
 			{{#if this}}
 			<ul class="grid__row">
 				{{#each this}}
 				<li class="grid__column-bp1-12 grid__column-bp2-6 grid__column-bp3-4 grid__column-bp4-3">
-					<div class="country" data-id="{{id}}">
+					<div class="country__tile" data-id="{{id}}">
 						<img class="country__flag" src="http://www.geonames.org/flags/x/{{toLowerCase iso2Code}}.gif" />
 						<section class="country__title">
 							<h3>{{name}} <small>({{iso2Code}})</small></h3>
@@ -105,6 +105,24 @@
 						<section class="country__money">
 							<span class="money__income-level" data-income-id="{{incomeLevel.id}}">{{incomeLevel.value}}</span>
 							<span class="money__lending-type" data-lending-id="{{lendingType.id}}">{{lendingType.value}}</span>
+						</section>
+					</div>
+				</li>
+				{{/each}}
+			</ul>
+			{{else}}
+				<p>No countries present in the Worldbank database!</p>
+			{{/if}}
+		</script>
+		<script id="countries-list-template" type="text/x-handlebars-template">
+			{{#if this}}
+			<ul class="grid__row">
+				{{#each this}}
+				<li class="grid__column-bp1-12">
+					<div class="country__listitem" data-id="{{id}}">
+						<img class="country__flag" src="http://www.geonames.org/flags/x/{{toLowerCase iso2Code}}.gif" />
+						<section class="country__title">
+							<h3>{{name}} <small>({{iso2Code}})</small></h3>
 						</section>
 					</div>
 				</li>
