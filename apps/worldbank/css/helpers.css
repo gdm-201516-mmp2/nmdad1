@@ -1,0 +1,47 @@
+/*
+* Helpers
+*/
+.clearfix::before, .clearfix::after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; 
+}
+.clearfix::after {
+	clear: both; 
+}
+
+/* 
+* Fullscreen + centered screen
+*/
+.fullscreen {
+    width: 100%;
+    min-height: 100%;
+}
+.tcontainer {
+    display: table !important;
+    height: 100%;
+    overflow: hidden;
+}
+.theader, .tmain, .tfooter {
+    display: table-row;
+    width: 100%;
+}
+.theader, .tfooter {
+    height: 1px;
+}
+.tmain{
+    height: 100%;
+}
+.tcentered {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+}
+.background{
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}

@@ -1,0 +1,14 @@
+.page {
+	position: absolute;
+	top: -100%;
+	left: -100%;
+	width: 100%;
+	
+	transition: left 368ms ease-out 0s;
+}
+.page.active {
+	top: 0;
+	left: 0;
+	
+	transition: left 368ms ease-out 0s;
+}
