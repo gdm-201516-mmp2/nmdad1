@@ -24,7 +24,7 @@
 }
 .country__title {
 	padding: 1rem;
-	min-height: 112px;
+	min-height: 66px;
 	margin-right: 5rem;
 }
 .country__title > h3 {
@@ -34,7 +34,7 @@
 .country__place {
 	border-top:1px solid #c0c0c0;
 	padding: 1rem;
-	min-height: 96px;
+	min-height: 86px;
 }
 .country__money {
 	border-top:1px solid #c0c0c0;
@@ -71,4 +71,12 @@
 	content: '\f09d';
 	font-family: FontAwesome;
 	margin-right: 0.5rem;
+}
+@media (min-width: 30rem) {
+	.country__title {
+		min-height: 112px;
+	}
+	.country__place {
+		min-height: 96px;
+	}
 }
