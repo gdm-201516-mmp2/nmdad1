@@ -22,7 +22,33 @@
 			this._hbsCache = {};// Handlebars cache for templates
 			this._hbsPartialsCache = {};// Handlebars cache for partials
 			
+			// Register listeners for list layout
+			this.registerListenersForListLayout();
+			
 			this.loadCountriesFromWorldBankAPI();// Execute method loadCountriesFromWorldBankAPI(): Load countries from the Worldbank API
+		},
+		registerListenersForListLayout: function() {
+			
+			var self = this;
+			
+			var anchors = document.querySelectorAll('[data-listlayout]');
+			if(anchors != null && anchors.length > 0) {
+				_.each(anchors, function(anchor) {
+					anchor.addEventListener('click', function(ev) {
+						ev.preventDefault();
+						
+						var layout = this.dataset.listlayout;
+						var target = this.dataset.target;
+						
+						if(target == 'countries-list') {
+							self.updateCountriesUI('countries-' + layout, '#countries-' + layout + '-template');// Call updateCountriesUI method when successful
+						}
+						
+						return false;
+						console.log(ev);	
+					});	
+				});
+			}
 		},
 		loadCountriesFromWorldBankAPI: function() {
 			// Closure
@@ -56,8 +82,7 @@
 						self._dataCountries = _.sortBy(self._dataCountries, function(country) {
 							return country.name;
 						});// Sorting on country name
-						self.updateCountriesUI('countries-tiles-list', '#countries-tiles-template');// Call updateCountriesUI method when successful*/	
-						//self.updateCountriesUI('countries-list', '#countries-list-template');// Call updateCountriesUI method when successful*/	
+						self.updateCountriesUI('countries-tiles', '#countries-tiles-template');// Call updateCountriesUI method when successful*/
 					}	
 				},
 				function(status) {

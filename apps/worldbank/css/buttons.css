@@ -69,3 +69,36 @@
 	
     transition: all 246ms ease-out 0s;
 }
+.btn-fa {
+	display: inline-block;
+	padding: 0.5rem;
+	
+	background: #0097A7;
+	border-bottom: 0.25rem solid #283593;
+	border-radius: 0.5rem;
+	
+	color: #FAFAFA;
+    text-decoration: none;
+}
+.btn-fa:hover {
+	border-bottom-color: #0097A7;
+	background: #283593;
+}
+.btn-fa:active {
+	background: rgba(26,35,126 ,1);
+	border-bottom-color: #283593;
+}
+.btn-fa > span{
+    display: none;
+}
+.btn-fa::before {
+    content: '\f0ca';
+    
+    font-family: FontAwesome;
+}
+.btn-fa-tiles::before {
+    content: '\f00a';
+}
+.btn-fa-list::before {
+    content: '\f0ca';
+}

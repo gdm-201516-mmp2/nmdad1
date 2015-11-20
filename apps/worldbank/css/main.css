@@ -48,7 +48,7 @@ body {
 }
 .header__logo > h1 > a {
 	display: block;
-	width: 32.72727px;
+	width: 36px;
 	height: 36px;
 	
 	background: url('images/logo.png') no-repeat top left;
@@ -129,6 +129,13 @@ body {
 	background: rgba(150,61,151, 1);
 }
 
+/*
+* Main Wrapper
+*/
+.main-wrapper {
+	margin-top: 52px;
+}
+
 /* 
 * baseline
 */
@@ -142,7 +149,7 @@ body {
 */
 @media (min-width: 30rem) {
 	.header__logo > h1 > a {
-		width: 78.81818px;
+		width: 86px;
 		height: 86px;
 	}
 	.header__navigation {
@@ -160,6 +167,14 @@ body {
 		
 		text-align: center;
 	}
+	
+	/*
+	* Main Wrapper
+	*/
+	.main-wrapper {
+		margin-top: 102px;
+	}
+
 	/*
 	* Home
 	*/
@@ -177,7 +192,7 @@ body {
 		display: none;
 	}
 	.header__logo > h1 > a {
-		width: 101.81818px;
+		width: 112px;
 		height: 112px;
 	}
 	.header__navigation-toggle {
@@ -199,6 +214,14 @@ body {
 		
 		text-align: left;
 	}
+	
+	/*
+	* Main Wrapper
+	*/
+	.main-wrapper {
+		margin-top: 128px;
+	}
+	
 	/*
 	* Home
 	*/

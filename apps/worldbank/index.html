@@ -38,53 +38,59 @@
 			</nav><!-- End Offcanvas Navigation -->
 		</div><!-- End Offcanvas -->
 		
-		<!-- Header Wrapper -->
-		<div class="grid__wrapper header-wrapper">
-			<div class="grid__container">
-				<div class="grid__row">
-					<div class="grid__column-bp1-12">
-						<header class="header">
-							<!-- Header Logo -->
-							<section class="header__logo">
-								<h1><a href="index.html" title="Back to the homepage"><span>Responsive Components</span></a></h1>
-								<h2>Responsive grid, navigation, images, ...</h2>
-							</section><!-- End Header Logo -->
-							<!-- Navigation Toggle 
-							data-navtype="headernav-open" when responsive push down menu
-							data-navtype="offcanvas-open" when responsive offcanvas
-							-->
-							<a class="navigation-toggle header__navigation-toggle" href="#" data-navtype="offcanvas-open">
-								<span>Toggle</span>
-							</a><!-- End Navigation Toggle -->
-							<!-- Navigation -->
-							<nav class="header__navigation">
-								<ul class="clearfix">
-									<li><a class="navigation__item" href="#/home" title="Back to the homepage">Home</a></li>
-									<li><a class="navigation__item" href="#/blog" title="Read my blog">Blog</a></li>
-									<li><a class="navigation__item" href="#/portfolio" title="See my wicked portfolio">Portfolio</a></li>
-									<li><a class="navigation__item" href="#/about" title="Read about me">About</a></li>
-									<li><a class="navigation__item" href="#/contact" title="Contact me">Contact</a></li>
-								</ul>
-							</nav><!-- End Navigation -->
-						</header>
-					</div>
-				</div>
-			</div>
-		</div><!-- End Header Wrapper -->
-		
 		<!-- Page: Countries -->
 		<div class="page active" id="countries">
-			<div class="grid__wrapper">
-			<div class="grid__container">
-				<div class="grid__row">
-					<div class="grid__column-bp1-12">
-						<h1>Contries of the World</h1>
-					</div>
-					<div class="grid__column-bp1-12">
-						<section class="countries-list"></section>
+			<!-- Header Wrapper -->
+			<div class="grid__wrapper header-wrapper">
+				<div class="grid__container">
+					<div class="grid__row">
+						<div class="grid__column-bp1-12">
+							<header class="header">
+								<!-- Header Logo -->
+								<section class="header__logo">
+									<h1><a href="index.html" title="Back to the homepage"><span>Responsive Components</span></a></h1>
+									<h2>Responsive grid, navigation, images, ...</h2>
+								</section><!-- End Header Logo -->
+								<!-- Navigation Toggle 
+								data-navtype="headernav-open" when responsive push down menu
+								data-navtype="offcanvas-open" when responsive offcanvas
+								-->
+								<a class="navigation-toggle header__navigation-toggle" href="#" data-navtype="offcanvas-open">
+									<span>Toggle</span>
+								</a><!-- End Navigation Toggle -->
+								<!-- Navigation -->
+								<nav class="header__navigation">
+									<ul class="clearfix">
+										<li><a class="navigation__item" href="#/home" title="Back to the homepage">Home</a></li>
+										<li><a class="navigation__item" href="#/blog" title="Read my blog">Blog</a></li>
+										<li><a class="navigation__item" href="#/portfolio" title="See my wicked portfolio">Portfolio</a></li>
+										<li><a class="navigation__item" href="#/about" title="Read about me">About</a></li>
+										<li><a class="navigation__item" href="#/contact" title="Contact me">Contact</a></li>
+									</ul>
+								</nav><!-- End Navigation -->
+							</header>
+						</div>
 					</div>
 				</div>
-			</div>
+			</div><!-- End Header Wrapper -->
+			<!-- Countries List -->
+			<div class="grid__wrapper main-wrapper">
+				<div class="grid__container">
+					<div class="grid__row">
+						<div class="grid__column-bp1-12">
+							<h1>Countries of the World</h1>
+						</div>
+						<div class="grid__column-bp1-12">
+							<!-- Container for a list layout switcher -->
+							<section class="list-layout">
+								<a class="btn-fa btn-fa-tiles" href="#" data-listlayout="tiles" data-target="countries-list"><span>Tiles</span></a>
+								<a class="btn-fa btn-fa-list" href="#" data-listlayout="list" data-target="countries-list"><span>List</span></a>
+							</section><!-- End Container -->
+							<section class="countries-list"></section>
+						</div>
+					</div>
+				</div>
+			</div><!-- End Countries List -->
 		</div><!-- End Page: Countries -->	
 		
 		<!-- Handlebars Templates -->

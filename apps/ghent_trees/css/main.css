@@ -162,7 +162,6 @@ body {
 }
 .tree__geo-distance {
 	position: absolute;
-<<<<<<< HEAD
 	right: 1rem;
 	bottom: 1rem;
 }
@@ -174,15 +173,12 @@ body {
 }
 .tree__geo-distance::after {
 	content: ' km';
-=======
 	padding: 0.25rem 0.5rem;
 	right: 0;
 	bottom: 0;
-	
 	background: #f0f0f0;
 	border-top: 1px solid #c0c0c0;
 	border-left: 1px solid #c0c0c0;
 	
 	font-size: 0.86rem;
->>>>>>> a65ca31f925f894de372de3d83a0c67c83f3036c
 }
