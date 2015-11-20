@@ -1,8 +1,10 @@
 /*
-* Description: JayWalker
+* Title: JayWalker
 * Modified: 17-11-2015
 * Version: 1.0.0
 * Author: Philippe De Pauw - Waterschoot
+* 
+* Description: Change routes via Hash
 */
 var JayWalker = {
 	init: function() {
@@ -15,10 +17,15 @@ var JayWalker = {
 		
 		// Router settings: Register routes
 		var homeRoute = this._router.addRoute('/', function() {
-			self.setActivePage('home');
+			self.setActivePage('countries');
 		});
 		var sectionRoute = this._router.addRoute('/{section}');// Add section route to the router (crossroads)
 		sectionRoute.matched.add(function(section) {
+			self.setActivePage(section);
+		});
+		var sectionDetailRoute = this._router.addRoute('/{section}/{id}');// Add section detail route to the router (crossroads)
+		sectionDetailRoute.matched.add(function(section, id) {
+			console.log(section + ' ' + id);
 			self.setActivePage(section);
 		});
 		

@@ -1,6 +1,6 @@
 /*
-*	Description: Worldbank
-*	Modified: 10-11-2015
+*	Title: Worldbank Application
+*	Modified: 19-11-2015
 *	Version: 1.0.0
 *	Author: Philippe De Pauw - Waterschoot
 * 	-----------------------------------------------
@@ -22,10 +22,47 @@
 			this._hbsCache = {};// Handlebars cache for templates
 			this._hbsPartialsCache = {};// Handlebars cache for partials
 			
+			// Create a clone from the JayWalker object
+			this._jayWalker = JayWalker;
+			this._jayWalker.init();
+			
+			this.registerNavigationToggleListeners();// Register All Navigation Toggle Listeners
+			
+			this.registerWindowListeners();// Register All Navigation Toggle Listeners
+			
 			// Register listeners for list layout
 			this.registerListenersForListLayout();
 			
 			this.loadCountriesFromWorldBankAPI();// Execute method loadCountriesFromWorldBankAPI(): Load countries from the Worldbank API
+		},
+		registerNavigationToggleListeners: function() {
+			var toggles = document.querySelectorAll('.navigation-toggle');
+			
+			if(toggles != null && toggles.length > 0) {
+				var toggle = null;
+				
+				for(var i = 0; i < toggles.length; i++ ) {
+					toggle = toggles[i];
+					toggle.addEventListener('click', function(ev) {
+						ev.preventDefault();
+						
+						document.querySelector('body').classList.toggle(this.dataset.navtype);
+						
+						return false;
+					});	
+				}
+			}
+		},
+		registerWindowListeners: function() {
+			window.addEventListener('resize', function(ev) {
+				if(document.querySelector('body').classList.contains('offcanvas-open')) {
+					document.querySelector('body').classList.remove('offcanvas-open');
+				}
+				
+				if(document.querySelector('body').classList.contains('headernav-open')) {
+					document.querySelector('body').classList.remove('headernav-open');
+				}
+			});
 		},
 		registerListenersForListLayout: function() {
 			
@@ -95,7 +132,7 @@
 				var src = document.querySelector(hbsTmplId).innerHTML;// Get the contents from the specified hbs template
 				this._hbsCache[hbsTmplName] = Handlebars.compile(src);// Compile the source and add it to the hbs cache
 			}	
-			document.querySelector('.countries-list').innerHTML = this._hbsCache[hbsTmplName](this._dataCountries);
+			document.querySelector('.countries-list').innerHTML = this._hbsCache[hbsTmplName](this._dataCountries);// Write compiled content to the appropriate container
 		}
 	};
 	

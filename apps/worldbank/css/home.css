@@ -1,7 +1,14 @@
-/* Countries */
+/* 
+* Countries 
+*/
+
 .countries-list>ul {
 	padding: 0;
 }
+
+/*
+* Tile for country
+*/
 .country__tile {
 	position: relative;
     overflow: hidden;
@@ -73,6 +80,9 @@
 	margin-right: 0.5rem;
 }
 
+/*
+* Listitem for country
+*/
 .country__listitem {
 	position: relative;
     overflow: hidden;
