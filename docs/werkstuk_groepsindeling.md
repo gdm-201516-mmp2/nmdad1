@@ -164,10 +164,10 @@ Groepsindeling zal plaatsvinden binnen elke klas, dus **niet over klassen heen**
 |2MMPB-01|Caes Zeger, Dekeyser Feline, De Backer Bram|
 |2MMPB-02|Billiet Bram, Kevin Devuyst, Nelis Fabian|
 |2MMPB-03|Van Raemdonck Laura, Lettens Kristof, Pauwelyn Alexander|
-|2MMPB-04|Fonck Mathias, Rypens Bryony|
+|2MMPB-04|Fonck Mathias, (Rypens Bryony), Van Der Sypt Thomas|
 |2MMPB-05|-|
 |2MMPB-06|Depelseneer Mathias, Mehauden Rina|
-|2MMPB-07|Rombaut Lotte, Van Der Sypt Thomas, De Vos Reinaert|
+|2MMPB-07|(Rombaut Lotte, De Vos Reinaert)|
 |2MMPB-08|De Greef Jodie, Janzegers Jonas|
 |2MMPB-09|-|
 |2MMPB-10|Dando Nicholas, De Geyter Bruno, De Busschere Giel|
