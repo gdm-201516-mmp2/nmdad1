@@ -6,7 +6,9 @@
 * 	-----------------------------------------------
 *	Worldbank countries API: http://api.worldbank.org/countries/all?format=jsonP&prefix=jsonp_callback&per_page=300
 *	Worldbank Forrest Area for certain country: http://api.worldbank.org/countries/be/indicators/AG.LND.FRST.ZS?format=jsonP&prefix=jsonp_callback&per_page=300
-* 
+* 	Worldbank Mobile cellular subscriptions (per 100 people)
+*	http://api.worldbank.org/countries/be/indicators/IT.CEL.SETS.P2?format=jsonP&prefix=jsonp_callback&per_page=300
+*
 *   ?([{"page":1,"pages":1,"per_page":"300","total":264},[{"id":"ABW","iso2Code":"AW","name":"Aruba","region":{"id":"LCN","value":"Latin America & Caribbean (all income levels)"},"adminregion":{"id":"","value":""},"incomeLevel":{"id":"NOC","value":"High income: nonOECD"},"lendingType":{"id":"LNX","value":"Not classified"},"capitalCity":"Oranjestad","longitude":"-70.0167","latitude":"12.5167"}
 */
 
@@ -20,10 +22,12 @@
 			
 			this.WBCOUNTRIESAPIURL = "http://api.worldbank.org/countries/all?format=jsonP&prefix=jsonp_callback_{0}&per_page=300";
 			this.WBFORRESTAREAPERCOUNTRYAPI = "http://api.worldbank.org/countries/{0}/indicators/AG.LND.FRST.ZS?format=jsonP&prefix=jsonp_callback_{1}&per_page=300";
+			this.WBCELLULARSUBSCRIPTIONSCOUNTRYAPI = "http://api.worldbank.org/countries/{0}/indicators/IT.CEL.SETS.P2?format=jsonP&prefix=jsonp_callback_{1}&per_page=300";
 			
 			this._dataCountries = null;// Variable for the list of countries
 			this._dataCountry = {
-				"forrestArea": null// Variable for the list of forrestArea per year
+				"forrestArea": null,// Variable for the list of forrestArea per year
+				"cellularSubscriptions": null// Variable for the list of cellular subscriptions per year
 			}// Variable for the details of a country
 			
 			// Handlebars Cache
@@ -146,6 +150,7 @@
 		},
 		loadDatasetsFromCountry: function(iso2code) {
 			this.loadForrestAreaFromCountryFromWorldBankAPI(iso2code);
+			this.loadCellularSubscriptionsFromCountryFromWorldBankAPI(iso2code);
 		},
 		loadForrestAreaFromCountryFromWorldBankAPI: function(iso2code) {
 			// Closure
@@ -166,7 +171,34 @@
 							return forrestAreaPerYear.year;
 						});// Sorting on year
 						self._dataCountry.forrestArea = forrestAreaFiltered;// Add the forrest area data to the details of a country
-						self.updateCountryDetailsUI('country-details', '#country-details-template');// Call updateCountryDetailsUI method when successful*/
+						self.updateCountryDetailsUI('country-details', '#country-details-template');// Call updateCountryDetailsUI method when successful
+					}	
+				},
+				function(status) {
+					console.log(status);
+				}
+			);
+		},
+		loadCellularSubscriptionsFromCountryFromWorldBankAPI: function(iso2code) {
+			// Closure
+			var self = this, url = String.format(this.WBCELLULARSUBSCRIPTIONSCOUNTRYAPI, iso2code, new Date().getTime());
+			
+			// Load JSONP from corresponding API with certain URL
+			// JSONP Callback is defined by a function name in this case
+			// prefix=jsonp_callback. The Utils object contains a new function
+			// which can handle the callback
+			Utils.getJSONPByPromise(url).then(
+				function(data) {
+					if(data != null) {
+						var cellularSubscriptions = data[1]; // Get the cellular subscriptions from the selected country from JSON (second item from array, first item is paging)
+						var cellularSubscriptionsFiltered = _.filter(cellularSubscriptions, function(subscr) {
+							return subscr.value != null;
+						});// First remove all years where value is null with LoDash
+						cellularSubscriptionsFiltered = _.sortBy(cellularSubscriptionsFiltered, function(subscr) {
+							return subscr.year;
+						});// Sorting on year
+						self._dataCountry.cellularSubscriptions = cellularSubscriptionsFiltered;// Add the cellular subscriptions data to the details of a country
+						self.updateCountryDetailsUI('country-details', '#country-details-template');// Call updateCountryDetailsUI method when successful
 					}	
 				},
 				function(status) {
@@ -181,27 +213,49 @@
 			}	
 			document.querySelector('.country-details').innerHTML = this._hbsCache[hbsTmplName](this._dataCountry);// Write compiled content to the appropriate container
 			this.createForrestAreaGraphForCountry();
+			this.createCellularSubscriptionsGraphForCountry();
 		},
 		createForrestAreaGraphForCountry: function() {
-		
-			var labels = [], series = [];
-			_.each(this._dataCountry.forrestArea.reverse(), function(item) {
-				labels.push(item.date);
-				series.push(parseFloat(item.value));
-			});
-
-			var options = {
-				low: _.min(_.pluck(this._dataCountry.forrestArea, 'value')),
-				hight: _.max(_.pluck(this._dataCountry.forrestArea, 'value'))
-			};
-			
-			var data = {
-				labels: labels,
-				series: [series]
-			};
-			// Create a new line chart object where as first parameter we pass in a selector that is resolving to our chart container element. The Second parameter is the actual data object.
-			new Chartist.Line('.country-details-forrestarea-chart', data, options);		
-			
+			if(this._dataCountry.forrestArea != null) {
+				var labels = [], series = [];
+				_.each(this._dataCountry.forrestArea.reverse(), function(item) {
+					labels.push(item.date);
+					series.push(parseFloat(item.value));
+				});
+	
+				var options = {
+					low: _.min(_.pluck(this._dataCountry.forrestArea, 'value')),
+					hight: _.max(_.pluck(this._dataCountry.forrestArea, 'value'))
+				};
+				
+				var data = {
+					labels: labels,
+					series: [series]
+				};
+				// Create a new line chart object where as first parameter we pass in a selector that is resolving to our chart container element. The Second parameter is the actual data object.
+				new Chartist.Line('.country-details-forrestarea-chart', data, options);	
+			}
+		},
+		createCellularSubscriptionsGraphForCountry: function() {
+			if(this._dataCountry.cellularSubscriptions != null) {
+				var labels = [], series = [];
+				_.each(this._dataCountry.cellularSubscriptions.reverse(), function(item) {
+					labels.push(item.date);
+					series.push(parseFloat(item.value));
+				});
+	
+				var options = {
+					low: _.min(_.pluck(this._dataCountry.cellularSubscriptions, 'value')),
+					hight: _.max(_.pluck(this._dataCountry.cellularSubscriptions, 'value'))
+				};
+				
+				var data = {
+					labels: labels,
+					series: [series]
+				};
+				// Create a new line chart object where as first parameter we pass in a selector that is resolving to our chart container element. The Second parameter is the actual data object.
+				new Chartist.Line('.country-details-cellularsubscriptions-chart', data, options);		
+			}
 		}
 	};
 	
