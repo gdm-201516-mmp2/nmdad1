@@ -10,7 +10,10 @@ var JayWalker = {
 	init: function() {
 		this._router = crossroads;// Clone the crossroads object
 		this._hasher = hasher;// Clone the hasher object
-		this.initRouter();// Initialize the router and hasher		
+		this.initRouter();// Initialize the router and hasher	
+		
+		// Events with signals
+		this._countryDetailsJSONPLoaded = new signals.Signal();	
 	},
 	initRouter: function() {
 		var self = this;
@@ -26,6 +29,7 @@ var JayWalker = {
 		var sectionDetailRoute = this._router.addRoute('/{section}/{subSection}{id}');// Add section detail route to the router (crossroads)
 		sectionDetailRoute.matched.add(function(section, subSection, id) {
 			self.setActivePage(section + '_' + subSection);
+			self._countryDetailsJSONPLoaded.dispatch(id || {});
 		});
 		
 		//Hasher settings

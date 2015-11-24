@@ -16,6 +16,8 @@
 	// Describe an App object with own functionalities
 	var App = {
 		init: function() {
+			var self = this;
+			
 			this.WBCOUNTRIESAPIURL = "http://api.worldbank.org/countries/all?format=jsonP&prefix=jsonp_callback_{0}&per_page=300";
 			this.WBFORRESTAREAPERCOUNTRYAPI = "http://api.worldbank.org/countries/{0}/indicators/AG.LND.FRST.ZS?format=jsonP&prefix=jsonp_callback_{1}&per_page=300";
 			
@@ -31,6 +33,9 @@
 			// Create a clone from the JayWalker object
 			this._jayWalker = JayWalker;
 			this._jayWalker.init();
+			this._jayWalker._countryDetailsJSONPLoaded.add(function(iso2code) {
+				self.loadDatasetsFromCountry(iso2code);// Test: load details data from country
+			});
 			
 			this.registerNavigationToggleListeners();// Register All Navigation Toggle Listeners
 			
@@ -40,7 +45,6 @@
 			this.registerListenersForListLayout();
 			
 			this.loadCountriesFromWorldBankAPI();// Execute method loadCountriesFromWorldBankAPI(): Load countries from the Worldbank API
-			this.loadDatasetsFromCountry('be');// Test: load details data from country
 		},
 		registerNavigationToggleListeners: function() {
 			var toggles = document.querySelectorAll('.navigation-toggle');
@@ -176,7 +180,29 @@
 				this._hbsCache[hbsTmplName] = Handlebars.compile(src);// Compile the source and add it to the hbs cache
 			}	
 			document.querySelector('.country-details').innerHTML = this._hbsCache[hbsTmplName](this._dataCountry);// Write compiled content to the appropriate container
+			this.createForrestAreaGraphForCountry();
 		},
+		createForrestAreaGraphForCountry: function() {
+		
+			var labels = [], series = [];
+			_.each(this._dataCountry.forrestArea.reverse(), function(item) {
+				labels.push(item.date);
+				series.push(parseFloat(item.value));
+			});
+
+			var options = {
+				low: _.min(_.pluck(this._dataCountry.forrestArea, 'value')),
+				hight: _.max(_.pluck(this._dataCountry.forrestArea, 'value'))
+			};
+			
+			var data = {
+				labels: labels,
+				series: [series]
+			};
+			// Create a new line chart object where as first parameter we pass in a selector that is resolving to our chart container element. The Second parameter is the actual data object.
+			new Chartist.Line('.country-details-forrestarea-chart', data, options);		
+			
+		}
 	};
 	
 	App.init();// Intialize the application

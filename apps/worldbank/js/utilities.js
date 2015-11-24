@@ -94,8 +94,7 @@ var Utils = {
             callbackStr = params['prefix'];
         } else if(params['callback']) {
             callbackStr = params['callback'];
-        }     
-        console.log(callbackStr);   
+        }
         return new Promise(function(resolve, reject) {
             window[callbackStr] = function(data) {
                 resolve(data);
