@@ -87,6 +87,38 @@
 			</div><!-- End Countries List -->
 		</div><!-- End Page: Countries -->	
 		
+		<!-- Page: Country Details -->
+		<div class="page active" id="countries_details">
+			<!-- Header Wrapper -->
+			<div class="grid__wrapper header-wrapper">
+				<div class="grid__container">
+					<div class="grid__row">
+						<div class="grid__column-bp1-12">
+							<header class="header">
+								<!-- Navigation Back -->
+								<a class="navigation-back header__navigation-back">
+									<span>BAck</span>
+								</a><!-- End Navigation Toggle -->
+							</header>
+						</div>
+					</div>
+				</div>
+			</div><!-- End Header Wrapper -->
+			<!-- Country -->
+			<div class="grid__wrapper main-wrapper">
+				<div class="grid__container">
+					<div class="grid__row">
+						<div class="grid__column-bp1-12">
+							<h1>THE COUNTRY</h1>
+						</div>
+						<div class="grid__column-bp1-12">
+							<section class="country-details"></section>
+						</div>
+					</div>
+				</div>
+			</div><!-- End Country -->
+		</div><!-- End Page: Country Details -->
+		
 		<!-- Page: About -->
 		<div class="page" id="about">
 			<!-- Header Wrapper -->
@@ -168,12 +200,30 @@
 						<section class="country__title">
 							<h3>{{name}} <small>({{iso2Code}})</small></h3>
 						</section>
+						<a data-id="{{iso2Code}}" class="btn-readmore" href="#/countries/details/{{iso2Code}}" title="Detail fro the country: {{name}}"><span class="fa fa-chevron-right"></span></a>
 					</div>
 				</li>
 				{{/each}}
 			</ul>
 			{{else}}
 				<p>No countries present in the Worldbank database!</p>
+			{{/if}}
+		</script>
+		<script id="country-details-template" type="text/x-handlebars-template">
+			{{#if this}}
+				{{#if this.forrestArea}}
+					<section class="country_forrestarea">
+						<ul>
+						{{#each this.forrestArea}}
+							<li>
+								{{date}} - {{value}}
+							</li>
+						{{/each}}
+						</ul>
+					</section>
+				{{/if}}
+			{{else}}
+				<p>No country present in the Worldbank database with the selected ISO2Code!</p>
 			{{/if}}
 		</script><!-- End Handlebars Templates -->
 			

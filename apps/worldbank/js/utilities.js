@@ -23,6 +23,20 @@ Date.prototype.toShortDateString = function () {
 	return tempStr;  
 };
 
+// Extend String function with: Format a string with parameters
+if(!String.format)
+String.format = function() {
+    for (var i = 0, args = arguments; i < args.length - 1; i++)
+        args[0] = args[0].replace("{" + i + "}", args[i + 1]);
+    return args[0];
+};
+if(!String.prototype.format && String.format)
+String.prototype.format = function() {
+    var args = Array.prototype.slice.call(arguments).reverse();
+    args.push(this);
+    return String.format.apply(this, args.reverse());
+};
+
 var Utils = {
     // Get JSON from localstorage string by his/her namespace
     // Set JSON to localstorage string by his/her namespace
@@ -33,6 +47,15 @@ var Utils = {
             var storedData = localStorage.getItem(namespace);
             return (storedData && JSON.parse(storedData)) || null;
         }
+    },
+    getParamsFromUrl: function(url) {
+        var regex = /[?&]([^=#]+)=([^&#]*)/g,
+            params = {},
+            match;
+        while(match = regex.exec(url)) {
+            params[match[1]] = match[2];
+        }
+        return params;
     },
     getJSONByPromise: function(url){
         return new Promise(function(resolve, reject) {
@@ -54,7 +77,7 @@ var Utils = {
         });
     },
     getJSONPByPromise: function(url) {
-    
+        
         var script = document.createElement('script');
         script.src = url;
         
@@ -65,8 +88,16 @@ var Utils = {
         var head = document.getElementsByTagName('head')[0];
         head.insertBefore(script, head.firstChild);// Insert script into the DOM
         
+        var params = this.getParamsFromUrl(url);
+        var callbackStr = 'json_callback';
+        if(params['prefix']) {
+            callbackStr = params['prefix'];
+        } else if(params['callback']) {
+            callbackStr = params['callback'];
+        }     
+        console.log(callbackStr);   
         return new Promise(function(resolve, reject) {
-            window.jsonp_callback = function(data) {
+            window[callbackStr] = function(data) {
                 resolve(data);
             }
         });

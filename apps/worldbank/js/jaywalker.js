@@ -23,10 +23,9 @@ var JayWalker = {
 		sectionRoute.matched.add(function(section) {
 			self.setActivePage(section);
 		});
-		var sectionDetailRoute = this._router.addRoute('/{section}/{id}');// Add section detail route to the router (crossroads)
-		sectionDetailRoute.matched.add(function(section, id) {
-			console.log(section + ' ' + id);
-			self.setActivePage(section);
+		var sectionDetailRoute = this._router.addRoute('/{section}/{subSection}{id}');// Add section detail route to the router (crossroads)
+		sectionDetailRoute.matched.add(function(section, subSection, id) {
+			self.setActivePage(section + '_' + subSection);
 		});
 		
 		//Hasher settings
