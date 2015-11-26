@@ -26,6 +26,7 @@
 			
 			this._dataCountries = null;// Variable for the list of countries
 			this._dataCountry = {
+				"info": null,// Information of the country comes from the list of countries
 				"forrestArea": null,// Variable for the list of forrestArea per year
 				"cellularSubscriptions": null// Variable for the list of cellular subscriptions per year
 			}// Variable for the details of a country
@@ -149,12 +150,18 @@
 			document.querySelector('.countries-list').innerHTML = this._hbsCache[hbsTmplName](this._dataCountries);// Write compiled content to the appropriate container
 		},
 		loadDatasetsFromCountry: function(iso2code) {
-			this.loadForrestAreaFromCountryFromWorldBankAPI(iso2code);
-			this.loadCellularSubscriptionsFromCountryFromWorldBankAPI(iso2code);
+			var selectedCountry = _.find(this._dataCountries, function(country) {
+				return country.iso2Code == iso2code;
+			});
+			if(selectedCountry != null && typeof selectedCountry != undefined) {
+				this._dataCountry.info = selectedCountry;
+			}
+			this.loadForrestAreaFromCountryFromWorldBankAPI(iso2code);// Load forrest area dataset
+			this.loadCellularSubscriptionsFromCountryFromWorldBankAPI(iso2code);// Load cellular usage dataset
 		},
 		loadForrestAreaFromCountryFromWorldBankAPI: function(iso2code) {
 			// Closure
-			var self = this, url = String.format(this.WBFORRESTAREAPERCOUNTRYAPI, iso2code, new Date().getTime());
+			var self = this, url = String.format(this.WBFORRESTAREAPERCOUNTRYAPI, iso2code, new Date().getTime() + Math.round(Math.random()*10));
 			
 			// Load JSONP from corresponding API with certain URL
 			// JSONP Callback is defined by a function name in this case
@@ -181,7 +188,7 @@
 		},
 		loadCellularSubscriptionsFromCountryFromWorldBankAPI: function(iso2code) {
 			// Closure
-			var self = this, url = String.format(this.WBCELLULARSUBSCRIPTIONSCOUNTRYAPI, iso2code, new Date().getTime());
+			var self = this, url = String.format(this.WBCELLULARSUBSCRIPTIONSCOUNTRYAPI, iso2code, new Date().getTime() + Math.round(Math.random()*10));
 			
 			// Load JSONP from corresponding API with certain URL
 			// JSONP Callback is defined by a function name in this case

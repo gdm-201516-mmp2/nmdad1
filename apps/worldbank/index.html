@@ -108,25 +108,7 @@
 			<!-- Country -->
 			<div class="grid__wrapper main-wrapper">
 				<div class="grid__container">
-					<div class="grid__row">
-						<div class="grid__column-bp1-12">
-							<h1>THE COUNTRY</h1>
-						</div>
-						<div class="grid__column-bp1-12">
-							<section class="country-details-forrestarea">
-								<h3>Forrest Area</h3>
-								<section class="ct-chart ct-minor-seventh country-details-forrestarea-chart">
-								</section>
-							</section>
-							<section class="country-details-cellularsubscriptions">
-								<h3>Mobile cellular subscriptions</h3>
-								<section class="ct-chart ct-minor-seventh country-details-cellularsubscriptions-chart">
-								</section>
-							</section>
-							
-							<section class="country-details"></section>
-						</div>
-					</div>
+					<div class="grid__row country-details">
 				</div>
 			</div><!-- End Country -->
 		</div><!-- End Page: Country Details -->
@@ -223,16 +205,28 @@
 		</script>
 		<script id="country-details-template" type="text/x-handlebars-template">
 			{{#if this}}
+				{{#if this.info}}
+				<div class="grid__column-bp1-12">
+					<h1 class="country-details-title">{{this.info.name}}</h1>
+				</div>
+				{{/if}}
 				{{#if this.forrestArea}}
-					<section class="country_forrestarea">
-						<ul>
-						{{#each this.forrestArea}}
-							<li>
-								{{date}} - {{value}}
-							</li>
-						{{/each}}
-						</ul>
-					</section>
+					<div class="grid__column-bp1-12">
+						<section class="country-details-forrestarea">
+							<h3>Forrest Area</h3>
+							<section class="ct-chart ct-minor-seventh country-details-forrestarea-chart">
+							</section>
+						</section>
+					</div>
+				{{/if}}
+				{{#if this.cellularSubscriptions}}
+					<div class="grid__column-bp1-12">
+						<section class="country-details-cellularsubscriptions">
+							<h3>Mobile cellular subscriptions</h3>
+							<section class="ct-chart ct-minor-seventh country-details-cellularsubscriptions-chart">
+							</section>
+						</section>
+					</div>
 				{{/if}}
 			{{else}}
 				<p>No country present in the Worldbank database with the selected ISO2Code!</p>
