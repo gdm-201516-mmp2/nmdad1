@@ -108,7 +108,7 @@
 			<!-- Country -->
 			<div class="grid__wrapper main-wrapper">
 				<div class="grid__container">
-					<div class="grid__row country-details">
+					<div class="grid__row country-details country__details">
 				</div>
 			</div><!-- End Country -->
 		</div><!-- End Page: Country Details -->
@@ -206,9 +206,14 @@
 		<script id="country-details-template" type="text/x-handlebars-template">
 			{{#if this}}
 				{{#if this.info}}
-				<div class="grid__column-bp1-12">
-					<h1 class="country-details-title">{{this.info.name}}</h1>
-				</div>
+				<h1 class="country-details-title grid__column-bp1-12">{{this.info.name}}</h1>
+				<img class="country__flag grid__column-bp1-6" src="http://www.geonames.org/flags/x/{{toLowerCase this.info.iso2Code}}.gif" />
+				<section class="country__info grid__column-bp1-6">
+						<span class="place__region">{{this.info.region.value}}</span>
+						<span class="place__city" data-lat="{{this.info.latitude}}" data-lng="{{this.info.longitude}}">{{this.info.capitalCity}}</span>
+						<span class="money__income-level" data-income-id="{{this.info.incomeLevel.id}}">{{this.info.incomeLevel.value}}</span>
+						<span class="money__lending-type" data-lending-id="{{this.info.lendingType.id}}">{{this.info.lendingType.value}}</span>
+				</section>
 				{{/if}}
 				{{#if this.forrestArea}}
 					<div class="grid__column-bp1-12">

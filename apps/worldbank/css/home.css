@@ -113,6 +113,45 @@
 	margin: 0;
 }
 
+/*
+* Country Details
+*/
+.country__details .country__info {
+
+}
+.country__details .place__region {
+	display: block;
+}
+.country__details .place__city {
+	display: block;
+}
+.country__details .place__region::before {
+	content: '\f0ac';
+	font-family: FontAwesome;
+	margin-right: 0.5rem;
+}
+.country__details .place__city::before {
+	content: '\f1ad';
+	font-family: FontAwesome;
+	margin-right: 0.5rem;
+}
+.country__details .money__income-level {
+	display: block;
+}
+.country__details .money__lending-type {
+	display: block;
+}
+.country__details .money__income-level::before {
+	content: '\f0d6';
+	font-family: FontAwesome;
+	margin-right: 0.5rem;
+}
+.country__details .money__lending-type::before {
+	content: '\f09d';
+	font-family: FontAwesome;
+	margin-right: 0.5rem;
+}
+
 
 @media (min-width: 30rem) {
 	.country__tile .country__title {
