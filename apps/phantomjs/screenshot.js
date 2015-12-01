@@ -24,6 +24,10 @@ webPage.open(url, function(result) {
 		
 		console.log('Title of the webpage: ' + title + '.');
 		
+		var fileName = end + '.png';
+		
+		webPage.render(fileName);
+		
 	}
 	phantom.exit();// Stop PhantomJS
 });
