@@ -78,6 +78,9 @@ var Utils = {
     },
     getJSONPByPromise: function(url) {
         
+        // UPDATE: Solution for unique calls
+        url = url + '_' + new Date().getTime() + '_' + Math.round(new Date().getTime()/(Math.random()*10));
+        
         var script = document.createElement('script');
         script.src = url;
         

@@ -20,9 +20,10 @@
 		init: function() {
 			var self = this;
 			
-			this.WBCOUNTRIESAPIURL = "http://api.worldbank.org/countries/all?format=jsonP&prefix=jsonp_callback_{0}&per_page=300";
-			this.WBFORRESTAREAPERCOUNTRYAPI = "http://api.worldbank.org/countries/{0}/indicators/AG.LND.FRST.ZS?format=jsonP&prefix=jsonp_callback_{1}&per_page=300";
-			this.WBCELLULARSUBSCRIPTIONSCOUNTRYAPI = "http://api.worldbank.org/countries/{0}/indicators/IT.CEL.SETS.P2?format=jsonP&prefix=jsonp_callback_{1}&per_page=300";
+			// UPDATE: URL for unique callbacks (will be extended by unique values)
+			this.WBCOUNTRIESAPIURL = "http://api.worldbank.org/countries/all?format=jsonP&per_page=300&prefix=jsonp_callback";
+			this.WBFORRESTAREAPERCOUNTRYAPI = "http://api.worldbank.org/countries/{0}/indicators/AG.LND.FRST.ZS?format=jsonP&per_page=300&prefix=jsonp_callback";
+			this.WBCELLULARSUBSCRIPTIONSCOUNTRYAPI = "http://api.worldbank.org/countries/{0}/indicators/IT.CEL.SETS.P2?format=jsonP&per_page=300&prefix=jsonp_callback";
 			
 			this._dataCountries = null;// Variable for the list of countries
 			this._dataCountry = {
@@ -104,7 +105,8 @@
 		},
 		loadCountriesFromWorldBankAPI: function() {
 			// Closure
-			var self = this, url = String.format(this.WBCOUNTRIESAPIURL, new Date().getTime());
+			// UPDATE
+			var self = this, url = String.format(this.WBCOUNTRIESAPIURL);
 			
 			// Load JSONP from corresponding API with certain URL
 			// JSONP Callback is defined by a function name in this case
@@ -161,7 +163,8 @@
 		},
 		loadForrestAreaFromCountryFromWorldBankAPI: function(iso2code) {
 			// Closure
-			var self = this, url = String.format(this.WBFORRESTAREAPERCOUNTRYAPI, iso2code, new Date().getTime() + Math.round(Math.random()*10));
+			// UPDATE
+			var self = this, url = String.format(this.WBFORRESTAREAPERCOUNTRYAPI, iso2code);
 			
 			// Load JSONP from corresponding API with certain URL
 			// JSONP Callback is defined by a function name in this case
@@ -188,7 +191,8 @@
 		},
 		loadCellularSubscriptionsFromCountryFromWorldBankAPI: function(iso2code) {
 			// Closure
-			var self = this, url = String.format(this.WBCELLULARSUBSCRIPTIONSCOUNTRYAPI, iso2code, new Date().getTime() + Math.round(Math.random()*10));
+			// UPDATE
+			var self = this, url = String.format(this.WBCELLULARSUBSCRIPTIONSCOUNTRYAPI, iso2code);
 			
 			// Load JSONP from corresponding API with certain URL
 			// JSONP Callback is defined by a function name in this case
