@@ -94,13 +94,9 @@ Specificaties
 Verplichte onderdelen voor de webapplicatie (opgelijst in alfabetische volgorde):
 
  - Blijf op de hoogte (maandelijkse nieuwsbrief)
- - Doen
- - Eten en drinken
- - Evenementen
- - Nieuws
- - Ontdekken
- - Overnachten
- - Weer
+ - Quiz
+ - Contactformulier
+ - ...
 
 #### Niet-functionele specificaties
 
